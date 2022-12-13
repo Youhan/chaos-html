@@ -1,0 +1,256 @@
+
+
+
+*:last-child{
+	margin-bottom: 0 !important;
+}
+*:first-child{
+	margin-top:0 !important;
+}
+
+
+
+
+/* 
+	++ padding and margin asset classes
+	=======================================================
+*/
+@define-mixin margin-top $size{
+	.m-top-$(size){
+	    margin-top: $(size)px;
+	}
+}
+@mixin margin-top 0{}
+@mixin margin-top 5{}
+@mixin margin-top 10{}
+@mixin margin-top 15{}
+@mixin margin-top 20{}
+@mixin margin-top 25{}
+@mixin margin-top 30{}
+@mixin margin-top 35{}
+@mixin margin-top 40{}
+@mixin margin-top 45{}
+@mixin margin-top 50{}
+@mixin margin-top 80{}
+@mixin margin-top 100{}
+@mixin margin-top 120{}
+@mixin margin-top 150{}
+@mixin margin-top 200{}
+
+
+@define-mixin margin-bottom $size{
+	.m-bottom-$(size){
+	    margin-bottom: $(size)px;
+	}
+}
+@mixin margin-bottom 0{}
+@mixin margin-bottom 5{}
+@mixin margin-bottom 10{}
+@mixin margin-bottom 15{}
+@mixin margin-bottom 20{}
+@mixin margin-bottom 25{}
+@mixin margin-bottom 30{}
+@mixin margin-bottom 35{}
+@mixin margin-bottom 40{}
+@mixin margin-bottom 45{}
+@mixin margin-bottom 50{}
+@mixin margin-bottom 80{}
+@mixin margin-bottom 100{}
+@mixin margin-bottom 120{}
+@mixin margin-bottom 150{}
+@mixin margin-bottom 200{}
+
+@define-mixin padding-top $size{
+	.p-top-$(size){
+	    padding-top: $(size)px;
+	}
+}
+@mixin padding-top 0{}
+@mixin padding-top 5{}
+@mixin padding-top 10{}
+@mixin padding-top 15{}
+@mixin padding-top 20{}
+@mixin padding-top 25{}
+@mixin padding-top 30{}
+@mixin padding-top 35{}
+@mixin padding-top 40{}
+@mixin padding-top 45{}
+@mixin padding-top 50{}
+@mixin padding-top 80{}
+@mixin padding-top 100{}
+@mixin padding-top 120{}
+@mixin padding-top 150{}
+@mixin padding-top 200{}
+
+@define-mixin padding-bottom $size{
+	.p-bottom-$(size){
+	    padding-bottom: $(size)px;
+	}
+}
+@mixin padding-bottom 0{}
+@mixin padding-bottom 5{}
+@mixin padding-bottom 10{}
+@mixin padding-bottom 15{}
+@mixin padding-bottom 20{}
+@mixin padding-bottom 25{}
+@mixin padding-bottom 30{}
+@mixin padding-bottom 35{}
+@mixin padding-bottom 40{}
+@mixin padding-bottom 45{}
+@mixin padding-bottom 50{}
+@mixin padding-bottom 80{}
+@mixin padding-bottom 100{}
+@mixin padding-bottom 120{}
+@mixin padding-bottom 150{}
+@mixin padding-bottom 200{}
+
+/* 
+	++ spacers
+	=======================================================
+*/
+@define-mixin spacers $size{
+	.sp-blank-$(size),
+	.sp-line-$(size),
+	.sp-trans-$(size){
+		height:$(size)px;
+	}
+}
+@mixin spacers 1{}
+@mixin spacers 20{}
+@mixin spacers 30{}
+@mixin spacers 40{}
+@mixin spacers 50{}
+@mixin spacers 75{}
+@mixin spacers 100{}
+@mixin spacers 120{}
+@mixin spacers 150{}
+@mixin spacers 200{}
+
+[class^="sp-line-"],
+[class^="sp-trans-"]{
+	position: relative;
+	&:after{
+		content:'';
+		width:100%;
+		height: 1px;
+		background-color: $chaos_borderinlight;
+        display: block;
+    	top: 50%;
+    	position: relative;
+	}
+	.in-dark &{
+		&:after{
+			background-color: $chaos_borderindark;
+		}
+	}
+}
+
+[class^="sp-trans-"]{
+	&:after{
+		background-color:transparent;
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(246,246,246,0.97) 30%, rgba(246,246,246,1) 50%, rgba(246,246,246,0.97) 70%, rgba(236,236,236,0) 100%);
+	}
+	.in-dark &{
+		&:after{
+			background-color:transparent;
+			background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(61,61,61,0.97) 30%, rgba(61,61,61,1) 50%, rgba(61,61,61,0.97) 70%, rgba(236,236,236,0) 100%);
+		}
+	}
+}
+
+
+@custom-selector :--separators [class^="sp-blank-"],[class^="sp-line-"],[class^="sp-trans-"];
+
+
+:--separators {
+	clear: both;
+    display: block;
+}
+
+
+
+
+
+.in-dark{
+	background-color: $chaos_dark;
+	color:$chaos_textindark;
+}
+/* 
+	++ Vertical-Center utility with absolute positioning
+	=======================================================
+	The parent of .vcente-wrapper should have a height
+	and be positioned relatively
+*/
+.vcenter-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+
+	/* if the is a container take care of that */
+	.container{
+		position: relative;
+		height: 100%;
+	}
+
+	.vcenter{
+		transform: translate(-50%, -50%);
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right:auto;
+		left: 50%;
+		z-index: 2;
+	}
+
+
+	.vleft{
+		transform: translate(0, -50%);
+		left: 0;
+		right:auto;
+		padding-left:inherit;
+	}
+
+	.vright{
+		transform: translate(0,-50%);
+		left: auto;
+		right:0;
+		padding-right:inherit;
+	}
+
+}
+
+
+
+/* 
+	++ Vertical-Center utility with table
+	=======================================================
+*/
+.tb-vcenter-wrapper{
+	display: table;
+	width:100%;
+	.vcenter{
+		display: table-cell;
+		vertical-align: middle;
+		float:none;
+	}
+}
+
+
+.set-bg,
+.bg-img{
+	background-size: cover;
+	img.set-me{
+		display: none;
+	}
+}
+.set-me{
+	display: none;
+}
+.parallax-bg{
+	background:transparent!important;
+}
+
+
