@@ -1,0 +1,206 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "People directory"
+	- var PageTitleHead = "Minimal"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined'
+	//- var pageTitleImage = dirPrefix+"assets/img/backgrounds/bg-dark-01.jpg"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section
+		.container
+			
+			.inline-filters
+				.form-inline.text-center
+					.form-group
+						.title Search
+					.form-group
+						input.form-control(type='text', placeholder='Search')
+					.form-group
+						select.form-control
+							option category #1
+							option category #2
+							option category #3
+							option category #4
+							option category #5
+							option category #6
+					.form-group
+						input.btn.btn-small.btn-skin-red(type='submit', value='Submit')
+			.sp-blank-50
+			.table-responsive
+				table.table.chaos-table.table-striped
+					thead
+						tr
+							th Name
+							th Position
+							th Email
+							th Phone
+					tbody
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+									span.name Abdulla, Tariq
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/02.jpg', alt='Owl Image')
+									span.name Ahmad, Irqufen
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/03.jpg', alt='Owl Image')
+									span.name Abdulla, Ahmad
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/no-avatar.png', alt='Owl Image')
+									span.name Rodriguez, Manuel
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+									span.name Abdulla, Tariq
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/02.jpg', alt='Owl Image')
+									span.name Ahmad, Irqufen
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/03.jpg', alt='Owl Image')
+									span.name Abdulla, Ahmad
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/no-avatar.png', alt='Owl Image')
+									span.name Rodriguez, Manuel
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+									span.name Abdulla, Tariq
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/02.jpg', alt='Owl Image')
+									span.name Ahmad, Irqufen
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/03.jpg', alt='Owl Image')
+									span.name Abdulla, Ahmad
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/no-avatar.png', alt='Owl Image')
+									span.name Rodriguez, Manuel
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+									span.name Abdulla, Tariq
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/02.jpg', alt='Owl Image')
+									span.name Ahmad, Irqufen
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/03.jpg', alt='Owl Image')
+									span.name Abdulla, Ahmad
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+						tr
+							td 
+								a(href="#").name-avatar
+									.avatar.avatar-xs
+										img(src=dirPrefix+'assets/img/avatars/no-avatar.png', alt='Owl Image')
+									span.name Rodriguez, Manuel
+							td research fellow
+							td.bold
+								a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+							td +44 55 66 43
+			.sp-blank-100.sp-blank-xs-0
+			include ../../../_partials/blocks/paginations/lined

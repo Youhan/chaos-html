@@ -1,0 +1,54 @@
+ul#primary-menu(class=primaryMenuClass)
+	+primarymenu([
+		{
+			'title'		: 'Register Now', 
+			'href'		: 'index.html'
+		},
+		{
+			'title'		: 'FAQ', 
+			'href'		: 'faq.html'
+		}
+	])
+
+
+
+
+mixin primarymenu(items)
+	each item in items
+		+navlinks(item)
+			
+
+mixin navlinks(item)
+	- var isCurrent = false
+	- var hasChild = false
+	- var menuClass = []
+	if currentMenu === item.title
+		- var isCurrent = menuClass.push(CurrentMenuClass)
+	if item.childs
+		- var hasChild = menuClass.push(HasChildMenuClass)
+	if item.isMegamenu
+		- var itIsMega = menuClass.push(MegamenuClass,HasChildMenuClass)
+	if item.submenuclass
+		- var megaclass = menuClass.push(item.submenuclass)
+
+	if item.menuclass
+		- var menuclass = menuClass.push(item.menuclass)
+
+	li( class=menuClass)
+		a(href= dirPrefix+item.href, title=item.title) <span>#{item.title}</span>
+		if item.childs
+			ul(class=primarySubMenuClass)
+				each childItem in item.childs
+					+navlinks(childItem)
+		if item.isMegamenu && item.menu
+			ul(class=megaMenuWrapperClass+' '+item.menu.classes)
+				+loadMega(item.menu)
+
+
+mixin loadMega(megamenu)
+	if megamenu.slug === "academics"
+		include megamenus/academics
+	else if megamenu.slug === "shortcodes"
+		include megamenus/shortcodes
+
+

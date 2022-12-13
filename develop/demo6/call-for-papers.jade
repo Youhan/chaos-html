@@ -1,0 +1,176 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var bcType = "intitle"
+	- var currentMenu = "Call for Papers"
+	- var pageTitle = "Call for Papers"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white'
+
+block main-area
+	section.section: .container
+		.row
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				a.ol-iconic-link.skin-green.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Download call for papers
+
+				a.ol-iconic-link.skin-blue.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Download Abstract preparation guide
+
+				a.ol-iconic-link.skin-purple.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Download Conference Wallpaper
+		.sp-line-80
+		.row
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 01
+					span Choose a scientific topic
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 02
+					span Prepare your abstract
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 03
+					span Make a registration
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 04
+					span Submit your abstract
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+
+	// Important Dates
+	section.section.slim-container.parallax-layer.ov-light-alpha-95(data-img-src="assets/img/bg/15.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-80
+			h2.title Important Deadlines
+			h4.subtitle We publish news about latest changes, announcements and recent projects
+		.owl-carousel.items.owwwlab-theme(data-margin="30", data-nav="true")
+			.ib-deadline.disabled
+				i.oli.oli-calendar
+				.meta
+					span 25 DEC 2015
+				h6.title Paper Submission
+			.ib-deadline.disabled
+				i.oli.oli-calendar
+				.meta
+					span 20 JAN 2016
+				h6.title Acceptance notice
+			.ib-deadline
+				i.oli.oli-calendar
+				.meta
+					span 37 FEB 2016
+				h6.title Registration Deadline
+			.ib-deadline
+				i.oli.oli-calendar
+				.meta
+					span 17-20 JUL 2016
+				h6.title Conference day
+
+	section.section.bg-gray: .container
+		// abstract submission
+		h3.m-bottom-60 Abstract Submission
+		.row
+			.col-md-3
+				p.tight Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				a.btn.btn-skin-green.btn-medium.m-top-30(href="#") Submit Now
+			.col-md-6
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+				p Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu.
+			.col-md-3
+				.alert.with-big-icons.alert-warning(role='alert') 
+					i.oli.oli-lightbulb
+					| The Review Commission will evaluate the abstract submission in the conference programme and the authors of the approved papers will be informed by e-mail.
+
+		.sp-line-150
+
+		// full paper submision
+		h3.m-bottom-60 Full Paper Submission
+		.row
+			.col-md-3
+				p.tight Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.col-md-6
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+				p Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu.
+			.col-md-3
+				h4.with-underline Helpfull Downloads
+				a.ol-iconic-link.m-bottom-10(href="#") 
+					i.oli.oli-document
+					|Guide to Prepare the full paper
+
+				a.ol-iconic-link(href="#") 
+					i.oli.oli-document
+					|Sample Manuscript
+
+		.sp-line-150
+
+		// Write Manuscript
+		h3.m-bottom-60 Writing the Final Manuscript
+		p.m-bottom-50 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+		.row
+			.col-md-4
+				.icon-box.ib-v4
+					i.oli.oli-checked
+					h4.title Checklist
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			.col-md-4
+				.icon-box.ib-v4
+					i.oli.oli-document
+					h4.title Prepare doc file
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			.col-md-4
+				.icon-box.ib-v4
+					i.oli.oli-upload_2
+					h4.title Upload
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+
+	section.section.section-narrow-2.dark-wrapper.parallax-layer.ov-grad1-alpha-90.text-center(data-img-src="assets/img/bg/01.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-40
+			h2.title Take Your Seat!
+			h4.subtitle The nubmer of available seats are limited so please make Jafar rich soon!
+		a.btn.btn-skin-blue.btn-wide.btn-thick-border.btn-circle.btn-medium(href="registration.html") Register Now
+	
+	// logo carousel
+	section: .container
+		.owl-carousel.items.owwwlab-theme(
+			data-cols-xxs=2,
+			data-cols-xs=3,
+			data-cols-sm=4,
+			data-cols-md=5,
+			data-cols-lg=6,
+			data-margin=50,
+			data-loop="true"
+			)
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/01.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/02.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/03.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/04.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/05.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/06.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/07.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/08.png")
+

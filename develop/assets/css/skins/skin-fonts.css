@@ -1,0 +1,445 @@
+$font_primary : 'Sintony', sans-serif;
+$font_secondary : "Play", sans-serif;
+$font_sans : "Merriweather", serif;
+
+
+@custom-selector :--heading h1,h2,h3,h4,h5,h6;
+:--heading{
+	font-family: $font_secondary;
+}
+.ol-dropcaps{
+    font-family: $font_secondary;
+}
+.secondry-font{
+	font-family: $font_secondary !important;
+}
+.summary-box{
+	ul.summaries{
+		li{
+			font-family: $font_secondary;
+		}
+	}
+	.two-col-info{
+		.info-box{
+			font-family: $font_secondary;
+		}
+	}
+}
+
+.ol-user-profile{
+	.side-header &{
+		.title{
+			font-family: $font_secondary;
+		}
+	}
+}
+
+.search-area{
+	&.fullscreen{
+		.search-field{
+			input{
+				font-family: $font_secondary;
+			}
+		}
+	}
+}
+
+.ol-countdown{
+	div{
+		font-family:$font_secondary;
+		span{
+			font-family:$font_primary;
+		}
+	}
+}
+
+.login-form{
+	.tab-navigation{
+		li{
+			a{
+				font-family:$font_primary;
+			}
+		}
+	}
+}
+
+.with-social-share{
+	.social-share{
+		.items{
+			font-family: $font_secondary;
+		}
+	}
+}
+
+.course-el{
+	.course-instructor{
+		font-size: 12px;
+		font-family: $font_secondary;
+	}
+}
+.course-shop-data{
+	.sub-meta{
+		font-family: $font_secondary;
+	}
+	.upper-meta{
+		font-family: $font_secondary;
+	}
+}
+.course-purchase-btn{
+    font-family: $font_secondary;
+}
+.widget-rating{
+	.rate,.count{
+		font-family: $font_secondary;
+	}
+}
+.course-el-regular{
+	.course-meta{
+		li{
+			&>span,.course-instructor>span{
+				font-family: $font_secondary;
+			}
+		}
+	}
+}
+.events{
+	.event-nav{
+		.event-counter{
+			.number{
+				font-family: $font_secondary;
+			}	
+		}
+	}
+	&.with-index{
+		.row-index{
+			.filter-index{
+				font-family: $font_secondary;
+			}
+		}
+	}
+	&.with-filters{
+		ul.filters{
+			li{
+				font-family: $font_secondary;
+			}
+		}
+	}
+}
+.ol-agenda{
+	ul.filters{
+		li{
+			font-family: $font_secondary;
+		}
+	}
+	.ag-section{
+		.section-head{
+			font-family: $font_secondary;
+		}
+	}
+}
+.book-el,.course-el{
+	.contents{
+		.item-meta{
+			.date{
+				font-family: $font_secondary ;
+			}
+		}
+	}
+	&.mini{
+		.contents{
+			.item-meta{
+				span{
+					font-family: $font_secondary;
+				}
+			}
+		}
+	}
+
+}
+#header{
+	.cart{
+		> a{
+			font-family: $font_secondary;
+		}
+	}
+}
+ul#primary-menu{
+	li{
+		a{
+			font-family:$font_secondary;
+		}
+	}
+}
+.news-posts{
+	&.date-aside-list{
+		.published_date{
+			font-family: $font_secondary;
+		}
+	}
+}
+.page-head {
+	.title-wrapper{
+		.info-wrapper{
+			font-family: $font_primary;
+		}
+	}
+	h2.description{
+		&.alt{
+			font-family: $font_secondary;
+		}
+	}
+}
+.alert{
+	font-family: $font_secondary;
+}
+
+.btn {
+	font-family: $font_secondary;
+}
+.icon-box{
+	&.ib-edu{
+		.description{
+			font-family: $font_secondary;
+		}
+	}
+}
+
+dl.description-item{
+	dt{
+		font-family: $font_secondary;
+	}
+}
+.with-shaded-label{
+	ol&{
+		li{
+			font-family: $font_secondary;
+		}
+	}
+}
+.dl-horizontal{
+	dt{
+		font-family: $font_secondary;
+	}
+}
+.fact-item{
+	.fact-number-wrap{
+		.fact-number{
+			font-family: $font_secondary;
+		}
+	}
+}
+.vc-card{
+	.vc-card-wrapper{
+		.title{
+			font-family: $font_secondary;
+		}
+	}
+}
+.ol-timeline{
+	.item-section{
+		font-family: $font_secondary;
+	}
+}
+.ol-timeline-tab{
+	.tl-head{
+		li{
+			font-family: $font_secondary;
+		}
+	}
+	.tl-content{
+		.title{
+			font-family: $font_secondary;
+		}
+	}
+}
+
+
+
+
+
+body{
+	font-family: $font_primary;
+}
+.primary-font{
+	font-family: $font_primary !important;
+}
+.section-side-title{
+	.title,.subtitle{
+		font-family: $font_primary;
+	}
+}
+.intro-box{
+	.content-side{
+		.subtitle{
+			font-family: $font_primary;
+		}
+	}
+}
+
+.ol-price-table{
+	.head{
+		.subtitle{
+			font-family:$font_primary;
+		}
+	}
+}
+.ol-countdown{
+	div{
+		span{
+			font-family:$font_primary;
+		}
+	}
+}
+.course-meta-list{
+	li{
+		font-family: $font_primary;
+	}
+}
+.lesson-item{
+	.title{
+		font-family: $font_primary;
+	}
+}
+
+.widget-rating{
+	.count{
+		font-family: $font_primary;
+	}
+}
+.ol-agenda{
+	.ag-section{
+		.section-body{
+			.contents{
+				.subtitle{
+					font-family: $font_primary;
+				}
+			}
+		}
+	}
+}
+.ol-caption{
+	.subtitle{
+		font-family: $font_primary;
+	}
+}
+.posts-list{
+	.post{
+		.entry-content{
+			.entry-title{
+				font-family: $font_primary;
+			}
+		}
+	}
+}
+
+.page-head {	
+	.title-wrapper{
+		.info-wrapper{
+			font-family: $font_primary;
+		}
+	}
+	h2.description{
+		font-family: $font_primary;
+	}
+	h4.head{
+		font-family: $font_primary;
+	}
+}
+dl.description-item{
+	&.dl-horizontal{
+		font-family: $font_primary;
+	}
+}
+.vc-card{
+	&.mini-card{
+		.title{
+			font-family: $font_primary;
+		}
+	}
+}
+
+.people-carousel{
+	.sub-title{
+		font-family: $font_primary;
+	}
+}
+.testimonial-item{
+	.single-shot & {
+		padding:5px 20%;
+		text-align: center;
+		
+		.their-quote{
+			&:after,
+			&:before{
+				font-family: $font_primary;
+			}
+		}
+	}
+}
+
+
+
+
+.heading-with-sub{
+	.subtitle,.lead{
+		font-family:$font_sans;
+	}
+}
+blockquote {
+	&.quote{
+		font-family: $font_sans;
+	}
+}
+p{
+	&.highlight{
+		font-family: $font_sans;
+	}
+}
+.sans-font{
+	font-family: $font_sans !important;
+}
+.intro-box{
+	.content-side{
+		.title{
+			font-family: $font_sans;
+		}
+	}
+
+}
+.ol-user-profile{
+	.title{
+		font-family: $font_sans;
+	}
+}
+
+.call-out{
+	.sub-title{
+		font-family: $font_sans;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

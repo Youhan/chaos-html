@@ -1,0 +1,233 @@
+
+
+.page-head {
+	z-index:1;
+	.container{
+		/* overflow:hidden; */
+		position: relative;
+		height: 100%;
+		z-index: 10;
+	}
+	height: 150px;
+	background-size: cover;
+	position: relative;
+	font-family: $font_secondary;
+	
+	/* this is used for rev slider */
+	&.auto-height{
+		height:auto;
+	}
+
+	.title-wrapper{
+		width: 50%;
+		.info-wrapper{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			line-height: 20px;
+			font-family: $font_primary;
+		}
+	}
+	.breadcrumb-wrapper{
+		width: 50%;
+		text-align: right;
+	}
+
+	:--heading{
+		padding:0;
+		margin:0;
+	}
+	h1.title {
+	        font-size: 26px;
+	        font-weight: 700;
+	        text-transform: capitalize;
+	        letter-spacing:1px;
+	        &.alt{
+	        	font-size: 40px;
+	        }
+	}
+	h2.description{
+		font-family: $font_primary;
+		font-size: 14px;
+		margin-top: 10px;
+		font-weight: normal;
+		line-height: 24px;
+		&.alt{
+			font-family: $font_secondary;
+			font-size:10px;
+			margin-top: 0;
+			letter-spacing: 3px;
+		}
+	}
+	h4.head{
+		font-family: $font_primary;
+		font-weight: bold;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 11px;
+		margin-bottom: 5px;
+		letter-spacing: 6px;
+	}
+	
+	.opacity-overlay{
+		position: absolute;
+		right:0;
+		left:0;
+		top:0;
+		bottom: 0;
+		opacity: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		&.p-bg-pan-up{
+			background-position: center top;
+		}
+		&.opacity-70{
+			opacity: 0.7;
+		}
+	}
+
+	
+
+	/*	skins	*/
+	color: $chaos_textinlight;
+	background-color: $chaos_lightgray;
+	:--heading{
+		color: $chaos_headerinlight;
+	}
+	&.light{
+		background-color: $chaos_lightgray;
+		color: $chaos_textinlight;
+		:--heading{
+			color: $chaos_headerinlight;
+		}
+	}
+	&.white{
+		background-color: #fff;
+		border-bottom: 1px solid $chaos_borderinlight;
+	}
+	&.dark{
+		background-color: $chaos_dark;
+		color: $chaos_textindark;
+		:--heading,
+		.info-wrapper{
+			color: #fff;
+		}
+	}
+
+	/* why???*/
+	/*&.set-bg{
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	}*/
+
+	&.center-it{
+		text-align: center;
+		.breadcrumb-wrapper{
+			display: none;
+		}
+		.title-wrapper{
+			padding:0 20%;
+		}
+		.title{
+			font-size: 40px;
+		}
+		&.boxed{
+			text-shadow: none;
+			height: auto;
+			.wrapper{
+				padding: 90px 0;
+				.title-wrapper{
+					padding: 0 25%; 
+					.boxed{
+						position: relative;
+						padding: 50px 10px;
+						background-color: rgba(245,245,245, 0.7);
+						&:after{
+							position: absolute;
+							content: "";
+							right: -8px;
+							left: -8px;
+							top: -8px;
+							bottom: -8px;
+							background-color: transparent;
+							border: 4px solid rgba(245,245,245, 0.7);
+						}
+					}
+				} 
+			}
+			&.dark{
+				.wrapper .title-wrapper .boxed{
+					background-color: rgba(51,51,51, 0.8);
+					&:after{
+						border-color: rgba(51,51,51, 0.8);
+					}
+				}
+			}
+		}
+	}
+
+	&.right-it{
+		text-align: right;
+		.breadcrumb-wrapper{
+			display: none;
+		}
+		.title-wrapper{
+			padding-right:inherit;
+		}
+	}
+
+
+	&.lined{
+		border-bottom: 1px solid $chaos_borderinlight;
+		.vcenter{
+	        vertical-align: bottom;
+	        padding-bottom: 20px;
+	        &.title-wrapper:after{
+	        	content:'';
+	        	position: absolute;
+	        	bottom:0;
+	        	left:0;
+	        	height: 3px;
+	        	width:50px;
+	        	background-color: $chaos_headerinlight;
+	        	
+	        }
+		}
+	}
+
+
+
+
+	&.hvh-60,
+	&.hvh-70,
+	&.hvh-80,
+	&.hvh-90,
+	&.hvh-100,
+	&.full-screen,
+	&.h-600,
+	&.h-700
+	&.h-800
+	&.h-900{
+		.center-it&{
+			.title-wrapper{
+				padding-right:0;
+				padding:0 20%;
+			}	
+		}
+		.title-wrapper{
+			padding-right:50%;
+		}
+		.description{
+			margin-top:30px;
+		}
+		.head{
+			margin-bottom:15px;
+		}
+	}
+	
+	.gmap,#gmap{
+		position: absolute !important;
+		z-index: -2;
+	}
+	
+}
+

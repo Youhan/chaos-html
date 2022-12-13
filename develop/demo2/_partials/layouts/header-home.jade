@@ -1,0 +1,14 @@
+.head-main.header-home(class=headMainClass).text-center
+		.logo-wrapper(class=logoWrapperClass).visible-sticky
+			// standard Logo
+			a('href'=dirPrefix+"index.html", "class"="standard-logo").text-logo
+				img('src'=dirPrefix+"assets/img/avatar.jpg", alt='Dr. Chaos Mctabi')
+				.text-wrapper
+					h1.title Dr. Chaos McTabi
+			
+		// primary navigation
+		include header/menu-primary
+
+		// #####Begin icons beside menu
+		.header-icons
+			include header/humburger

@@ -1,0 +1,215 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark trans sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var PageTitleHead = "Chaos theme"
+	- var pageTitle = "Bring Order Out Of Chaos!"
+	- var pageTitleClass = 'h-700 parallax-layer center-it dark ov-blue-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/18.jpg"
+	- var pageTitleParallaxMode = "bg"
+	-loadeExtraAssets.push('revolution')
+block page-title
+	.page-head.parallax-layer.center-it.dark.bg-white.h-700(data-img-src=dirPrefix+"assets/img/backgrounds/48.jpg", data-parallax-mode="mode-title")
+		.container
+			.tb-vcenter-wrapper
+				.title-wrapper.vcenter.text-left.p-left-0.p-right-0
+					.sp-blank-50
+					h4.head Chaos Theme
+					h1.title It Takes a Dream and Chaos!
+					.sp-blank-50
+					a.btn.btn-medium.btn-circle.btn-skin-blue.btn-icon-right.btn-anim-i(href="#") 
+						i.oli.oli-forward
+						span Explore the lab
+block main-area
+	section.section.bg-pattern: .container
+		// #####Begin heading
+		.heading-with-sub
+			h2.title About Chaos Lab
+			h4.subtitle We Provide Analytical Expertise to Space Programs in Service of the National Interest 
+		// #####End heading
+		.row
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				a.ol-iconic-link.skin-green.m-bottom-10(href="#")
+					i.oli.oli-linegraph
+					| People Directory
+				a.ol-iconic-link.skin-blue.m-bottom-10(href="#")
+					i.oli.oli-linegraph
+					| Our Publications
+				a.ol-iconic-link.skin-purple.m-bottom-10(href="#")
+					i.oli.oli-linegraph
+					| Our Research
+	//some facts
+	section.section.set-bg.ov-light-alpha-60(data-img-src=dirPrefix+"assets/img/backgrounds/08.jpg")
+		.container
+			.row.multi-columns-row.col-margin-bottom-30
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 73
+						span Research Projects
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 1350
+						span Published Articles
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 218
+						span Technical Papers
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 85
+						span Awesome People
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+	// projects section
+	section.section
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Research Projects 
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			// #####End heading
+			.sp-blank-30
+			// #####Begin grid filters
+			.ol-grid-filters
+				ul.default-filters
+					li.active
+						a(href="#" data-filter="*") Show All
+					li
+						a(href="#" data-filter=".art-work") Artwork
+					li
+						a(href="#" data-filter=".banner") Banner
+					li
+						a(href="#" data-filter=".marketing") Marketing
+					li
+						a(href="#" data-filter=".design") Design
+				
+				.select-filters
+					select
+						option(value="*") Show All
+						option(value=".art-work") Artwork
+						option(value=".banner") Banner
+						option(value=".marketing") Marketing
+						option(value=".design") Design
+			// #####End grid filters
+			.ol-grid.grid.col-3
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing
+					.gi-wrapper.ol-hover.hover-4
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='image hover')
+						.ol-overlay.ov-grad1-alpha-20
+						.cover.ov-dark-alpha-95
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/07.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") Thomaean pultaceous
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.design
+					.gi-wrapper.ol-hover.hover-4
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='image hover')
+						.ol-overlay.ov-grad1-alpha-20
+						.cover.ov-dark-alpha-95
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/08.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") calibrator etna
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work
+					.gi-wrapper.ol-hover.hover-4
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='image hover')
+						.ol-overlay.ov-grad1-alpha-20
+						.cover.ov-dark-alpha-95
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") oftentimes urotoxin
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing.art-work.design
+					.gi-wrapper.ol-hover.hover-4
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='image hover')
+						.ol-overlay.ov-grad1-alpha-20
+						.cover.ov-dark-alpha-95
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") forewritten midvein
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.design
+					.gi-wrapper.ol-hover.hover-4
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='image hover')
+						.ol-overlay.ov-grad1-alpha-20
+						.cover.ov-dark-alpha-95
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/03.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") aqueomercurial hypocrisy
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work.design
+					.gi-wrapper.ol-hover.hover-4
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='image hover')
+						.ol-overlay.ov-grad1-alpha-20
+						.cover.ov-dark-alpha-95
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/04.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") archetypally ostiolar
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+	// call to action
+	section.section.parallax-layer.ov-light-alpha-90(data-img-src=dirPrefix+"assets/img/backgrounds/09.jpg")
+		.container
+			.row
+				// #####Begin call to action
+				.call-out.tb-vcenter-wrapper
+					.col-md-9.vcenter.ol-animate.fadeInLeft
+						h2.title Fellowship opportunities available
+						h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+					.col-md-3.vcenter.text-center.ol-animate.fadeInRight
+						a.btn.btn-medium.btn-anim-i.btn-skin-dark.btn-icon-right.btn-circle(href='#') 
+							i.oli.oli-forward
+							span Apply now
+				// #####End call to action
+	// pulications
+	section.section.bg-gray: .container: .row
+		.col-md-6
+			img(src=dirPrefix+"assets/img/journal01.png")
+		.col-md-6
+			.sp-blank-50.hidden-xs
+			// #####Begin heading
+			.heading-with-sub
+				h3.title Pear Reviewed Publications
+				h4.subtitle Jounal papers, conference papers and reviewed articles
+			// #####End heading
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis.
+			a.btn.btn-skin-red.btn-circle.btn-wide.btn-small(href="#") Read more
+//- prepend customjs
+//- 	include /_partials/blocks/sliders/slider1-js

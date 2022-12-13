@@ -1,0 +1,60 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var customStyleName = 'demo7.css'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('trans') 
+	- var pageTitle = "login form"
+	- var bcType = "false"
+	- var headerParallaxType = 'bg'
+	- var pageTitleClass = 'h-600 set-bg'
+	- var pageTitleImage = "assets/img/bg-light.jpg"
+	- var triggerClass = 'pull-right'
+	- var triggerType = 'overlay-content'
+	- var triggerTarget = 'login form'
+	- var headMainClass =""
+
+block header
+	header#header(class=headerClasses)
+		.head-main(class=headMainClass)
+			.container
+				//trigger content
+				include _partials/layouts/header/trigger-content
+prepend contents
+	section(class="overlay-content").set-bg
+		img(src='assets/img/bg-blured.jpg').set-me
+		.container
+			.row
+				.col-md-6.col-md-offset-3.hvh-100.ofx-auto
+					.trigger-content(data-type=triggerType).right.dark.p-top-50
+						a(href="#")
+							.oli.oli-delete_sign
+					.tb-vcenter-wrapper
+						.vcenter
+							.login-form.tab
+								ul.nav.nav-tabs
+									li.tab
+										a(href="#login") LOGIN
+									li.tab.active
+										a(href="#register") REGISTER
+								.tab-content
+									.tab-pane#login
+										h6.title Login
+										form(action="/" method="post" role='form')
+											.form-group
+												input#email.form-control(type='text', name='email' placeholder='email')
+												input#password.form-control(type='password', name='password' placeholder='password')
+												input.btn.btn-small.btn-block(type='submit', value='Login')
+									.tab-pane.active#register
+										h6.title Creat New Account
+										form(action="/" method="post" role='form')
+											.form-group
+												input#username.form-control(type='text', name='name' placeholder='name')
+												input#email.form-control(type='text', name='email' placeholder='email')
+												input#password.form-control(type='password', name='password' placeholder='password')
+												input#password.form-control(type='password', name='password' placeholder='confirm password')
+												input.btn.btn-small.btn-block(type='submit', value='register')
+								.copyright Copyrights &copy; All Rights Reserved by owwwlab Inc.
+							

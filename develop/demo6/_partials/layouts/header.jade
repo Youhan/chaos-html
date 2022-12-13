@@ -1,0 +1,23 @@
+.head-main
+	.container
+			// logo
+			include header/logo
+			
+			// primary navigation
+			include header/menu-primary
+
+			// search
+			include header/search-icon
+			include header/humburger
+
+			.search-area.fullscreen
+				.ol-search-bg.set-bg.ov-dark-alpha-50(data-img-src=dirPrefix+"assets/img/bg/04.jpg")
+				.inner-wrapper
+					a.close-btn(href='#')
+						i.ol-css-close
+						span ESC
+					.search-field
+						input(type="text" placeholder="Type and hit enter")
+					.search-logo
+						img(src="assets/img/logo/logo-dark.png")
+

@@ -1,0 +1,26 @@
+.partner-logos{
+	.owl-wrapper{
+		display: table !important;
+	}
+	.owl-item{
+		display: table-cell !important;
+		vertical-align: middle;
+	}
+	.partner-logo{
+		text-align: center;
+		padding:30px;
+	}
+}
+
+.owwwlab-theme .owl-item >a{
+	display: block;
+}
+
+.ol-logo-container{
+	background-color:#f5f5f5;
+	text-align:center;
+	padding:20px;
+	img{
+		max-width:150px;
+	}
+}

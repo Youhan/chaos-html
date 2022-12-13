@@ -1,0 +1,276 @@
+extends ../../../_layouts/lo-normal/right_sidebar
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "People directory"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/bg-dark-01.jpg"
+	
+	- var currentMenu = "Academia"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+mixin list()
+	a(href="#" data-toggle="tooltip" data-original-title="homepage")
+		i.fa.fa-home
+	a(href="#" data-toggle="tooltip" data-original-title="Biography")
+		i.fa.fa-user
+	a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+		i.fa.fa-facebook
+	a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+		i.fa.fa-twitter
+block main-area
+	// #####Begin row with multiple columns
+	.row.multi-columns-row.col-margin-bottom-50
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Kerr Waylon
+					.subtitle
+						| Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Celestine Wilfred
+					.subtitle
+						| Associate Dean, Degree Programmes
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Woody Terence
+					.subtitle
+						| Associate Dean, marketting
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Quinlan Granville
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Mick Roscoe
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Tristram Jack
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. John Doe
+					.subtitle
+						| Associate Dean, physics head
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/08.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Jane Doe
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Kerr Waylon
+					.subtitle
+						| Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Celestine Wilfred
+					.subtitle
+						| Associate Dean, Degree Programmes and Career Services
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Woody Terence
+					.subtitle
+						| Associate Dean, marketting
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Quinlan Granville
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Mick Roscoe
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Tristram Jack
+					.subtitle
+						| Associate Dean
+				.links
+					+list()
+			// #####End person card
+		.col-md-4.col-xs-6
+			// #####Begin person card
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. John Doe
+					.subtitle
+						| Associate Dean, physics head
+				.links
+					+list()
+			// #####End person card
+	// #####End row with multiple columns
+	.sp-blank-100
+	include ../../../_partials/blocks/paginations/lined
+mixin list2()
+	li: a(href="#") item
+	li: a(href="#") item
+	li: a(href="#") item
+mixin list2c()
+	li: a(href="#") item
+	li.current-menu-parent: a(href="#") Current item
+	li: a(href="#") item
+	li: a(href="#") item
+	li: a(href="#") item
+block sidebar-1
+	h3 Navigation
+	// #####Begin sidebar navigation
+	ul.ol-side-navigation
+		li.menu-item-has-children
+			a(href="#") level 1
+			// #####Begin sub-menu
+			ul.sub-menu
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+			// #####End sub-menu
+		li.menu-item-has-children.current-menu-parent
+			a(href="#") level 1
+			// #####Begin sub-menu
+			ul.sub-menu
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+				li.menu-item-has-children.current-menu-parent
+					a(href="#") level 2
+					ul.sub-menu
+						+list2c()
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+			// #####End sub-menu
+		li.menu-item-has-children
+			a(href="#") level 1
+			// #####Begin sub-menu
+			ul.sub-menu
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+				li.menu-item-has-children
+					a(href="#") level 2
+					ul.sub-menu
+						+list2()
+			// #####End sub-menu
+	// #####End sidebar navigation

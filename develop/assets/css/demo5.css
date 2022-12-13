@@ -1,0 +1,77 @@
+/*  Variables
+*  ===================================================
+*  - variables
+*/
+@import "partials/_variables.css";
+
+
+body{
+	background-image: url('../img/bg/main-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+$chaos_theme_color:#a9e84f;
+
+.ol-d5-slider{
+	.ol-title,
+	.ol-subtitle,
+	.ol-description{
+		text-shadow:0 1px 1px rgba(0,0,0,0.5);
+	}
+	.ol-title{
+		font-size: 50px;
+		color: #fff;
+	}
+
+	.ol-subtitle{
+		font-size: 20px;
+		color: #fff;
+	}
+
+	.ol-description{
+		font-size: 14px;
+		white-space: initial;
+		color: #fff;
+	}
+
+	
+}
+
+#footer{ 
+	#footer-main{
+		background-color: #eee;
+    	border-top: 1px solid #e6e6e6;
+	}
+}
+
+
+#header {
+	.search a i {
+	    display: block;
+	    font-size: 14px;
+	    background: #454545; 
+	    line-height: 30px;
+	    width: 30px;
+	    text-align: center;
+	    border-radius: 50%;
+	    border: 1px solid #5E5C5C;
+
+	    &:hover,&:focus{
+	    	background-color:#222;
+	    }
+	}
+
+	&.trans:not(.is-sticky){
+		.search a i {
+		    background: rgba(255,255,255,0.1); 
+		    border-color: rgba(255,255,255,0.3);
+		    color: #fff;
+
+		    &:hover,&:focus{
+		    	background: rgba(255,255,255,0.3); 
+		    }
+		}
+	}
+}

@@ -1,0 +1,60 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' light') 
+	- var pageTitle = "Some sections (experiments)"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam"
+block main-area
+	section.section.pad-0: .container
+		// #####Begin extended background
+		div.row.extend-bg-wrapper
+			div.col-md-6
+				div.extend-left.set-bg
+					img(src=dirPrefix+"assets/img/backgrounds/12.jpg").set-me
+			div.col-md-5.col-md-offset-1.p-top-50.p-bottom-50
+				div.tb-vcenter-wrapper
+					div.vcenter
+						h2.with-sideline Based on the height of content
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam.
+						a.btn.btn-medium.btn-round.btn-thick-border(href="#") read more
+		// #####End extended background
+	section.section.pad-0: .container
+		// #####Begin extended background
+		div.row.extend-bg-wrapper.h-600
+			div.col-md-5.p-top-50.p-bottom-50
+				div.vertical-center-transform
+					h2.with-sideline Fixed 600px height
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam.
+					a.btn.btn-medium.btn-round.btn-thick-border(href="#") read more		
+			div.col-md-6.col-md-offset-1
+				div.extend-right.set-bg
+					img(src=dirPrefix+"assets/img/backgrounds/13.jpg").set-me
+					
+		// #####End extended background
+		// #####Begin extended background
+		div.row.extend-bg-wrapper
+			div.col-md-6
+				div.extend-left.set-bg
+					img(src=dirPrefix+"assets/img/backgrounds/15.jpg").set-me
+				div.tb-vcenter-wrapper
+					div.vcenter
+						div.inner-wrapper.dark-wrapper
+							h2.with-sideline some title
+							p Phasellus lectus sem, egestas eget sollicitudin ut.
+			div.col-md-5.col-md-offset-1.p-top-50.p-bottom-50
+				div.tb-vcenter-wrapper
+					div.vcenter
+						h2.with-sideline with text on bg section
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam.
+						a.btn.btn-medium.btn-round.btn-thick-border(href="#") read more
+		// #####End extended background

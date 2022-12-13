@@ -1,0 +1,148 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Grid 1 column"
+	- var PageTitleHead = "Portfolio"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var headerParallaxType = "bg"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/portfolio/03.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Work"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+block main-area
+	section.section.slim-container: .container
+		.ol-grid.grid.col-1
+			// #####Begin grid item
+			.grid-item.ratio-2
+				.row
+					.col-md-6
+						.gi-wrapper.ol-hover.hover-1
+							.img-layer.set-bg
+								img.set-me(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='portfolio item')
+							.ol-overlay.ov-dark-alpha-80
+							.icons
+								a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+								a(href="#"): i.oli.oli-right
+					.col-md-6
+						.gi-desc
+							h3.title Title of portfolio
+							.tags
+								i.icon.oi-price-tag-filled
+								a(href="#") Banner
+								|  ,
+								a(href="#") Design
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. 
+							a.btn.btn-small(href="#") READ MORE
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2
+				.row
+					.col-md-6
+						.ol-hover.hover-1
+							img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='portfolio item')
+							.ol-overlay.ov-dark-alpha-80
+							.icons
+								a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+								a(href="#"): i.oli.oli-right
+					.col-md-6
+						.gi-desc
+							h3.title Title of portfolio
+							.tags
+								i.icon.oi-price-tag-filled
+								a(href="#") Banner
+								|  ,
+								a(href="#") Design
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. 
+							a.btn.btn-small(href="#") READ MORE
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2
+				.row
+					.col-md-6
+						.ol-hover.hover-1
+							img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='portfolio item')
+							.ol-overlay.ov-dark-alpha-80
+							.icons
+								a(href=dirPrefix+"assets/img/portfolio/03.jpg").ol-lightbox: i.oli.oli-search
+								a(href="#"): i.oli.oli-right
+					.col-md-6
+						.gi-desc
+							h3.title Title of portfolio
+							.tags
+								i.icon.oi-price-tag-filled
+								a(href="#") Banner
+								|  ,
+								a(href="#") Design
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. 
+							a.btn.btn-small(href="#") READ MORE
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2
+					.row
+						.col-md-6
+							.ol-hover.hover-1
+								img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='portfolio item')
+								.ol-overlay.ov-dark-alpha-80
+								.icons
+									a(href=dirPrefix+"assets/img/portfolio/04.jpg").ol-lightbox: i.oli.oli-search
+									a(href="#"): i.oli.oli-right
+						.col-md-6
+							.gi-desc
+								h3.title Title of portfolio
+								.tags
+									i.icon.oi-price-tag-filled
+									a(href="#") Banner
+									|  ,
+									a(href="#") Design
+								p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.. 
+								a.btn.btn-small(href="#") READ MORE
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2
+					.row
+						.col-md-6
+							.ol-hover.hover-1
+								img(src=dirPrefix+"assets/img/portfolio/05.jpg", alt='portfolio item')
+								.ol-overlay.ov-dark-alpha-80
+								.icons
+									a(href=dirPrefix+"assets/img/portfolio/05.jpg").ol-lightbox: i.oli.oli-search
+									a(href="#"): i.oli.oli-right
+						.col-md-6
+							.gi-desc
+								h3.title Title of portfolio
+								.tags
+									i.icon.oi-price-tag-filled
+									a(href="#") Banner
+									|  ,
+									a(href="#") Design
+								p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.. 
+								a.btn.btn-small(href="#") READ MORE
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2
+				.row
+					.col-md-6
+						.ol-hover.hover-1
+							img(src=dirPrefix+"assets/img/portfolio/06.jpg", alt='portfolio item')
+							.ol-overlay.ov-dark-alpha-80
+							.icons
+								a(href=dirPrefix+"assets/img/portfolio/06.jpg").ol-lightbox: i.oli.oli-search
+								a(href="#"): i.oli.oli-right
+					.col-md-6
+						.gi-desc
+							h3.title Title of portfolio
+							.tags
+								i.icon.oi-price-tag-filled
+								a(href="#") Banner
+								|  ,
+								a(href="#") Design
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. 
+							a.btn.btn-small(href="#") READ MORE
+			// #####End grid item
+			

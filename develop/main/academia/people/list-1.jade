@@ -1,0 +1,176 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "People directory"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "Another style to represent the awesome people of your organization"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+mixin list()
+	a(href="#")
+		i.oli.oli-external_link
+		span homepage
+	a(href="#")
+		i.oli.oli-user_male_circle
+		span bio
+block main-area
+	section.section.bg-gray
+		.container
+			
+				// #####Begin row with multiple columns
+				.row.multi-columns-row.col-margin-bottom-40.pull-up-180
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Kerr Waylon
+								.subtitle
+									| Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Celestine Wilfred
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Woody Terence
+								.subtitle
+									| Associate Dean, marketting
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Quinlan Granville
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Mick Roscoe
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Tristram Jack
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. John Doe
+								.subtitle
+									| Associate Dean, physics head
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/08.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Jane Doe
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Kerr Waylon
+								.subtitle
+									| Dean
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Celestine Wilfred
+								.subtitle
+									| Associate Dean, Degree Programmes and Career Services
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Woody Terence
+								.subtitle
+									| Associate Dean, marketting
+							.links
+								+list()
+						// #####End person card
+					.col-md-3.col-sm-4.col-xs-6
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Quinlan Granville
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+				// #####End row with multiple columns
+				
+				.sp-blank-100
+				include ../../../_partials/blocks/paginations/boxed

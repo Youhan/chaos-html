@@ -1,0 +1,416 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Events & Seminars"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "It is all happening at CHAOS!"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.bg-gray.slim-container.section-nopadding
+		.container
+			form.search-box.inline-filters.pull-up-100
+				.row.form-inline
+					
+					.col-sm-10.col-xs-8.form-group.with-filter
+						input.form-control(type='text', placeholder='Search', name="q")
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+							i.icon.oi-filter
+					.col-sm-2.col-xs-4.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Event Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple', name="type")
+								option(value='')
+								option(value='Conference') Conference
+								option(value='Seminar') Seminar
+								option(value='Concert') Concert
+								option(value='Workshop') Workshop
+								option(value='Talk') Talk
+								option(value='Celebration') Celebration
+								option(value='Lecture') Lecture
+								option(value='Film') Film
+								option(value='Exhibit') Exhibit
+						.form-group
+							label Target audiences:
+							select.selectize(data-placeholder='Select Year', multiple='multiple', name="targets")
+								option(value='') 
+								option(value='children') Children
+								option(value='friends-of-the-university') Friends of the University
+								option(value='general-public') General Public
+								option(value='faculty') Faculty
+								option(value='staff') Staff
+								option(value='graduate-students') Graduate Students
+								option(value='under-graduate-students') Under Graduate Students
+					.col-sm-6
+						.form-group
+							label Date From:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="datefrom")
+						.form-group
+							label Date To:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="dateto")
+			.events
+				// #####Begin events table
+				.event-table
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-1.jpg")
+						.cols-wrapper.clearfix
+							.col-sm-12.col-md-6.vcenter.title-col
+								.wrap
+									h3.title From Palace to Studio: Chinese Women Artists, 1900 to the present
+									h4.cat Conference
+							.col-sm-6.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| 15 sep 2015
+									.date
+										span Ends
+										| 16 sep 2015
+							.col-sm-6.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-2.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Botanical garden: Northern California bats
+									h4.cat Conference
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										| October 31
+									.date
+										| 10-11 a.m.
+							.col-md-3.vcenter.location-col
+								.wrap
+									| UC Botanical Garden at Berkeley
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-3.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Special event: Happy creepy halloween
+									h4.cat Celebration
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										| October 31 
+									.date
+										| 11 a.m.-4 p.m.
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Lawrence Hall of Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-4.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Music: UC Berkeley Symphony Orchestra
+									h4.cat Music Concert
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| October 30
+									.date
+										span Ends
+										| October 31
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-5.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Noon concert: Chamber music from Bali and Java
+									h4.cat Concert
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| 15 sep 2015
+									.date
+										span Ends
+										| 16 sep 2015
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-6.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Society for Advancement of Hispanics/Chicanos and Native Americans in Science (SACNAS) National Conference
+									h4.cat Conference/Symposium
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| October 29
+									.date
+										span Ends
+										| October 30
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Durant Hall
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-1.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Maps and More: Ghost Town Maps
+									h4.cat Tour
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										| October 30
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-2.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+									h4.cat Seminar
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										| October 30
+									.date
+										| 2-3:30 p.m. 
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Wheeler Hall
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-4.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Music: UC Berkeley Symphony Orchestra
+									h4.cat Music Concert
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| October 30
+									.date
+										span Ends
+										| October 31
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-5.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Noon concert: Chamber music from Bali and Java
+									h4.cat Concert
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| 15 sep 2015
+									.date
+										span Ends
+										| 16 sep 2015
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-6.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Society for Advancement of Hispanics/Chicanos and Native Americans in Science (SACNAS) National Conference
+									h4.cat Conference/Symposium
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										span Starts
+										| October 29
+									.date
+										span Ends
+										| October 30
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Durant Hall
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-1.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Maps and More: Ghost Town Maps
+									h4.cat Tour
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										| October 30
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Museum of History Science
+						.arrow-wrapper
+							i.icon.oi-forward
+					a.item(href="#")
+						.image-wrapper.set-bg
+							img.set-me(src=dirPrefix+"assets/img/events/thumb-2.jpg")
+						.cols-wrapper.clearfix
+							.col-md-6.vcenter.title-col
+								.wrap
+									h3.title Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+									h4.cat Seminar
+							.col-md-3.vcenter.date-col
+								.wrap
+									.date
+										| October 30
+									.date
+										| 2-3:30 p.m. 
+							.col-md-3.vcenter.location-col
+								.wrap
+									| Wheeler Hall
+						.arrow-wrapper
+							i.icon.oi-forward
+				// #####End events table
+	section.section.parallax-layer.ov-light-alpha-80(data-img-src=dirPrefix+"assets/img/backgrounds/02.jpg")
+		.container
+			h2.text-center Recent Tweets
+			.text-center.single-icon.size-xl.skin-blue
+				i.fa.fa-twitter
+			.sp-blank-50
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.twitter-carousel(data-cols="3" data-margin="50" data-nav="false" data-dots="false" data-autoplaytime="5000")
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents1
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxsad
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents2
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents3
+							| Society for Advancement of Hispanics/Chicanos and Native Americans in Science (SACNAS) National Conference 
+							a(href="#") http://buff.ly/1KrBBxsda
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents4
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents5
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxssd
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents1
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxsad
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents2
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents3
+							| Society for Advancement of Hispanics/Chicanos and Native Americans in Science (SACNAS) National Conference 
+							a(href="#") http://buff.ly/1KrBBxsda
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents4
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents5
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxssd
+			// #####End carousel
+	section.section.bg-blue.dark-wrapper.with-top-icon
+		.container
+			.top-icon.text-center
+				.circle-icon.double.skin-blue.size-lg
+					i.fa.fa-envelope
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title.white-color Stay Informed
+				h4.subtitle.white-color Lorem ipsum dolor sit amet, agam quodsi salutandi nec at. Exerci graece ex sea, vim ut quas propriae menandri, ullum dolor habemus vix no.
+			// #####End heading
+			.sp-blank-20
+			.newsletter-form.simple
+				form.form-inline.text-center
+					.form-group
+						input.form-control.form-circle(type='text', placeholder='Your Email...')
+					.form-group
+						input.btn.btn-medium.btn-trans.btn-skin-white.btn-circle.btn-wide(type='submit', value='Sign up')

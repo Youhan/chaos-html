@@ -1,0 +1,13 @@
+extends ../../../_layouts/lo-normal/fullwidth
+
+append config
+	- var pageSpecificBodyClass = bodyClasses.push('bg-image sticky-header')
+	- var pagewrapperClasses = wrapperClasses.push('boxed-layout-padding')
+	- var PSheaderClasses = headerClasses.push("") 
+	- var pageTitle = "Boxed Layout fullwidth"
+	- var dirPrefix = '../../'
+	- var currentMenu = "pages"
+
+block main-area
+	include ../../../_partials/blocks/pages/main-area-fullwidth
+

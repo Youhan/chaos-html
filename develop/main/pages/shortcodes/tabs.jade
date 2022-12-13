@@ -1,0 +1,292 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "tabs"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	section.section
+		.container
+			h3.text-capitalize.m-bottom-60 default style
+			.row
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab
+						// #####Begin tab navigation
+						ul.tab-navigation
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+					// #####End tab element
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab.right
+						// #####Begin tab navigation
+						ul.tab-navigation
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+					// #####End tab element
+	hr
+	section.section
+		.container
+			h3.text-capitalize.m-bottom-60 bottom
+			.row
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab.bottom
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+						// #####Begin tab navigation
+						ul.tab-navigation
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+					// #####End tab element
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab.bottom.right
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+						// #####Begin tab navigation
+						ul.tab-navigation
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+					// #####End tab element
+	
+	hr
+	section.section
+		.container
+			h3.text-capitalize.m-bottom-60 justified
+			.row
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab
+						// #####Begin tab navigation
+						ul.tab-navigation.nav-justified
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+					// #####End tab element
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab.bottom
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+						// #####Begin tab navigation
+						ul.tab-navigation.nav-justified
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+					// #####End tab element
+	hr
+	section.section
+		.container
+			h3.text-capitalize.m-bottom-60 vertical style
+			.row
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab.vertical
+						// #####Begin tab navigation
+						ul.tab-navigation
+							li.active
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+					// #####End tab element
+				.col-md-6
+					// #####Begin tab element
+					.ol-tab.vertical.right
+						// #####Begin tab navigation
+						ul.tab-navigation
+							li
+								a(href="#") integral
+							li
+								a(href="#") sigma
+							li
+								a(href="#") radical
+							li
+								a(href="#") infinity
+						// #####End tab navigation
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane
+								p integral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p sigma Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p radical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								p infinity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+							// #####End tab panel item
+					// #####End tab element

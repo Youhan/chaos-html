@@ -1,0 +1,306 @@
+extends ../../_layouts/lo-normal/right_sidebar
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Start Learning Today!"
+	- var PageTitleHead = "Life is too short"
+	- var PageTitleDesc = ""
+	- var bcType = ""
+	- var pageTitleClass = 'h-400 set-bg ov-grad3-alpha-60'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/05.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Courses"
+block main-area
+	section.section.p-top-0
+			form.search-box.inline-filters
+				.row.form-inline
+					
+					.col-sm-10.col-xs-8.form-group.with-filter
+						input.form-control(type='text', placeholder='Search', name="q")
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+							i.icon.oi-filter
+					.col-sm-2.col-xs-4.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Event Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple', name="type")
+								option(value='')
+								option(value='Conference') Conference
+								option(value='Seminar') Seminar
+								option(value='Concert') Concert
+								option(value='Workshop') Workshop
+								option(value='Talk') Talk
+								option(value='Celebration') Celebration
+								option(value='Lecture') Lecture
+								option(value='Film') Film
+								option(value='Exhibit') Exhibit
+						.form-group
+							label Target audiences:
+							select.selectize(data-placeholder='Select Year', multiple='multiple', name="targets")
+								option(value='') 
+								option(value='children') Children
+								option(value='friends-of-the-university') Friends of the University
+								option(value='general-public') General Public
+								option(value='faculty') Faculty
+								option(value='staff') Staff
+								option(value='graduate-students') Graduate Students
+								option(value='under-graduate-students') Under Graduate Students
+					.col-sm-6
+						.form-group
+							label Date From:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="datefrom")
+						.form-group
+							label Date To:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="dateto")
+			
+			.sp-blank-50
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-50
+				.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg(href="course-single.html")
+						img.set-me(src=dirPrefix+"assets/img/courses/01.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/01.jpg")
+								.side-info
+									span.course-instructor Mathilda Griffin
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 23$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+									.sub-meta
+										span 45 Students
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-blue(href="course-single.html")
+						img.set-me(src=dirPrefix+"assets/img/courses/02.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/02.jpg")
+									img(src=dirPrefix+"assets/img/avatars/03.jpg")
+									img(src=dirPrefix+"assets/img/avatars/04.jpg")
+								.side-info
+									span.course-instructor Multiple Instructors
+							.title-wrapper
+								h6.sub-title Life
+								h2.title How To<br> become a teacher<br>Complete guide
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span Free
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-half-full
+									.sub-meta
+										span 12 Chapters	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-yellow(href="course-single.html")
+						img.set-me(src=dirPrefix+"assets/img/courses/03.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/05.jpg")
+								.side-info
+									span.course-instructor Norman Cole
+							.title-wrapper
+								h6.sub-title Underground
+								h2.title NinjaScript programmer
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 299$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 36 Sessions	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-green(href="course-single.html")
+						img.set-me(src=dirPrefix+"assets/img/courses/04.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/06.jpg")
+								.side-info
+									span.course-instructor Mathilda Griffin
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span Free
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-half-full
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-purple(href="course-single.html")
+						img.set-me(src=dirPrefix+"assets/img/courses/01.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/07.jpg")
+								.side-info
+									span.course-instructor Mathilda Griffin
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 230$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-blue(href="course-single.html")
+						img.set-me(src=dirPrefix+"assets/img/courses/02.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/07.jpg")
+									img(src=dirPrefix+"assets/img/avatars/08.jpg")
+									img(src=dirPrefix+"assets/img/avatars/04.jpg")
+								.side-info
+									span.course-instructor Multiple Instructors
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 15$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.skin-yellow(href="course-single.html")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/02.jpg")
+									img(src=dirPrefix+"assets/img/avatars/06.jpg")
+									img(src=dirPrefix+"assets/img/avatars/08.jpg")
+								.side-info
+									span.course-instructor Multiple Instructors
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 170$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.skin-blue(href="course-single.html")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/10.jpg")
+								.side-info
+									span.course-instructor Bess Jones
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span Free$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-md-4
+					// #####Begin course element
+					a.course-el.skin-purple(href="course-single.html")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/02.jpg")
+								.side-info
+									span.course-instructor Jeffrey Williamson
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 23$
+									.ol-review-rates(data-rate="5")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+			// #####End row with multiple columns
+			.sp-blank-100
+			include ../../_partials/blocks/paginations/lined		
+block sidebar-1
+	include /_partials/blocks/pages/sidebar-course

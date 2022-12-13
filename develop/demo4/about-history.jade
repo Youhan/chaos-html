@@ -1,0 +1,112 @@
+extends /_layouts/lo-normal/fullwidth
+append config
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var bcType = "intitle"
+	- var currentMenu = "Our History"
+	- var PageTitleHead = "Our past"
+	- var pageTitle = "History"
+	- var PageTitleDesc = "When you do the common things in life in an uncommon way, you will command the attention of the world."
+	- var pageTitleClass = 'h-600 parallax-layer center-it dark ov-dark-alpha-30'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/006.jpg"
+	- var pageTitleParallaxMode = "bg"
+block main-area
+	section.section.slim-container: .container
+		.single-post.large-typo
+			p.highlight.text-center
+				| Any intelligent fool can make things bigger and more complex. It takes a touch of genius-and a lot of courage-to move in the opposite direction.
+			p
+				span.ol-dropcaps.circle.colored S
+				| Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet.
+			.sp-blank-20
+			.caption-img.left-align.off-container
+				img(src=dirPrefix+"assets/img/bg/history.jpg", alt='image hover')
+				.caption Materials Modelling Lab 1970
+			p Their experiments in mice revealed that by preventing DISC-1 from binding with these molecules - using a protein-releasing drug called Tamoxifen at an early stage of the brain's development - it would lack plasticity once it grows to its adult state, preventing cells (cortical neurons) in the brain. Their experiments in mice revealed that by preventing DISC-1 from binding with these molecules - using a protein-releasing drug called Tamoxifen at an early stage of the brain's development - it would lack plasticity once it grows to its adult state, preventing cells (cortical neurons) in the brain. Their experiments Their experiments in mice revealed that by preventing DISC-1 from binding with these molecules - using a protein-releasing drug called Tamoxifen at an early stage of the brain's development - it would lack plasticity once it grows to its adult state, preventing cells (cortical neurons) in the brain. Their experiments in mice. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet.
+			.caption-img.off-container
+				img(src=dirPrefix+"assets/img/bg/history2.jpg", alt='image hover')
+				.caption Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Their experiments in mice revealed that by preventing DISC-1 from binding with these molecules - using a protein-releasing drug called Tamoxifen at an early stage of the brain's development - it would lack plasticity once it grows to its adult state, preventing cells (cortical neurons) in the brain's largest region from being able to form synapses.
+	.slim-container
+		.container
+			.sp-shadow-line-20
+	section.section.slim-container.p-bottom-0
+		.container
+			h3 Honors &amp; Awards
+			p Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est.
+			// #####Begin timeline
+			.ol-timeline
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 2015
+					.elem-wrapper
+						i.oli.oli-university
+					.content-wrapper
+						h3.title Nobel Prize
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 2000
+					.elem-wrapper
+						i.oli.oli-literature
+					.content-wrapper
+						h3.title Nuffield Foundation New Lecturer Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-literature
+					.content-wrapper
+						h3.title Invaders And Guardians Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-university
+					.content-wrapper
+						h3.title Influence Of The Land Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. 
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 1994
+					.elem-wrapper
+						i.oli.oli-like
+					.content-wrapper
+						h3.title Descendant Without Duty Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 1980
+					.elem-wrapper
+						i.oli.oli-biomass
+					.content-wrapper
+						h3.title Losing The Future Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 1950
+					.elem-wrapper
+						i.oli.oli-university
+					.content-wrapper
+						h3.title Turtles Of The Sea Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+			// #####End timeline

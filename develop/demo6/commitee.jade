@@ -1,0 +1,311 @@
+extends /_layouts/lo-normal/right_sidebar
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var bcType = "intitle"
+	- var currentMenu = "Commitee"
+	- var pageTitle = "Conference Organization"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white'
+mixin list()
+	a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+		i.fa.fa-facebook
+	a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+		i.fa.fa-twitter
+block main-area
+	p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	.sp-blank-60
+	h3.m-bottom-40 Organizing Committee
+	.row.multi-columns-row.col-margin-bottom-40
+		.col-xs-6.col-md-4
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Kerr Waylon
+					.subtitle
+						| Dean
+				.links
+					+list()
+		.col-xs-6.col-md-4
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr. Celestine Wilfred
+					.subtitle Founder & CEO
+				.links
+					+list()
+		.col-xs-6.col-md-4
+			.vc-card.boxed
+				a(href="#")
+					img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Dr.Prof. Woody Terence
+					.subtitle
+						| Associate Marketing Dean
+				.links
+					+list()
+	
+	.sp-blank-80
+	h3.m-bottom-40 Scientific Committee
+	.row.multi-columns-row.col-margin-bottom-40
+		.col-xs-6
+			.vc-card.boxed.hoverable-links.mini-card
+				a.set-bg(href="#") 
+					img.set-me(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Quinlan Granville
+					.subtitle
+						| Shalghamology
+				.links
+					a(href="#")
+						i.fa.fa-external-link
+						span 
+					a(href="mailto:email@email.com")
+						i.fa.fa-envelope-o
+						span 		
+		.col-xs-6
+			.vc-card.boxed.hoverable-links.mini-card
+				a.set-bg(href="#") 
+					img.set-me(src=dirPrefix+"assets/img/people/08.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Quinlan Granville
+					.subtitle
+						| Shalghamology
+				.links
+					a(href="#")
+						i.fa.fa-external-link
+						span 
+					a(href="mailto:email@email.com")
+						i.fa.fa-envelope-o
+						span 		
+		.col-xs-6
+			.vc-card.boxed.hoverable-links.mini-card
+				a.set-bg(href="#") 
+					img.set-me(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Quinlan Granville
+					.subtitle
+						| Shalghamology
+				.links
+					a(href="#")
+						i.fa.fa-external-link
+						span 
+					a(href="mailto:email@email.com")
+						i.fa.fa-envelope-o
+						span 		
+		.col-xs-6
+			.vc-card.boxed.hoverable-links.mini-card
+				a.set-bg(href="#") 
+					img.set-me(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Quinlan Granville
+					.subtitle
+						| Shalghamology
+				.links
+					a(href="#")
+						i.fa.fa-external-link
+						span 
+					a(href="mailto:email@email.com")
+						i.fa.fa-envelope-o
+						span 		
+		.col-xs-6
+			.vc-card.boxed.hoverable-links.mini-card
+				a.set-bg(href="#") 
+					img.set-me(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Quinlan Granville
+					.subtitle
+						| Shalghamology
+				.links
+					a(href="#")
+						i.fa.fa-external-link
+						span 
+					a(href="mailto:email@email.com")
+						i.fa.fa-envelope-o
+						span 		
+		.col-xs-6
+			.vc-card.boxed.hoverable-links.mini-card
+				a.set-bg(href="#") 
+					img.set-me(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+				.vc-card-wrapper
+					a.title(href="#") Quinlan Granville
+					.subtitle
+						| Shalghamology
+				.links
+					a(href="#")
+						i.fa.fa-external-link
+						span 
+					a(href="mailto:email@email.com")
+						i.fa.fa-envelope-o
+						span 		
+	
+	.sp-blank-100
+	.row
+		.col-md-4
+			h3 Execution Members
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam.
+		.col-md-8
+			.row.multi-columns-row.col-margin-bottom-40
+				
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/03.jpg', alt='Owl Image')
+						.contents
+							h5.title Lavonne Morra
+							p.meta recomplicate@fairy.com
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/01.jpg', alt='Owl Image')
+						.contents
+							h5.title Larhonda Trill
+							p.meta tracaulon@carbarn.net
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/01.jpg', alt='Owl Image')
+						.contents
+							h5.title Theresa Sellards
+							p.meta gibbsite@motored.edu
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/06.jpg', alt='Owl Image')
+						.contents
+							h5.title Jesusita Kriegh
+							p.meta maku@cloudberry.net
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/06.jpg', alt='Owl Image')
+						.contents
+							h5.title Stasia Kuzia
+							p.meta hyalinosis@enframement.org
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/05.jpg', alt='Owl Image')
+						.contents
+							h5.title Kayleen Volstad
+							p.meta passalus@stonepecker.net
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/06.jpg', alt='Owl Image')
+						.contents
+							h5.title Loreta Dest
+							p.meta livelihood@teratosis.org
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/04.jpg', alt='Owl Image')
+						.contents
+							h5.title Margart Baurer
+							p.meta dure@burl.net
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/04.jpg', alt='Owl Image')
+						.contents
+							h5.title Joaquina Pachla
+							p.meta eciliate@florification.co.uk
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/06.jpg', alt='Owl Image')
+						.contents
+							h5.title Von Freno
+							p.meta lepas@ceraunoscope.edu
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/07.jpg', alt='Owl Image')
+						.contents
+							h5.title Ira Kelley
+							p.meta syntheses@syntone.com
+				.col-sm-6
+					.ol-people-short
+						.avatar.avatar-sm
+							img.img-circle(src=dirPrefix+'assets/img/people/07.jpg', alt='Owl Image')
+						.contents
+							h5.title Jonie Bottom
+							p.meta  pegmatophyre@ungladden.net
+					
+block sidebar-1
+	.widget
+		h4 Organization
+		ul.ol-side-navigation
+			li.menu-item-has-children.current-menu-parent
+				a(href="#") People
+				ul.sub-menu
+					li.current-menu-item
+						a(href="#") Organizing Committee
+					li
+						a(href="#") Scientific Committee
+					li
+						a(href="#") Execution Members
+
+			li.menu-item-has-children
+				a(href="#") Sponsors
+				ul.sub-menu
+					li
+						a(href="#") Golden Sponsors
+					li
+						a(href="#") Silver Sponsors
+					li
+						a(href="#") Bronze Sponsors
+
+	
+	.widget
+		h4 Helpfull Downloads
+		a.ol-iconic-link.m-bottom-10(href="#") 
+			i.oli.oli-document
+			|Paper preparation Guide
+
+		a.ol-iconic-link(href="#") 
+			i.oli.oli-document
+			|Sample Manuscript
+
+
+append main-contents
+	section.section.section-narrow-2.dark-wrapper.parallax-layer.ov-grad1-alpha-90.text-center(data-img-src="assets/img/bg/01.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-40
+			h2.title Take Your Seat!
+			h4.subtitle The nubmer of available seats are limited so please make Jafar rich soon!
+		a.btn.btn-skin-blue.btn-wide.btn-thick-border.btn-circle.btn-medium(href="registration.html") Register Now
+	
+	// logo carousel
+	section: .container
+		.owl-carousel.items.owwwlab-theme(
+			data-cols-xxs=2,
+			data-cols-xs=3,
+			data-cols-sm=4,
+			data-cols-md=5,
+			data-cols-lg=6,
+			data-margin=50,
+			data-loop="true"
+			)
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/01.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/02.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/03.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/04.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/05.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/06.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/07.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/08.png")

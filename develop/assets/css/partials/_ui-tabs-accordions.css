@@ -1,0 +1,277 @@
+.ol-accordion{
+	a{
+		text-decoration: none;
+		color: $chaos_headerinlight;
+	}
+	.item-head{
+		cursor: pointer;
+		font-size: 15px;
+		color: $chaos_headerinlight;
+		background-color: #eee;
+		padding: 15px 20px;
+		text-transform: capitalize;
+		position: relative;
+		margin-bottom: 2px;
+		transition: all 0.3s ease;
+		
+
+		.ol-toggle-icon{
+			width: 15px;
+			right: 20px;
+
+			&:after{
+				height:15px;
+				top:-7px;
+				left: 7px;
+			}
+		}
+		
+		
+	}
+	.item-body{
+		display: none;
+		padding: 20px 10px 40px;
+		font-size: 14px;
+		color: $chaos_textinlight;
+	}
+
+	.item-head:hover,
+	.item-head:focus{
+		background-color: #dedede
+	}
+	.ac-item.open .item-head{
+		color: $chaos_light;
+		background-color: $chaos_theme_color;
+
+		.ol-toggle-icon{
+			&,&:after{
+				background-color: #fff;
+			}
+			
+		}
+
+	}
+
+	.ac-item{
+		&.open{
+			.item-head .ol-toggle-icon{
+				
+				
+			}
+		}
+	}
+
+	&.blue-skin{
+		.ac-item.open .item-head{
+			background-color: $chaos_blue;		
+		}
+	}
+	&.cyan-skin {
+		.ac-item.open .item-head{
+			background-color: $chaos_cyan;		
+		}
+	}
+	&.yellow-skin {
+		.ac-item.open .item-head{
+			background-color: $chaos_yellow;		
+		}
+	}
+	&.red-skin {
+		.ac-item.open .item-head{
+			background-color: $chaos_red;		
+		}
+	}
+	&.dark-skin {
+		.ac-item.open .item-head{
+			background-color: $chaos_dark_lighter;		
+		}
+	}
+	&.green-skin {
+		.ac-item.open .item-head{
+			background-color: $chaos_green;		
+		}
+	}
+
+	.dark-wrapper &{
+		& .item-head{
+			background-color: #3a3a3a;
+			color:#cbcbcb;
+		}
+	}
+}
+
+
+/*Tabs*/
+.ol-tab{
+	&:after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	.tab-navigation{
+		border: none;
+		font-size: 15px;
+		margin:0;
+		padding:0;
+		list-style:none;
+		li{
+			top: 1px;
+			float: left;
+			position: relative;
+			z-index: 1;
+			a{
+				padding: 10px 15px;
+				display:block;
+				text-decoration: none;
+			}
+
+			&:hover,
+			&:focus{
+				background-color: $chaos_lightgray;
+			}
+		}
+		li.active{
+			border-left: 1px solid $chaos_borderinlight;
+			border-right: 1px solid $chaos_borderinlight;
+			top: 1px;
+			background: #fff;
+			z-index: 10;
+
+			a:hover,
+			a:focus{
+				color: $chaos_headerinlight;
+				border-radius: 0 !important;
+				margin: 0 !important;
+			}
+			&:after{
+				position: absolute;
+				content: "";
+				top: 0;
+				left: -1px;
+				right: -1px;
+				height: 3px;
+				background-color: $chaos_theme_color
+			}
+		}
+		&.nav-justified{
+			li{
+				display: table-cell;
+				float: none;
+				&.active:after{
+					height: 5px;
+				}
+			}
+		}
+
+		&:after{
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+	}
+
+	
+	&.right{
+		.tab-navigation li{
+			float: right;
+		}
+	}
+	&.bottom{
+		.tab-navigation{
+			border: none;
+			li{
+				top: -1px;
+			}
+			li.active:after{
+				top: auto;
+				bottom: 0;
+			}
+			&.nav-justified{
+				li.active{
+					border-top: 0;
+					&:after{
+						height: 5px;
+					}
+				}
+			}
+		}
+	}
+	&.vertical{
+		.tab-navigation{
+			float: left;
+			width: 25%;
+			li {
+				text-align: center;
+				float: none;
+				top: 0;
+				left: 1px;
+			}
+			li.active{
+
+				border: 1px solid $chaos_borderinlight;
+				border-left:none;
+				border-right: none;
+				&:after{
+					top:-1px;
+					bottom: -1px;
+					left: 0;
+					width: 4px;
+					height: auto;
+				}
+			}
+		}
+		.tab-content{
+			float: right;
+			width: 75%;
+		}
+
+		&.right{
+			.tab-navigation{
+				float: right;
+				li{
+				    left: auto;
+					right: 1px;
+
+					&.active:after{
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+			.tab-content{
+				float: left;
+			}
+		}	
+	}
+	.tab-pane{
+		padding: 30px 20px;
+		border: 1px solid $chaos_borderinlight;
+		&.active{
+			position: relative;
+			z-index: 5;
+		}
+	}
+	.dark-wrapper &{
+		& .tab-navigation li{
+			a{
+				color:#cbcbcb;
+			}
+			&:hover{
+				background-color: #3a3a3a;
+			}
+		}
+		& .tab-navigation li.active {
+			border-color:#4b4b4b;
+			background: #3a3a3a;
+			a{
+				color:#fff;
+			}
+		}
+
+		& .tab-pane{
+			border-color:#4b4b4b;
+			background-color: #3a3a3a;
+		}
+	}
+}

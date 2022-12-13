@@ -1,0 +1,107 @@
+.progress{
+
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	overflow: visible;
+	height: 30px;
+	background: $chaos_lightgray_darker;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+	.progress-bar{
+		text-align: left;
+		padding: 0 10px;
+		font-size: 12px;
+		background-color: $chaos_dark;
+		line-height: 30px;
+		span{
+			float:right;
+		}
+	}
+
+	&.progress-theme-color .progress-bar{
+		background-color: $chaos_theme_color;
+	}
+
+	&.progress-on-top{
+
+		margin-bottom: 50px;
+		height: 20px;
+		
+		.progress-bar{
+			position: relative;
+			line-height: 20px;
+			font-size: 10px;
+			
+			> span {
+
+				display: inline-block;
+				min-width: 30px;
+				height: 20px;
+				padding: 0px 15px;
+				position: absolute;
+				top: -27px;
+				right: 0px;
+				text-align: center;
+				line-height: 22px;
+				letter-spacing: 0;
+				background-color: $chaos_lightgray_darker;
+				color:$chaos_textinlight;
+				border-radius: 8px;
+
+				&:before {
+					background-color: $chaos_lightgray_darker;
+					border-color: $chaos_lightgray_darker;
+					border-image: none;
+					border-right: 1px solid $chaos_lightgray_darker;
+					border-style: none;
+					bottom: -2px;
+					content: "";
+					display: block;
+					height: 5px;
+					left: 23px;
+					position: absolute;
+					transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+					width: 5px;
+				}
+			}
+		}
+	}
+
+	.dark-wrapper & {
+		background: rgba(232, 232, 232, 0.1);
+		.progress-bar{
+			background-color: $chaos_light;
+			color:$chaos_dark;
+
+			>span{
+				color:$chaos_dark;
+			}
+		}
+
+		&.progress-theme-color .progress-bar{
+			background-color: $chaos_theme_color;
+			color:$chaos_light;
+
+			>span{
+				color:$chaos_light;
+			}
+		}
+
+		&.progress-on-top.progress-theme-color{
+			.progress-bar >span{
+				color:$chaos_dark;
+			}
+		}	
+	}
+
+}

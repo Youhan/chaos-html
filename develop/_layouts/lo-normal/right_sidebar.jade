@@ -1,0 +1,16 @@
+extends ../lo-normal
+
+block main-contents
+	section.section: .container
+		.row
+			// #####Begin main area
+			.col-md-9
+				div#main-area
+					block main-area
+			// #####End main area
+
+			// #####Begin sidebar
+			.col-md-3
+				div.sidebar.right
+					block sidebar-1
+			// #####End sidebar

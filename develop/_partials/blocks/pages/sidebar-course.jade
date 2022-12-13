@@ -1,0 +1,111 @@
+// #####Begin widget
+.widgets-wrapper
+	
+	.widget
+		h4 Categories
+		// #####Begin list of categoreis
+		.category-list
+			a.cat(href="#")
+				| Programming
+				span 12
+			a.cat(href="#")
+				| Data Mining
+				span 20
+			a.cat(href="#")
+				| Design
+				span 12
+			a.cat(href="#")
+				| Objective C
+				span 20
+		// #####End list of categoreis
+	.widget
+		h4 Popular Courses
+		// #####Begin list of posts
+		.posts-list
+			.post
+				a.entry-image(href='#')
+					img(src= dirPrefix +'assets/img/publications/04.jpg', alt='item')
+				.entry-content
+					h4.entry-title
+					a(href='#') Mastering OOP in PHP
+					div.price
+					| $299
+					div
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+			.post
+				a.entry-image(href='#')
+					img(src= dirPrefix +'assets/img/publications/02.jpg', alt='item')
+				.entry-content
+					h4.entry-title
+					a(href='#') Practicall Programmer
+					div.price
+					| Free
+					div
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star-half-o
+			.post
+				a.entry-image(href='#')
+					img(src= dirPrefix +'assets/img/publications/03.jpg', alt='item')
+				.entry-content
+					h4.entry-title
+					a(href='#') Course Design
+					div.price
+					| $199
+					div
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star
+					i.fa.fa-star-o
+			
+		// #####End list of posts
+	.widget
+		h4 Recent Comments
+		// #####Begin list of posts
+		.posts-list.comments
+			.post
+				a.entry-image(href='#')
+					img.img-circle(src= dirPrefix +'assets/img/avatars/01.jpg', alt='image')
+				.entry-content
+					a(href="#")
+						strong John Doe: 
+						| lorem ipsum odor sit amet ...
+			
+			.post
+				a.entry-image(href='#')
+					img.img-circle(src= dirPrefix +'assets/img/avatars/02.jpg', alt='image')
+				.entry-content
+					a(href="#")
+						strong John Doe: 
+						| lorem ipsum odor sit amet ...
+			
+			.post
+				a.entry-image(href='#')
+					img.img-circle(src= dirPrefix +'assets/img/avatars/03.jpg', alt='image')
+				.entry-content
+					a(href="#")
+						strong John Doe: 
+						| lorem ipsum odor sit amet ...
+			
+			.post
+				a.entry-image(href='#')
+					img.img-circle(src= dirPrefix +'assets/img/avatars/04.jpg', alt='image')
+				.entry-content
+					a(href="#")
+						strong John Doe: 
+						| lorem ipsum odor sit amet ...	
+		// #####End list of posts
+	.widget
+		h4 Featured Course
+		.callout.set-bg.dark.ov-dark-alpha-80.dark-wrapper
+			img.set-me(src=dirPrefix+"assets/img/backgrounds/02.jpg")
+			a(href="#") 
+				h3 How to Code without typing!
+// #####End widget

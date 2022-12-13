@@ -1,0 +1,151 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('side-header slim-container')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var currentMenu = "Gallery"
+	- var pageTitle = "Gallery"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white shadow-line ol-particles'
+	
+
+
+
+block main-area
+	section.section.section-narrow: .container 
+		.ol-grid.grid.col-3.with-gutter.gutter-15.ol-lightbox-gallery
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/01.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/01.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Paris Jan 2007
+					
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/02.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/02.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span National library Mar 2010
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/03.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/03.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Let it go Apr 2008
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/04.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/04.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span A scene to see Dec 2014
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/05.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/05.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Jony and the spoon
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/06.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/06.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Walking trough madness
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/07.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/07.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Nice shot Sep 2016
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/08.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/08.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Materials modeling lab 2007
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/09.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/09.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Materials modeling lab 2007
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/10.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/10.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Materials modeling lab 2007
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/11.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/11.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Materials modeling lab 2007
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/12.jpg").grid-item.ratio-2.ol-lightbox.m-bottom-10
+					.gi-wrapper.caption-img.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/gallery/12.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							i.oli.oli-search
+					.caption
+						span Materials modeling lab 2007
+				// #####End grid item

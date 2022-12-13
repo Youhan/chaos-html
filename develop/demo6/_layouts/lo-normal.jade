@@ -1,0 +1,32 @@
+extends skelton
+
+//- append config
+//- 	- var bodyClasses = ['class-one','class-two']
+//- 	- var wrapperClasses = ['regular-layout']
+//- 	- var headerClasses = []
+
+block contents
+	block header
+		header#header.set-bg(class=headerClasses,data-img-src="assets/img/header-bg.jpg")
+			include ../_partials/layouts/header
+		// end #header
+
+	
+	section#contents
+		if bcType == "block"
+			.breadcrumbs-wrapper
+				.container
+					include ../_partials/blocks/page-titles/breadcrumbs
+		
+		block page-title
+			include ../_partials/blocks/page-titles/page_title
+		
+		.page-contents
+			block main-contents
+	// end #contents
+	
+	block pagefooter
+		include ../_partials/layouts/footer
+		// end #footer
+
+	

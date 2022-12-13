@@ -1,0 +1,160 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var bcType = "intitle"
+	- var currentMenu = "Sponsors"
+	- var pageTitle = "Conference Sponsors"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white'
+
+
+block main-area
+	section.section: .container
+		.row
+			.col-md-3
+				.heading-with-sub
+					h3.title Master Sponsors
+					h4.subtitle preceptoral proreduction Temiskaming quadripartite nagster survive.
+			.col-md-9
+				.row.multi-columns-row.col-margin-bottom-40
+					.col-xs-6.col-md-6
+						.ol-logo-container
+							img(src="assets/img/partner-logos/01.png")
+						.caption orographically
+					.col-xs-6.col-md-6
+						.ol-logo-container
+							img(src="assets/img/partner-logos/02.png")
+						.caption inclinatory
+		.sp-blank-80
+		.row
+			.col-md-3
+				.heading-with-sub
+					h3.title Gold Sponsors
+					h4.subtitle morenita Squatinidae unanticipating miscegine comatula stepwise spiculate ding suprapygal cabling Russianize syphilology preflatter.
+			.col-md-9
+				.row.multi-columns-row.col-margin-bottom-40
+					.col-xs-6.col-md-4
+						.ol-logo-container
+							img(src="assets/img/partner-logos/03.png")
+						.caption sideronym
+					.col-xs-6.col-md-4
+						.ol-logo-container
+							img(src="assets/img/partner-logos/04.png")
+						.caption Vod
+					.col-xs-6.col-md-4
+						.ol-logo-container
+							img(src="assets/img/partner-logos/05.png")
+						.caption overcollar
+					.col-xs-6.col-md-4
+						.ol-logo-container
+							img(src="assets/img/partner-logos/06.png")
+						.caption gerah
+					.col-xs-6.col-md-4
+						.ol-logo-container
+							img(src="assets/img/partner-logos/03.png")
+						.caption gerah
+
+	// become a sponsor
+	section.section.parallax-layer.ov-light-alpha-50.slim-container(data-img-src="assets/img/bg/02.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-50
+			h2.title Become a Sponsor
+			h4.subtitle We acknowledge our awesome sposors who made this event an enjoyable place to be!
+		.row
+			.col-md-4
+				.ol-price-table.skin-red
+					.head.shadow.text-center
+						.contents
+							h3.title Silver
+							h6.subtitle Sponsorship
+							p.etc 
+								strong $3000
+					.body.text-center
+						ul.list-unstyled
+							li Welcome Reception
+							li President’s Reception
+							li Welcome Gift
+							li Conference Bag
+							li Attendee’s welcome gift
+						a.btn.btn-skin-red.btn-circle.btn-small.btn-wide(href="#") Read More
+			.col-md-4
+				.ol-price-table.featured.skin-red
+					.head.shadow.text-center
+						.contents
+							h3.title Silver
+							h6.subtitle Sponsorship
+							p.etc 
+								strong $3000
+					.body.text-center
+						ul.list-unstyled
+							li Welcome Reception
+							li President’s Reception
+							li Welcome Gift
+							li Conference Bag
+							li Attendee’s welcome gift
+						a.btn.btn-skin-red.btn-circle.btn-small.btn-wide(href="#") Read More
+			.col-md-4
+				.ol-price-table.skin-red
+					.head.shadow.text-center
+						.contents
+							h3.title Silver
+							h6.subtitle Sponsorship
+							p.etc 
+								strong $3000
+					.body.text-center
+						ul.list-unstyled
+							li Welcome Reception
+							li President’s Reception
+							li Welcome Gift
+							li Conference Bag
+							li Attendee’s welcome gift
+						a.btn.btn-skin-red.btn-circle.btn-small.btn-wide(href="#") Read More
+		.sp-blank-40
+		h5 All Sponsorships will Include
+		ul.arrows.np
+			li Priority Tabletop placement at the Laser Industry Vendor Reception & Tabletop Display
+			li Company Logo/Signage displayed throughout sponsored event
+			li Logo and Listing in Technical Digest
+			li Company Logo featured in Advance Program
+			li One full conference registration
+			li Hyperlink to company on CHAOS website
+
+
+	section.section.section-narrow-2.dark-wrapper.parallax-layer.ov-grad1-alpha-90.text-center(data-img-src="assets/img/bg/01.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-40
+			h2.title Take Your Seat!
+			h4.subtitle The nubmer of available seats are limited so please make Jafar rich soon!
+		a.btn.btn-skin-red.btn-wide.btn-thick-border.btn-circle.btn-medium(href="registration.html") Register Now
+	
+	// logo carousel
+	section: .container
+		.owl-carousel.items.owwwlab-theme(
+			data-cols-xxs=2,
+			data-cols-xs=3,
+			data-cols-sm=4,
+			data-cols-md=5,
+			data-cols-lg=6,
+			data-margin=50,
+			data-loop="true"
+			)
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/01.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/02.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/03.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/04.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/05.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/06.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/07.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/08.png")

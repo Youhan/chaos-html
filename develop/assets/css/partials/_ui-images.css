@@ -1,0 +1,16 @@
+
+.caption{
+	margin-left: 10%;
+	margin-right:25%;
+	border-left: 2px solid #ececec;
+	padding: 10px;
+	font-size: 11px;
+	line-height: 16px;
+	font-style: italic;
+
+	.dark-wrapper &{
+		border-left-color: #4b4b4b;
+	}
+}
+
+

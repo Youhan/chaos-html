@@ -1,0 +1,22 @@
+extends ../../../_layouts/lo-normal/fullwidth
+
+append config
+
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' trans') 
+	- var pageTitle = "FullScreen Page Title"
+	- var PageTitleHead = "Awesome"
+	- var PageTitleDesc = "With these page titles you can do anything you want! Customize your page titles and give them meanings. We have an awesome documentation on this."
+	- var bcType = "intitle"
+
+	- var pageTitleClass = 'set-bg hvh-100 center-it ov-light-alpha-60'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/02.jpg"
+	
+	- var currentMenu = "Features"
+
+
+	
+block main-area
+	include ../../../_partials/blocks/pages/main-area-fullwidth

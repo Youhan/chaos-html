@@ -1,0 +1,51 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Follow-up after prostate cancer treatment: What happens next?"
+	- var PageTitleHead = "Journal Paper"
+	- var PageTitleDesc = ""
+	- var bcType = "block"
+	- var pageTitleClass = 'h-200'
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section: .container
+		
+		.row
+			.col-sm-3
+				img(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+			.col-sm-9
+				p The DOI system was designed to provide a form of persistent identification, in which each DOI name permanently and unambiguously identifies the object to which it is associated. And, it associates metadata with objects, allowing it to provide users with relevant pieces of information about the objects and their relationships. Included as part of this metadata are network actions that allow DOI names to be resolved to web locations where the objects they describe can be found. To achieve its goals, the DOI system combines the Handle System and the indecs Content Model with a social infrastructure.
+				.sp-blank-30
+				.dl-horizontal.text-left.tight
+					dt Date:
+					dd 2015
+					dt Type:
+					dd Journal Paper
+					dt Author:
+					dd John Doe et al.
+					dt Source:
+					dd Journal of Prostate Cancer
+					dt DOI:
+					dd 10.1000/182
+	section.section.bg-gray: .container
+		.row
+			.col-sm-4
+				h4 Download Citation
+			.col-sm-8
+				.inline-wrapper
+					a.btn.btn-small.btn-circle.btn-skin-blue BibTex
+					a.btn.btn-small.btn-circle.btn-skin-blue EndNote
+					a.btn.btn-small.btn-circle.btn-skin-blue RefMan
+					a.btn.btn-small.btn-circle.btn-skin-blue RefWorks
+	.sp-hatched-10
+	section.section: .container
+		h4 Overview
+		p  The DOI system was designed to provide a form of persistent identification, in which each DOI name permanently and unambiguously identifies the object to which it is associated. And, it associates metadata with objects, allowing it to provide users with relevant pieces of information about the objects and their relationships. Included as part of this metadata are network actions that allow DOI names to be resolved to web locations where the objects they describe can be found. To achieve its goals, the DOI system combines the Handle System and the indecs Content Model with a social infrastructure.
+		.inline-image-left
+			img(src=dirPrefix+"assets/img/publications/grid/01.jpg", alt="item thumbnail")
+		p  The DOI system was designed to provide a form of persistent identification, in which each DOI name permanently and unambiguously identifies the object to which it is associated. And, it associates metadata with objects, allowing it to provide users with relevant pieces of information about the objects and their relationships. Included as part of this metadata are network actions that allow DOI names to be resolved to web locations where the objects they describe can be found. To achieve its goals, the DOI system combines the Handle System and the indecs Content Model with a social infrastructure.
+		p  The DOI system was designed to provide a form of persistent identification, in which each DOI name permanently and unambiguously identifies the object to which it is associated. And, it associates metadata with objects, allowing it to provide users with relevant pieces of information about the objects and their relationships. Included as part of this metadata are network actions that allow DOI names to be resolved to web locations where the objects they describe can be found. To achieve its goals, the DOI system combines the Handle System and the indecs Content Model with a social infrastructure.

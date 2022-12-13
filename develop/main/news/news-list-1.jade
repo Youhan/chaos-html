@@ -1,0 +1,195 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "News Grid"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-blue-alpha-90 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/17.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "News"
+block main-area
+	section.section.slim-container.bg-gray
+		.container
+			
+			
+			// #####Begin features news carousel
+			.featured-news-box.set-bg.pull-up-280.pull-up-xs-130
+				img.set-me(src=dirPrefix+"assets/img/backgrounds/summ-bg.jpg")
+				
+				// #####Begin carousel
+				ul.featured-news.owl-carousel.items.owwwlab-theme(data-cols-all="1" data-margin="0" data-nav="false" data-dots="true" data-autoplaytime=5000)
+					li.item
+						.date 24 Oct 2015
+						h3.title 
+							a(href="#") New software being developed to help answer complex biological questions and lorem ipsum
+					li.item
+						.date 24 Oct 2015
+						h3.title 
+							a(href="#") Planning permission granted for new centre for food and health
+					li.item
+						.date 24 Oct 2015
+						h3.title 
+							a(href="#") Thai student stresses benefits of learning Welsh
+					li.item
+						.date 24 Oct 2015
+						h3.title 
+							a(href="#") Undergrads Dive Deep for Submarine Competition
+				// #####End carousel
+			// #####End features news carousel
+			.sp-blank-75
+			
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-70
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 21 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Meeting
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 21 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Meeting
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 21 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Meeting
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 21 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+					// #####End journal element
+				.col-md-4.col-sm-6
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.author <span>By</span> Jane Doe
+								h6.cat <span>In</span> Students News
+								h2.title Meeting
+					// #####End journal element
+			// #####End row with multiple columns
+			.sp-blank-100
+			include ../../_partials/blocks/paginations/lined											

@@ -1,0 +1,132 @@
+extends /_layouts/lo-normal/fullwidth
+append config
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var bcType = "intitle"
+	- var currentMenu = "About"
+	- var PageTitleHead = "Who we are"
+	- var pageTitle = "About Chaos Lab"
+	- var pageTitleClass = 'h-600 parallax-layer center-it dark ov-blue-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/001.jpg"
+	- var pageTitleParallaxMode = "bg"
+	
+block main-area
+	section.section.section-narrow: .container: .row
+		.col-md-4
+			// #####Begin iconbox v1
+			.icon-box.ib-v2
+				a(href="#")
+					i.oli.oli-genius
+					h3.title WHO WE ARE
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v1
+		.col-md-4
+			// #####Begin iconbox v1
+			.icon-box.ib-v2
+				a(href="#")
+					i.oli.oli-telescope2
+					h3.title What we do
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v1
+		.col-md-4
+			// #####Begin iconbox v1
+			.icon-box.ib-v2
+				a(href="#")
+					i.oli.oli-rocket
+					h3.title who we serve
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v1
+	section.section.section-narrow.bg-gray: .container
+		// #####Begin heading
+		.heading-with-sub
+			h3.title Who We Are
+			h4.subtitle Vision and Values
+		// #####End heading
+		.row
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				a.ol-iconic-link.skin-green.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Annual Report 2015
+				a.ol-iconic-link.skin-blue.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Annual Report 2014
+				a.ol-iconic-link.skin-purple.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Annual Report 2013
+		.sp-line-60
+		.row
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 01
+					span Dedication to Mission success
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 02
+					span Technical Excelence
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 03
+					span Commitment to Our People
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label.darken 04
+					span Objectivity
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+	section.section.section-narrow.bg-pattern: .container
+		// #####Begin heading
+		.heading-with-sub
+			h3.title What We Do
+			h4.subtitle Providing Technical and Analytical Expertise to Space Programs in Service of the National Interest 
+		// #####End heading
+		.row
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				a.ol-iconic-link.skin-green.m-bottom-10(href="#")
+					i.oli.oli-linegraph
+					| Annual Report 2015
+				a.ol-iconic-link.skin-blue.m-bottom-10(href="#")
+					i.oli.oli-linegraph
+					| Annual Report 2014
+				a.ol-iconic-link.skin-purple.m-bottom-10(href="#")
+					i.oli.oli-linegraph
+					| Annual Report 2013
+		
+	section.section: .container
+		// #####Begin heading
+		.heading-with-sub
+			h3.title Who We Serve
+			h4.subtitle Providing Enovation Engineering Solutions for the Nation’s most Complex Challenges 
+		// #####End heading
+		.row
+			.col-md-8
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+				
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				// #####Begin iconbox v4
+				.icon-box.ib-v4
+					i.oli.oli-tools
+					h3.title
+						span We are Awesome
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla.
+				// #####End iconbox v4
+				.sp-blank-20
+				// #####Begin iconbox v4
+				.icon-box.ib-v4
+					i.oli.oli-tools-2
+					h3.title
+						span We are Khafan
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla.
+				// #####End iconbox v4
+		

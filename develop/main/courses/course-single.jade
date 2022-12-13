@@ -1,0 +1,990 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header course-single')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "All Courses"
+	- var PageTitleHead = "Chaos LMS"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = ''
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Courses"
+mixin list()
+	a(href="#" data-toggle="tooltip" data-original-title="homepage")
+		i.fa.fa-home
+	a(href="#" data-toggle="tooltip" data-original-title="Biography")
+		i.fa.fa-user
+	a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+		i.fa.fa-facebook
+	a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+		i.fa.fa-twitter
+block page-title
+	.page-head.parallax-layer.ov-light-alpha-50(data-img-src="../assets/img/backgrounds/19.jpg"): .container
+		// #####Begin course introduction
+		.course-intro
+			.row.sync-cols-height
+				.col-md-4
+					.course-info
+						span.category Psycology
+						h2.title Dont Let The Outtakes Take You Out
+						ul.course-meta-list
+							li
+								i.oli.oli-training
+								span Lectures
+								span.pull-right 25
+							li
+								i.oli.oli-borrow_book
+								span Quizes
+								span.pull-right 5
+							li
+								i.oli.oli-clock
+								span Duration
+								span.pull-right 01:22:30
+							li
+								i.oli.oli-global
+								span Language
+								span.pull-right English
+							li
+								i.oli.oli-conference_call
+								span Reviews (5)
+								span.pull-right
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star 
+						.course-shop-wrapper
+							.course-shop-data
+								a.course-purchase-btn(href='#')
+									i.oli.oli-shopping_bag_filled
+									span Take this course
+								.upper-meta
+									span 699$
+								.sub-meta
+									span 45 Students
+				.col-md-8
+					a.ol-hover.hover-5.ol-lightbox(href='https://www.youtube.com/watch?v=E12H1NUDkT0', data-type='iframe', title='Sample Course Intro')
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/backgrounds/19.jpg", alt='Course Intro')
+						.ol-overlay.ov-light-alpha-80
+						.icons
+							i.fa.fa-play
+		// #####End course introduction
+block main-area
+	section
+		// #####Begin tab element
+		.ol-tab.course-single-tab
+			.head-wrapper: .container
+				// #####Begin tab navigation
+				ul.tab-navigation
+					li.active
+						a(href="#") Description
+					li
+						a(href="#") Curriculum
+					li
+						a(href="#") Instructors
+					li
+						a(href="#") Reviews
+				// #####End tab navigation
+				// #####Begin social icons
+				ul.social-icons.shape-circle.hover-theme.pull-right
+					li
+						a(href="#")
+							i.fa.fa-facebook
+					li
+						a(href="#")
+							i.fa.fa-twitter
+					li
+						a(href="#")
+							i.fa.fa-google-plus
+					li
+						a(href="#")
+							i.fa.fa-linkedin
+				// #####End social icons
+			.body-wrapper: .container
+				.row
+					.col-md-9
+						.tab-content
+							// #####Begin tab panel item
+							.tab-pane.active
+								//------Description Begin------
+								section
+									h2 Course Description
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur
+									h3 Certification
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque.
+									.row.m-bottom-50.m-top-30
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 01
+												span Dedication to Mission success
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 02
+												span Dedication to Mission success
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 03
+												span Dedication to Mission success
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+									h3 Course Requirments
+									ol.with-shaded-label
+										li To identify the patterns of care need of people approaching the end
+										li To map their current pathways of care provision and place of death.
+										li To confirm these patterns of need and care pathways with carers, GPs and DNs.
+										li To investigate the health costs of the identified care pathways.
+										li To develop a toolkit for Primary Care Teams to review care and better align patient needs to care provision.
+									.sp-line-150
+								//------Description End------
+								//------Curriculum Begin------
+								section
+									h2 Curriculum
+									.row
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 01
+												span Introduction to Psycoligy
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-8
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 01
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 02
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+									.sp-line-120
+									.row
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 02
+												span Reduce capital costs and ongoing operating costs of assets
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-8
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 01
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 02
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+									.sp-line-120
+									.row
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 03
+												span Reduce capital costs and ongoing operating costs of assets
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-8
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 01
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 02
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+									.sp-line-150
+								//------Curriculum End------
+								//------Instructors Begin------
+								section
+									h2 	Instructors-Multiple
+									// #####Begin row with multiple columns
+									.row.multi-columns-row.col-margin-bottom-40
+										.col-md-4.col-xs-6
+											// #####Begin person card
+											.vc-card.boxed
+												a(href="#")
+													img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+												.vc-card-wrapper
+													a.title(href="#") Dr. Kerr Waylon
+													.subtitle
+														| Chairman
+												.links
+													+list()
+											// #####End person card
+										.col-md-4.col-xs-6
+											// #####Begin person card
+											.vc-card.boxed
+												a(href="#")
+													img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+												.vc-card-wrapper
+													a.title(href="#") Celestine Wilfred
+													.subtitle
+														| Assistant
+												.links
+													+list()
+											// #####End person card
+										.col-md-4.col-xs-6
+											// #####Begin person card
+											.vc-card.boxed
+												a(href="#")
+													img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+												.vc-card-wrapper
+													a.title(href="#") Prof. Woody Terence
+													.subtitle
+														| Co-Chairman
+												.links
+													+list()
+											// #####End person card
+									// #####End row with multiple columns
+									.sp-line-120
+								//------Instructors End------
+								
+								//------Teacher Begin------
+								section
+									h2 About Teacher
+									// #####Begin author biography
+									.author-bio
+										.avatar.avatar-md
+											img.img-circle(src=dirPrefix+'assets/img/avatars/04.jpg', alt='Owl Image')
+										
+										.author-bio-content
+											h4
+												a(href='#')
+													| Dr. Lela Chambers
+											p
+												| We are a small, quick and talented design agency with big, vast and creative ideas. We don't work for you, we work with you.
+											// #####Begin social icons
+											ul.social-icons.shape-circle.hover-theme
+												li
+													a(href="#")
+														i.fa.fa-facebook
+												li
+													a(href="#")
+														i.fa.fa-twitter
+												li
+													a(href="#")
+														i.fa.fa-google-plus
+												li
+													a(href="#")
+														i.fa.fa-linkedin
+											// #####End social icons
+									// #####End author biography
+									.sp-line-120
+								//------Teacher End------
+								//------Reviews Begin------
+								section
+									h2 Reviews
+									.row
+										.col-md-4
+											// #####Begin widget
+											.widget.widget-rating
+												.widget-wrapper
+													span.rate 4.85
+													.ol-review-rates
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star 
+													span.count 4 Ratings
+											// #####End widget
+											// #####Begin widget
+											.widget.widget-rating-bars
+												h4 Detailed Ratings
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+													// #####End progress item
+													span.type 5 Stars
+													span.count 18
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100', style='width: 20%;')
+													// #####End progress item
+													span.type 4 Stars
+													span.count 5
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 7%;')
+													// #####End progress item
+													span.type 4 Stars
+													span.count 0
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 1%;')
+													// #####End progress item
+													span.type 1 Stars
+													span.count 0
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 1%;')
+													// #####End progress item
+													span.type 1 Stars
+													span.count 1
+											// #####End widget
+										.col-md-8
+											// #####Begin comments
+											ul.comments
+												// #####Begin single comment
+												li.comment
+													.avatar
+														img(alt='alt', src=dirPrefix+'assets/img/people/01.jpg')
+													.comment-body
+														.comment-meta
+															ul
+																li.author-name
+																	a.url(href='#', rel='external nofollow') John Doe 
+																	span -
+																li
+																	| September 16, 2014 at 7:03 am
+																
+														.comment-content
+															p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list the Middle English gobbe meaning lump (gob) as the origin of jobbe. Attempts to link the word to the biblical character Job seem to be folk etymology.
+												// #####End single comment
+												// #####Begin single comment
+												li.comment
+													.avatar
+														img(alt='alt', src=dirPrefix+'assets/img/people/03.jpg')
+													.comment-body
+														.comment-meta
+															ul
+																li.author-name
+																	a.url(href='#', rel='external nofollow') John Doe 
+																	span -
+																li
+																	| September 16, 2014 at 7:03 am
+																
+														.comment-content
+															p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list the Middle English gobbe meaning lump (gob) as the origin of jobbe. Attempts to link the word to the biblical character Job seem to be folk etymology.
+													
+													ul.clearfix
+														li.comment
+															.avatar
+																img(alt='alt', src=dirPrefix+'assets/img/people/06.jpg')
+															.comment-body
+																.comment-meta
+																	ul
+																		li.author-name
+																			a.url(href='#', rel='external nofollow') John Doe 
+																			span -
+																		li
+																			| September 16, 2014 at 7:03 am
+																		
+																.comment-content
+																	p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list.
+														li.comment
+															.avatar
+																img(alt='alt', src=dirPrefix+'assets/img/people/03.jpg')
+															.comment-body
+																.comment-meta
+																	ul
+																		li.author-name
+																			a.url(href='#', rel='external nofollow') Jennifer Doe 
+																			span -
+																		li
+																			| September 19, 2014 at 8:03 pm
+																		
+																.comment-content
+																	p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list.
+												// #####End single comment
+												// #####Begin single comment
+												li.comment
+													.avatar
+														img(alt='alt', src=dirPrefix+'assets/img/people/02.jpg')
+													.comment-body
+														.comment-meta
+															ul
+																li.author-name
+																	a.url(href='#', rel='external nofollow') John Doe 
+																	span -
+																li
+																	| September 16, 2014 at 7:03 am
+																
+														.comment-content
+															p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list the Middle English gobbe meaning lump (gob) as the origin of jobbe. Attempts to link the word to the biblical character Job seem to be folk etymology.
+												// #####End single comment
+											// #####End comments
+									
+								//------Reviews End------
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								//------Curriculum Begin------
+								section
+									h2 Curriculum
+									.row
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 01
+												span Introduction to Psycoligy
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-8
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 01
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 02
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+									.sp-line-120
+									.row
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 02
+												span Reduce capital costs and ongoing operating costs of assets
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-8
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 01
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 02
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+									.sp-line-120
+									.row
+										.col-md-4
+											h6.with-shaded-label
+												span.shaded-label.darken 03
+												span Reduce capital costs and ongoing operating costs of assets
+											p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+										.col-md-8
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 01
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item(href='#')
+												.lesson-meta
+													span.counter 02
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 03
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+											// #####Begin lesson
+											a.lesson-item.access-lock(href='#')
+												.lesson-meta
+													span.counter 04
+													i.lesson-type.fa.fa-play
+													span.duration 12 Min
+												h4.title Maxima, Minima and Saddle Points
+											// #####End lesson
+									.sp-line-150
+								//------Curriculum End------
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								//------Instructors Begin------
+								section
+									h2 	Instructors-Multiple
+									// #####Begin row with multiple columns
+									.row.multi-columns-row.col-margin-bottom-40
+										.col-md-4.col-xs-6
+											// #####Begin person card
+											.vc-card.boxed
+												a(href="#")
+													img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+												.vc-card-wrapper
+													a.title(href="#") Dr. Kerr Waylon
+													.subtitle
+														| Chairman
+												.links
+													+list()
+											// #####End person card
+										.col-md-4.col-xs-6
+											// #####Begin person card
+											.vc-card.boxed
+												a(href="#")
+													img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+												.vc-card-wrapper
+													a.title(href="#") Celestine Wilfred
+													.subtitle
+														| Assistant
+												.links
+													+list()
+											// #####End person card
+										.col-md-4.col-xs-6
+											// #####Begin person card
+											.vc-card.boxed
+												a(href="#")
+													img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+												.vc-card-wrapper
+													a.title(href="#") Prof. Woody Terence
+													.subtitle
+														| Co-Chairman
+												.links
+													+list()
+											// #####End person card
+									// #####End row with multiple columns
+									.sp-line-120
+								//------Instructors End------
+							// #####End tab panel item
+							// #####Begin tab panel item
+							.tab-pane
+								//------Reviews Begin------
+								section
+									h2 Reviews
+									.row
+										.col-md-4
+											// #####Begin widget
+											.widget.widget-rating
+												.widget-wrapper
+													span.rate 4.85
+													.ol-review-rates
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star 
+													span.count 4 Ratings
+											// #####End widget
+											// #####Begin widget
+											.widget.widget-rating-bars
+												h4 Detailed Ratings
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+													// #####End progress item
+													span.type 5 Stars
+													span.count 18
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100', style='width: 20%;')
+													// #####End progress item
+													span.type 4 Stars
+													span.count 5
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 7%;')
+													// #####End progress item
+													span.type 4 Stars
+													span.count 0
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 1%;')
+													// #####End progress item
+													span.type 1 Stars
+													span.count 0
+												.progress.rate-bar
+													// #####Begin progress item
+													.progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 1%;')
+													// #####End progress item
+													span.type 1 Stars
+													span.count 1
+											// #####End widget
+										.col-md-8
+											// #####Begin comments
+											ul.comments
+												// #####Begin single comment
+												li.comment
+													.avatar
+														img(alt='alt', src=dirPrefix+'assets/img/people/01.jpg')
+													.comment-body
+														.comment-meta
+															ul
+																li.author-name
+																	a.url(href='#', rel='external nofollow') John Doe 
+																	span -
+																li
+																	| September 16, 2014 at 7:03 am
+																
+														.comment-content
+															p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list the Middle English gobbe meaning lump (gob) as the origin of jobbe. Attempts to link the word to the biblical character Job seem to be folk etymology.
+												// #####End single comment
+												// #####Begin single comment
+												li.comment
+													.avatar
+														img(alt='alt', src=dirPrefix+'assets/img/people/03.jpg')
+													.comment-body
+														.comment-meta
+															ul
+																li.author-name
+																	a.url(href='#', rel='external nofollow') John Doe 
+																	span -
+																li
+																	| September 16, 2014 at 7:03 am
+																
+														.comment-content
+															p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list the Middle English gobbe meaning lump (gob) as the origin of jobbe. Attempts to link the word to the biblical character Job seem to be folk etymology.
+													
+													ul.clearfix
+														li.comment
+															.avatar
+																img(alt='alt', src=dirPrefix+'assets/img/people/06.jpg')
+															.comment-body
+																.comment-meta
+																	ul
+																		li.author-name
+																			a.url(href='#', rel='external nofollow') John Doe 
+																			span -
+																		li
+																			| September 16, 2014 at 7:03 am
+																		
+																.comment-content
+																	p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list.
+														li.comment
+															.avatar
+																img(alt='alt', src=dirPrefix+'assets/img/people/03.jpg')
+															.comment-body
+																.comment-meta
+																	ul
+																		li.author-name
+																			a.url(href='#', rel='external nofollow') Jennifer Doe 
+																			span -
+																		li
+																			| September 19, 2014 at 8:03 pm
+																		
+																.comment-content
+																	p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list.
+												// #####End single comment
+												// #####Begin single comment
+												li.comment
+													.avatar
+														img(alt='alt', src=dirPrefix+'assets/img/people/02.jpg')
+													.comment-body
+														.comment-meta
+															ul
+																li.author-name
+																	a.url(href='#', rel='external nofollow') John Doe 
+																	span -
+																li
+																	| September 16, 2014 at 7:03 am
+																
+														.comment-content
+															p The Online Etymology Dictionary explains that the origin of job is from the obsolete phrase jobbe of work in the sense of piece of work, and most dictionaries list the Middle English gobbe meaning lump (gob) as the origin of jobbe. Attempts to link the word to the biblical character Job seem to be folk etymology.
+												// #####End single comment
+											// #####End comments
+									
+								//------Reviews End------
+							// #####End tab panel item
+					.col-md-3
+						include /_partials/blocks/pages/sidebar-course
+			
+		// #####End tab element

@@ -1,0 +1,404 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' trans') 
+	- var bcType = "intitle"
+	- var currentMenu = ""
+	- var ptType= "false"
+	- var headMainClass = ""
+	- var logoWrapperClass=""
+	- var pageTitle = "Chaos"
+	- var templateName = 'Academic Driven Multipurpose HTML Template'
+
+append metatags
+	meta(name='description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(itemprop='name', content='Chaos Academic Driven Multipurpose HTML Template')
+	meta(itemprop='description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(itemprop='image', content='http://chaos.owwwlab.com/public-images/chaos-banner.jpg')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@owwwlab')
+	meta(name='twitter:creator', content='@owwwlab')
+	meta(name='twitter:title', content='Chaos Academic Driven Multipurpose HTML Template')
+	meta(name='twitter:description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(name='twitter:image:src', content='http://chaos.owwwlab.com/public-images/chaos-banner.jpg')
+	meta(property='og:title', content='Chaos Academic Driven Multipurpose HTML Template')
+	meta(property='og:type', content='article')
+	meta(property='og:url', content='http://chaos.owwwlab.com/')
+	meta(property='og:image', content='http://chaos.owwwlab.com/public-images/chaos-banner.jpg')
+	meta(property='og:description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(property='og:site_name', content='owwwlab')
+
+//- append head-scripts
+//- 	if env == "demo"
+//- 		script(src="//cdn.optimizely.com/js/5984321636.js")
+block page-title
+	#index_head.page-head.parallax-layer.full-screen.bg-gray(data-img-src=dirPrefix+"assets/img/bg/01.jpg")
+		.container
+			.tb-vcenter-wrapper
+				.vcenter.text-center
+					h1.intro-title Chaos
+					h2.intro-subtitle Academic Driven <br> Multi-Purpose HTML Template
+					.intro-buttons
+						a.btn.btn-large.btn-circle.btn-skin-white(data-scroll, href="#index_demos") Choose your demo
+						a.btn.btn-circle.btn-large.btn-skin-yellow(href="http://themeforest.net/item/chaos-academic-driven-multipurpose-template/16297747?ref=owwwlab") Purchase Now - $20
+	
+block main-area
+
+	section.bg-darkgray.slim-container.p-bottom-50.p-bottom-xs-30.p-top-50.p-top-xs-30: .container
+		ul.index-features
+			li
+				span.upper 120+
+				span.sub Components
+			li
+				span.upper 26+
+				span.sub Layouts
+			li
+				span.upper 300+
+				span.sub HTML Pages
+			li
+				span.upper 12+
+				span.sub Pre-Built Demos
+
+	// demos
+	section#index_demos.section.bg-gray.slim-container.p-bottom-0
+
+		.container
+			.section-head
+				h2.title Demos
+				h3.subtitle Full websites
+			
+			.section-lead
+				p CHAOS - perfect, elegant and bright HTML template with lots of functional elements which are designed and polished for academic websites. 
+
+		.container.p-right-100.p-left-100
+			
+			// main demo
+			.demo-item.m-bottom-80.m-bottom-xs-30
+				a(href="../main/index.html" target="_blank")
+					img.demo-thumb.pull-right(
+						alt="alt image"
+						src="assets/img/demos/main.jpg"
+					)
+				.demo-info.abs-left.bottom.text-right
+					h3.title Main Demo
+					p This is the main demo of the template, a full feature demo that contains all elements and variations.
+					a.btn.btn-medium.btn-circle(href="../main/index.html" target="_blank") Explore
+			
+			h2.separator-title 
+				span Niche Demos
+
+			.row.multi-columns-row.col-margin-bottom-40
+				.col-md-6
+					a.demo-box-item(href="../demo6/index.html" target="_blank")
+						img(src="assets/img/demos/00.jpg" title="demo 1")
+						.description
+							h3.title Seminar & Conference
+							h4.subtitle Conference, Seminar, Workshop, etc
+				.col-md-6
+					a.demo-box-item(href="../demo3/index.html" target="_blank")
+						img(src="assets/img/demos/03.jpg" title="demo 4")
+						.description
+							h3.title Personal Website
+							h4.subtitle Creative profile, Staff, Faculty
+				.col-md-6
+					a.demo-box-item(href="../demo5/index.html" target="_blank")
+						img(src="assets/img/demos/02.jpg" title="demo 2")
+						.description
+							h3.title Laboratory
+							h4.subtitle Clinics, organizations, Group, etc.
+				.col-md-6
+					a.demo-box-item(href="../demo4/index.html" target="_blank")
+						img(src="assets/img/demos/01.jpg" title="demo 3")
+						.description
+							h3.title Institution
+							h4.subtitle Agency, Department, Boards, etc
+				
+				.col-md-6
+					a.demo-box-item(href="../demo2/index.html" target="_blank")
+						img(src="assets/img/demos/04.jpg" title="demo 5")
+						.description
+							h3.title Personal #2
+							h4.subtitle PhD Candidates.
+				.col-md-6
+					a.demo-box-item(href="../demo1/index.html" target="_blank")
+						img(src="assets/img/demos/05.jpg" title="demo 6")
+						.description
+							h3.title Personal #3
+							h4.subtitle Simple and minimal
+				.col-md-6
+					a.demo-box-item(href="#")
+						img(src="assets/img/pages/soon.jpg" title="demo 5")
+						.description
+							h3.title Medical Clinic
+							h4.subtitle Coming Soon...
+				.col-md-6
+					a.demo-box-item(href="#")
+						img(src="assets/img/pages/soon2.jpg" title="demo 6")
+						.description
+							h3.title Instructor & Courses
+							h4.subtitle Coming Soon...
+		
+
+	// pages 
+	section#index_pages.with-rotated-bg.bg-gray.slim-container
+		.rotated-wrapper
+			.ov-yellow-alpha-70.img-layer.parallax-layer(data-img-src="assets/img/bg/03.jpg")
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-6
+					.section-head.skin-dark
+						
+						h2.title Homepages
+						h3.subtitle and featured pages
+						p.m-top-30 Pages that you want to look at,<br> including homepages, directories, etc.
+				.col-sm-6
+					.icon-box.ib-v1.m-bottom-50.m-top-50.m-bottom-xs-30.m-top-xs-30
+						i.oli.oli-layers
+						h3.title Ready to Use
+						p Just copy and paste the code<br> and you have it all!
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Research Driven
+						p We continually are conducting <br>research on academic websites needs.
+	
+	// pages body
+	section.bg-gray.slim-container.ov-visible: .container
+		
+		h2.separator-title.text-left
+			span Homepages 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-8.html" target="_blank")
+					img(src="assets/img/pages/01.jpg" title="demo 1")
+					.description
+						h3.title Book Landing Page
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-9.html" target="_blank")
+					img(src="assets/img/pages/02.jpg" title="demo 1")
+					.description
+						h3.title Home - Courses
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-6.html" target="_blank")
+					img(src="assets/img/pages/03.jpg" title="demo 1")
+					.description
+						h3.title Home - Portfolio
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-7.html" target="_blank")
+					img(src="assets/img/pages/04.jpg" title="demo 1")
+					.description
+						h3.title Home - Portfolio 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-5.html" target="_blank")
+					img(src="assets/img/pages/05.jpg" title="demo 1")
+					.description
+						h3.title Home - Laboratory 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-1.html" target="_blank")
+					img(src="assets/img/pages/06.jpg" title="demo 1")
+					.description
+						h3.title Home - Laboratory 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-3.html" target="_blank")
+					img(src="assets/img/pages/07.jpg" title="demo 1")
+					.description
+						h3.title Home - Laboratory 3
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-2.html" target="_blank")
+					img(src="assets/img/pages/08.jpg" title="demo 1")
+					.description
+						h3.title Home - General 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/homepages/home-4.html" target="_blank")
+					img(src="assets/img/pages/09.jpg" title="demo 1")
+					.description
+						h3.title Home - General 2
+
+		h2.separator-title.text-left.m-top-20
+			span Publications 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/publications/pub-series-1.html" target="_blank")
+					img(src="assets/img/pages/17.jpg" title="demo 1")
+					.description
+						h3.title Publication Series
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/publications/pub-list-2.html" target="_blank")
+					img(src="assets/img/pages/12.jpg" title="demo 1")
+					.description
+						h3.title Publications Directory 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/publications/pub-list-3.html" target="_blank")
+					img(src="assets/img/pages/13.jpg" title="demo 1")
+					.description
+						h3.title Publications Directory 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/publications/pub-list-5.html" target="_blank")
+					img(src="assets/img/pages/10.jpg" title="demo 1")
+					.description
+						h3.title Publications Directory 3
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/publications/pub-single.html" target="_blank")
+					img(src="assets/img/pages/20.jpg" title="demo 1")
+					.description
+						h3.title Publications Single
+			
+
+		h2.separator-title.text-left.m-top-20
+			span People & Staff 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/people/list-2.html" target="_blank")
+					img(src="assets/img/pages/11.jpg" title="demo 1")
+					.description
+						h3.title People Directory 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/people/list-3.html" target="_blank")
+					img(src="assets/img/pages/21.jpg" title="demo 1")
+					.description
+						h3.title People Directory 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/people/list-1.html" target="_blank")
+					img(src="assets/img/pages/22.jpg" title="demo 1")
+					.description
+						h3.title People Directory 3
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/people/list-7.html" target="_blank")
+					img(src="assets/img/pages/24.jpg" title="demo 1")
+					.description
+						h3.title People Directory 4
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/people/single-1.html" target="_blank")
+					img(src="assets/img/pages/15.jpg" title="demo 1")
+					.description
+						h3.title Faculty Profile 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/people/single-2.html" target="_blank")
+					img(src="assets/img/pages/25.jpg" title="demo 1")
+					.description
+						h3.title Faculty Profile 2
+		
+
+
+		h2.separator-title.text-left.m-top-20
+			span Courses 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/courses/course-grid.html" target="_blank")
+					img(src="assets/img/pages/12.jpg" title="demo 1")
+					.description
+						h3.title Course Directory 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/courses/course-regular-list.html" target="_blank")
+					img(src="assets/img/pages/26.jpg" title="demo 1")
+					.description
+						h3.title Course Directory 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/courses/course-single.html" target="_blank")
+					img(src="assets/img/pages/27.jpg" title="demo 1")
+					.description
+						h3.title Single Course
+
+		h2.separator-title.text-left.m-top-20
+			span Events 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/events/events-list-1.html" target="_blank")
+					img(src="assets/img/pages/13.jpg" title="demo 1")
+					.description
+						h3.title Events Directory 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/events/events-list-3.html" target="_blank")
+					img(src="assets/img/pages/28.jpg" title="demo 1")
+					.description
+						h3.title Events Directory 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/academia/events/events-single-2.html" target="_blank")
+					img(src="assets/img/pages/14.jpg" title="demo 1")
+					.description
+						h3.title Seminar Page
+
+
+		h2.separator-title.text-left.m-top-20
+			span Projects & Portfolio 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/portfolio/portfolio-grid-3.html" target="_blank")
+					img(src="assets/img/pages/29.jpg" title="demo 1")
+					.description
+						h3.title Projects Directory
+			.col-md-4
+				a.demo-box-item.stand(href="../main/portfolio/portfolio-single-simple.html" target="_blank")
+					img(src="assets/img/pages/30.jpg" title="demo 1")
+					.description
+						h3.title Single Project
+			.col-md-4
+				a.demo-box-item.stand(href="../main/portfolio/portfolio-masonry-fullwidth.html" target="_blank")
+					img(src="assets/img/pages/31.jpg" title="demo 1")
+					.description
+						h3.title Masonry Layout
+
+
+		h2.separator-title.text-left.m-top-20
+			span Blog & News 
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/news/news-list-5.html" target="_blank")
+					img(src="assets/img/pages/32.jpg" title="demo 1")
+					.description
+						h3.title Blog List 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/news/news-list-3.html" target="_blank")
+					img(src="assets/img/pages/33.jpg" title="demo 1")
+					.description
+						h3.title Blog List 2
+			.col-md-4
+				a.demo-box-item.stand(href="../main/news/news-list-3.html" target="_blank")
+					img(src="assets/img/pages/34.jpg" title="demo 1")
+					.description
+						h3.title Single Post
+
+
+		h2.separator-title.text-left.m-top-20
+			span Shop
+
+		.row.multi-columns-row.col-margin-bottom-40
+			.col-md-4
+				a.demo-box-item.stand(href="../main/shop/shop-list-2col.html" target="_blank")
+					img(src="assets/img/pages/35.jpg" title="demo 1")
+					.description
+						h3.title Shop List 1
+			.col-md-4
+				a.demo-box-item.stand(href="../main/shop/shop-list-3col.html" target="_blank")
+					img(src="assets/img/pages/36.jpg" title="demo 1")
+					.description
+						h3.title Shop List 2 
+			.col-md-4
+				a.demo-box-item.stand(href="../main/shop/shop-single.html" target="_blank")
+					img(src="assets/img/pages/37.jpg" title="demo 1")
+					.description
+						h3.title Single Product
+
+		.sp-blank-80
+
+append footer-scripts
+	script(type='text/javascript').
+		(function($) {
+			
+			smoothScroll.init();
+			gumshoe.init({
+				activeClass: 'current-menu-item'
+			});
+		})(jQuery);

@@ -1,0 +1,167 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "People directory"
+	- var PageTitleHead = "2-col"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'center-it h-300'
+	
+	- var currentMenu = "Academia"
+mixin list()
+	a(href="#")
+		i.oli.oli-facebook
+		span Facebook
+	a(href="#")
+		i.oli.oli-twitter
+		span Twitter
+block main-area
+	section.section.pad-0.bg-gray
+		.inline-filters
+			.container
+				.form-inline.text-center
+					.form-group
+						.title Search
+					.form-group
+						input.form-control(type='text', placeholder='Search')
+					.form-group
+						select.form-control
+							option category #1
+							option category #2
+							option category #3
+							option category #4
+							option category #5
+							option category #6
+					.form-group
+						input.form-control.btn.btn-small.btn-skin-red(type='submit', value='Submit')
+	
+	section.section.slim-container
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-40
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/08.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+				.col-xs-6
+					// #####Begin person card
+					.vc-card.boxed.hoverable-links.mini-card
+						a.set-bg(href="#") 
+							img.set-me(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+					// #####End person card
+			// #####End row with multiple columns
+		.sp-blank-100
+		include ../../../_partials/blocks/paginations/lined	

@@ -1,0 +1,672 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var pageTitle = "Home"
+	- var PageTitleHead = "My Awesome"
+	- var PageTitleDesc = ""
+	- var bcType = "false"
+	- var pageTitleClass = ''
+	- var pageTitleImage = dirPrefix+"assets/img/.jpg"
+	- var pageTitleParallaxMode = 'bg-title'
+	-loadeExtraAssets.push('revolution')
+
+block page-title
+	.page-head.auto-height.dark
+		include /_partials/blocks/sliders/slider-d8
+
+block main-area
+	section.section.p-bottom-50
+		.container
+			h2 About Chaos 2016 Conf
+			p Mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor.
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu.
+			.sp-blank-50.shadow-line
+			.row.m-top-70
+				.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-globe
+						h6.title.with-shaded-label
+							span.shaded-label.text-uppercase Who
+							| holds the CHAOS 2016?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+				.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-trophy2
+						h6.title.with-shaded-label
+							span.shaded-label.text-uppercase What
+							| are the themes of the conf?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+				.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-lightbulb
+						h6.title.with-shaded-label
+							span.shaded-label.text-uppercase How
+							| to send abstracts?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+	.sp-cities.set-bg(data-img-src="assets/img/cities.png")
+	
+	section.section.p-top-80.bg-gray
+		.container
+			.heading-with-sub.text-center
+				h2.title Latest Announcements 
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			.sp-blank-30
+			.owl-carousel.items.owwwlab-theme.nav-top-center.has-shadow(data-margin="30",data-nav="true", data-loop="true")
+				a.book-el.shadow.set-bg.skin-red(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Welcome Prof. Jane Doe to our Technical Commitee
+				a.book-el.shadow.set-bg.skin-yellow(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.item-meta
+							span.date 13 Oct 2015
+						.title-wrapper
+							h2.title Call for Abstracts
+				a.book-el.shadow.set-bg.skin-blue(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.item-meta
+							span.date 14 Oct 2015
+						.title-wrapper
+							h2.title CHAOS 2016 will be held in Grand Hotel
+				a.book-el.shadow.set-bg.skin-purple(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.item-meta
+							span.date 5 Jan 2016
+						.title-wrapper
+							h2.title Another Cooperation Partner!
+				a.book-el.shadow.set-bg.skin-yellow(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+					.contents
+						.item-meta
+							span.date 5 Jan 2016
+						.title-wrapper
+							h2.title Adolescent health transition
+
+	section.section.bg-pattern-2: .container: .row
+		.col-md-5
+			.people-carousel.set-bg.shadow.ov-light-alpha-70.owl-carousel.items.owwwlab-theme(data-img-src="assets/img/bg/005.jpg", data-cols-all=1, data-margin=0, data-nav="true")
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/06.jpg")
+					h3.title Prof. Rebbeca Culbertson
+					h4.sub-title University Of Chaos
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/05.jpg")
+					h3.title Prof. Quinlan Granville
+					h4.sub-title Ohoi University
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/04.jpg")
+					h3.title Dr. Renato Schiller
+					h4.sub-title Mcloran University
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/03.jpg")
+					h3.title Prof. Wynell Lariviere
+					h4.sub-title University of Experience
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+
+
+
+		.col-md-7.p-left-40.p-top-40
+			.heading-with-sub
+				h2.title Keynote Lectures
+				h4.subtitle Awesome Lectures will be there
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			a.btn.btn-circle.btn-small(href="about-people.html") Read more
+
+	section.section.bg-gray: .container
+		h2.m-bottom-60 Conference Themes
+		.row
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label 01
+					| Reduce capital costs and ongoing operating costs of assets
+			.col-md-9
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque.
+		.sp-line-80
+		.row
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label 02
+					| Improve regulatory compliance and reduce legal risks of the asset owners
+			.col-md-9
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque.
+		.sp-line-80
+		.row
+			.col-md-3
+				h6.with-shaded-label
+					span.shaded-label 03
+					| Repair and life extension
+			.col-md-9
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque.
+	
+	section.section.section-narrow.parallax-layer.dark-wrapper(data-img-src="assets/img/bg/00.jpg")
+		.container
+			.row.call-out.tb-vcenter-wrapper
+				
+				.col-sm-8.vcenter.text-left
+					h2.title Call for Papers and Abstracts
+					h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+				.col-sm-4.vcenter.text-right
+					a.btn.btn-medium.btn-skin-yellow.btn-circle(href='#') 
+						span Submit Now
+	
+	section.section.slim-container.parallax-layer.ov-light-alpha-95(data-img-src="assets/img/bg/15.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-80
+			h2.title Important Deadlines
+			h4.subtitle We publish news about latest changes, announcements and recent projects
+		.owl-carousel.items.owwwlab-theme(data-margin="30", data-nav="true")
+			.ib-deadline.disabled
+				i.oli.oli-calendar
+				.meta
+					span 25 DEC 2015
+				h6.title Paper Submission
+			.ib-deadline.disabled
+				i.oli.oli-calendar
+				.meta
+					span 20 JAN 2016
+				h6.title Acceptance notice
+			.ib-deadline
+				i.oli.oli-calendar
+				.meta
+					span 37 FEB 2016
+				h6.title Registration Deadline
+			.ib-deadline
+				i.oli.oli-calendar
+				.meta
+					span 17-20 JUL 2016
+				h6.title Conference day
+			.ib-deadline
+				i.oli.oli-calendar
+				.meta
+					span 25 DEC 2015
+				h6.title Paper Submission
+	
+	section.section: .container
+		h2.pull-left Conference Agenda
+		a.btn.btn-small.btn-circle.btn-skin-dark.pull-right View Full Program
+		.sp-blank-30
+		.ol-agenda.sticky-type
+			ul.filters
+				li.active
+					a(href="#" data-filter="*") All
+				li
+					a(href="#" data-filter="room-1") Main Hall
+				li
+					a(href="#" data-filter="room-2") Conference Hall
+				li
+					a(href="#" data-filter="room-3") Room #3
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 05
+						span JUL 2016 
+				.section-body
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Registration - Conference
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Conference Hall
+						.contents
+							h3.title Registration - Workshops
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title Openning Party!
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.		
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 06
+						span JUL 2016 
+				.section-body
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Professional Consort
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title Sir Jamie B. McMahan
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title The Dangerous Angel
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title Sir Jamie B. McMahan
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Words of Storms
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title The Blade of the Streams
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title Snow in the Dragon
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title The Flowers's Girlfriend
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title The Splintered Flames
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Room #3
+						.contents
+							h3.title Husband in the Game
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 07
+						span JUL 2016 
+				.section-body
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title The Woman of the Mage
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title The Willow's Game
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title The Final Game
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Goodby Party!
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+
+	section.section.dark-wrapper.parallax-layer.ov-grad1-alpha-90.text-center(data-img-src="assets/img/bg/01.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-60
+			h2.title Take Your Seat!
+			h4.subtitle The nubmer of available seats are limited so please make Jafar rich soon!
+		a.btn.btn-skin-blue.btn-wide.btn-thick-border.btn-circle(href="registration.html") Register Now
+
+	section.section: .container
+		.row
+			.col-md-4
+				h4 Sponsors
+				p.m-bottom-30 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				a.btn.btn-anim-drawer.btn-round.btn-small(href="#")
+					span READ MORE
+			.col-md-8
+				
+				ul.clients-grid
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+					li
+					
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+					li
+						a(href='#')
+							img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+	
+	section.section.bg-pattern-2: .container
+		
+		.heading-with-sub.text-center
+			h2.title Don&#39;t take it from us, see what other people say!
+			h4.subtitle Here is an awesome quick description about it that is class lorem Efficiently unleash.
+
+		.sp-blank-50
+		
+		.row
+			.col-md-4
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/people/05.jpg', alt='Owl Image')
+					.texts
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+			.col-md-4
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/people/06.jpg', alt='Owl Image')
+					.texts
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+			.col-md-4
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/people/07.jpg', alt='Owl Image')
+					.texts
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google	
+
+
+	section.section.parallax-layer.ov-light-alpha-50(data-img-src="assets/img/bg/02.jpg")
+
+		.container
+			h2.text-center Recent Tweets
+			.text-center.single-icon.size-xl.skin-purple
+				i.fa.fa-twitter
+			.sp-blank-50
+			.owl-carousel.items.owwwlab-theme.twitter-carousel(data-cols="3" data-margin="50" data-nav="false" data-dots="false" data-autoplaytime="5000")
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents1
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxsad
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents2
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents3
+							| Society for Advancement of Hispanics/Chicanos and Native Americans in Science (SACNAS) National Conference 
+							a(href="#") http://buff.ly/1KrBBxsda
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents4
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents5
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxssd
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents1
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxsad
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents2
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents3
+							| Society for Advancement of Hispanics/Chicanos and Native Americans in Science (SACNAS) National Conference 
+							a(href="#") http://buff.ly/1KrBBxsda
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents4
+							| Solid State Technology and Devices Seminar: Developing and commercializing photovoltaic products
+							a(href="#") #owwwlab
+				.item
+					.tweet
+						p
+							a(href="#") @ChaosEvents5
+							| Order without Law?' Dr Insa Koch, Dr Lisa McKenzie, Dr David Skarbek discuss on 16 Nov 
+							a(href="#") #LSEgangs 
+							a(href="#") @lselaw  
+							a(href="#") http://buff.ly/1KrBBxssd
+
+
+	section.section.bg-purple.dark-wrapper.with-top-icon
+		.container
+			.top-icon.text-center
+				.circle-icon.double.skin-purple.size-lg
+					i.fa.fa-envelope
+			
+			.heading-with-sub.text-center
+				h2.title We will keep you Informed
+				h4.subtitle.white-color Lorem ipsum dolor sit amet, agam quodsi salutandi.
+			.sp-blank-40
+			.newsletter-form.simple
+				form.form-inline.text-center
+					.form-group
+						input.form-control.form-circle(type='text', placeholder='Your Email...')
+					.form-group
+						input.btn.btn-medium.btn-trans.btn-skin-white.btn-circle.btn-wide(type='submit', value='Sign up')
+
+	section.section.bg-gray: .container
+		.row
+			.col-md-4
+				h2 From CHAOS 2015
+				p.m-bottom-30 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				a.btn.btn-anim-drawer.btn-round.btn-small(href="#")
+					span READ MORE
+			.col-md-8
+				.owl-carousel.items.owwwlab-theme.nav-top-right.tj-lightbox-gallery(data-cols="3" data-margin="30", data-nav="true")
+					.item
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/gallery/15.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.oli.oli-start_filled
+						.caption 2015 Ceremony
+
+					.item
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/gallery/13.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.oli.oli-start_filled
+						.caption Prof. Chaos Talk
+					
+					.item
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/gallery/11.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.oli.oli-start_filled
+						.caption Keynotes of last lear
+					
+					.item
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/gallery/12.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.oli.oli-start_filled
+						.caption Students at lunch
+					
+					.item
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/gallery/14.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.oli.oli-start_filled
+						.caption TED Talks
+					
+
+prepend customjs
+	include /_partials/blocks/sliders/slider-d8-js
+	

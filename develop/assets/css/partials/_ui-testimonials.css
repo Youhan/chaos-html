@@ -1,0 +1,98 @@
+
+.avatar{
+	display: block;
+	img{
+		width:100%;
+		height:100%;
+		border-radius: 50%;
+	}
+	&.avatar-lg{
+		width:100px;
+		height: 100px;
+	}
+	&.avatar-md{
+		width:80px;
+		height: 80px;
+	}
+	&.avatar-sm{
+		width:60px;
+		height: 60px;
+	}
+	&.avatar-xs{
+		width:30px;
+		height: 30px;
+	}
+	&.center{
+		margin: 0 auto;
+	}
+}
+.name-avatar{
+	.name,
+	.avatar{
+		display: inline-block;
+	}
+	.avatar{
+		margin-right: 15px;
+	}
+}
+
+.testimonial-item{
+	padding: 5px 15px;
+	.avatar{
+		float:left;
+	}
+	.texts{
+		font-size: 13px;
+		line-height: 22px;
+		margin-left:80px;
+		p{
+			font-size: 13px;
+			line-height: 22px;
+			margin-bottom: 20px;
+		}
+		
+	}
+	.their-name{
+        font-size: 15px;
+    	margin-bottom: 2px;
+	}
+	.single-shot & {
+		padding:5px 20%;
+		text-align: center;
+		
+		.their-quote{
+			position: relative;
+			display: block;
+			&:after,
+			&:before{
+				position: absolute;
+				top:0;
+				color:#ccc;
+				left:-40px;
+				content:"\201C";
+				font-size:60px;
+				font-family: $font_primary;
+			}
+			&:after{
+				content:"\201D";
+				left:auto;
+				right:-40px;
+			}
+		}
+		.their-info{
+			margin-top:30px;
+			.avatar{
+				float:none;
+				margin:0 auto;
+				margin-bottom: 30px;
+			}
+		}
+
+		.dark-wrapper &{
+			.their-quote:after, 
+			.their-quote:before{
+				color:$chaos_light;
+			}
+		}
+	}
+}

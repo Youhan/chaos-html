@@ -1,0 +1,436 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Buttons"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "The biggest button set we have produced"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 particles center-it parallax-layer ov-light-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/06.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Default Button
+					h4.subtitle This is the default button only .btn class
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-extra-small(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-small(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium(href='#') read more
+					a.btn.btn-large(href='#') read more
+					a.btn.btn-medium(href='#') read more
+					a.btn.btn-small(href='#') read more
+					a.btn.btn-extra-small(href='#') read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Rounded Buttons
+					h4.subtitle You just need to add .btn-round to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-extra-small.btn-round(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-round(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round(href='#') read more
+					a.btn.btn-large.btn-round(href='#') read more
+					a.btn.btn-medium.btn-round(href='#') read more
+					a.btn.btn-small.btn-round(href='#') read more
+					a.btn.btn-extra-small.btn-round(href='#') read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Circled Buttons
+					h4.subtitle You just need to add .btn-circle to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-extra-small.btn-circle(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-circle(href='#') read more
+					a.btn.btn-large.btn-circle(href='#') read more
+					a.btn.btn-medium.btn-circle(href='#') read more
+					a.btn.btn-small.btn-circle(href='#') read more
+					a.btn.btn-extra-small.btn-circle(href='#') read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Wide Buttons
+					h4.subtitle You just need to add .btn-wide to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-wide(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-circle.btn-wide(href='#') read more
+					a.btn.btn-large.btn-circle.btn-wide(href='#') read more
+					a.btn.btn-medium.btn-circle.btn-wide(href='#') read more
+					a.btn.btn-small.btn-circle.btn-wide(href='#') read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Thick border Buttons
+					h4.subtitle You just need to add .btn-thick-border to achive these buttons
+				// #####End heading
+				div.demo-btns
+					
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-thick-border(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-thick-border(href='#') read more
+					a.btn.btn-large.btn-circle.btn-thick-border(href='#') read more
+					a.btn.btn-medium.btn-round.btn-thick-border(href='#') read more
+					a.btn.btn-small.btn-thick-border(href='#') read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Transparent Normal
+					h4.subtitle You just need to add .btn-trans to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-extra-small.btn-trans(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-trans(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-trans(href='#') read more
+					a.btn.btn-large.btn-trans(href='#') read more
+					a.btn.btn-medium.btn-trans(href='#') read more
+					a.btn.btn-small.btn-trans(href='#') read more
+					a.btn.btn-extra-small.btn-trans(href='#') read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Transparent skin dark
+					h4.subtitle You just need to add .btn-trans to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-extra-small.btn-trans.btn-skin-dark(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-trans.btn-skin-dark(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-trans.btn-skin-dark(href='#') read more
+					a.btn.btn-large.btn-trans.btn-skin-dark(href='#') read more
+					a.btn.btn-medium.btn-trans.btn-skin-dark(href='#') read more
+					a.btn.btn-small.btn-trans.btn-skin-dark(href='#') read more
+					a.btn.btn-extra-small.btn-trans.btn-skin-dark(href='#') read more
+	.sp-line-0
+	section.section.bg-dark.dark-wrapper
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Transparent skin white
+					h4.subtitle You just need to add .btn-trans to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-extra-small.btn-trans.btn-skin-white(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-trans.btn-skin-white(href='#') read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-trans.btn-skin-white(href='#') read more
+					a.btn.btn-large.btn-trans.btn-skin-white(href='#') read more
+					a.btn.btn-medium.btn-trans.btn-skin-white(href='#') read more
+					a.btn.btn-small.btn-trans.btn-skin-white(href='#') read more
+					a.btn.btn-extra-small.btn-trans.btn-skin-white(href='#') read more
+	
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Skin Red
+					h4.subtitle You just need to add .btn-skin-red to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-skin-red.btn-trans(href='#') .btn-trans
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-red(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-red(href='#') read more
+					a.btn.btn-medium.btn-round.btn-skin-red(href='#') read more
+					a.btn.btn-small.btn-circle.btn-skin-red.btn-trans(href='#') .btn-trans
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Skin Blue
+					h4.subtitle You just need to add .btn-skin-blue to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-skin-blue.btn-trans(href='#') .btn-trans
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-blue(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-blue(href='#') read more
+					a.btn.btn-medium.btn-round.btn-skin-blue(href='#') read more
+					a.btn.btn-small.btn-circle.btn-skin-blue.btn-trans(href='#') .btn-trans
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Skin Green
+					h4.subtitle You just need to add .btn-skin-green to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-skin-green.btn-trans(href='#') .btn-trans
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-green(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-green(href='#') read more
+					a.btn.btn-medium.btn-round.btn-skin-green(href='#') read more
+					a.btn.btn-small.btn-circle.btn-skin-green.btn-trans(href='#') .btn-trans
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Skin Purple
+					h4.subtitle You just need to add .btn-skin-purple to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-skin-purple.btn-trans(href='#') .btn-trans
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-purple(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-purple(href='#') read more
+					a.btn.btn-medium.btn-round.btn-skin-purple(href='#') read more
+					a.btn.btn-small.btn-circle.btn-skin-purple.btn-trans(href='#') .btn-trans
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Skin Yellow
+					h4.subtitle You just need to add .btn-skin-yellow to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-skin-yellow.btn-trans(href='#') .btn-trans
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-yellow(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-yellow(href='#') read more
+					a.btn.btn-medium.btn-round.btn-skin-yellow(href='#') read more
+					a.btn.btn-small.btn-circle.btn-skin-yellow.btn-trans(href='#') .btn-trans
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Skin Dark
+					h4.subtitle You just need to add .btn-skin-dark to achive these buttons
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-skin-dark.btn-trans(href='#') .btn-trans
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-dark(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-dark(href='#') read more
+					a.btn.btn-medium.btn-round.btn-skin-dark(href='#') read more
+					a.btn.btn-small.btn-circle.btn-skin-dark.btn-trans(href='#') .btn-trans
+	.sp-line-0
+	
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Buttons with icons
+					h4.subtitle Icons cs be easily added to 
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round(href='#')
+						i.oli.oli-like
+						span read more
+					a.btn.btn-large.btn-thick-border.btn-circle(href='#') 
+						i.oli.oli-like
+						span read more
+					a.btn.btn-medium.btn-round(href='#')
+						i.oli.oli-like
+						span read more
+				.sp-blank-50
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-blue(href='#')
+						i.fa.fa-facebook
+						span read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-green(href='#') 
+						i.fa.fa-twitter
+						span read more
+					a.btn.btn-medium.btn-round.btn-skin-purple(href='#')
+						i.fa.fa-instagram
+						span read more
+				.sp-blank-50
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-skin-red.btn-icon-right(href='#')
+						i.oli.oli-back
+						span read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-skin-yellow.btn-icon-right(href='#') 
+						i.oli.oli-down4
+						span read more
+					a.btn.btn-medium.btn-round.btn-skin-green.btn-icon-right(href='#')
+						i.oli.oli-forward
+						span read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Animated Icons
+					h4.subtitle You just need to add .btn-anim-i to achive these buttons
+				// #####End heading
+				div.demo-btns
+					div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-anim-i(href='#')
+						i.oli.oli-back
+						span read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-anim-i(href='#') 
+						i.oli.oli-back
+						span read more
+					a.btn.btn-medium.btn-round.btn-anim-i(href='#')
+						i.oli.oli-back
+						span read more
+				.sp-blank-30
+				div.demo-btns
+					div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href='#')
+						i.oli.oli-forward
+						span read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-icon-right.btn-anim-i(href='#') 
+						i.oli.oli-forward
+						span read more
+					a.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href='#')
+						i.oli.oli-forward
+						span read more
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Drawer Effect
+					h4.subtitle class .btn-anim-drawer and this button is unique regarding colors
+				// #####End heading
+				div.demo-btns
+					div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-anim-drawer(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-anim-drawer(href='#') read more
+					a.btn.btn-medium.btn-round.btn-anim-drawer(href='#') read more
+	section.section.bg-dark.dark-wrapper
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Drawer Effect skin dark
+					h4.subtitle add class .btn-skin-dark 
+				// #####End heading
+				div.demo-btns
+					div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-anim-drawer.btn-skin-dark(href='#') read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-anim-drawer.btn-skin-dark(href='#') read more
+					a.btn.btn-medium.btn-round.btn-anim-drawer.btn-skin-dark(href='#') read more
+				
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Split Effect
+					h4.subtitle class .btn-an-split and this button is unique regarding colors
+				// #####End heading
+				div.demo-btns
+					a.hidden-sm.hidden-xs.btn.btn-small.btn-circle.btn-an-split(href='#',data-text="Read More") 
+						span read more
+					a.hidden-sm.hidden-xs.btn.btn-medium.btn-round.btn-an-split(href='#',data-text="Read More") 
+						span read more
+					a.btn.btn-large.btn-thick-border.btn-circle.btn-an-split(href='#',data-text="Read More") 
+						span read more
+					a.btn.btn-medium.btn-round.btn-an-split(href='#',data-text="Read More") 
+						span read more
+					a.btn.btn-small.btn-circle.btn-an-split(href='#',data-text="Read More") 
+						span read more
+				
+	.sp-line-0
+	// bootstrap buttons
+	section.section.bg-gray
+		.container
+			.row
+				.heading-title.text-center.m-bottom-120
+					h3.text-uppercase Bootstrap buttons
+					span.text-uppercase Lorem impum odor sit amet
+				.col-md-4.col-sm-6
+					div
+						.m-bottom-10
+							a.btn.btn-large(href='#') read more 
+						.m-bottom-10
+							a.btn.btn-medium(href='#') read more
+						.m-bottom-10
+							a.btn.btn-small(href='#') read more
+						.m-bottom-10
+							a.btn.btn-extra-small(href='#') read more
+				.col-md-4.col-sm-6
+					div
+						.m-bottom-10
+							a.btn-primary.btn-large.btn-rounded(href='#')
+								i.oli.oli-like
+								| read more
+						.m-bottom-10
+							a.btn-primary.btn-medium.btn-rounded(href='#')
+								i.oli.oli-like
+								| read more
+						.m-bottom-10
+							a.btn-primary.btn-small.btn-rounded(href='#')
+								i.oli.oli-like
+								| read more
+						.m-bottom-10
+							a.btn-extra-small.btn-primary.btn-rounded(href='#') read more
+				.col-md-4.col-sm-6
+					div
+						.m-bottom-10
+							a.btn-success.btn-large.btn-circle(href='#') read more 
+						.m-bottom-10
+							a.btn-success.btn-medium.btn-circle(href='#') read more
+						.m-bottom-10
+							a.btn-success.btn-small.btn-circle(href='#') read more
+						.m-bottom-10
+							a.btn-success.btn-extra-small.btn-circle(href='#') read more
+			.sp-blank-50
+			.row
+				.col-md-4.col-sm-6
+					div
+						.m-bottom-10
+							a.btn-info.btn-large(href='#') read more 
+						.m-bottom-10
+							a.btn-info.btn-medium(href='#') read more
+						.m-bottom-10
+							a.btn-info.btn-small(href='#') read more
+						.m-bottom-10
+							a.btn-info.btn-extra-small(href='#') read more
+				.col-md-4.col-sm-6
+					div
+						.m-bottom-10
+							a.btn-warning.btn-large(href='#') read more 
+						.m-bottom-10
+							a.btn-warning.btn-medium(href='#') read more
+						.m-bottom-10
+							a.btn-warning.btn-small(href='#') read more
+						.m-bottom-10
+							a.btn-warning.btn-extra-small(href='#') read more
+				.col-md-4.col-sm-6
+					div
+						.m-bottom-10
+							a.btn-danger.btn-large(href='#') read more 
+						.m-bottom-10
+							a.btn-danger.btn-medium(href='#') read more
+						.m-bottom-10
+							a.btn-danger.btn-small(href='#') read more
+						.m-bottom-10
+							a.btn-danger.btn-extra-small(href='#') read more

@@ -1,0 +1,402 @@
+.ol-hover{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	z-index: 1;
+	height: 100%;
+	&:focus{
+		outline:none;
+	}
+	*{
+		transition:all 0.25s cubic-bezier(0.39, 0.58, 0.57, 1);
+	}
+	a{
+		color:#eee;
+		text-decoration: none;
+		&:hover,&:focus{
+			color:#fff;
+		}
+	}
+	.ol-overlay{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 101%;
+		height: 100%;
+		visibility: hidden;
+		z-index: 0;
+		opacity:0;
+	}
+
+	.title,.subtitle,.icons,.ol-overlay{
+		position: absolute;
+		opacity:0;
+		visibility: hidden;
+	}
+	.title{
+		margin:0;
+		font-size: 23px;
+		color:#fff;
+		a{
+			color:#fff;
+		}
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		z-index:2;
+	}
+	.subtitle{
+		text-transform: uppercase;
+		margin-top:20px;
+		font-size:10px;
+		color:#bbb;
+		a{
+			color:#bbb;
+		}
+		z-index:2;
+	}
+	.icons{
+		top:50%;
+		left:0;
+		width:100%;
+		text-align: center;
+		visibility: hidden;
+		opacity:0;
+		z-index: 2;
+		transform:scale(0.95);
+		transition-delay:0.05s;
+		a{
+			display: inline-block;
+			text-decoration: none;
+			font-size: 0;
+			padding: 10px;
+
+			&:hover,&:focus{
+				i{
+					color:#fff;
+					border-color:#fff;
+					background-color: rgba(150,150,150,0.4);
+				}
+			}
+		}
+		i{
+			display: inline-block;
+			border:1px solid #eee; 
+			color:#eee;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			font-size: 14px;
+		}
+	}
+	
+
+	.img-layer{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&:--hover{
+		.title,
+		.subtitle,
+		.icons,
+		.ol-overlay{
+			opacity:1 ;
+			visibility: visible;
+		}
+	}
+
+	&.hover-1{
+		>img,.img-layer{
+			transform-origin:center bottom;
+		}
+		&:--hover{
+			>img,.img-layer{
+				transform:scale(1.1);
+			}
+			
+
+			.icons{
+				transform:translateY(-50%) scale(1);
+				opacity:1;
+				visibility: visible;	
+			}
+		}
+	}
+
+	&.hover-2{
+		>img,.img-layer{
+			transform:scale(1.1) translateY(0px);
+		}
+		.ol-overlay{
+			opacity:0.4;
+			visibility: visible;
+		}
+		.icons{
+			top:auto;
+			bottom:15%;
+			transform: translateY(20px);
+			transition-delay:200ms;
+		}
+		.title,.subtitle{
+			top:50%;
+			left:0;
+			width:100%;
+			padding:0 20px;
+			text-align: center;
+			margin:0;
+			font-size: 20px;
+
+			transform:translateY(0);
+    		
+			a{
+				&:hover,&:focus{
+					color:#fff;
+				}
+			}
+		}
+		.title{
+			opacity:1;
+			visibility: visible;
+			margin-top:-10px;
+			transition-delay:50ms;
+		}
+		.subtitle{
+			transition-delay:100ms;
+			text-transform: uppercase;
+			margin-top:20px;
+			font-size:10px;
+			a{
+				color:#bbb;
+			}
+		}
+
+		&:--hover{
+			>img,.img-layer{
+				transform:scale(1.1) translateY(-10px);
+			}
+			.ol-overlay{
+				opacity: 1;
+			}
+			.icons{
+				transform: translateY(0);
+			}
+			.title{
+				transform:translateY(-25px);
+			}
+			.subtitle{
+				transform:translateY(-25px);
+			}
+		}
+	}
+
+	&.hover-3{
+		>img,.img-layer{
+			transform:scale(1.1) translateX(-10px);
+		}
+		.ol-overlay{opacity:0.5; visibility: visible;}
+		.icons{
+			top: auto;
+			bottom: 20px;
+			right: 20px;
+			left:auto;
+			text-align: right;
+			transform: translateX(-25px);
+			transition-delay:200ms;
+		}
+		.title,.subtitle{
+			top:40px;
+			left:0;
+			width:100%;
+			padding:0 40px;
+			text-align: left;
+			
+		}
+		.title{
+			opacity:1; 
+			visibility: visible;
+			transition-delay:50ms;
+		}
+		.subtitle{
+			margin-top:15px;
+			transform:translateX(-15px);
+			transition-delay:100ms;
+		}
+		&:--hover{
+			>img,.img-layer{
+				transform:scale(1.1) translateX(10px);
+			}
+			.ol-overlay{opacity:1;}
+			.icons{
+				transform: translateX(0%);
+			}
+			.title{transform:translateY(-10px);}
+			.subtitle{transform:translateX(0);}
+		}
+	}
+
+	&.hover-4{
+
+		.cover{
+			content:"";
+			position: absolute;
+			bottom:0;
+			width: 100%;
+			height: 70px;
+			opacity: 0;
+			visibility: hidden;
+			transform:translateY(100%);
+			z-index:0;
+		}
+		>img,.img-layer{
+			transform:scale(1.2) translateY(10px);
+
+		}
+		.ol-overlay{
+			visibility: visible;
+			opacity:0.3;
+		}	
+		.icons{
+			top: auto;
+			bottom: 0px;
+			right: 10px;
+			left: auto;
+			text-align: right;
+			width: auto;
+			transform: translateY(15px);
+			transition-delay: 100ms;
+			line-height: 40px;
+			i{
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 12px;
+			}
+		}
+		.title,.subtitle{
+			bottom:20px;
+			left:30px;
+			width:60%;
+			padding:0;
+			text-align: left;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			
+		}
+		.title{
+			opacity:1; 
+			visibility: visible;
+			transition-delay:50ms;
+			font-size: 20px;
+		}
+		.subtitle{
+			margin-top:15px;
+			transform:translateY(15px);
+			transition-delay:100ms;
+		}
+		&:--hover{
+			>img,.img-layer{
+				transform:scale(1.1) translateY(-10px);
+				transition-delay:100ms;
+			}
+			.ol-overlay{opacity:1;}
+			.cover{
+				transform:translateY(0px);
+				opacity: 1;
+				visibility: visible;
+			}
+			.icons{
+				transform: translateY(0);
+			}
+			.title{transform:translateY(-10px);}
+			.subtitle{transform:translateY(0);}
+		}
+	}
+	
+	&.hover-5{
+		&:after{
+			content:"";
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom: 0px;
+			border:1px solid #333;
+			opacity:0;
+			transition:all 0.25s cubic-bezier(0.39, 0.58, 0.57, 1);
+		}
+		.ol-overlay{
+			opacity: 0.2;
+			visibility: visible;
+		}
+		.icons{
+			opacity: 1;
+			visibility: visible;
+			transform:translateY(-50%);
+			i{
+				color:#333;
+				border:none;
+				font-size: 24px;
+			}
+		}
+		.title{
+			top:50%;
+			left:0;
+			width:100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding:0 40px;
+			text-align: center;
+			margin:0;
+			transform:translateY(-50%);
+			font-size: 20px;
+			opacity: 1;
+			visibility: visible;
+			color:#333;
+			
+		}
+		&:--hover{
+			&:after{
+				top:30px;
+				left:30px;
+				right:30px;
+				bottom: 30px;
+				opacity:1;
+			}
+			>img,.img-layer{
+				transform:scale(1.1);
+			}
+			.ol-overlay{
+				opacity: 1;
+			}
+		}
+	}
+	
+}
+
+@custom-selector :--hover :hover,:focus,.touch-hover;
+
+
+.ol-caption{
+	background: #fff;
+	padding: 20px 0;
+
+	.title{
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+	.subtitle{
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #bbb;
+		font-family: $font_primary;
+	}
+}

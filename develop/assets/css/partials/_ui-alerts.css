@@ -1,0 +1,50 @@
+.alert{
+	padding:40px;
+	text-align: left;
+	font-family: $font_secondary;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #fff;
+
+	> i {
+		font-size: 20px;
+		vertical-align: middle;
+		padding-right:10px;
+	}
+
+	&.with-big-icons{
+		position: relative;
+		overflow: hidden;
+		> i{
+			position: absolute;
+	        top: -30px;
+	        left: -30px;
+	        height: 100%;
+	        font-size: 110px;
+	        opacity: 0.1;
+		}
+	}
+
+	
+	&.alert-dark{
+		background-color: $chaos_dark;
+		color:$chaos_textindark;
+		text-shadow: none;
+	}
+	&.alert-gray{
+		background-color: $chaos_lightgray_darker;	
+	}
+
+	&.alert-narrow,
+	&.alert-thin{
+		padding:20px;
+	}
+	.dark-wrapper &{
+		&.alert-gray{
+			color: #636363;
+		}
+		&.alert-dark{
+			background-color: #3a3a3a;
+		}
+	}
+}
+

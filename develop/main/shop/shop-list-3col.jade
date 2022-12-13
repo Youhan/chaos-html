@@ -1,0 +1,232 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+  - var dirPrefix = '../'
+  - var PSbodyClass = bodyClasses.push('sticky-header')
+  - var PSwrapperClasses = wrapperClasses.push('regular-layout')
+  - var PSheaderClasses = headerClasses.push(' ') 
+  - var pageTitle = "SHOP"
+  - var PageTitleHead = "3 column"
+  - var PageTitleDesc = ""
+  - var pageTitleClass = 'h-500 center-it dark parallax-layer'
+  - var pageTitleImage = dirPrefix+"assets/img/shop/header-bg-01.jpg"
+  - var pageTitleParallaxMode = "bg-title"
+  - var currentMenu = "Shop"
+block main-area
+  section.section
+    .container
+      // #####Begin row with multiple columns
+      .row.pull-up-200.multi-columns-row.col-margin-bottom-70
+        .col-md-4.col-sm-6
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .col-md-4.col-sm-6
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .col-md-4.col-sm-6
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .col-md-4.col-sm-6
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .col-md-4.col-sm-6
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .col-md-4.col-sm-6
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+      // #####End row with multiple columns
+      .sp-blank-100
+      include ../../_partials/blocks/paginations/lined
+  section.section.bg-gray.sidebar
+    .container
+      .row
+        .col-md-3.col-sm-6
+          // #####Begin widget
+          .widget
+            h4 Cart
+            // #####Begin list of posts
+            .posts-list
+              .post
+                a.entry-image(href='#')
+                  img(src= dirPrefix +'assets/img/shop/previews/item-01.jpg', alt='item')
+                .entry-content
+                  h4.entry-title
+                    a(href='#') Debitis nihil placeat, illum
+                  div.price
+                      | 1 x $20.99
+              .post
+                a.entry-image(href='#')
+                  img(src= dirPrefix +'assets/img/shop/previews/item-01.jpg', alt='item')
+                .entry-content
+                  h4.entry-title
+                    a(href='#') Journal Collection #1
+                  div.price
+                      | 1 x $30.99
+              div.clearfix
+                .pull-left.p-top-10
+                  | Subtotal: 
+                  strong $35.00
+                .pull-right
+                  a.btn.btn-extra-small.btn-thick-border(href='#') View Cart
+            // #####End list of posts
+          // #####End widget
+        .col-md-3.col-sm-6
+          // #####Begin widget
+          .widget
+            h4 Best Sellers
+            // #####Begin list of posts
+            .posts-list
+              .post
+                a.entry-image(href='#')
+                  img(src= dirPrefix +'assets/img/shop/previews/item-01.jpg', alt='item')
+                .entry-content
+                  h4.entry-title
+                    a(href='#') Journal Collection 1
+                  div.price
+                    | $25.00
+                  div
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+              .post
+                a.entry-image(href='#')
+                  img(src= dirPrefix +'assets/img/shop/previews/item-01.jpg', alt='item')
+                .entry-content
+                  h4.entry-title
+                    a(href='#') Journal Collection 2
+                  div.price
+                    | $25.00
+                  div
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-half-o
+              .post
+                a.entry-image(href='#')
+                  img(src= dirPrefix +'assets/img/shop/previews/item-01.jpg', alt='item')
+                .entry-content
+                  h4.entry-title
+                    a(href='#') Mega Reports
+                  div.price
+                    | $25.00
+                  div
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+            // #####End list of posts
+          // #####End widget
+        .col-md-3.col-sm-6
+          // #####Begin widget
+          .widget
+            h4 Tag Cloud
+            .tagcloud
+              a(href='#') general
+              a(href='#') videos
+              a(href='#') music
+              a(href='#') media
+              a(href='#') photography
+              a(href='#') parallax
+              a(href='#') ecommerce
+              a(href='#') terms
+              a(href='#') coupons
+              a(href='#') modern
+          // #####End widget
+        .col-md-3.col-sm-6
+          // #####Begin widget
+          .widget
+            h4 Filter by price 
+            .shop-filter-price
+              form.form(method='post', action='#')
+                .row.m-bottom-20
+                  .col-xs-6
+                    input#price-from.form-control(type='text', name='price-from', placeholder='From, $', maxlength='100')
+                  .col-xs-6
+                    input#price-to.form-control(type='text', name='price-to', placeholder='To, $', maxlength='100')
+                button.btn.btn-small.btn-skin-dark.btn-block Filter
+          // #####End widget

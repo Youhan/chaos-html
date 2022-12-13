@@ -1,0 +1,218 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "List styles"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+mixin list()
+	li List One
+	li List Two
+	li List Three
+	li List Four
+	li List Five
+block main-area
+	section.section
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-80
+				.col-md-4
+					h4.with-underline Shaded Ordered list
+					ol.with-shaded-label
+						+list
+				.col-md-4
+					h4.with-underline Shaded lower alpha
+					ol.with-shaded-label.ol-lower-alpha
+						+list
+				.col-md-4
+					h4.with-underline Shaded lower roman
+					ol.with-shaded-label.ol-lower-roman
+						+list
+				.col-md-4
+					h4.with-underline Shaded Greek
+					ol.with-shaded-label.ol-greek
+						+list
+				.col-md-4
+					h4.with-underline Shaded upper alpha
+					ol.with-shaded-label.ol-upper-alpha
+						+list
+				.col-md-4
+					h4.with-underline Shaded Upper roman
+					ol.with-shaded-label.ol-upper-roman
+						+list
+			// #####End row with multiple columns
+	.sp-line-2
+	section.section.bg-gray
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-80
+				.col-md-4
+					h4.with-underline Ordered list
+					ol
+						+list
+				.col-md-4
+					h4.with-underline lower alpha
+					ol.ol-lower-alpha
+						+list
+				.col-md-4
+					h4.with-underline lower roman
+					ol.ol-lower-roman
+						+list
+				.col-md-4
+					h4.with-underline Greek
+					ol.ol-greek
+						+list
+				.col-md-4
+					h4.with-underline upper alpha
+					ol.ol-upper-alpha
+						+list
+				.col-md-4
+					h4.with-underline Upper roman
+					ol.ol-upper-roman
+						+list
+			// #####End row with multiple columns
+	.sp-line-2
+	section.section
+		.container
+			.row
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list.icon-border
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list.icon-border.radius
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list.icon-border.circle
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+	.sp-line-2
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list
+						li
+							i.theme-color.oli.oli-diamond
+							|  Icon List One
+						li
+							i.theme-color.oli.oli-diamond
+							|  Icon List Two
+						li
+							i.theme-color.oli.oli-diamond
+							|  Icon List Three
+						li
+							i.theme-color.oli.oli-diamond
+							|  Icon List Four
+					// #####End list with icon
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list.icon-bg-box
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list.skin-dark.radius
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+				.col-md-3
+					// #####Begin list with icon
+					ul.icon-list.skin-theme.circle
+						li
+							i.oli.oli-like_filled
+							|  Icon List One
+						li
+							i.oli.oli-like_filled
+							|  Icon List Two
+						li
+							i.oli.oli-like_filled
+							|  Icon List Three
+						li
+							i.oli.oli-like_filled
+							|  Icon List Four
+					// #####End list with icon
+	

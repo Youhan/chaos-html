@@ -1,0 +1,27 @@
+extends skelton
+
+block contents
+	block header
+		// #####Begin Header
+		header#header(class=headerClasses)
+			include ../_partials/layouts/header
+		// #####End Header
+
+	// #####Begin contents
+	section#contents
+		if bcType == "block"
+			// #####Begin breadcrumbs
+			.breadcrumbs-wrapper
+				.container
+					include ../_partials/blocks/page-titles/breadcrumbs
+			// #####End breadcrumbs
+		block page-title
+			include ../_partials/blocks/page-titles/page_title
+		section.page-contents
+			block main-contents
+	// #####End contents
+	block pagefooter
+		include ../_partials/layouts/footer
+		
+
+	

@@ -1,0 +1,22 @@
+extends ../../../_layouts/lo-normal/fullwidth
+
+append config
+
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Large page title"
+	- var PageTitleHead = "Flexible"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+
+	- var pageTitleClass = 'set-bg h-400 center-it ov-light-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/04.jpg"
+	
+	- var currentMenu = "Features"
+
+
+	
+block main-area
+	include ../../../_partials/blocks/pages/main-area-fullwidth

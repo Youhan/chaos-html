@@ -1,0 +1,124 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Notifications"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta aliquet sed!"
+	
+block main-area
+	section.section: .container
+		.row 
+			.col-md-12
+				// #####Begin heading
+				.heading-with-sub.text-center
+					h2.title Don't take it from us, see what other people say!
+					h4.subtitle Here is an awesome quick description about it that is class lorem Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
+				// #####End heading
+		.sp-blank-75
+		.row
+			.col-md-3
+			.col-md-6
+				// #####Begin heading
+				.heading-with-sub
+					h3.title.with-sideline Simple Alerts
+					h5.subtitle We are proud of our Jafar for his great contribution to the world!
+				// #####End heading
+				.alert.alert-success(role='alert') Don't take it from us, see what other people say!
+				.alert.alert-info(role='alert') Don't take it from us, see what other people say!
+				.alert.alert-warning(role='alert') Don't take it from us, see what other people say!
+				.alert.alert-danger(role='alert') Don't take it from us, see what other people say!
+				.alert.alert-dark(role='alert') Don't take it from us, see what other people say!
+				.alert.alert-gray(role='alert') Don't take it from us, see what other people say!
+			.col-md-3
+	section.section.bg-gray: .container
+		.row
+			.col-md-6.col-md-offset-3
+				// #####Begin heading
+				.heading-with-sub
+					h3.title.with-sideline With Icons
+					h5.subtitle You can add any icon to these alerts.
+				// #####End heading
+				.alert.alert-success(role='alert') 
+					i.oli.oli-attention
+					| Don't take it from us, see what other people say!
+				.alert.alert-info(role='alert') 
+					i.oli.oli-attention
+					| Don't take it from us, see what other people say!
+				.alert.alert-warning(role='alert') 
+					i.oli.oli-idea
+					| Don't take it from us, see what other people say!
+				.alert.alert-danger(role='alert') 
+					i.oli.oli-ok
+					| Don't take it from us, see what other people say!
+				.alert.alert-dark(role='alert') 
+					i.oli.oli-cancel
+					| Don't take it from us, see what other people say!
+				.alert.alert-gray(role='alert') 
+					i.oli.oli-cancel
+					| Don't take it from us, see what other people say!
+			.col-md-3
+	section.section: .container
+		.row
+			.col-md-3
+			.col-md-6
+				// #####Begin heading
+				.heading-with-sub
+					h3.title.with-sideline With Big Icons
+					h5.subtitle You can add any icon to these alerts.
+				// #####End heading
+				.alert.with-big-icons.alert-success(role='alert') 
+					i.oli.oli-lightbulb
+					| Don't take it from us, see what other people say!
+				.alert.with-big-icons.alert-info(role='alert') 
+					i.oli.oli-lightbulb
+					| Don't take it from us, see what other people say!
+				.alert.with-big-icons.alert-warning(role='alert') 
+					i.oli.oli-lightbulb
+					| Don't take it from us, see what other people say!
+				.alert.with-big-icons.alert-danger(role='alert') 
+					i.oli.oli-linegraph
+					| Don't take it from us, see what other people say!
+				.alert.with-big-icons.alert-dark(role='alert') 
+					i.oli.oli-linegraph
+					| Don't take it from us, see what other people say!
+				.alert.with-big-icons.alert-gray(role='alert') 
+					i.oli.oli-linegraph
+					| Don't take it from us, see what other people say!
+			.col-md-3
+	section.section.bg-gray: .container
+		.row
+			.col-md-3
+			.col-md-6
+				// #####Begin heading
+				.heading-with-sub
+					h3.title.with-sideline With Big Icons and Thin
+					h5.subtitle You can add any icon to these alerts.
+				// #####End heading
+				.alert.alert-thin.with-big-icons.alert-success(role='alert') 
+					i.oli.oli-pricetags
+					| Don't take it from us, see what other people say!
+				.alert.alert-thin.with-big-icons.alert-info(role='alert') 
+					i.oli.oli-pricetags
+					| Don't take it from us, see what other people say!
+				.alert.alert-thin.with-big-icons.alert-warning(role='alert') 
+					i.oli.oli-pricetags
+					| Don't take it from us, see what other people say!
+				.alert.alert-thin.with-big-icons.alert-danger(role='alert') 
+					i.oli.oli-alarmclock
+					| Don't take it from us, see what other people say!
+				.alert.alert-thin.with-big-icons.alert-dark(role='alert') 
+					i.oli.oli-alarmclock
+					| Don't take it from us, see what other people say!
+				.alert.alert-thin.with-big-icons.alert-gray(role='alert') 
+					i.oli.oli-alarmclock
+					| Don't take it from us, see what other people say!
+			.col-md-3

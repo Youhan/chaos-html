@@ -1,0 +1,23 @@
+extends ../../../_layouts/lo-normal/fullwidth
+
+append config
+
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Particles around"
+	- var PageTitleHead = "Awesome"
+	- var PageTitleDesc = "This can be combined with other variations!"
+	- var bcType = "false"
+
+	- var pageTitleClass = 'hvh-40 center-it ol-particles'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/06.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Features"
+
+
+	
+block main-area
+	include ../../../_partials/blocks/pages/main-area-fullwidth

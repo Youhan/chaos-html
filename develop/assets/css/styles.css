@@ -1,0 +1,300 @@
+/*	Table of contents
+ *  v 1.1 -- June 23 2016
+ *	===================================================
+ *  - Basic styles
+ *  - Typography
+ *  - Layouts
+ *  - Headers
+ *  - Navigations
+ *  - Header skins
+ *  - Footer
+ *  - Page Titles
+ *  - Breadcrumbs
+ *  - Bottons
+ *  - Social icons
+ *  - Shop
+ *  - Iconbox
+ *  - Side Navigation
+ *  - Accordions 
+ *  - Toggles
+ *  - Tabs
+ *  - Numbers
+ *  - Callouts
+ *  - Testimonials
+ *  - Alerts
+ *  - Modals
+ *  - List icons
+ *  - Progress bars
+ *  - People
+ *  - Tables
+ *  - Grid items (journal)
+ *  - Portfolio Grid
+ *  - Partners
+ *  - Images
+ *  - hovers
+ *  - Videos
+ *  - list styles
+ *  - paginations
+ *  - Form elements
+ *  - extend bg
+ *  - Timelines
+ *  - News
+ *  - events
+ *  - sections
+ *  - Courses
+ *  - revolution sliders
+ *  - General css
+ */
+
+
+@import "partials/_variables.css";
+@import "partials/_variables-override.css";
+
+
+/*	Base
+ *	===================================================
+ *  - Header variations
+ */
+@import "partials/_base.css";
+
+
+/*	Typography
+ *	===================================================
+ */
+@import "partials/_ui-typography.css";
+
+
+/*	Layouts
+ *	===================================================
+ *  - varius layouts
+ */
+@import "partials/_layouts.css";
+
+
+/*	Headers
+ *	===================================================
+ *  - Header variations
+ */
+@import "partials/_header.css";
+
+
+/*	Navigations
+ *	===================================================
+ */
+@import "partials/_navigation.css";
+
+
+
+/*	Header skins
+ *	===================================================
+ */
+@import "partials/_header_skins.css";
+
+
+/*	Footer
+ *	===================================================
+ */
+@import "partials/_footer.css";
+
+
+
+/*	Page Titles
+ *	===================================================
+ *  - Title variations
+ */
+@import "partials/_page-titles.css";
+
+
+
+/*	Breadcrumbs
+ *	===================================================
+ *  - Title variations
+ */
+@import "partials/_ui-breadcrumbs.css";
+
+
+
+/*	theme bottons
+ *	===================================================
+ *  - varius layouts
+ */
+@import "partials/_ui-buttons.css";
+
+
+
+/*	ui - social icons
+ *	===================================================
+ */
+@import "partials/_ui-social-icons.css";
+
+
+/*	shop
+ *	===================================================
+ */
+@import "partials/_shop.css";
+
+
+
+/*	iconbox
+ *	===================================================
+ */
+@import "partials/_ui-iconboxes.css";
+
+
+
+/*	ui-side-navigations
+ *	===================================================
+ */
+@import "partials/_ui-side-navigations.css";
+
+/*	ui-Accordions & Toggles & Tabs
+ *	===================================================
+ */
+@import "partials/_ui-tabs-accordions.css";
+
+
+/*	numbers
+ *	===================================================
+ */
+@import "partials/_ui-numbers.css";
+
+
+/*	Callouts
+ *	===================================================
+ */
+@import "partials/_ui-callouts.css";
+
+
+/*	Testimonials
+ *	===================================================
+ */
+@import "partials/_ui-testimonials.css";
+
+
+/*	Alerts / Notifications
+ *	===================================================
+ */
+@import "partials/_ui-alerts.css";
+
+/*	Modals
+ *	===================================================
+ */
+@import "partials/_ui-modals.css";
+
+/*	List icons
+ *	===================================================
+ */
+@import "partials/_ui-list-icons.css";
+
+/*	Progress bars
+ *	===================================================
+ */
+@import "partials/_ui-progressbar.css";
+
+
+/*	People
+ *	===================================================
+ */
+@import "partials/_ui-people.css";
+
+/*	Tables
+ *	===================================================
+ */
+@import "partials/_ui-tables.css";
+
+
+/*	Grid items
+ *	===================================================
+ *  items related to grid
+ */
+
+@import "partials/_gridy-items.css";
+
+
+/*	Portfolio Grid
+ *	===================================================
+ */
+@import "partials/_ol-grid.css";
+
+/*	Partners
+ *	===================================================
+ */
+@import "partials/_partners.css";
+
+
+
+/*	Images
+ *	===================================================
+ */
+@import "partials/_ui-images.css";
+
+/*	hovers
+ *	===================================================
+ */
+@import "partials/_hover.css";
+
+/*	Videos
+ *	===================================================
+ */
+@import "partials/_ui-videos.css";
+
+/*	list styles
+ *	===================================================
+ */
+@import "partials/_ui-listyles.css";
+
+/*	paginations
+ *	===================================================
+ */
+@import "partials/_ui-paginations.css";
+
+
+/*	Form elements
+ *	===================================================
+ */
+@import "partials/_ui-formelements.css";
+
+/*	extend bg
+ *	===================================================
+ */
+@import "partials/_ui-extend-bg.css";
+
+/*	Timelines
+ *	===================================================
+ */
+@import "partials/_ui-timelines.css";
+
+/*	News
+ *	===================================================
+ */
+@import "partials/_news.css";
+
+
+/*	events
+ *	===================================================
+ */
+@import "partials/_events.css";
+
+
+/*	sections
+ *	===================================================
+ */
+@import "partials/_sections.css";
+
+
+/*	Courses
+ *	===================================================
+ */
+@import "partials/_course.css";
+
+/*	revolution sliders
+ *	===================================================
+ */
+@import "partials/_revsliders.css";
+
+
+/*	General css
+ *	===================================================
+ *	keep this at the bottom
+ */
+@import "partials/__general.css";

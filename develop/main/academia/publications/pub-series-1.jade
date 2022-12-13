@@ -1,0 +1,255 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Publication Series"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = "Series Lists are great way to display your publication series to visitors!"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 center-it white'
+	//- - var pageTitleImage = dirPrefix+"assets/img/backgrounds/bg-dark-02.jpg"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section.slim-container.bg-gray
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-40.pull-up-180
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 325
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Adolescent health transition
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 953
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer, cancer treatment, cancer detection
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 196
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title metagraphic
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 270
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Adolescent health transition
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.skin-blue(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 682
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.skin-green(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 782
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer, cancer treatment, cancer detection
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.skin-purple(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 151
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Adolescent
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.skin-yellow(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 188
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer, cancer treatment, cancer detection
+					// #####End  book element
+				.col-md-4.col-sm-4
+					// #####Begin  book element
+					a.book-el.skin-red(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 101
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title treatment detection
+					// #####End  book element
+			// #####End row with multiple columns
+	section.section
+		.container
+			.row
+				.col-md-12
+					// #####Begin heading
+					.heading-with-sub.text-center
+						h2.title In Carousel
+						h3.subtitle These Grid Elements can also be placed inside a carousel
+					// #####End heading
+					.sp-blank-20
+					// #####Begin carousel
+					.owl-carousel.items.owwwlab-theme.nav-top-center(data-cols="4"  data-margin="30" data-nav="true")
+						// #####Begin  book element
+						a.book-el.set-bg.skin-blue(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 148
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title Adolescent health transition
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-purple(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 184
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title Quantom Physics
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-yellow(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 390
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title Resistance Spot Welding
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-green(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 104
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title American Society of Mechaniucal Engineering Review
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-yellow(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 304
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title psychology
+						// #####End  book element
+					// #####End carousel
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-3
+					h3 In Carousel
+					p These Grid Elements can also be placed inside a carousel
+				.col-md-9
+					// #####Begin carousel
+					.owl-carousel.items.owwwlab-theme.nav-top-right(data-cols="3"  data-margin="30" data-nav="true")
+						// #####Begin  book element
+						a.book-el.set-bg.skin-blue(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 497
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title Adolescent health transition
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-purple(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 115
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title Quantom Physics
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-yellow(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 141
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title Resistance Spot Welding
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-green(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 339
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title American Society of Mechaniucal Engineering Review
+						// #####End  book element
+						// #####Begin  book element
+						a.book-el.set-bg.skin-yellow(href="#")
+							img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+							.contents
+								.item-meta
+									i.oli.oli-bookmark
+									span.side-info 81
+								.title-wrapper
+									h6.sub-title Series:
+									h2.title psychology
+						// #####End  book element
+					// #####End carousel

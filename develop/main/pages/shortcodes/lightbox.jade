@@ -1,0 +1,139 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Lightboxes"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+		
+block main-area
+		section.section: .container
+			h3
+				| Single Light-boxs
+			p
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+			.sp-blank-50
+			.row
+				.col-md-3
+					a.ol-hover.hover-5.ol-lightbox(href=dirPrefix+'assets/img/hovers/01.jpg')
+						img(src=dirPrefix+'assets/img/hovers/01.jpg', alt='image hover')
+						.ol-overlay.ov-light-alpha-80
+						.icons
+							i.fa.fa-camera
+					.caption Image lightbox 
+				.col-md-3
+					a.ol-hover.hover-5.ol-lightbox(href='http://www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+						img(src=dirPrefix+'assets/img/hovers/02.jpg', alt='image hover')
+						.ol-overlay.ov-light-alpha-80
+						.icons
+							i.fa.fa-youtube
+					.caption Youtube Video
+				.col-md-3
+					a.ol-hover.hover-5.ol-lightbox(href='https://vimeo.com/45830194', data-type='iframe', title='some title')
+						img(src=dirPrefix+'assets/img/hovers/03.jpg', alt='image hover')
+						.ol-overlay.ov-light-alpha-80
+						.icons
+							i.fa.fa-vimeo
+					.caption Vimeo Video
+				.col-md-3
+					a.ol-hover.hover-5.ol-lightbox(href='https://embed-ssl.ted.com/talks/christine_sun_kim_the_enchanting_music_of_sign_language.html', data-type='iframe', title='some title')
+						img(src=dirPrefix+'assets/img/hovers/04.jpg', alt='image hover')
+						.i.ol-overlay.ov-light-alpha-80
+						h3.title TED
+					.caption TED Talks
+		section.section.bg-gray
+			.container
+				h3
+					| Lightbox Mix Gallery (image and video)
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.sp-blank-50
+				.row.ol-lightbox-gallery.no-space-grid
+					.col-sm-6
+						a.ol-hover.hover-5.ol-lightbox(href=href=dirPrefix+'assets/img/hovers/01.jpg')
+							img(src=dirPrefix+'assets/img/hovers/01.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-camera
+					.col-sm-6
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/hovers/02.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-youtube
+					.col-sm-6
+						a.ol-hover.hover-5.ol-lightbox(href='//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/222782746', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/hovers/02.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-soundcloud
+					.col-sm-6
+						a.ol-hover.hover-5.ol-lightbox(href='//vimeo.com/45830194', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/hovers/04.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-vimeo
+		section.section
+			.container
+				.row.ol-lightbox-gallery
+					.col-md-3
+						h3
+							| Lightbox Gallery
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.col-md-3
+						a.ol-hover.hover-5.ol-lightbox(href=dirPrefix+'assets/img/hovers/01.jpg')
+							img(src=dirPrefix+'assets/img/hovers/01.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-camera
+						.caption Image lightbox 
+					.col-md-3
+						a.ol-hover.hover-5.ol-lightbox(href=dirPrefix+'assets/img/hovers/02.jpg')
+							img(src=dirPrefix+'assets/img/hovers/02.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-camera
+						.caption Image lightbox 
+					.col-md-3
+						a.ol-hover.hover-5.ol-lightbox(href=dirPrefix+'assets/img/hovers/03.jpg')
+							img(src=dirPrefix+'assets/img/hovers/03.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-camera
+						.caption Image lightbox
+		section.section.bg-gray
+			.container
+				.row.ol-lightbox-gallery
+					.col-md-3
+						h3
+							| lightbox Video Gallery
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.col-md-3
+						a.ol-hover.hover-5.ol-lightbox(href='//www.youtube.com/watch?v=0O2aH4XLbto', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/hovers/04.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-play
+					.col-md-3
+						a.ol-hover.hover-5.ol-lightbox(href='//vimeo.com/45830194', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/hovers/03.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-play
+					.col-md-3
+						a.ol-hover.hover-5.ol-lightbox(href='//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/222782746', data-type='iframe', title='some title')
+							img(src=dirPrefix+'assets/img/hovers/02.jpg', alt='image hover')
+							.ol-overlay.ov-light-alpha-80
+							.icons
+								i.fa.fa-play
+					

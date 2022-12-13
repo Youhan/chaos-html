@@ -1,0 +1,186 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Side navigations"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+mixin list()
+	li: a(href="#") item
+	li: a(href="#") item
+	li: a(href="#") item
+mixin listc()
+	li: a(href="#") item
+	li.current-menu-parent: a(href="#") Current item
+	li: a(href="#") item
+	li: a(href="#") item
+	li: a(href="#") item
+	
+block main-area
+	section.section.slim-container: .container
+		.row
+			.col-md-4
+				// #####Begin sidebar navigation
+				ul.ol-side-navigation
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+						// #####End sub-menu
+					li.menu-item-has-children.current-menu-parent
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+							li.menu-item-has-children.current-menu-parent
+								a(href="#") level 2
+								ul.sub-menu
+									+listc()
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+							li.menu-item-has-children
+								a(href="#") level 2
+								ul.sub-menu
+									+list()
+						// #####End sub-menu
+				// #####End sidebar navigation
+			.col-md-8
+				h2 	Accordion - 3 level
+				p Ronsdorfian explainable regiminal petrogeny Agastache bacillicidic unlove surrebuttal kallilite duraplasty struthioniform rammack yatalite imparsonee polyplegic intravertebrally nodiferous lozenger postmeningeal hushing obliquangular gastrotympanites sphenofrontal Willugbaeya mantis asylum unallotment superestablish unshakenness transhumant cackerel overpay saccomyian dudleyite parapathia metallographic lyricism trophoblastic divestible unbedimmed titivator pronged calamitean extrasocial microchronometer muley intersubstitution modillion
+		.sp-blank-100
+		.row
+			.col-md-4
+				// #####Begin sidebar navigation
+				ul.ol-side-navigation.skin-dark
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+					li.menu-item-has-children.current-menu-parent
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+listc()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+				// #####End sidebar navigation
+			.col-md-8
+				h2 	Accordion - 2 level
+				p Ronsdorfian explainable regiminal petrogeny Agastache bacillicidic unlove surrebuttal kallilite duraplasty struthioniform rammack yatalite imparsonee polyplegic intravertebrally nodiferous lozenger postmeningeal hushing obliquangular gastrotympanites sphenofrontal Willugbaeya mantis asylum unallotment superestablish unshakenness transhumant cackerel overpay saccomyian dudleyite parapathia metallographic lyricism trophoblastic divestible unbedimmed titivator pronged calamitean extrasocial microchronometer muley intersubstitution modillion
+		.sp-blank-100
+		.row
+			.col-md-4
+				// #####Begin sidebar navigation
+				ul.ol-side-navigation.skin-purple
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+					li.menu-item-has-children.current-menu-parent
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+listc()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+				// #####End sidebar navigation
+			.col-md-8
+				h2 	Various color skins
+				p Ronsdorfian explainable regiminal petrogeny Agastache bacillicidic unlove surrebuttal kallilite duraplasty struthioniform rammack yatalite imparsonee polyplegic intravertebrally nodiferous lozenger postmeningeal hushing obliquangular gastrotympanites sphenofrontal Willugbaeya mantis asylum unallotment superestablish unshakenness transhumant cackerel overpay saccomyian dudleyite parapathia metallographic lyricism trophoblastic divestible unbedimmed titivator pronged calamitean extrasocial microchronometer muley intersubstitution modillion
+		.sp-blank-100
+		.row
+			.col-md-4
+				// #####Begin sidebar navigation
+				ul.ol-side-navigation.skin-blue.toggle-free
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+					li.menu-item-has-children.current-menu-parent
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+listc()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+					li.menu-item-has-children
+						a(href="#") level 1
+						// #####Begin sub-menu
+						ul.sub-menu
+							+list()
+						// #####End sub-menu
+				// #####End sidebar navigation
+			.col-md-8
+				h2 	Toggle behaviour
+				p Ronsdorfian explainable regiminal petrogeny Agastache bacillicidic unlove surrebuttal kallilite duraplasty struthioniform rammack yatalite imparsonee polyplegic intravertebrally nodiferous lozenger postmeningeal hushing obliquangular gastrotympanites sphenofrontal Willugbaeya mantis asylum unallotment superestablish unshakenness transhumant cackerel overpay saccomyian dudleyite parapathia metallographic lyricism trophoblastic divestible unbedimmed titivator pronged calamitean extrasocial microchronometer muley intersubstitution modillion

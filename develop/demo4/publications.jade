@@ -1,0 +1,170 @@
+extends /_layouts/lo-normal/fullwidth
+append config
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark')
+	- var bcType = "intitle"
+	- var currentMenu = "Publications"
+	- var PageTitleHead = "OUR CONTRIBUTIONS"
+	- var pageTitle = "Publications"
+	- var pageTitleClass = 'h-600 parallax-layer center-it dark ov-blue-alpha-30'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/007.jpg"
+	- var pageTitleParallaxMode = "bg"
+block main-area
+	section.slim-container
+		.container
+			// #####Begin summary box
+			.summary-box.parallax-layer.pull-up-200(data-img-src=dirPrefix+"assets/img/bg/008.jpg")
+				i.oli.oli-rocket
+				// #####Begin carousel
+				ul.summaries.owl-carousel.items.owwwlab-theme(data-cols-lg="4" data-cols-md="4" data-cols-sm="3" data-cols-xs="2" data-cols-xxs="1"  data-margin="40" data-nav="false" data-loop="false")
+					li.item: a(href="#")
+						.number 1235
+						.title Journal Articles
+					li.item: a(href="#")
+						.number 936
+						.title Book Chapters
+					li.item: a(href="#")
+						.number 20k
+						.title Reports
+					li.item: a(href="#")
+						.number 987
+						.title Technical Papers
+					li.item: a(href="#")
+						.number 453
+						.title Another Category
+					li.item: a(href="#")
+						.number 23
+						.title Awesome Category
+				// #####End carousel
+			// #####End summary box
+	section.section
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Periodicals
+				h3.subtitle We publish most dedicated periodicals about space and related technologies
+			// #####End heading
+			.sp-blank-30
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.nav-top-center(data-cols="4"  data-margin="30" data-nav="true")
+				// #####Begin  book element
+				a.book-el.set-bg.skin-blue(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.item-meta
+							i.oli.oli-bookmark
+							span.side-info 12
+						.title-wrapper
+							h6.sub-title Series:
+							h2.title Adolescent health transition
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.set-bg.skin-purple(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.item-meta
+							i.oli.oli-bookmark
+							span.side-info 215
+						.title-wrapper
+							h6.sub-title Series:
+							h2.title Quantom Physics
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.set-bg.skin-yellow(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.item-meta
+							i.oli.oli-bookmark
+							span.side-info 12
+						.title-wrapper
+							h6.sub-title Series:
+							h2.title Resistance Spot Welding
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.set-bg.skin-green(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+					.contents
+						.item-meta
+							i.oli.oli-bookmark
+							span.side-info 126
+						.title-wrapper
+							h6.sub-title Series:
+							h2.title American Society of Mechaniucal Engineering Review
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.set-bg.skin-yellow(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.item-meta
+							i.oli.oli-bookmark
+							span.side-info 65
+						.title-wrapper
+							h6.sub-title Series:
+							h2.title psychology
+				// #####End  book element
+			// #####End carousel
+	section.section.bg-pattern
+		.container
+			// #####Begin heading
+			.heading-with-sub.m-bottom-40
+				h3.title Annual Reports
+				h4.subtitle Providing Technical and Analytical Expertise to Space Programs in Service of the National Interest
+			// #####End heading
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-30
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+				.col-md-3
+					a.ol-iconic-link.skin-green.size-tall(href="#")
+						i.oli.oli-linegraph
+						| Annual Report 2015
+			// #####End row with multiple columns
+	section.section.bg-gray: .container: .row
+		.col-md-6
+			img(src="assets/img/bg/journal01.png")
+		.col-md-6
+			// #####Begin heading
+			.heading-with-sub.m-bottom-40
+				h3.title Pear Reviewed Publications
+				h4.subtitle Jounal papers, conference papers and reviewed articles
+			// #####End heading
+			p.m-bottom-40 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis.
+			a.btn.btn-skin-red.btn-circle.btn-wide.btn-small(href="#") Read more
+	section.section.bg-pattern-3: .container: .row
+		.col-md-6
+			img(src="assets/img/bg/journal02.png")
+		.col-md-6
+			// #####Begin heading
+			.heading-with-sub.m-bottom-40
+				h3.title Pear Reviewed Publications
+				h4.subtitle Jounal papers, conference papers and reviewed articles
+			// #####End heading
+			p.m-bottom-40 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis.
+			a.btn.btn-skin-red.btn-circle.btn-wide.btn-small(href="#") Read more

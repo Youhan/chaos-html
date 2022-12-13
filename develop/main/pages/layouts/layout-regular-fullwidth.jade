@@ -1,0 +1,16 @@
+extends ../../../_layouts/lo-normal/fullwidth
+
+append config
+	- var pageSpecificBodyClass = bodyClasses.push()
+	- var pagewrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push("") 
+	- var pageTitle = "Regular Layout - fullwidth"
+	- var PageTitleHead = ""
+	- var PageTitleDesc= ""
+	- var dirPrefix = '../../'
+	- var currentMenu = "pages"
+
+block main-area
+	include ../../../_partials/blocks/pages/main-area-fullwidth
+
+

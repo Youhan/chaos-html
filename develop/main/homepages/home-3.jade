@@ -1,0 +1,276 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header bg-gray')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push(' dark trans sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var PageTitleHead = "Chaos theme"
+	- var pageTitle = "Chaos Home #3"
+	-loadeExtraAssets.push('revolution')
+mixin list()
+	a(href="#" data-toggle="tooltip" data-original-title="homepage")
+		i.fa.fa-home
+	a(href="#" data-toggle="tooltip" data-original-title="Biography")
+		i.fa.fa-user
+	a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+		i.fa.fa-facebook
+	a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+		i.fa.fa-twitter
+block page-title
+	.page-head.dark.auto-height
+		include /_partials/blocks/sliders/slider-h2
+block main-area
+	// iconboxs
+	section.section: .container: .row
+		.col-md-4
+			// #####Begin iconbox v4
+			.icon-box.ib-v4
+				i.oli.oli-nuclear_power_plant
+				h3.title In-Depth Video Tutorials
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v4
+		.col-md-4
+			// #####Begin iconbox v4
+			.icon-box.ib-v4
+				i.oli.oli-hand_planting
+				h3.title loaded with love
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v4
+		.col-md-4
+			// #####Begin iconbox v4
+			.icon-box.ib-v4
+				i.oli.oli-students
+				h3.title free updates and support
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v4
+	// about us
+	section.section.bg-gray: .container
+		// #####Begin heading
+		.heading-with-sub
+			h3.title Who We Are
+			h4.subtitle Vision and Values
+		// #####End heading
+		.row
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. 
+			.col-md-4
+				a.ol-iconic-link.skin-green.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Annual Report 2015
+				a.ol-iconic-link.skin-blue.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Annual Report 2014
+				a.ol-iconic-link.skin-purple.m-bottom-10(href="#")
+					i.oli.oli-download_2
+					| Annual Report 2013
+		.sp-line-60
+		.row.multi-columns-row.col-margin-bottom-30
+			.col-md-3.col-sm-6
+				h6.with-shaded-label
+					span.shaded-label.darken 01
+					span Dedication to Mission success
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3.col-sm-6
+				h6.with-shaded-label
+					span.shaded-label.darken 02
+					span Technical Excelence
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3.col-sm-6
+				h6.with-shaded-label
+					span.shaded-label.darken 03
+					span Commitment to Our People
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+			.col-md-3.col-sm-6
+				h6.with-shaded-label
+					span.shaded-label.darken 04
+					span Objectivity
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+	// call to action
+	section.section.parallax-layer.ov-light-alpha-10(data-img-src=dirPrefix+"assets/img/backgrounds/19.jpg")
+		.container
+			.row
+				// #####Begin call to action
+				.call-out.tb-vcenter-wrapper
+					.col-md-9.vcenter.ol-animate.fadeIn
+						h2.title Fellowship opportunities available
+						h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+					.col-md-3.vcenter.text-center.ol-animate.fadeIn
+						a.btn.btn-medium.btn-anim-i.btn-skin-red.btn-icon-right.btn-circle(href='#') 
+							i.oli.oli-forward
+							span Apply now
+				// #####End call to action
+	// people section
+	section.section.bg-gray: .container: .row
+		.col-md-5
+			// #####Begin carousel
+			.people-carousel.set-bg.shadow.ov-light-alpha-70.owl-carousel.items.owwwlab-theme(data-img-src=dirPrefix+"assets/img/backgrounds/06.jpg", data-cols-all=1, data-margin=0, data-nav="true", data-loop="true")
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/06.jpg")
+					h3.title Rebbeca Culbertson
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/05.jpg")
+					h3.title Quinlan Granville
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/04.jpg")
+					h3.title Renato Schiller
+					h4.sub-title PHD Candidate
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/03.jpg")
+					h3.title Wynell Lariviere
+					h4.sub-title Baghalilogist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/02.jpg")
+					h3.title Jane Doe
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profil
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/01.jpg")
+					h3.title Carole Stangle
+					h4.sub-title Nanatolist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+			// #####End carousel
+		.col-md-7.p-left-40.p-top-40
+			// #####Begin heading
+			.heading-with-sub
+				h3.title People @ Chaos
+				h4.subtitle Awesome People working hrere
+			// #####End heading
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			a.btn.btn-circle.btn-small(href="about-people.html") Read more
+	// publications
+	section.section.bg-pattern
+		.container
+			.row
+				.col-md-4
+					h2 Selected Publications
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					a.btn.btn-anim-drawer.btn-round.btn-small(href="publications.html") Read more
+				.col-md-8
+					
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+	// News Section
+	section.section.bg-gray
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Latest News 
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			// #####End heading
+			.sp-blank-30
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.nav-top-center.has-shadow(data-margin="30",data-nav="true", data-loop="true")
+				// #####Begin  book element
+				a.book-el.shadow.set-bg.skin-red(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Welcome Prof. Jane Doe
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.shadow.set-bg.skin-yellow(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.item-meta
+							span.date 13 Oct 2015
+						.title-wrapper
+							h2.title Call for Abstracts
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.shadow.set-bg.skin-blue(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.item-meta
+							span.date 14 Oct 2015
+						.title-wrapper
+							h2.title CHAOS 2016 will be held in...
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.shadow.set-bg.skin-purple(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.item-meta
+							span.date 5 Jan 2016
+						.title-wrapper
+							h2.title Another Cooperation Partner!
+				// #####End  book element
+				// #####Begin  book element
+				a.book-el.shadow.set-bg.skin-yellow(href="#")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+					.contents
+						.item-meta
+							span.date 5 Jan 2016
+						.title-wrapper
+							h2.title Adolescent health transition
+				// #####End  book element
+			// #####End carousel
+prepend customjs
+	include /_partials/blocks/sliders/slider-h2-js

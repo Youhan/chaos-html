@@ -1,0 +1,175 @@
+extends ../../../_layouts/lo-normal/right_sidebar
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Signup forms"
+	- var PageTitleHead = "chaos"
+	- var PageTitleDesc = ""
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "shorcodes"
+	
+block main-area
+	.newsletter-form.set-bg
+		img.set-me(src=dirPrefix+"assets/img/backgrounds/09.jpg", alt='image')
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		.nl-etc
+			| Awesome place for your secondary words!
+	.sp-blank-100
+	.newsletter-form.set-bg.light
+		img.set-me(src=dirPrefix+"assets/img/backgrounds/08.jpg", alt='image')
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		.nl-etc
+			| Awesome place for your secondary words!		
+	.sp-blank-100
+	.newsletter-form
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		.nl-etc
+			| Awesome place for your secondary words!
+	.sp-blank-100
+	.newsletter-form.skin-blue
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		.nl-etc
+			| Awesome place for your secondary words!
+	.sp-blank-100
+	.newsletter-form.skin-green
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		.nl-etc
+			| Awesome place for your secondary words!
+	.sp-blank-100
+	.newsletter-form.skin-purple
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		.nl-etc
+			| Awesome place for your secondary words!
+	.sp-blank-100
+	.newsletter-form.skin-yellow
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+		
+	.sp-blank-100
+	.newsletter-form.skin-dark
+		.nl-title
+			h3 Stay notified about our latest News and Stories, Weekly!
+		.nl-form
+			.form-with-border
+				input.form-control(type='text', placeholder='Email Address...')
+			input.btn.btn-medium.btn-circle.btn-block(type='submit', value='Keep me posted!')
+			
+		
+block sidebar-1
+	// #####Begin widget
+	.widgets-wrapper
+		.widget
+			.newsletter-form.small.set-bg
+				img.set-me(src=dirPrefix+"assets/img/backgrounds/09.jpg", alt='image')
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+		
+		.widget
+			.newsletter-form.small.set-bg.light
+				img.set-me(src=dirPrefix+"assets/img/backgrounds/08.jpg", alt='image')
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+				
+		.widget
+			.newsletter-form.small
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+		
+		.widget
+			.newsletter-form.small.skin-blue
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+		
+		.widget
+			.newsletter-form.small.skin-green
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+		
+		.widget
+			.newsletter-form.small.skin-purple
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+		
+		.widget
+			.newsletter-form.small.skin-yellow
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+		
+		.widget
+			.newsletter-form.small.skin-dark
+				.nl-title
+					h3 Awesome Newsletter
+				.nl-form
+					.form-with-border
+						input.form-control(type='text', placeholder='Email Address...')
+					input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+				.nl-etc
+					| Sent Weekly!
+	// #####End widget

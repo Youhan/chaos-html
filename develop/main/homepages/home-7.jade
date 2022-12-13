@@ -1,0 +1,323 @@
+
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('dark trans') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var footerLayout = 3
+	
+block page-title
+	// #####Begin page head
+	.page-head.parallax-layer.ov-dark-alpha-95.h-700.dark(data-img-src=dirPrefix+"assets/img/backgrounds/21.jpg", data-parallax-mode="mode-title")
+		.container
+			.tb-vcenter-wrapper
+				.row.vcenter
+					.col-md-9
+						h5 WELCOME .
+						.sp-blank-15
+						h1.large-text
+							|This Is The Most 
+							span.ol-text-rotate.bg-dark.p-right-10.p-left-10(data-words='{"w1":"Hilarious", "w2":"Surprising", "w3":"Fascinating", "w4":"Marvelous", "w5":"Amazing"}')
+							br
+							span.theme-color CHAOS 
+							| in the World!
+					.col-md-3
+						.sp-blank-40.hidden-xs
+						.text-right-md.text-right-lg
+							a.btn.btn-medium.btn-circle.btn-skin-dark(href="#") Work with us
+						
+	// #####End page head
+block main-area
+	section.section.bg-dark.dark-wrapper: .container: .row: .col-md-12
+		
+		p.m-bottom-50.pull-up-315.pull-up-sm-0
+			mixin lorem(60)
+		// #####Begin grid filters
+		.ol-grid-filters
+			ul.default-filters
+				li.active
+					a(href="#" data-filter="*") Show All
+				li
+					a(href="#" data-filter=".art-work") Artwork
+				li
+					a(href="#" data-filter=".banner") Banner
+				li
+					a(href="#" data-filter=".marketing") Marketing
+				li
+					a(href="#" data-filter=".design") Design
+			
+			.select-filters
+				select
+					option(value="*") Show All
+					option(value=".art-work") Artwork
+					option(value=".banner") Banner
+					option(value=".marketing") Marketing
+					option(value=".design") Design
+		// #####End grid filters
+		.ol-grid.masonry.col-3.with-gutter
+			// #####Begin grid item
+			.grid-item.art-work
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp
+					img(src=dirPrefix+"assets/img/backgrounds/40.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/40.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.art-work.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.1s")
+					img(src=dirPrefix+"assets/img/backgrounds/32.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/32.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.15s")
+					img(src=dirPrefix+"assets/img/backgrounds/42.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/42.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.art-work.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp
+					img(src=dirPrefix+"assets/img/backgrounds/34.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/34.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.marketing.art-work
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.1s")
+					img(src=dirPrefix+"assets/img/backgrounds/35.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/35.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.marketing.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.15s")
+					img(src=dirPrefix+"assets/img/backgrounds/36.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/36.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp
+					img(src=dirPrefix+"assets/img/backgrounds/37.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/37.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.1s")
+					img(src=dirPrefix+"assets/img/backgrounds/38.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/38.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.15s")
+					img(src=dirPrefix+"assets/img/backgrounds/39.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/39.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.art-work.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0s")
+					img(src=dirPrefix+"assets/img/backgrounds/40.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/40.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.1s")
+					img(src=dirPrefix+"assets/img/backgrounds/41.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/41.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.art-work
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.15s")
+					img(src=dirPrefix+"assets/img/backgrounds/42.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/42.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.art-work.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0s")
+					img(src=dirPrefix+"assets/img/backgrounds/20.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/20.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.1s")
+					img(src=dirPrefix+"assets/img/backgrounds/21.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/21.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.art-work
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.15s")
+					img(src=dirPrefix+"assets/img/backgrounds/22.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/22.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.art-work.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0s")
+					img(src=dirPrefix+"assets/img/backgrounds/26.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/26.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.design
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.1s")
+					img(src=dirPrefix+"assets/img/backgrounds/27.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/27.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.art-work
+				.gi-wrapper.ol-hover.hover-2.ol-animate.fadeInUp(data-delay="0.15s")
+					img(src=dirPrefix+"assets/img/backgrounds/25.jpg", alt='image hover')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/25.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#")
+						mixin lorem(2,'')
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			
+		.sp-blank-150
+		h2.text-center.m-bottom-50 Take it from our Customers!
+		// testimonial carousel
+		// #####Begin carousel
+		.owl-carousel.items.owwwlab-theme.nav-top-center.single-shot(data-cols="1", data-nav="true", data-loop="true")
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				
+				.their-quote
+					p
+						mixin lorem(20)
+				.their-info
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.their-quote
+					p
+						mixin lorem(20)
+				.their-info
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.their-quote
+					p
+						mixin lorem(20)
+				.their-info
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+		// #####End carousel

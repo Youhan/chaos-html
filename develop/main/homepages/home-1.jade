@@ -1,0 +1,328 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('dark trans sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var PageTitleHead = "Chaos"
+	- var pageTitle = "Chaos Homepage #1"
+	- var pageTitleClass = 'h-500 parallax-layer center-it dark ov-blue-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/01.jpg"
+	- var pageTitleParallaxMode = "bg"
+	-loadeExtraAssets.push('revolution')
+	- var lorem = "Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta aliquet sed!"
+	
+block page-title
+	.page-head.dark.auto-height
+		include /_partials/blocks/sliders/slider-h1
+mixin list()
+	a(href="#")
+		i.oli.oli-external_link
+		span homepage
+	a(href="#")
+		i.oli.oli-user_male_circle
+		span bio
+block main-area
+	section.section: .container: .row
+		.col-sm-4
+			mixin ibv2('oli oli-launched_rocket',"who we are")
+		.col-sm-4
+			mixin ibv2('oli oli-test_tube',"waht we do")
+		.col-sm-4
+			mixin ibv2('oli oli-sprout',"who we serve")
+	
+	// News section
+	section.section.bg-gray
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Latest Announcements 
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			// #####End heading
+			.sp-blank-30
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.nav-top-center(data-margin="30",data-nav="true", data-loop="true")
+				// #####Begin journal element
+				a.journal-el.set-bg(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.header
+							h6 11 Sep - 21 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Relational Geographies
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-green(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.header
+							h6 5 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Postgraduate mixer at the Chelsea MA show
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-purple(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.header
+							h6 8 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Meeting
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-blue(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.header
+							h6 11 Sep - 21 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Relational Geographies
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-yellow(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.header
+							h6 5 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Postgraduate mixer at the Chelsea MA show
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-lemon(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.header
+							h6 8 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Meeting
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-cyan(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.header
+							h6 11 Sep - 21 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Relational Geographies
+				// #####End journal element
+			// #####End carousel
+	// call to action
+	section.section.parallax-layer.ov-light-alpha-90(data-img-src=dirPrefix+"assets/img/backgrounds/09.jpg")
+		.container
+			.row
+				// #####Begin call to action
+				.call-out.tb-vcenter-wrapper
+					.col-md-7.col-md-push-5.vcenter
+						h2.title Fellowship opportunities available
+						h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+					.col-md-5.col-md-pull-7.vcenter.text-right
+						a.btn.btn-medium.btn-circle.btn-skin-red(href='#') 
+							i.oli.oli-unlock-filled
+							| Apply now
+				// #####End call to action
+	// projects section
+	section.section
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Research Projects 
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			// #####End heading
+			.sp-blank-30
+			// #####Begin grid filters
+			.ol-grid-filters
+				ul.default-filters
+					li.active
+						a(href="#" data-filter="*") Show All
+					li
+						a(href="#" data-filter=".art-work") Artwork
+					li
+						a(href="#" data-filter=".banner") Banner
+					li
+						a(href="#" data-filter=".marketing") Marketing
+					li
+						a(href="#" data-filter=".design") Design
+				
+				.select-filters
+					select
+						option(value="*") Show All
+						option(value=".art-work") Artwork
+						option(value=".banner") Banner
+						option(value=".marketing") Marketing
+						option(value=".design") Design
+			// #####End grid filters
+			.ol-grid.grid.col-3
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing
+					.gi-wrapper.ol-hover.hover-2
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/07.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") Thomaean pultaceous
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.design
+					.gi-wrapper.ol-hover.hover-2
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/08.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") calibrator etna
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work
+					.gi-wrapper.ol-hover.hover-2
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") oftentimes urotoxin
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing.art-work.design
+					.gi-wrapper.ol-hover.hover-2
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") forewritten midvein
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.design
+					.gi-wrapper.ol-hover.hover-2
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/03.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") aqueomercurial hypocrisy
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work.design
+					.gi-wrapper.ol-hover.hover-2
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/04.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+						h3.title: a(href="#") archetypally ostiolar
+						h4.subtitle: a(href="#") Category
+				// #####End grid item
+			
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-3
+					h2 People @ CHaos
+					p We publish news about latest changes, announcements and recent projects
+				.col-md-9: .row
+					.col-sm-4
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Kerr Waylon
+								.subtitle
+									| Dean
+							.links
+								+list()
+						// #####End person card
+					.col-sm-4
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Celestine Wilfred
+								.subtitle
+									| Associate Dean
+							.links
+								+list()
+						// #####End person card
+					.col-sm-4
+						// #####Begin person card
+						.vc-card.boxed.hoverable-links
+							a(href="#") 
+								img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Woody Terence
+								.subtitle
+									| Associate Dean, marketting
+							.links
+								+list()
+						// #####End person card
+	section.section.dark-wrapper.parallax-layer.ov-blue-alpha-90(data-img-src=dirPrefix+"assets/img/backgrounds/03.jpg")
+		.container
+			.row
+				.col-md-4
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Give me a Reason Why?
+						h4.subtitle Reasons about why we are one of a kind!
+					// #####End heading
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					.sp-blank-30
+					a.btn.btn-small.btn-circle.btn-skin-red(href='#') read more
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-camera
+						h3.title reasonable offer
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+					.sp-blank-50
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-quill_with_ink
+						h3.title Drives you crazy
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-printed_OCR
+						h3.title loaded with love
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+					.sp-blank-50
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-chromatography
+						h3.title Approved by Jafar!
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+prepend customjs
+	include /_partials/blocks/sliders/slider-h1-js

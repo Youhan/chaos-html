@@ -1,0 +1,116 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Video & Media"
+	- var PageTitleHead = "Responsive"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+	
+block main-area
+	section.section.p-bottom-0: .container
+		.alert.alert-thin.with-big-icons.alert-warning(role='alert') 
+			i.oli.oli-pricetags
+			| Some Elements in this page won't work on your computer without a local webserver. But they will be fine online.
+	// TED
+	section.section: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|TED Video
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.video-container
+				<iframe src="https://embed-ssl.ted.com/talks/pamela_meyer_how_to_spot_a_liar.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	// ISSUU
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Issuu Journals
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.issuuembed(data-configid='23762006/33691266', style='width:525px; height:371px;')
+				script(type='text/javascript', src='https://e.issuu.com/embed.js', async='true')
+	// Yumpu
+	section.section: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Yumpu Journals
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.video-container
+				<iframe width="620px" height="533px" src="https://www.yumpu.com/en/embed/view/mQIgdYkp2N06MGTj" frameborder="0" allowfullscreen="true"  allowtransparency="true"></iframe>
+	// Slideshare
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|SlideShare
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.video-container
+				<iframe src="//www.slideshare.net/slideshow/embed_code/key/tordf5ifpRwIdM" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
+	// Youtube
+	section.section: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Youtube Video
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.video-container
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/m57cimnJ7fc" frameborder="0" allowfullscreen></iframe>
+	// Vimeo
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Vimeo Video
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.video-container
+				<iframe src="https://player.vimeo.com/video/96091341?title=0&byline=0&portrait=0" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	// Google Calendar
+	section.section: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Google Calendar
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.calendar-container
+				<iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=60aqhusbghf7v0qvvbfu1ml22k%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	// Google Map
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Google Maps
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.col-md-8
+			.google-maps-container
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.260812859955!2d-73.990184!3d40.756288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb134c693ac14a04c!2sThe+TimesCenter!5e0!3m2!1sen!2suk!4v1393485725496" width="500" height="450" frameborder="0" style="border:0"></iframe>
+				
+	// Twitter timeline
+	section.section: .container: .row
+		.col-md-4
+			h3.with-shaded-label 
+				span.shaded-label RESPONSIVE
+				|Twitter's Timeline
+			p 
+				|Read here to make customizations:
+				br
+				a(href="https://dev.twitter.com/web/embedded-timelines") https://dev.twitter.com/web/embedded-timelines
+		.col-md-8
+			<a class="twitter-timeline" href="https://twitter.com/hashtag/designe" data-widget-id="708932843985092608">#designe Tweets</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

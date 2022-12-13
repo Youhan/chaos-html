@@ -1,0 +1,295 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' trans header-personal-1') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var ptType= "false"
+	- var headMainClass = "text-center"
+	- var logoWrapperClass="visible-sticky"
+
+block page-title
+	include ./_partials/blocks/intro
+	
+block main-area
+	section.section.bg-gray.section-narrow-2
+		.container
+			.row.text-center
+				.col-md-3
+					.ol-heading
+						h3.title Full Name
+						h4.sub-title Chaos L. McTabi
+				.col-md-3
+					.ol-heading
+						h3.title Education
+						h4.sub-title BS, MS, PhD
+				.col-md-3
+					.ol-heading
+						h3.title Faculty of
+						h4.sub-title Stanford University
+				.col-md-3
+					.ol-heading
+						h3.title Currently
+						h4.sub-title Professor at Chaos Colledge
+	section.section.section-narrow-2
+		.container
+			.row
+				.col-md-9
+					h3.with-sideline Biography
+
+					p A social psychologist and marketer, Jennifer Doe is the General Atlantic Professor of Marketing and Ormond Family Faculty at Stanford University’s Graduate School of Business. Her research spans time, money and happiness. She focuses on questions such as: What actually makes people happy, as opposed to what they think makes them happy?
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				.col-md-3
+					h3.with-sideline CV
+					a.btn.btn-medium.btn-block.btn-round.btn-thick-border(href='#')
+						i.oi-download-from-cloud
+						span.text-capitilize Download CV
+	section.section.bg-gray.section-narrow-2
+		.container
+			.row
+				.col-md-3
+					h3.with-sideline Educations
+				.col-md-9
+					.row
+						.col-md-6
+							.icon-box.ib-edu
+								i.oli.oli-diploma
+								.ib-wrap
+									h3.title Bachelor of Arts in Psychology
+									span.subtitle Stanford University Graduate School of Business
+									.description 
+										span 2001
+							
+						.col-md-6
+							.icon-box.ib-edu
+								i.oli.oli-diploma
+								.ib-wrap
+									h3.title Master of Business Administration
+									span.subtitle University of California, Berkeley
+									.description 
+										span 2001-2003
+					.sp-blank-50
+					.row
+						.col-md-6
+							.icon-box.ib-edu
+								i.oli.oli-diploma
+								.ib-wrap
+									h3.title Ph.D. in Marketing
+									span.subtitle University of California, Berkeley
+									.description 
+										span 2004-2008
+							
+						.col-md-6
+							.icon-box.ib-edu
+								i.oli.oli-diploma
+								.ib-wrap
+									h3.title Postdoc fellowship
+									span.subtitle Cornell university
+									.description 
+										span 2010
+	section.section
+		.container
+			.row
+				.col-md-3
+					.heading-with-sub
+						h3.title.with-sideline Research
+						p.lead List of coursers that are being tought, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas.
+					a.btn.btn-small.btn-round.m-top-5
+						span read more
+				.col-md-9
+					.owl-carousel.items.featured-items.owwwlab-theme.nav-top-right(data-cols="3" data-nav="true" data-margin="30" data-cols-md=2)
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+								h3.features-title Computer Architecture
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+								h3.features-title Analysis of Algorithm
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+								h3.features-title Image Processing
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/04.jpg", alt='image')
+								h3.features-title Analysis of Algorithm
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+								h3.features-title Computer Architecture
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+								h3.features-title Language processing
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+								h3.features-title Image Processing
+	section.bg-gray.no-space-grid
+		.container
+			.row.extend-bg-wrapper.no-space-grid.h-500
+				.col-md-4
+					.set-bg.extend-left.hidden-sm
+						img.set-me(src=dirPrefix+"assets/img/bg/light-01.jpg", alt="background-image")
+					.row
+						.col-md-9
+							.inner-wrapper.m-top-80
+								.heading-with-sub
+									h3.title.with-sideline Honors and Awards
+									p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim.
+				.col-md-8
+					.ol-timeline-tab(data-start-from="center",data-fade-edge="true")
+						ul.tl-head
+							li 1995
+							li 1998
+							li 2000
+							li 2005
+							li 2006
+							li 2008
+							li 2010
+							li 2013
+							li 2015
+						.tl-content
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							
+
+
+							
+	section.section
+		.container
+			.row
+				.col-md-3
+					.heading-with-sub
+						h3.title.with-sideline Research
+						p.lead List of coursers that are being tought, Lorem ipsum dolor sit amet, coursersnsectetur adipiscing elit. Sed egestas.
+					a.btn.btn-small.btn-round.m-top-5
+						span read more
+				.col-md-9
+					.row
+						.col-md-4
+							a.book-el.shadow.set-bg(href="#")
+								img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+								.contents
+									.item-meta
+										span.date 12 Oct 2015
+									.title-wrapper
+										h2.title Adolescent health transition
+						.col-md-4
+							a.book-el.shadow.set-bg(href="#")
+								img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+								.contents
+									.item-meta
+										span.date 22 Jan 2012
+									.title-wrapper
+										h2.title Cancer treatment and detection
+						.col-md-4
+							a.book-el.shadow.set-bg(href="#")
+								img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+								.contents
+									.item-meta
+										span.date 15 Dec 2001
+									.title-wrapper
+										h2.title thyroid disease symptoms
+						

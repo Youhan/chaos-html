@@ -1,0 +1,238 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('nav-light full-width') 
+	- var bcType = "intitle"
+	- var currentMenu = "Students"
+	- var pageTitle = "Research Group"
+	- var PageTitleDesc = "Simple Lists are great way to display your publications to visitors, here is a simple list shows vaiations of this grid elements."
+
+	- var pageTitleClass = 'h-500 ov-grad8-alpha-80 center-it parallax-layer dark'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/04.jpg"
+	- var pageTitleParallaxMode = "bg"
+
+block main-area
+	section.section.section-narrow.slim-container.bg-gray
+		.container
+			.row.multi-columns-row.pull-up-160.col-margin-bottom-40
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Kerr Waylon
+							.subtitle
+								| Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Celestine Wilfred
+							.subtitle Founder & CEO
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Woody Terence
+							.subtitle
+								| Associate Marketing Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+									i.fa.fa-twitter
+			
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Mick Roscoe
+							.subtitle
+								| Associate Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Tristram Jack
+							.subtitle
+								| Associate Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+			
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. John Doe
+							.subtitle
+								| Associate Dean, physics head
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/08.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Jane Doe
+							.subtitle
+								| Associate Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Kerr Waylon
+							.subtitle
+								| Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+			
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Celestine Wilfred
+							.subtitle
+								| Head of Human Resource
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Woody Terence
+							.subtitle
+								| Associate Dean, marketting
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+
+	section.section.section-narrow.set-bg.dark-wrapper
+		img.set-me(src=dirPrefix+"assets/img/bg/08.jpg", alt="background")
+		.container
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-8.vcenter
+					h2.title Apply for Being a TA and Join us at Stanford
+					h4.sub-title Absolutely Stunning Design &amp; Functionality Common Things Expected
+				.col-sm-4.vcenter.text-center
+					a.btn.btn-medium.btn-circle.btn-skin-yellow.btn-icon-right.btn-anim-i(href='#')
+						i.oli.oli-forward
+						span read more

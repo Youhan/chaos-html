@@ -1,0 +1,230 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('nav-light full-width') 
+	- var bcType = "intitle"
+	- var currentMenu = "Blog"
+	- var pageTitle = "Blog"
+	- var PageTitleDesc = "Simple Lists are great way to display your publications to visitors, here is a simple list shows vaiations of this grid elements."
+
+	- var pageTitleClass = 'h-500 center-it ov-grad8-alpha-80 parallax-layer dark'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/06.jpg"
+	- var pageTitleParallaxMode = "bg"
+
+block main-area
+	section.section.section-narrow-2.slim-container.bg-gray
+		.container
+			.row.multi-columns-row.pull-up-185.col-margin-bottom-40
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Relational Geographies
+
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Meeting
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Relational Geographies
+
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Meeting
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Relational Geographies
+
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Meeting
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Relational Geographies
+
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Postgraduate mixer at the Chelsea MA show
+				.col-md-4.col-xs-6
+					a.journal-el.set-bg(href="single-post.html")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.sub-title By John Doe</br>
+									|In Students News
+								h2.title Meeting
+			include ./_partials/blocks/paginations/lined
+
+	section.section.section-narrow
+		.container
+			.row
+				.col-md-3
+					.widgets-wrapper
+						.widget
+							h4 Popular Posts
+							.posts-list
+								.post
+									a.entry-image(href='#')
+										img(src= dirPrefix +'assets/img/news/thumb-50-1.jpg', alt='')
+									.entry-content
+										h4.entry-title
+											a(href='#') Debitis nihil placeat, illum
+										ul.entry-meta
+											li
+												i.icon.oi-speech-bubble
+												| 35 Comments
+								
+								.post
+									a.entry-image(href='#')
+										img(src= dirPrefix +'assets/img/news/thumb-50-2.jpg', alt='')
+									.entry-content
+										h4.entry-title
+											a(href='#') Debitis nihil placeat, illum
+										ul.entry-meta
+											li
+												i.icon.oi-speech-bubble
+												| 35 Comments
+								
+								.post
+									a.entry-image(href='#')
+										img(src= dirPrefix +'assets/img/news/thumb-50-3.jpg', alt='')
+									.entry-content
+										h4.entry-title
+											a(href='#') Debitis nihil placeat, illum
+										ul.entry-meta
+											li
+												i.icon.oi-speech-bubble
+												| 35 Comments
+								
+								
+				.col-md-3
+					.widget
+						h4 Tag Cloud
+						.tagcloud
+							a(href='#') general
+							a(href='#') videos
+							a(href='#') music
+							a(href='#') media
+							a(href='#') photography
+							a(href='#') parallax
+							a(href='#') ecommerce
+							a(href='#') terms
+							a(href='#') coupons
+							a(href='#') modern								
+				.col-md-3
+					.widget
+						h4 Categories
+						.category-list
+							a.cat(href="#")
+								| Articles
+								span.pull-right 12
+
+							a.cat(href="#")
+								| Research Highlights
+								span.pull-right 20
+
+							a.cat(href="#")
+								| Lab Updates
+								span.pull-right 12
+
+							a.cat(href="#")
+								| New papers
+								span.pull-right 20
+
+							a.cat(href="#")
+								| Video
+								span.pull-right 55
+				.col-md-3
+					.widget
+						h4 Simple HTML
+						.html-widget
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.

@@ -1,0 +1,350 @@
+extends /_layouts/lo-normal/fullwidth
+append config
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark trans') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var PageTitleHead = "Chaos"
+	- var pageTitle = "Chaos Demo4"
+	- var pageTitleImage = dirPrefix+"assets/img/bg/001.jpg"
+	- var pageTitleParallaxMode = "bg"
+	-loadeExtraAssets.push('revolution')
+	- var lorem = "Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta aliquet sed!"
+	
+block page-title
+	// #####Begin page head
+	.page-head.auto-height
+		include /_partials/blocks/sliders/slider1
+	// #####End page head
+block main-area
+	section.section
+		.container
+			.row
+				.col-md-9
+					div
+						h2 A Trusted Partner. A National Resource.
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor consectetur adipiscing elit. Integer posuere erat a ante.
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+					.sp-line-60
+					.row
+						.col-md-6
+							// #####Begin iconbox v4
+							.icon-box.ib-v4
+								i.oli.oli-piechart
+								h3.title
+									span We are Awesome
+								p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+							// #####End iconbox v4
+						.col-md-6
+							// #####Begin iconbox v4
+							.icon-box.ib-v4
+								i.oli.oli-strategy
+								h3.title
+									span loaded with love
+								p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+							// #####End iconbox v4
+				.col-md-3
+					// #####Begin person card
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/10.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Kerr Waylon
+							.subtitle
+								| Spicylogy
+								| <br> Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.fa.fa-user
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+								i.fa.fa-twitter
+					// #####End person card
+	section.section.set-bg.ov-light-alpha-95(data-img-src="assets/img/bg/003.jpg")
+		.container
+			.row
+				.col-md-3
+					h5.with-shaded-label
+						span.shaded-label.darken 73
+						span Research Projects
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3
+					h5.with-shaded-label
+						span.shaded-label.darken 1350
+						span Published Articles
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3
+					h5.with-shaded-label
+						span.shaded-label.darken 218
+						span Technical Papers
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3
+					h5.with-shaded-label
+						span.shaded-label.darken 85
+						span Awesome People
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+	section.section: .container
+		
+		// #####Begin heading
+		.heading-with-sub.text-center
+			h2.title Don&#39;t take it from us, see what other people say!
+			h4.subtitle Here is an awesome quick description about it that is class lorem Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
+		// #####End heading
+		.sp-blank-50
+		
+		.row
+			.col-md-4
+				// #####Begin single testimonial
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/people/05.jpg', alt='Owl Image')
+					.texts
+						p #{lorem}
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+			.col-md-4
+				// #####Begin single testimonial
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/people/06.jpg', alt='Owl Image')
+					.texts
+						p #{lorem}
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+			.col-md-4
+				// #####Begin single testimonial
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/people/07.jpg', alt='Owl Image')
+					.texts
+						p #{lorem}
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+	section.section.parallax-layer.ov-grad1-alpha-80.dark-wrapper(data-img-src="assets/img/bg/004.jpg")
+		.container
+			// #####Begin call to action
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-4.vcenter.text-right
+					a.btn.btn-medium.btn-wide.btn-skin-red.btn-circle(href='#') 
+						span apply
+				.col-sm-8.vcenter.text-left
+					h2.title Apply for Being a TA and Join us at CHAOS
+					h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+			// #####End call to action
+	section.section.bg-gray: .container: .row
+		.col-md-5
+			// #####Begin carousel
+			.people-carousel.set-bg.shadow.ov-light-alpha-70.owl-carousel.items.owwwlab-theme(data-img-src="assets/img/bg/005.jpg", data-cols-all=1, data-margin=0, data-nav="true", data-loop="true")
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/06.jpg")
+					h3.title Rebbeca Culbertson
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/05.jpg")
+					h3.title Quinlan Granville
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/04.jpg")
+					h3.title Renato Schiller
+					h4.sub-title PHD Candidate
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/03.jpg")
+					h3.title Wynell Lariviere
+					h4.sub-title Baghalilogist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/02.jpg")
+					h3.title Jane Doe
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profil
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/01.jpg")
+					h3.title Carole Stangle
+					h4.sub-title Nanatolist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+			// #####End carousel
+		.col-md-7.p-left-40.p-top-40
+			// #####Begin heading
+			.heading-with-sub
+				h3.title People @ Chaos
+				h4.subtitle Awesome People working hrere
+			// #####End heading
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			a.btn.btn-circle.btn-small(href="about-people.html") Read more
+	section.section.bg-pattern
+		.container
+			.row
+				.col-md-4
+					h2 Selected<br>Publications
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					a.btn.btn-anim-drawer.btn-round.btn-small(href="publications.html") Read more
+				.col-md-8
+					
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+	section.section.bg-gray
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Recent News
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			// #####End heading
+			.sp-blank-30
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.nav-top-center(data-margin="30",data-nav="true", data-loop="true")
+				// #####Begin journal element
+				a.journal-el.set-bg(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.header
+							h6 11 Sep - 21 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Relational Geographies
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-green(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.header
+							h6 5 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Postgraduate mixer at the Chelsea MA show
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-purple(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.header
+							h6 8 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Meeting
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-blue(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.header
+							h6 11 Sep - 21 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Relational Geographies
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-yellow(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+					.contents
+						.header
+							h6 5 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Postgraduate mixer at the Chelsea MA show
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-lemon(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+					.contents
+						.header
+							h6 8 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Meeting
+				// #####End journal element
+				// #####Begin journal element
+				a.journal-el.set-bg.skin-cyan(href="news-single.html")
+					img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+					.contents
+						.header
+							h6 11 Sep - 21 Sep 2015
+						.footer
+							h6.sub-title By John Doe</br>
+								|In Students News
+							h2.title Relational Geographies
+				// #####End journal element
+			// #####End carousel
+prepend customjs
+	include /_partials/blocks/sliders/slider1-js

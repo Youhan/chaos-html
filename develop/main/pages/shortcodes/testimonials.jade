@@ -1,0 +1,183 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Tesimonials"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta aliquet sed!"
+	
+block main-area
+	section.section: .container
+		// #####Begin heading
+		.heading-with-sub.text-center
+			h2.title Don&#39;t take it from us, see what other people say!
+			h4.subtitle Here is an awesome quick description about it that is class.
+		// #####End heading
+		.sp-blank-50
+		
+		.row
+			.col-md-4
+				// #####Begin single testimonial
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/05.jpg', alt='Owl Image')
+					.texts
+						p #{lorem}
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+			.col-md-4
+				// #####Begin single testimonial
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+					.texts
+						p #{lorem}
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+			.col-md-4
+				// #####Begin single testimonial
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+					.texts
+						p #{lorem}
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+	section.section.bg-gray: .container
+		
+		h2.text-center.m-bottom-50 Maybe you prefer a carousel to believe us!	
+			
+		// testimonial carousel
+		// #####Begin carousel
+		.owl-carousel.items.owwwlab-theme.nav-top-center(data-cols="3", data-nav="true", data-loop="true")
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.avatar.avatar-sm
+					img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+				.texts
+					p #{lorem}
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.avatar.avatar-sm
+					img(src=dirPrefix+'assets/img/avatars/02.jpg', alt='Owl Image')
+				.texts
+					p #{lorem}
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.avatar.avatar-sm
+					img(src=dirPrefix+'assets/img/avatars/03.jpg', alt='Owl Image')
+				.texts
+					p #{lorem}
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.avatar.avatar-sm
+					img(src=dirPrefix+'assets/img/avatars/04.jpg', alt='Owl Image')
+				.texts
+					p #{lorem}
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.avatar.avatar-sm
+					img(src=dirPrefix+'assets/img/avatars/05.jpg', alt='Owl Image')
+				.texts
+					p #{lorem}
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.avatar.avatar-sm
+					img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+				.texts
+					p #{lorem}
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+		// #####End carousel
+	section.section.section-thick.dark-wrapper.parallax-layer(data-img-src=dirPrefix+"assets/img/poly-bg-dark.jpg")
+		.container
+			h2.text-center.m-bottom-50 You will believe us with this Parallax Testimonial Slider!
+			// testimonial carousel
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.nav-top-center.single-shot(data-cols="1", data-nav="true", data-loop="true")
+				// #####Begin single testimonial
+				.item: .testimonial-item
+					
+					.their-quote
+						p #{lorem} Phasellus lectus sem, egestas eget sollic ut, Phasellus lectus sem, egestas eget sollic ut
+					.their-info
+						.avatar.avatar-sm
+							img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+				// #####Begin single testimonial
+				.item: .testimonial-item
+					.their-quote
+						p #{lorem} 
+					.their-info
+						.avatar.avatar-sm
+							img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+				// #####End single testimonial
+				// #####Begin single testimonial
+				.item: .testimonial-item
+					.their-quote
+						p #{lorem} Phasellus lectus sem, egestas eget sollic ut
+					.their-info
+						.avatar.avatar-sm
+							img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+					
+				// #####End single testimonial
+			// #####End carousel
+	

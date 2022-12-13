@@ -1,0 +1,61 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('side-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('light') 
+	- var pageTitle = "Sidebar Menu"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer dark ov-blue-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/page-title-bg-light-3.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Features"
+block main-area
+	section.section.section-narrow-2: .container: .row.text-center
+		.col-md-4.ol-animate.fadeInLeft
+			// #####Begin iconbox v1
+			.icon-box.ib-v2
+					a(href="#")
+						i.oli.oli-lightbulb
+						h3.title publications
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v1
+		.col-md-4.ol-animate.bounceInUp(data-delay='0.5s')
+			// #####Begin iconbox v1
+			.icon-box.ib-v2
+					a(href="#")
+						i.oli.oli-lightbulb
+						h3.title publications
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v1
+		.col-md-4.ol-animate.fadeInRight(data-delay='1s')
+			// #####Begin iconbox v1
+			.icon-box.ib-v2
+					a(href="#")
+						i.oli.oli-lightbulb
+						h3.title publications
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			// #####End iconbox v1
+	section.section.bg-gray.section-narrow-2: .container: .row
+		.col-md-6.ol-animate.fadeInLeft
+			img(src=dirPrefix+"assets/img/hovers/01.jpg", alt='image hover')
+			.caption Fade In Left
+		.col-md-6.ol-animate.fadeInRight
+			img(src=dirPrefix+"assets/img/hovers/02.jpg", alt='image hover')
+			.caption Fade In Right
+		
+	section.section.dark-wrapper.parallax-layer.ov-blue-alpha-50(data-img-src=dirPrefix+"assets/img/bg-dark.jpg")
+		.container
+			// #####Begin call to action
+			.call-out.text-center.ol-animate.fadeInUpBig
+				h2.title Fellowship opportunities available
+				h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+				.sp-blank-20
+				a.btn.btn-medium.btn-circle.btn-thick-border(href='#')
+					i.oli.oli-timer
+					span Apply now					
+					
+			// #####End call to action

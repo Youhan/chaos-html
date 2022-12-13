@@ -1,0 +1,17 @@
+extends ../../../../_layouts/lo-normal/fullwidth
+
+append config
+
+	- var dirPrefix = '../../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('trans') 
+	- var pageTitle = "Header v1 - transparent"
+	- var pageTitleClass = 'set-bg h-400'
+	- var pageTitleImage = dirPrefix+"assets/img/page-title-bg-light-1.jpg"
+	- var currentMenu = "Features"
+
+
+	
+block main-area
+	include ../../../../_partials/blocks/pages/main-area-fullwidth

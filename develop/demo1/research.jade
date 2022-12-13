@@ -1,0 +1,158 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('nav-light full-width') 
+	- var bcType = "intitle"
+	- var currentMenu = "Research"
+	- var pageTitle = "Reseach"
+	- var PageTitleDesc = "My research interests are in the structure, function and evolution of the large-scale complex networks in nature and socciety, with an emphasis on the information and comunication networks, such as the internet and the world wide web."
+
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-grad8-alpha-80 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/03.jpg"
+	- var pageTitleParallaxMode = "bg"
+
+block main-area
+	section.section.section-narrow-2
+		.container
+			.row
+				.col-md-4
+					.heading-with-sub
+						h2.title Current Reseach
+						p.lead I am currently working on the following research topics
+				.col-md-8
+					.row
+						.col-md-6
+							.icon-box.ib-v4
+								i.icon.oli.oli-literature
+								h3.title Comlex Networks
+								p 	Structural Constraints</br>
+									|Network Growth Mechanisms	
+						.col-md-6
+							.icon-box.ib-v4
+								i.icon.oli.oli-piechart
+								h3.title Network Security
+								p Immunology-inspired Internet Defense</br>
+									|Secure communication for cloud computing
+					.sp-blank-50
+					.row
+						.col-md-6
+							.icon-box.ib-v4
+								i.icon.oli.oli-genius
+								h3.title Social Networks
+								p Measurment of AS Relationships</br>
+									|Internet routing struture</br>
+									|Internet performance an robustness 
+							
+						.col-md-6
+							.icon-box.ib-v4
+								i.icon.oli.oli-recycle
+								h3.title Internet
+								p Measurment of AS Relationships</br>
+									|Internet routing struture</br>
+									|Internet performance an robustness
+	section.section.bg-gray.section-narrow-2
+		.container
+			.row
+				.col-md-4
+					.heading-with-sub
+						h2.title Reseach Grants
+						p.lead Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-md-8
+					.row
+						.col-md-12
+							.pub-item.with-icon
+								.elem-wrapper
+									i.oli.oli-bookmark
+								.content-wrapper
+									h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+									.description 
+										p <strong>Funding bodies:</strong> The Royal Academy of Engineering</br>
+											<strong>Role:</strong> Principle investigator</br>
+											<strong>Value:</strong> &#36;480,000</br>
+											<strong>Years:</strong> 2002-2012
+							.pub-item.with-icon
+								.elem-wrapper
+									i.oli.oli-bookmark
+								.content-wrapper
+									h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+									.description 
+										p <strong>Funding bodies:</strong> The Royal Academy of Engineering</br>
+											<strong>Role:</strong> Principle investigator</br>
+											<strong>Value:</strong> &#36;480,000</br>
+											<strong>Years:</strong> 2002-2012
+							.pub-item.with-icon
+								.elem-wrapper
+									i.oli.oli-bookmark
+								.content-wrapper
+									h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+									.description 
+										p <strong>Funding bodies:</strong> The Royal Academy of Engineering</br>
+											<strong>Role:</strong> Principle investigator</br>
+											<strong>Value:</strong> &#36;480,000</br>
+											<strong>Years:</strong> 2002-2012
+							.pub-item.with-icon
+								.elem-wrapper
+									i.oli.oli-bookmark
+								.content-wrapper
+									h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+									.description 
+										p <strong>Funding bodies:</strong> The Royal Academy of Engineering</br>
+											<strong>Role:</strong> Principle investigator</br>
+											<strong>Value:</strong> &#36;480,000</br>
+											<strong>Years:</strong> 2002-2012
+	section.section.section-narrow-2.set-bg
+		img.set-me(src=dirPrefix+"assets/img/bg/light-02.jpg", alt="background")
+		.container
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-9.vcenter
+					h2.title List of Publications
+					h4.sub-title Absolutely Stunning Design &amp; Functionality Common Things Expected
+				.col-sm-3.vcenter.text-center
+					a.btn.btn-medium.btn-wide.btn-skin-red.btn-circle(href='#') 
+						span view
+	section.section.section-narrow-2
+		.container
+			.row
+				.col-md-4
+					.heading-with-sub
+						h2.title Reseach Affiliates
+						p.lead Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					a.btn.btn-round.btn-small(href="#")
+						span READ MORE
+				.col-md-8
+					.row
+						.col-md-12
+							ul.clients-grid
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+								li
+									a(href='#')
+										img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')

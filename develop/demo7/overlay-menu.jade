@@ -1,0 +1,52 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var customStyleName = 'demo7.css'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('trans') 
+	- var pageTitle = "Overlay Manu"
+	- var bcType = "false"
+	- var headerParallaxType = 'bg'
+	- var pageTitleClass = 'h-600 set-bg'
+	- var pageTitleImage = "assets/img/bg-light.jpg"
+	- var triggerClass = 'pull-right'
+	- var triggerType = 'overlay-content'
+	- var triggerTarget = 'overlay-menu'
+	- var headMainClass =""
+
+block header
+	header#header(class=headerClasses)
+		.head-main(class=headMainClass)
+			.container
+				//trigger content
+				include _partials/layouts/header/trigger-content
+prepend contents
+	section(class="overlay-content").bg-green
+		.container
+			.row
+				.head-main(class=headMainClass)
+					// trogger content
+					.trigger-content(data-type=triggerType data-direction='right')
+						a(href="#")
+							.oli.oli-delete_sign
+
+				.col-md-6.col-md-offset-3.hvh-100.ofx-auto
+					.tb-vcenter-wrapper
+						.vcenter
+							.vertical-menu.text-center
+								nav
+									ul(id="nav")
+										li.active
+											a(href="overlay-menu.html" title="Home")
+												span Overlay Menu
+										li
+											a(href="side-content.html" title="side content")
+												span With side content
+										li
+											a(href="side-content-push.html" title="side content push")
+												span With pushy side content
+										li
+											a(href="login-form.html" title="login form")
+												span Login Form

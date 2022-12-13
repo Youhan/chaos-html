@@ -1,0 +1,953 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' trans') 
+	- var bcType = "intitle"
+	- var currentMenu = ""
+	- var ptType= "false"
+	- var headMainClass = ""
+	- var logoWrapperClass=""
+	- var pageTitle = "Chaos"
+	- var templateName = 'Academic Driven Multipurpose HTML Template'
+
+append metatags
+	meta(name='description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(itemprop='name', content='Chaos Academic Driven Multipurpose HTML Template')
+	meta(itemprop='description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(itemprop='image', content='http://chaos.owwwlab.com/public-images/chaos-banner.jpg')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@owwwlab')
+	meta(name='twitter:creator', content='@owwwlab')
+	meta(name='twitter:title', content='Chaos Academic Driven Multipurpose HTML Template')
+	meta(name='twitter:description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(name='twitter:image:src', content='http://chaos.owwwlab.com/public-images/chaos-banner.jpg')
+	meta(property='og:title', content='Chaos Academic Driven Multipurpose HTML Template')
+	meta(property='og:type', content='article')
+	meta(property='og:url', content='http://chaos.owwwlab.com/')
+	meta(property='og:image', content='http://chaos.owwwlab.com/public-images/chaos-banner.jpg')
+	meta(property='og:description', content='Chaos is a premium HTML template driven from academic needs to fulfil design requirements for typical academic websites such as, faculty priofile, students and staff directory, events, conferences, seminar, research laboratories, etc.')
+	meta(property='og:site_name', content='owwwlab')
+
+block page-title
+	#index_head.page-head.parallax-layer.h-900.bg-gray(data-img-src=dirPrefix+"assets/img/bg/01.jpg")
+		.container
+			.tb-vcenter-wrapper
+				.vcenter.text-center
+					h1.intro-title Chaos
+					h2.intro-subtitle Academic Driven <br> Multi-Purpose HTML Template
+					.intro-buttons
+						a.btn.btn-medium.btn-circle.btn-skin-white(data-scroll, href="#index_subscribe") Need WP version?
+						a.btn.btn-circle.btn-medium.btn-skin-yellow(href="http://themeforest.net/item/chaos-academic-driven-multipurpose-template/16297747?ref=owwwlab") Purchase Now - $20
+	
+block main-area
+
+	section.bg-darkgray.slim-container.p-bottom-80.p-bottom-xs-30: .container
+		ul.index-features.pull-up-40.pull-up-xs-0
+			li
+				span.upper 120+
+				span.sub Components
+			li
+				span.upper 26+
+				span.sub Layouts
+			li
+				span.upper 300+
+				span.sub HTML Pages
+			li
+				span.upper 12+
+				span.sub Pre-Built Demos
+
+	// demos
+	section#index_demos.section.bg-gray.slim-container.p-bottom-0
+
+		.container
+			.section-head
+				h2.title Demos
+				h3.subtitle Full websites
+			
+			.section-lead
+				p CHAOS - perfect, elegant and bright HTML template with lots of functional elements which are designed and polished for academic websites. 
+
+		.container.p-right-100.p-left-100
+			
+			// main demo
+			.demo-item.m-bottom-90.m-bottom-xs-30
+				a(href="../main/index.html" target="_blank")
+					img.demo-thumb.pull-right(
+						alt="alt image"
+						src="assets/img/demos/00.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+					)
+				.demo-info.abs-left.bottom.text-right
+					h3.title Main Demo
+					p This is the main demo of the template, a full feature demo that contains all elements and variations.
+					a.btn.btn-medium.btn-circle(href="../main/index.html" target="_blank") Explore
+			// demo 6 - conf
+			.demo-item.m-bottom-60.m-bottom-xs-30
+				a(href="../demo6/index.html" target="_blank")
+					img.demo-thumb(
+						alt="alt image"
+						src="assets/img/demos/01.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+					)
+				.demo-info.abs-right.bottom.text-left
+					h3.title Academic Conference
+					p Suitable for academic conferences, seminars, workshops and any other <strong>event</strong> websites.
+					a.btn.btn-medium.btn-circle(href="../demo6/index.html" target="_blank") Explore
+			// demo 2 
+			.inner-wrapper.m-bottom-xs-30
+				.demo-item.two-col-layout
+					a(href="../demo1/index.html" target="_blank")
+						img.demo-thumb.m-top-100.m-top-xs-0(
+							alt="alt image"
+							src="assets/img/demos/02.jpg"
+							data-0-top-bottom="transform[sqrt]:translate3d(0,-70px,0)"
+							data-100-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+						)
+					.demo-info
+						h3.title PhD Personal Website
+						p Personal website built for <strong>academic people</strong> and PhD candidates.
+						a.btn.btn-medium.btn-circle(href="../demo1/index.html" target="_blank") Explore
+
+				.demo-item.two-col-layout.abs-right
+					a(href="../demo2/index.html" target="_blank")
+						img.demo-thumb(
+							alt="alt image"
+							src="assets/img/demos/03.jpg"
+							data-0-top-bottom="transform[sqrt]:translate3d(0,-70px,0)"
+							data-100-bottom-top="transform[sqrt]:translate3d(0,150px,0);"
+						)
+					.demo-info.text-right
+						h3.title Academic Profile
+						p This demo will surprise you about how easily it can be customized to get a whole different layout out of the main layouts.
+						a.btn.btn-medium.btn-circle(href="../demo2/index.html" target="_blank") Explore
+			// demo 3
+			.demo-item.m-bottom-90.m-bottom-xs-30
+				a(href="../demo3/index.html" target="_blank")
+					img.demo-thumb.pull-right(
+						alt="alt image"
+						src="assets/img/demos/04.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+					)
+				.demo-info.abs-left.bottom.text-right
+					h3.title Mr. Professor
+					p This demo utilizes side menu and is designed to show the personal capabilities of Chaos template!
+					a.btn.btn-medium.btn-circle(href="../demo3/index.html" target="_blank") Explore
+			// demo 5
+			.demo-item.m-bottom-xs-30
+				a(href="../demo5/index.html" target="_blank")
+					img.demo-thumb(
+						alt="alt image"
+						src="assets/img/demos/05.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,-50px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+					)
+				.demo-info.abs-right.top.text-left.m-top-20
+					h3.title Research Lab
+					p A light demo suitable for small research groups and research laboratories. 
+					a.btn.btn-medium.btn-circle(href="../demo5/index.html" target="_blank") Explore
+			// demo 4
+			.demo-item.m-bottom-xs-30
+				a(href="../demo4/index.html" target="_blank")
+					img.demo-thumb.pull-right(
+						alt="alt image"
+						src="assets/img/demos/06.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+					).pull-up-120.pull-up-xs-0
+				.demo-info.abs-left.bottom.text-right
+					h3.title Research Center
+					p Suitable for small to large research labs and research centers.
+					a.btn.btn-medium.btn-circle(href="../demo4/index.html" target="_blank") Explore
+			
+
+		
+
+	// pages 
+	section#index_pages.with-rotated-bg.bg-gray.slim-container
+		.rotated-wrapper
+			.ov-yellow-alpha-70.img-layer.parallax-layer(data-img-src="assets/img/bg/03.jpg")
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-6
+					.section-head.skin-dark
+						span.upper 1/9 
+						h2.title Featured Pages
+						h3.subtitle Ctrl+c & Crtl+v
+						p.m-top-30 Pages that you want to look at,<br> including homepages, directories, etc.
+				.col-sm-6
+					.icon-box.ib-v1.m-bottom-50.m-top-50.m-bottom-xs-30.m-top-xs-30
+						i.oli.oli-layers
+						h3.title Ready to Use
+						p Just copy and paste the code<br> and you have it all!
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Research Driven
+						p We continually are conducting <br>research on academic websites needs.
+	
+	// pages body
+	section.bg-gray.slim-container.ov-visible: .container
+		.section-side-title
+			h3.title Pages
+			h4.subtitle copy & paste
+
+		.row.multi-columns-row.col-margin-bottom-30.pull-up-100.pull-up-xs-0.p-top-xs-30
+			.col-sm-6(
+					data-0-top-bottom="transform[sqrt]:translate3d(0,-20px,0)"
+					data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+				)
+				.ol-viewer
+					img(src="assets/img/demos/homepages/01.jpg" alt="alt image")
+					.info
+						h3.title Book Landing Page
+						p Got a book to promote?<br> Try this specific page then.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-8.html" target="_blank") Explore
+
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,110px,0);"
+			)
+				.ol-viewer.leftside
+					img(src="assets/img/demos/homepages/02.jpg" alt="alt image")
+					.info
+						h3.title E-learning
+						p A homepage for e-learning and<br> online course websites.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-9.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-20px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,120px,0);"
+
+			)
+				.ol-viewer
+					img(src="assets/img/demos/homepages/03.jpg" alt="alt image")
+					.info
+						h3.title Portfolio & Show case
+						p Suitable to showcase your<br> projects and researches.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-6.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-20px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+				.ol-viewer.leftside
+					img(src="assets/img/demos/homepages/04.jpg" alt="alt image")
+					.info
+						h3.title Portfolio & Show case
+						p p Suitable to showcase your<br> projects and researches.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-7.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,80px,0);"
+			)
+				.ol-viewer
+					img(src="assets/img/demos/homepages/05.jpg" alt="alt image")
+					.info
+						h3.title Laboratory Home
+						//- p Suitable for large list of people<br> in case you just want to list.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-5.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-15px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+				.ol-viewer.leftside
+					img(src="assets/img/demos/homepages/06.jpg" alt="alt image")
+					.info
+						h3.title Laboratory Home
+						//- p Suitable for large list of people<br> in case you just want to list.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-1.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-10px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+				.ol-viewer
+					img(src="assets/img/demos/homepages/07.jpg" alt="alt image")
+					.info
+						h3.title Laboratory Home
+						ul.list-unstyled.m-bottom-30
+							li Vimeo Hero Background
+							li Boxed layout
+
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-3.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-10px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,90px,0);"
+			)
+				.ol-viewer.leftside
+					img(src="assets/img/demos/homepages/08.jpg" alt="alt image")
+					.info
+						h3.title University Group
+						ul.list-unstyled.m-bottom-30
+							li Video lightbox
+							li People
+							li Projects
+							li News
+							li Testimonials
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-2.html" target="_blank") Explore
+
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-15px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+				.ol-viewer
+					img(src="assets/img/demos/homepages/09.jpg" alt="alt image")
+					.info
+						h3.title Institution
+						p A simple homepage for academic institutions.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/homepages/home-4.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-10px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,90px,0);"
+			)
+				.ol-viewer.leftside
+					img(alt="alt image" src="assets/img/demos/homepages/10.jpg")
+					.info
+						h3.title Publications Directory
+						p All your publications in a nice one page fasion.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/academia/publications/pub-list-5.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-20px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,80px,0);"
+			)
+				.ol-viewer
+					img(alt="alt image" src="assets/img/demos/homepages/11.jpg")
+					.info
+						h3.title People Directory
+						p It can be students, staff, professors, alumni, etc.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/academia/people/list-3.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+				.ol-viewer.leftside
+					img(alt="alt image" src="assets/img/demos/homepages/12.jpg")
+					.info
+						h3.title Course Directory
+						p List of available courses on your website.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/courses/course-grid.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,80px,0);"
+			)
+				.ol-viewer
+					img(alt="alt image" src="assets/img/demos/homepages/13.jpg")
+					.info
+						h3.title Academic Events
+						p A nead design for your event list.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/academia/events/events-list-1.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-10px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,90px,0);"
+			)
+				.ol-viewer.leftside
+					img(alt="alt image" src="assets/img/demos/homepages/14.jpg")
+					.info
+						h3.title Seminar Page
+						p Details about a seminar or workshop
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/academia/events/events-single-2.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-15px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+				.ol-viewer
+					img(alt="alt image" src="assets/img/demos/homepages/15.jpg")
+					.info
+						h3.title Faculty Profile
+						p Profile page of faculty and staff.
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../main/academia/people/single-1.html" target="_blank") Explore
+			
+			.col-sm-6(
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-20px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,120px,0);"
+			)
+				.ol-viewer.leftside
+					img(alt="alt image" src="assets/img/demos/homepages/16.jpg")
+					.info
+						h3.title Program & Agenda
+						p Details about your event
+						a.btn.btn-medium.btn-circle.btn-skin-red(href="../demo6/program.html" target="_blank") Explore
+			// sence
+			.ol-viewer-scene
+		.sp-blank-100.sp-blank-sm-30
+	
+	// shortcodes
+	section#index_features.section.slim-container
+		.img-layer.parallax-layer(data-img-src="assets/img/bg/04.jpg")
+		.container
+			.inner-wrapper
+				.row
+					.col-sm-8
+						.section-head.skin-dark
+							span.upper 2/9 
+							h2.title 100+ Shortcodes
+							h3.subtitle Ready to use 
+						p.m-bottom-30 Wide variety of UI elements <br> Ready to use!
+					.col-sm-6.col-md-4.abs-right.bottom
+							.icon-box.ib-v1
+								i.oli.oli-layers
+								h3.title 350+ Hand-Picked Icons
+								p Suitable for large list of people<br> in case you just want to list.
+			.sp-blank-60
+			.row.multi-columns-row.col-margin-bottom-60.col-margin-bottom-sm-30
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title IconBoxes
+						p This is a sample of iconbox<br> an icon followed by a title.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Pricing Tables
+						p Show features and prices<br> of your priceless services.
+				.col-sm-6.col-md-4
+						.icon-box.ib-v1
+							i.oli.oli-layers
+							h3.title Gallery
+							p Little thumbnails on page<br> will lead to fullscreen.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Timeline
+						p Time related items grouped<br> together in a nice way.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Tabs & Accordions
+						p Beautiful tabs and accordions<br> or eveb toggles.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Progress Bars
+						p Show progress of your work<br> 50% or 90% ?!.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Form Elements
+						p Powered by Booststrap framework<br> you can use them all.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Lightboxes
+						p Click on an anchor link or image<br> get a fullscreen space.
+				.col-sm-6.col-md-4
+						.icon-box.ib-v1
+							i.oli.oli-layers
+							h3.title Charts
+							p Show your data or statistics<br> in a better way.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Testimonials
+						p Got recommendations from experts?<br> Here is a nice way to show.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Partners
+						p Display a list of logos<br> from partners or sponsors.
+				.col-sm-6.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Call to actions
+						p Encourage people to go to a page<br> in a chaotic fasion.
+
+
+	.sp-blank-100.sp-blank-sm-0
+	// publications Head
+	section.with-rotated-bg.reverse.slim-container
+		.rotated-wrapper
+			.ov-grad7-alpha-100.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-6
+					.section-head.skin-light
+						span.upper 3/9 
+						h2.title Publications
+						h3.subtitle Directory
+					p This includes conferences, seminars,<br> workshops, education.
+	// publications body
+	section.section.bg-transparent.slim-container: .container.p-right-100.p-left-100
+		.demo-item.m-bottom-60.m-bottom-xs-30.pull-up-250.pull-up-xs-0
+			img.demo-thumb.pull-right(
+				alt="alt image"
+				src="assets/img/demos/07.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-30px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+			.demo-info.abs-left.bottom.text-right
+				h3.title Publications Series
+				p A page representing your series in carousels and grids.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/publications/pub-series-1.html") Explore
+	
+		.demo-item.m-bottom-60.m-bottom-xs-30
+			img.demo-thumb(
+				alt="alt image"
+				src="assets/img/demos/08.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-50px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,130px,0);"
+				)
+			.demo-info.abs-right.bottom
+				h3.title One Page list
+				p Suitable for 20-50 publications, showing them all in a single page
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/publications/pub-list-5.html") Explore
+		
+		.demo-item
+			img.demo-thumb.pull-right(
+				alt="alt image"
+				src="assets/img/demos/09.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-30px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+			.demo-info.abs-left.bottom.text-right
+				h3.title Paginated Lists
+				p Got hundreds of publications in various categories, try this one.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/publications/pub-list-2.html") Explore
+
+
+	.sp-blank-100.sp-blank-sm-0
+	// People
+	section.with-rotated-bg.reverse.slim-container
+		.rotated-wrapper
+			.ov-grad8-alpha-100.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-6
+					.section-head.skin-light
+						span.upper 4/9 
+						h2.title Faculty & Staff
+						h3.subtitle Directory
+					p.skin-light This includes conferences, seminars,<br> workshops, education.
+	// People body
+	section.section.bg-transparent.slim-container
+
+		.container
+			.text-center.pull-up-280.pull-up-xs-0
+				img(
+					alt="alt image" 
+					src="assets/img/demos/10.png"
+					data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+					data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+				)
+			.sp-blank-60
+			.row
+				.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Small
+						p Suitable for small list of people just listed as reference.
+						a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/people/list-1.html") Explore
+				.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Large
+						p Suitable for large list of  with categories.
+						a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/people/list-7.html") Explore
+				.col-md-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Medium
+						p Suitable for medium list of people with categories.
+						a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/people/list-3.html") Explore
+			.sp-blank-100
+
+			.section-head
+					h2.title Academic Profiles
+					h3.subtitle Professors & Students
+			.sp-blank-20
+		.container.p-right-100.p-left-100
+			.demo-item
+				img.demo-thumb(
+					alt="alt image"
+					src="assets/img/demos/11.jpg"
+					data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+					data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+				)
+				.demo-info.abs-right.top.text-left.m-top-20
+					h3.title Prefessor Profile
+					p Professors, Lab managers and special people.
+					a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/people/single-1.html") Explore
+
+			.demo-item
+				img.demo-thumb.pull-right(
+					alt="alt image"
+					src="assets/img/demos/12.jpg"
+					data-0-top-bottom="transform[sqrt]:translate3d(0,-30px,0)"
+					data-0-bottom-top="transform[sqrt]:translate3d(0,250px,0);"
+				).pull-up-120.pull-up-xs-0
+				.demo-info.abs-left.bottom.text-right
+					h3.title Staff & Students Profile
+					p Students, staff, alumni, or other academics.
+					a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/people/single-1.html") Explore
+
+
+	.sp-blank-100.sp-blank-sm-0
+	// E-learning
+	section.with-rotated-bg.reverse.slim-container
+		.rotated-wrapper
+			.ov-grad9-alpha-100.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-6
+					.section-head.skin-light
+						span.upper 5/9 
+						h2.title E-Learning
+						h3.subtitle Learning Management System (LMS)
+					p Course, course management<br> lessons, education.
+	// E-learning body
+	section.section.bg-transparent.slim-container: .container.p-right-100.p-left-100
+		.demo-item.pull-up-280.pull-up-xs-0
+			img.demo-thumb.pull-right(
+				alt="alt image"
+				src="assets/img/demos/13.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-60px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,50px,0);"
+			)
+
+		.demo-item
+			img.demo-thumb(
+				alt="alt image"
+				src="assets/img/demos/14.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,200px,0);"
+			).pull-up-220.pull-up-xs-0
+			.demo-info.abs-right.bottom.text-left.p-bottom-0
+				h3.title Course Lists
+				p Paginated list of courses in a grid fasion or conventional way.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/courses/course-grid.html") Grid
+				span.p-right-15
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/courses/course-regular-list.html") Regular
+		.sp-blank-80
+		.demo-item
+			img.demo-thumb.pull-right(
+				alt="alt image"
+				src="assets/img/demos/15.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+			.demo-info.abs-left.bottom.text-right
+				h3.title Functional Course Page
+				p Suitable for academic conferences, seminars, workshops and any other event websites.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/courses/course-single.html") Explore
+
+
+	.sp-blank-100.sp-blank-sm-0
+	// Events
+	section.with-rotated-bg.reverse.slim-container
+		.rotated-wrapper
+			.ov-grad10-alpha-100.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-6
+					.section-head.skin-light
+						span.upper 6/9
+						h2.title Scalable Events
+						h3.subtitle Conference & Workshop
+					p From a simple meeting to<br> workshops, seminars and conferences.
+	// Events body
+	section.section.bg-transparent.slim-container: .container.p-right-100.p-left-100
+		.demo-item.m-bottom-60.m-bottom-xs-30.pull-up-280.pull-up-xs-0
+			img.demo-thumb.pull-right(
+				alt="alt image"
+				src="assets/img/demos/16.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-50px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+			.demo-info.abs-left.bottom.text-right
+				h3.title List of Events on the Table
+				p Awesome Event directory for any kind of academic events.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/events/events-list-1.html") Explore
+	
+		.demo-item.m-bottom-60.m-bottom-xs-30
+			img.demo-thumb(
+				alt="alt image"
+				src="assets/img/demos/17.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+			)
+			.demo-info.abs-right.bottom
+				h3.title Choose from other 2 Types of List
+				p Other variations of Events list.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/events/events-list-2.html") var 1
+				span.p-right-15
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/events/events-list-3.html") var 2
+
+		.demo-item.m-bottom-60.m-bottom-xs-30
+			img.demo-thumb.pull-right(
+				alt="alt image"
+				src="assets/img/demos/18.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,150px,0);"
+			)
+			.demo-info.abs-left.bottom.text-right
+				h3.title Stunning <br>Seminar Landing Page
+				p Single page for seminars, conferences and workshops.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/events/events-single-2.html") Explore
+	
+		.demo-item.m-bottom-60.m-bottom-xs-30
+			img.demo-thumb(
+				alt="alt image"
+				src="assets/img/demos/19.jpg"
+				data-0-top-bottom="transform[sqrt]:translate3d(0,-50px,0)"
+				data-0-bottom-top="transform[sqrt]:translate3d(0,150px,0);"
+			)
+			.demo-info.abs-right.bottom
+				h3.title General Event Page
+				p Single page for general types of events.
+				a.btn.btn-medium.btn-circle(target="_blank" href="../main/academia/events/events-single-1.html") Explore
+	
+
+	// portfolio
+	section.with-rotated-bg.bg-gray.slim-container.m-top-0
+		.rotated-wrapper
+			.ov-dark-alpha-100.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-5
+					.section-head.skin-light
+						span.upper 7/9 
+						h2.title Portfolio
+						h3.subtitle Your Projects
+					p.skin-light Showcase of your researchs<br> projects, works.
+					a.btn.btn-small.btn-circle(target="_blank" href="../main/portfolio/portfolio-mix-3.html") Explore
+				.col-sm-7
+					img.demo-thumb.pull-up-70.pull-up-xs-0(
+						alt="alt image"
+						src="assets/img/demos/20.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,-50px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,350px,0);"
+					)
+		
+	section.slim-container.pull-up-100.pull-up-xs-0.p-top-xs-40.p-bottom-xs-40
+		.container: .row
+			.col-md-4
+				.icon-box.ib-v1
+					i.oli.oli-layers
+					h3.title 10+ Grid Styles
+					p Choose from various styles<br> of grids, mix or simple.
+					
+			.col-md-4
+				.icon-box.ib-v1
+					i.oli.oli-layers
+					h3.title 5+ Hover Effects
+					p Choose form 5+ variations of<br> hover effects.
+					
+			.col-md-4
+				.icon-box.ib-v1
+					i.oli.oli-layers
+					h3.title 4+ Single Pages
+					p Choose from 4+ variations of<br> single Pages for details.
+					
+
+	.sp-blank-150.sp-blank-sm-0
+	// Blog
+	section.with-rotated-bg.bg-gray.slim-container.m-top-0
+		.rotated-wrapper
+			.bg-light-red.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-5
+					.section-head.skin-light
+						span.upper 8/9 
+						h2.title Amazing Blog
+						h3.subtitle News & Announcement
+					p Blog! Blog! Blog!
+					a.btn.btn-small.btn-circle(target="_blank" href="../main/news/news-list-3.html") Explore
+				.col-sm-7
+					img.demo-thumb.pull-up-70.pull-up-xs-0(
+						alt="alt image"
+						src="assets/img/demos/21.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,-50px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,350px,0);"
+					)
+
+	section.slim-container.pull-up-100.pull-up-xs-0.p-top-xs-40.p-bottom-xs-40
+		.container: .row
+			.col-md-4
+				.icon-box.ib-v1
+					i.oli.oli-layers
+					h3.title 3+ List Layouts
+					p Conventional, simple, modern<br> use theme how you wish.
+					
+			.col-md-4
+				.icon-box.ib-v1
+					i.oli.oli-layers
+					h3.title 2 Post layouts
+					p Single Post can be<br> general or modern!
+					
+			.col-md-4
+				.icon-box.ib-v1
+					i.oli.oli-layers
+					h3.title 6+ Sidebar Widgets
+					p Fan od widgets?<br> these are designed with love.
+					
+
+
+	.sp-blank-150.sp-blank-sm-0
+	// ecommerce
+	section.with-rotated-bg.bg-gray.slim-container.m-top-0
+		.rotated-wrapper
+			.bg-light-yellow.img-layer
+		.inner-wrapper: .container(
+			data-400-center-center="transform[sqrt]:translate3d(0%,0px,0)"
+			data-0-bottom-top="transform[sqrt]:translate3d(5%,0px,0);"
+		)
+			.row
+				.col-sm-8
+					.section-head.skin-dark
+						span.upper 9/9 
+						h2.title E-Commerce
+						h3.subtitle Online Shop
+					p Got books or other materials to sell?<br> we got your back.
+					a.btn.btn-small.btn-circle(target="_blank" href="../main/shop/shop-list-3col.html") Explore
+				.col-sm-4
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title 3+ List Layouts
+						p 2 columns and 4 columns.<br> Oh! Forgot about 3 columns!
+					.sp-blank-40
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title Awesome Product Page
+						p General Single page to describe<br> your product and well, you know.
+					.sp-blank-40
+					.icon-box.ib-v1
+						i.oli.oli-layers
+						h3.title 4+ Sidebar Widgets
+						p Widgets are great way to <br> show little data.
+		.sp-blank-xs-30
+		.container
+			.inner-wrapper
+				.demo-item.two-col-layout
+					img.demo-thumb(
+						alt="alt image"
+						src="assets/img/demos/22.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,150px,0);"
+					)
+
+				.demo-item.two-col-layout.abs-right
+					img.demo-thumb.m-top-100.m-top-xs-0(
+						alt="alt image"
+						src="assets/img/demos/23.jpg"
+						data-0-top-bottom="transform[sqrt]:translate3d(0,0px,0)"
+						data-0-bottom-top="transform[sqrt]:translate3d(0,100px,0);"
+					)
+		.sp-blank-100.sp-blank-xs-30
+
+append footer-scripts
+	script(type='text/javascript').
+		(function($) {
+			var olViewer = {
+				init:function(){
+					this.$elem = $('.ol-viewer');
+					if (!this.$elem.length>0) return false;
+					this.viewerScene = $(".ol-viewer-scene");
+					this.$body=$('body');
+					this.$closeBtn = $('<a href="#" title="press Esc" class="ol-viewer-close-btn"><i class="oli oli-delete_sign"></i></a>');
+					this.bindUIActions();
+				},
+				bindUIActions:function(){
+					var self=this;
+					self.$body.on('click','.ol-viewer:not(".in-the-scene")',function(e){
+						e.preventDefault();
+						self.inSceneElem = $(this);
+						self.showScene($(this));
+						console.log('1');
+						
+					});
+					self.$body.on('click','.ol-viewer-close-btn',function(e){
+						e.preventDefault();
+						self.closeScene();
+					});
+
+					$(document).keyup(function(e) {
+						if (e.keyCode == 27) {
+							self.closeScene();
+						}
+					});
+
+
+				},
+				closeScene:function($elem){
+					var self=this;
+
+					$('.in-the-scene').removeClass('in-the-scene');
+
+					self.viewerScene
+						.velocity(
+							{ 
+								opacity: 0 
+							},{ 
+								display: "none",
+								duration:500,
+								delay: 200,
+								complete:function(){
+									self.inSceneElem.parent().removeClass('stay-up');
+								}
+							});
+					self.closeBtnClone.remove();
+					$(window).off('scroll.olViewer');
+				},
+				showScene:function($elem){
+					var self=this;
+					self.closeBtnClone = self.$closeBtn.clone().appendTo($elem).fadeIn();
+					self.viewerScene.addClass('scene-shown').velocity({ opacity: 0.95 }, { display: "block" });
+					$elem.addClass("in-the-scene").parent().addClass('in-the-scene stay-up');
+					$elem
+						.velocity('scroll', {
+							duration: 200,
+							offset: -$(window).height()/2+$elem.outerHeight()/2,
+							easing: 'ease-in-out',
+							complete: function() {
+								$(window).on('scroll.olViewer',function(){
+									console.log('scrolling');
+									if (!$.inViewport($elem, -250)){
+										self.closeScene();
+									}
+								});
+							}
+						});
+				}
+			}
+
+			olViewer.init();
+			smoothScroll.init();
+			gumshoe.init({
+				activeClass: 'current-menu-item'
+			});
+		})(jQuery);

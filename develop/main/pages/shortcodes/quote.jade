@@ -1,0 +1,60 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var headerType = v2
+	- var pageTitle = "quotes and blockquotes"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+	
+block main-area
+	section.section.slim-container
+		.container
+			.row
+				.col-md-12
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Blockquote
+					// #####End heading
+					.sp-blank-10
+					
+					blockquote
+						p #{lorem}
+					.sp-line-200
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Blockquote with footer
+					// #####End heading
+					
+					.sp-blank-10
+					
+					blockquote
+						p #{lorem}
+						footer John Doe, Google Inc.
+					
+					.sp-line-200
+					
+					
+					blockquote.quote
+						p We believe that DISC-1 is schizophrenia’s Rosetta Stone gene and could hold the master key to help us unlock our understand of the role played by all risk genes involved in the disease.
+					.sp-line-200
+					
+					
+					blockquote.quote
+						p We believe that DISC-1 is schizophrenia’s Rosetta Stone gene and could hold the master key to help us unlock our understand of the role played by all risk genes involved in the disease.
+						footer John Doe, Google Inc.
+					.sp-line-200
+					
+					
+					blockquote.quote.text-center
+						p We believe that DISC-1 is schizophrenia’s Rosetta Stone gene and could hold the master key to help us unlock our understand of the role played by all risk genes involved in the disease.
+						footer John Doe, Google Inc.

@@ -1,0 +1,41 @@
+ 
+if headerType === "default"
+	// #####Begin header main area
+	.head-main
+		.container
+			//- logo
+			include header/logo
+			//- primary navigation
+			include header/menu-primary
+			//- etc
+			// #####Begin icons beside menu
+			.header-icons
+				include header/cart
+				include header/search-icon
+				include header/humburger
+			// #####End icons beside menu
+	// #####End header main area
+else 
+	// #####Begin header main area
+	.head-main.text-right.hidden-sticky
+		.container
+				// logo
+				include header/logo
+				.promotion
+					include header/v2/side-of-logo
+	// #####End header main area
+	.nav-row
+		.container
+			//- primary navigation
+			-var primaryMenuClass=''
+			.visible-sticky
+				include header/logo
+			include header/menu-primary
+		
+			//- etc
+			// #####Begin icons beside menu
+			.header-icons
+				include header/cart
+				include header/search-icon
+				include header/humburger
+			// #####End icons beside menu

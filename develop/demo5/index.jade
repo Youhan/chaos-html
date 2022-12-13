@@ -1,0 +1,244 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push(' trans dark sticky') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var pageTitle = "Home"
+	- var PageTitleHead = "My Awesome"
+	- var PageTitleDesc = ""
+	- var bcType = "false"
+	- var pageTitleClass = ''
+	- var pageTitleImage = dirPrefix+"assets/img/.jpg"
+	- var pageTitleParallaxMode = 'bg-title'
+	-loadeExtraAssets.push('revolution')
+
+block page-title
+	.page-head.auto-height
+		include /_partials/blocks/sliders/slider-d5
+
+block main-area
+	section.section.full-width.section-nopadding
+		.container
+			.row.gradient-cols-wrapper.sync-cols-height.light-grad
+				.col-md-4
+					.inner-wrapper
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-greentech
+							h3.title
+								span In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+						a.btn.btn-small.btn-round.btn-anim-drawer(href="#") read more
+				.col-md-4
+					.inner-wrapper
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-desk_lamp
+							h3.title
+								span Awesome title
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-small.btn-round.btn-anim-drawer(href="#") read more
+				.col-md-4
+					.inner-wrapper
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-rocket
+							h3.title
+								span Awesome title
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-small.btn-round.btn-anim-drawer(href="#") read more
+
+	section.section: .container
+		.heading-with-sub.text-center.m-bottom-80
+			h3.title Selected Publications
+			h4.subtitle Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+		.row.multi-columns-row.col-margin-bottom-30
+			.col-md-6
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+						.description
+							.citation 
+								| Achievements in the Life Sciences 2014
+								| <br>McTabi et. al.
+							
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+			.col-md-6
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+						.description
+							.citation 
+								| Achievements in the Life Sciences 2014
+								| <br>McTabi et. al.
+							
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+			
+			.col-md-6
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+						.description
+							.citation 
+								| Achievements in the Life Sciences 2014
+								| <br>McTabi et. al.
+							
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+			
+			.col-md-6
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+						.description
+							.citation 
+								| Achievements in the Life Sciences 2014
+								| <br>McTabi et. al.
+							
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+			
+	section
+		.owl-carousel.items.ol-theme.ol-lightbox-gallery(data-cols="6", data-loop="true", data-autoplaytime=4000)
+			a(href="assets/img/gallery/thumbs/01.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/01.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+			a(href="assets/img/gallery/thumbs/15.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/15.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/02.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/02.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/04.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/04.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/05.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/05.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/06.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/06.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/07.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/07.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/08.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/08.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/09.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/09.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/10.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/10.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/11.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/11.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/12.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/12.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/13.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/13.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+			a(href="assets/img/gallery/thumbs/14.jpg").ol-hover.hover-1.ol-lightbox
+				img(src="assets/img/gallery/thumbs/14.jpg")
+				.ol-overlay.ov-grad3-alpha-50
+					.icons
+						i.oli.oli-search
+
+	
+	section.section.bg-pattern-3
+		.container
+			.heading-with-sub.text-center
+				h2.title Recent News
+				h4.subtitle We publish news about latest changes, announcements and recent projects
+			.sp-blank-30
+			.owl-carousel.items.owwwlab-theme.nav-top-center(data-margin="30",data-nav="true", data-loop="true")
+				a.book-el.skin-blue(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Adolescent health transition
+				a.book-el.skin-theme(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Silver City
+				a.book-el.skin-yellow(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Wounded Change
+				a.book-el.skin-green(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Wheel's Atlas
+				a.book-el.skin-purple(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Ice of the Fortress
+
+
+prepend customjs
+	include /_partials/blocks/sliders/slider-d5-js
+	

@@ -1,0 +1,185 @@
+//- ----------------------------------
+//- Usage:
+//- include lorem
+//- p
+//-   mixin lorem(25)
+//- ----------------------------------
+//- new sentece after N words
+- var colonEvery = 10
+//- 175 words
+- var words = ['consectetur', 'adipiscing', 'elit', 'curabitur', 'vel', 'hendrerit', 'libero', 'eleifend', 'blandit', 'nunc', 'ornare', 'odio', 'ut', 'orci', 'gravida', 'imperdiet', 'nullam', 'purus', 'lacinia', 'a', 'pretium', 'quis', 'congue', 'praesent', 'sagittis', 'laoreet', 'auctor', 'mauris', 'non', 'velit', 'eros', 'dictum', 'proin', 'accumsan', 'sapien', 'nec', 'massa', 'volutpat', 'venenatis', 'sed', 'eu', 'molestie', 'lacus', 'quisque', 'porttitor', 'ligula', 'dui', 'mollis', 'tempus', 'at', 'magna', 'vestibulum', 'turpis', 'ac', 'diam', 'tincidunt', 'id', 'condimentum', 'enim', 'sodales', 'in', 'hac', 'habitasse', 'platea', 'dictumst', 'aenean', 'neque', 'fusce', 'augue', 'leo', 'eget', 'semper', 'mattis', 'tortor', 'scelerisque', 'nulla', 'interdum', 'tellus', 'malesuada', 'rhoncus', 'porta', 'sem', 'aliquet', 'et', 'nam', 'suspendisse', 'potenti', 'vivamus', 'luctus', 'fringilla', 'erat', 'donec', 'justo', 'vehicula', 'ultricies', 'varius', 'ante', 'primis', 'faucibus', 'ultrices', 'posuere', 'cubilia', 'curae', 'etiam', 'cursus', 'aliquam', 'quam', 'dapibus', 'nisl', 'feugiat', 'egestas', 'class', 'aptent', 'taciti', 'sociosqu', 'ad', 'litora', 'torquent', 'per', 'conubia', 'nostra', 'inceptos', 'himenaeos', 'phasellus', 'nibh', 'pulvinar', 'vitae', 'urna', 'iaculis', 'lobortis', 'nisi', 'viverra', 'arcu', 'morbi', 'pellentesque', 'metus', 'commodo', 'ut', 'facilisis', 'felis', 'tristique', 'ullamcorper', 'placerat', 'aenean', 'convallis', 'sollicitudin', 'integer', 'rutrum', 'duis', 'est', 'etiam', 'bibendum', 'donec', 'pharetra', 'vulputate', 'maecenas', 'mi', 'fermentum', 'consequat', 'suscipit', 'aliquam', 'habitant', 'senectus', 'netus', 'fames', 'quisque', 'euismod', 'curabitur', 'lectus', 'elementum', 'tempor', 'risus', 'cras', 'colus', 'miga' ]
+//- first letter to uppercase
+mixin capitalize(string)
+	= string.charAt(0).toUpperCase() + string.slice(1)
+//- begin a new sentence
+mixin beginSentence(string)
+	= '. ' 
+	mixin capitalize(string)
+- var maxWords = words.length - 1
+//- howmany: number of words in paragraph
+//- loremipsum: include the paragraph typical initiation?
+mixin lorem(howmany, loremipsum)
+	//- include lorem ipsum?
+	if loremipsum || typeof loremipsum == 'undefined'
+		= 'Lorem ipsum dolor sit amet. '
+	- for (var i = 0; i < howmany; i++) {
+		- var nextWord = words[Math.floor((Math.random()*maxWords))]
+		if (i == 0)
+			mixin capitalize(nextWord)
+		else
+			if ! parseInt(i % colonEvery) && (howmany - i > colonEvery)
+				mixin beginSentence(nextWord)
+			else
+				= ' ' + nextWord
+				if i == howmany - 1 
+					= '.'
+	- }
+//-----------------------------------
+//- 	Usage:
+//- 
+//- 	.col-md-4
+//- 	  +hov5_icon(dirPrefix+"assets/img/hovers/04.jpg","ol ol-start_filled")
+//-----------------------------------
+mixin hov5_icon(img,icon)
+	a.ol-hover.hover-5.ol-lightbox(href=img)
+		img(src=img, alt='image hover')
+		.ol-overlay.ov-light-alpha-80
+		.icons
+			i(class=(icon?icon:"fa fa-camera"))
+mixin hov5_icon_follow(img,href,icon)
+	a.ol-hover.hover-5(href=(href?href:"#"))
+		img(src=img, alt='image hover')
+		.ol-overlay.ov-light-alpha-80
+		.icons
+			i(class=(icon?icon:"fa fa-link"))
+//-----------------------------------
+//- 	Usage:
+//- 
+//- 	.col-md-4
+//-   		+hov5_title(dirPrefix+"assets/img/hovers/03.jpg","Chaos Theory")
+//-----------------------------------
+mixin hov5_title(img,title)
+	a.ol-hover.hover-5.ol-lightbox(href=img)
+		img(src=img, alt='image hover')
+		.ol-overlay.ov-light-alpha-80
+		if title
+			h3.title= title
+		else
+			h3.title
+				mixin lorem(2,'')
+mixin hov5_title_follow(img,href,title)
+	a.ol-hover.hover-5(href=(href?href:"#"))
+		img(src=img, alt='image hover')
+		.ol-overlay.ov-light-alpha-80
+		if title
+			h3.title= title
+		else
+			h3.title
+				mixin lorem(2,'')
+//-----------------------------------
+//- hov4
+//-----------------------------------
+mixin hov4(img,overlay,cover,thref,title,sthref,subtitle)
+	.ol-hover.hover-4
+		img(src=img, alt='image hover')
+		.ol-overlay(class=(overlay ? overlay : 'ov-grad1-alpha-20'))
+		.cover(class=(cover ? cover : 'ov-dark-alpha-95'))
+		.icons
+			a(href=img).ol-lightbox: i.oli.oli-search
+			a(href="#"): i.oli.oli-right
+		if title
+			h3.title: a(href=(thref?thref:"#"))=title
+		else
+			h3.title: a(href=(thref?thref:"#"))
+				mixin lorem(2,'')
+		h4.subtitle
+			if sthref
+				a(href=sthref)=(subtitle ? subtitle : "category")
+			else
+				=(subtitle ? subtitle : "category")
+//-----------------------------------
+//- hov3
+//-----------------------------------
+mixin hov3(img,overlay,cover,thref,title,sthref,subtitle)
+	.ol-hover.hover-3
+		img(src=img, alt='image hover')
+		.ol-overlay(class=(overlay ? overlay : 'ov-grad6-alpha-80'))
+		.icons
+			a(href=img).ol-lightbox: i.oli.oli-search
+			a(href="#"): i.oli.oli-right
+		if title
+			h3.title: a(href=(thref?thref:"#"))=title
+		else
+			h3.title: a(href=(thref?thref:"#"))
+				mixin lorem(2,'')
+		h4.subtitle
+			if sthref
+				a(href=sthref)=(subtitle ? subtitle : "category")
+			else
+				=(subtitle ? subtitle : "category")
+//-----------------------------------
+//- hov2
+//-----------------------------------
+mixin hov2(img,overlay,thref,title,sthref,subtitle)
+	.ol-hover.hover-2
+		img(src=img, alt='image hover')
+		.ol-overlay(class=(overlay ? overlay : 'ov-grad1-alpha-80'))
+		.icons
+			a(href=img).ol-lightbox: i.oli.oli-search
+			a(href="#"): i.oli.oli-right
+		if title
+			h3.title: a(href=(thref?thref:"#"))=title
+		else
+			h3.title: a(href=(thref?thref:"#"))
+				mixin lorem(2,'')
+		h4.subtitle
+			if sthref
+				a(href=sthref)=(subtitle ? subtitle : "category")
+			else
+				=(subtitle ? subtitle : "category")
+//-----------------------------------
+//- hov1
+//-----------------------------------
+mixin hov1(img,overlay)
+	.ol-hover.hover-1
+		img(src=img, alt='image hover')
+		.ol-overlay(class=(overlay ? overlay : 'ov-dark-alpha-80'))
+		.icons
+			a(href=img).ol-lightbox: i.oli.oli-search
+			a(href="#"): i.oli.oli-right
+//-----------------------------------
+//- ibv3
+//-----------------------------------
+mixin ibv3(icon,title,des,btn,btnHref,btnText,btnClass)
+	// #####Begin iconbox v3
+	.icon-box.ib-v3
+		i(class=(icon ? icon : 'ol ol-beaker'))
+		h3.title
+			if title
+				span=title
+			else
+				span 
+					mixin lorem(2,'')
+		if des
+			p=des
+		else
+			p
+				mixin lorem(15)
+		if btn
+			a(href=(btnHref?btnHref:"#"), class=(btnClass ? btnClass : 'btn btn-small btn-circle btn-skin-dark'))=(btnText?btnText:"Read More")
+	// #####End iconbox v3
+//-----------------------------------
+//- ibv2
+//-----------------------------------
+mixin ibv2(icon,title,des,href)
+	// #####Begin iconbox v1
+	.icon-box.ib-v2
+		a(href=(href?href:"#"))
+			i(class=(icon ? icon : 'ol ol-beaker'))
+			h3.title=(title?title:"Lorem Ipsum")
+		p
+			if des
+				= des
+			else
+				| Potenti rhoncus non quisque habitant torquent tempor enim arcu aptent.
+	// #####End iconbox v1

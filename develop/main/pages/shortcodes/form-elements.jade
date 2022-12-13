@@ -1,0 +1,83 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Form elements"
+	- var PageTitleHead = "chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	
+block main-area
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Forms
+						h3.subtitle Here is a basic form, Bootstrap style:
+					// #####End heading
+					.sp-blank-50
+					form(role='form')
+						.form-group
+							label(for='username') Username
+							input#username.form-control(type='text', name='username')
+						.form-group
+							label(for='password') Password
+							input#password.form-control(type='password', name='password')
+						input.btn.btn-small.btn-skin-red.btn-round(type='submit', value='Login')
+						input.btn.btn-small.btn-round(type='button', value='Cancel')
+	.sp-line-0
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Group Forms
+						h3.subtitle Here is a basic form, Bootstrap style:
+					// #####End heading
+					.sp-blank-50
+					form.form-horizontal(role='form')
+						.form-group
+							label.col-sm-2.control-label(for='username') Username
+							.col-sm-10
+								input#username.form-control(type='text', name='username')
+						.form-group
+							label.col-sm-2.control-label(for='password') Password
+							.col-sm-10
+								input#password.form-control(type='password', name='password')
+						.form-group
+							.col-sm-offset-2.col-sm-10
+								input.btn.btn-small.btn-round.btn-skin-blue(type='submit', value='Login')
+								input.btn.btn-small.btn-round(type='button', value='Cancel')
+	.sp-line-0
+	section.section
+		.container
+			.row
+				.col-md-8.col-md-offset-2
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Inline Forms
+						h3.subtitle Here is a basic form, Bootstrap style:
+					// #####End heading
+					.sp-blank-50
+					form.form-inline
+						.form-group
+							label.sr-only(for='exampleInputEmail3') Email address
+							input#exampleInputEmail3.form-control(type='email', placeholder='Email')
+						.form-group
+							label.sr-only(for='exampleInputPassword3') Password
+							input#exampleInputPassword3.form-control(type='password', placeholder='Password')
+						.checkbox
+							label
+								input(type='checkbox')
+								|  Remember me
+						input.btn.btn-small.btn-skin-purple(type='submit', value='Login')

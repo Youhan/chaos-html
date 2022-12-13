@@ -1,0 +1,184 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('side-header slim-container')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var pageTitle = "Chaos Demo3"
+	- var bcType = "inline"
+	- var pageTitleClass = 'h-400'
+	
+
+block page-title
+
+block main-area
+	section.section.p-top-0
+		.ol-particles.h-200
+		.container.pull-up-50
+			h2 Short Bio
+			.row
+				.col-md-8
+					p 
+						span.ol-dropcaps.square.bordered.light B
+						| iam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis.
+					p 
+						| Mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis.
+					p 
+						| Mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis.
+				.col-md-4
+						h4.with-underline Academic Positions
+						ul.with-shaded-label
+							li 
+								h3.title 
+									span.shaded-label 1999-Present
+									| Professor
+								.description
+									p Material Department <br>University of California, Santa Barbara
+							li 
+								h3.title 
+									span.shaded-label 1993-1999
+									| Senior Researcher
+								.description
+									p Department of Research and Development <br>Nichia Chemical Ind., Ltd.
+							li 
+								h3.title 
+									span.shaded-label 1988-1990
+									| Visiting Research Associate
+								.description
+									p Electronic Engineering <br>University of Florida
+			.sp-blank-50.shadow-line
+			h2.m-top-50 Selected Awards
+			p
+				| Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+
+			.row.m-top-50
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-globe
+						h6.title.with-shaded-label
+							span.shaded-label 2015
+							| Nobel Prize in Physics
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-trophy2
+						h6.title.with-shaded-label
+							span.shaded-label 2010
+							| Global innovation award
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-lightbulb
+						h6.title.with-shaded-label
+							span.shaded-label 2007
+							| World technology award
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+	
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-4
+					h2 Selected Publications
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					a.btn.btn-anim-drawer.btn-round.btn-small(href="publications.html") Read more
+				.col-md-8
+					
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+
+
+	section.section.ov-grad1-alpha-60.dark-wrapper.parallax-layer(data-img-src=dirPrefix+"assets/img/bg/04.jpg", data-parallax-mode="mode-5")
+		.container
+			// #####Begin call to action
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-9.vcenter
+					h2.title List of Publications
+					h4.sub-title Absolutely Stunning Design &amp; Functionality Common Things Expected
+				.col-sm-3.vcenter.text-center
+					a.btn.btn-medium.btn-wide.btn-trans.btn-skin-white.btn-circle(href='#') 
+						span view
+			// #####End call to action
+
+	section.section.slim-container
+			.container
+
+				h2 Research Projects
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+			
+				// #####Begin featured item
+				// #####Begin carousel
+				.owl-carousel.items.featured-items.owwwlab-theme.nav-center.m-top-50(data-cols="3" data-nav="true" data-margin="20" data-cols-md=2, data-loop="true")
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+						h3.features-title Computer Architecture
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+						h3.features-title Analysis of Algorithm
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+						h3.features-title Image Processing
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/04.jpg", alt='image')
+						h3.features-title Analysis of Algorithm
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/05.jpg", alt='image')
+						h3.features-title Computer Architecture
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/06.jpg", alt='image')
+						h3.features-title Language processing
+				// #####End carousel
+				// #####End featured item

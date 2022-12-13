@@ -1,0 +1,236 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Social Icons"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "here is an introduction to social icons variations"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+mixin list
+	li
+		a(href="#")
+			i.fa.fa-facebook
+	li
+		a(href="#")
+			i.fa.fa-twitter
+	li
+		a(href="#")
+			i.fa.fa-google-plus
+	li
+		a(href="#")
+			i.fa.fa-linkedin
+	li
+		a(href="#")
+			i.fa.fa-skype
+	li
+		a(href="#")
+			i.fa.fa-dribbble
+block main-area
+	section.section.bg-gray
+		.container
+			.row
+				
+				.col-md-4
+					h4.text-center Simple
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-small
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-large
+						+list
+					// #####End social icons
+				
+				.col-md-4
+					h4.text-center Circle
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-small.shape-circle
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-large.shape-circle
+						+list
+					// #####End social icons
+				.col-md-4
+					h4.text-center Square
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-small.shape-square
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-square
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-large.shape-square
+						+list
+					// #####End social icons
+	section.section.bg-dark.dark-wrapper
+		.container
+			.row
+				
+				.col-md-4
+					h4.text-center Simple
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-small
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-large
+						+list
+					// #####End social icons
+				
+				.col-md-4
+					h4.text-center Circle
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-small.shape-circle
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-large.shape-circle
+						+list
+					// #####End social icons
+				.col-md-4
+					h4.text-center Theme Color
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-small.shape-circle.skin-theme
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-theme
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.size-large.shape-circle.skin-theme
+						+list
+					// #####End social icons
+	section.section.bg-gray
+		.container
+			.row
+				
+				.col-md-4
+					h4.text-center Color Skins
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.skin-theme
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.skin-blue
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.skin-green
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.skin-yellow
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.skin-dark
+						+list
+					// #####End social icons
+					
+				.col-md-4
+					h4.text-center Color Skins
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-white
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-theme
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-blue
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-green
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-yellow
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.skin-dark
+						+list
+					// #####End social icons
+				.col-md-4
+					h4.text-center Hover Skins
+					hr0
+					.sp-blank-30
+					
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.hover-white
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.hover-theme
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.hover-blue
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.hover-green
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.hover-yellow
+						+list
+					// #####End social icons
+					// #####Begin social icons
+					ul.m-bottom-25.text-center.social-icons.shape-circle.hover-dark
+						+list
+					// #####End social icons
+	

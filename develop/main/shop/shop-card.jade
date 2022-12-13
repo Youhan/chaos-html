@@ -1,0 +1,94 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+  - var dirPrefix = '../'
+  - var PSbodyClass = bodyClasses.push('sticky-header shop-page')
+  - var PSwrapperClasses = wrapperClasses.push('regular-layout')
+  - var PSheaderClasses = headerClasses.push(' ') 
+  - var pageTitle = "Shop - Cart"
+  - var PageTitleHead = ""
+  - var PageTitleDesc = "A Simple Shop for Your Academic Products"
+  - var pageTitleClass = 'h-250'
+  - var currentMenu = "Shop"
+block main-area
+  .section.slim-container
+    .container
+      .row
+        .col-md-12
+          table.table.table-striped.shopping-cart-table
+            tbody
+              tr
+                th.hidden-xs
+                  | Photo
+                th
+                  | Product
+                th
+                  | Q-ty
+                th
+                  | Total
+                th
+              tr
+                td.hidden-xs
+                  a(href='#')
+                    img(src=dirPrefix+'assets/img/shop/previews/item-01.jpg', alt='image')
+                td
+                  a(href='#', title='') Journal of CHAOS Science!
+                td
+                  form.form
+                    input.form-control(type='number', style='width: 60px;', min='1', max='100', value='1')
+                td
+                  | $25.99
+                td
+                  a(href='')
+                    i.fa.fa-times 
+                    span.hidden-xs Remove
+              tr
+                td.hidden-xs
+                  a(href='')
+                    img(src=dirPrefix+'assets/img/shop/previews/item-01.jpg', alt='image')
+                td
+                  a(href='#', title='') CHAOS Anual Reports
+                td
+                  form.form
+                    input.form-control(type='number', style='width: 60px;', min='1', max='100', value='1')
+                td
+                  | $30.00
+                td
+                  a(href='')
+                    i.fa.fa-times 
+                    span.hidden-xs Remove
+          .sp-line-50
+          .row
+            .col-sm-8
+              form.form.form-inline(action='#')
+                input.form-control(placeholder='Coupon code', style='width: 250px;', type='text', pattern='.{3,100}', required='')
+                button.btn.btn-skin-red.btn-small(type='submit') Apply Coupon
+            .col-sm-4.update-cart-button
+              div
+                a.btn.btn.btn-skin-dark.btn-small(href='') Update Cart
+          .sp-line-50
+          .row
+            .col-sm-6
+              h3 Calculate Shipping
+              form.form(action='#')
+                .m-bottom-10
+                  select.input-md.form-control
+                    option Select Country
+                    option France
+                    option Ukraine
+                    option USA
+                .m-bottom-10
+                  input.form-control(placeholder='State', type='text', pattern='.{3,100}')
+                .m-bottom-10
+                  input.form-control(placeholder='Postcode / Zip', type='text', pattern='.{3,100}')
+            .col-sm-6.text.text-right
+              div
+                | Cart subtotal: 
+                strong $45.95
+              .m-bottom-10
+                | Shipping: 
+                strong $30.00
+              .lead
+                | Order Total: 
+                strong $75.99
+              div
+                a.btn.btn-skin-dark.btn-large(href='#') Proceed to Checkout

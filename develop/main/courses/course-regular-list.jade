@@ -1,0 +1,264 @@
+extends ../../_layouts/lo-normal/right_sidebar
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "All Courses"
+	- var PageTitleHead = "Chaos LMS"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-300 parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/18.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Courses"
+block main-area
+	section
+			form.search-box.inline-filters.m-bottom-20
+				.row.form-inline
+					.col-sm-10.col-xs-8.form-group.with-filter
+						input.form-control(type='text', placeholder='Search', name="q")
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+							i.icon.oi-filter
+					.col-sm-2.col-xs-4.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Event Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple', name="type")
+								option(value='')
+								option(value='Conference') Conference
+								option(value='Seminar') Seminar
+								option(value='Concert') Concert
+								option(value='Workshop') Workshop
+								option(value='Talk') Talk
+								option(value='Celebration') Celebration
+								option(value='Lecture') Lecture
+								option(value='Film') Film
+								option(value='Exhibit') Exhibit
+						.form-group
+							label Target audiences:
+							select.selectize(data-placeholder='Select Year', multiple='multiple', name="targets")
+								option(value='') 
+								option(value='children') Children
+								option(value='friends-of-the-university') Friends of the University
+								option(value='general-public') General Public
+								option(value='faculty') Faculty
+								option(value='staff') Staff
+								option(value='graduate-students') Graduate Students
+								option(value='under-graduate-students') Under Graduate Students
+					.col-sm-6
+						.form-group
+							label Date From:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="datefrom")
+						.form-group
+							label Date To:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="dateto")
+			
+			// #####Begin course element
+			.course-el-regular
+				.row
+					.col-md-4
+						a.course-thumb.set-bg(href='course-single.html')
+							img(src=dirPrefix+"assets/img/courses/07.jpg")
+					.col-md-8
+						.contents
+							h2.title
+								a(href='course-single.html') How to Become an PhD Candidate
+							ul.course-meta
+								li
+									.authors-thumb
+										img(src=dirPrefix+"assets/img/avatars/01.jpg")
+									.course-instructor
+										span Teacher
+										span Multiple
+								li 
+									span Reviews (3)
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+								li
+									span Category
+									span Life Science
+								li
+									span Students
+									span 281
+							.description
+								p
+									| The beauty of astronomy is that anybody can do it. From the tiniest baby to the most advanced astrophysicist, there is something for anyone who wants to enjoy astronomy.
+								
+								a.course-purchase-btn(href='course-single.html')
+										i.oli.oli-shopping_bag_filled
+										span 299$
+			// #####End course element
+			hr
+			// #####Begin course element
+			.course-el-regular
+				.row
+					.col-md-4
+						a.course-thumb.set-bg(href='course-single.html')
+							img(src=dirPrefix+"assets/img/courses/08.jpg")
+					.col-md-8
+						.contents
+							h2.title
+								a(href='course-single.html') How to Become an PhD Candidate
+							ul.course-meta
+								li
+									.authors-thumb
+										img(src=dirPrefix+"assets/img/avatars/01.jpg")
+									.course-instructor
+										span Teacher
+										span Multiple
+								li 
+									span Reviews (3)
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+								li
+									span Category
+									span Life Science
+								li
+									span Students
+									span 281
+							.description
+								p
+									| The beauty of astronomy is that anybody can do it. From the tiniest baby to the most advanced astrophysicist, there is something for anyone who wants to enjoy astronomy.
+								
+								a.course-purchase-btn(href='course-single.html')
+										i.oli.oli-shopping_bag_filled
+										span 299$
+			// #####End course element
+			hr
+			// #####Begin course element
+			.course-el-regular
+				.row
+					.col-md-4
+						a.course-thumb.set-bg(href='course-single.html')
+							img(src=dirPrefix+"assets/img/courses/09.jpg")
+					.col-md-8
+						.contents
+							h2.title
+								a(href='course-single.html') How to Become an PhD Candidate
+							ul.course-meta
+								li
+									.authors-thumb
+										img(src=dirPrefix+"assets/img/avatars/01.jpg")
+									.course-instructor
+										span Teacher
+										span Multiple
+								li 
+									span Reviews (3)
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+								li
+									span Category
+									span Life Science
+								li
+									span Students
+									span 281
+							.description
+								p
+									| The beauty of astronomy is that anybody can do it. From the tiniest baby to the most advanced astrophysicist, there is something for anyone who wants to enjoy astronomy.
+								
+								a.course-purchase-btn(href='course-single.html')
+										i.oli.oli-shopping_bag_filled
+										span 299$
+			// #####End course element
+			hr
+			// #####Begin course element
+			.course-el-regular
+				.row
+					.col-md-4
+						a.course-thumb.set-bg(href='course-single.html')
+							img(src=dirPrefix+"assets/img/courses/10.jpg")
+					.col-md-8
+						.contents
+							h2.title
+								a(href='course-single.html') How to Become an PhD Candidate
+							ul.course-meta
+								li
+									.authors-thumb
+										img(src=dirPrefix+"assets/img/avatars/01.jpg")
+									.course-instructor
+										span Teacher
+										span Multiple
+								li 
+									span Reviews (3)
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+								li
+									span Category
+									span Life Science
+								li
+									span Students
+									span 281
+							.description
+								p
+									| The beauty of astronomy is that anybody can do it. From the tiniest baby to the most advanced astrophysicist, there is something for anyone who wants to enjoy astronomy.
+								
+								a.course-purchase-btn(href='course-single.html')
+										i.oli.oli-shopping_bag_filled
+										span 299$
+			// #####End course element
+			hr
+			// #####Begin course element
+			.course-el-regular
+				.row
+					.col-md-4
+						a.course-thumb.set-bg(href='course-single.html')
+							img(src=dirPrefix+"assets/img/courses/11.jpg")
+					.col-md-8
+						.contents
+							h2.title
+								a(href='course-single.html') How to Become an PhD Candidate
+							ul.course-meta
+								li
+									.authors-thumb
+										img(src=dirPrefix+"assets/img/avatars/01.jpg")
+									.course-instructor
+										span Teacher
+										span Multiple
+								li 
+									span Reviews (3)
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+								li
+									span Category
+									span Life Science
+								li
+									span Students
+									span 281
+							.description
+								p
+									| The beauty of astronomy is that anybody can do it. From the tiniest baby to the most advanced astrophysicist, there is something for anyone who wants to enjoy astronomy.
+								
+								a.course-purchase-btn(href='course-single.html')
+										i.oli.oli-shopping_bag_filled
+										span 299$
+							
+			// #####End course element
+			.sp-blank-50
+			include ../../_partials/blocks/paginations/lined		
+block sidebar-1
+	include /_partials/blocks/pages/sidebar-course

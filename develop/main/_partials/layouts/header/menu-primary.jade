@@ -1,0 +1,431 @@
+// #####Begin primary menu
+ul#primary-menu(class=primaryMenuClass)
+	+primarymenu([
+		{
+			'title'		: 'Home', 
+			'href'		: 'index.html',
+			'submenuclass': '',
+			'isMegamenu' 	: true,
+			'menu'   		: {'slug':'home','classes'  : ''}
+		},
+		{
+			'title'			: 'Pages', 
+			'href'			:'pages/index.html',
+			'submenuclass'  : '',
+			'childs': [
+				{
+					'title' : 'Layout Variations',
+					'href' 	: 'pages/layouts/layout-boxed-fullwidth.html',
+					'childs': [
+						{
+							'title' : 'Regular Layout',
+							'href' 	: '#',
+							'childs': [
+								{
+									'title' : 'Fullwidth',
+									'href' 	: 'pages/layouts/layout-regular-fullwidth.html'
+								},
+								{
+									'title' : 'sidebar right',
+									'href' 	: 'pages/layouts/layout-regular-rightsidebar.html'
+								},
+								{
+									'title' : 'sidebar left',
+									'href' 	: 'pages/layouts/layout-regular-leftsidebar.html'
+								},
+								{
+									'title' : 'double sidebar right',
+									'href' 	: 'pages/layouts/layout-regular-doublerightsidebar.html'
+								},
+								{
+									'title' : 'double sidebar left',
+									'href' 	: 'pages/layouts/layout-regular-doubleleftsidebar.html'
+								},
+								{
+									'title' : 'double sidebaer',
+									'href' 	: 'pages/layouts/layout-regular-rightleftsidebar.html'
+								},
+							]
+						},
+						{
+							'title' : 'Boxed Layout',
+							'href' 	: '#',
+							'childs': [
+								{
+									'title' : 'Fullwidth padding',
+									'href' 	: 'pages/layouts/layout-boxed-fullwidth-padding.html'
+								},
+								{
+									'title' : 'sidebar right',
+									'href' 	: 'pages/layouts/layout-boxed-rightsidebar.html'
+								},
+								{
+									'title' : 'sidebar left',
+									'href' 	: 'pages/layouts/layout-boxed-leftsidebar.html'
+								},
+								{
+									'title' : 'double sidebar right',
+									'href' 	: 'pages/layouts/layout-boxed-doublerightsidebar.html'
+								},
+								{
+									'title' : 'double sidebar left',
+									'href' 	: 'pages/layouts/layout-boxed-doubleleftsidebar.html'
+								},
+								{
+									'title' : 'double sidebaer',
+									'href' 	: 'pages/layouts/layout-boxed-rightleftsidebar.html'
+								},
+							]
+						},
+						{
+							'title' : 'Side Header Layout',
+							'href' 	: '#',
+							'childs': [
+								{
+									'title' : 'Light skin',
+									'href' 	: 'pages/layouts/layout-side-light.html'
+								},
+								{
+									'title' : 'Dark skin',
+									'href' 	: 'pages/layouts/layout-side-dark.html'
+								}
+							]
+						},
+					]
+				},
+				{
+					'title' : 'Header Variations',
+					'href' 	: '#',
+					'childs': [
+						{
+							'title' : 'Default Header',
+							'href' 	: 'pages/headers/header-v1-default.html',
+							'childs': [
+								{
+									'title' : 'light',
+									'href' 	: 'pages/headers/default/light.html'
+								},
+								{
+									'title' : 'dark',
+									'href' 	: 'pages/headers/default/dark.html'
+								},
+								{
+									'title' : 'None Sticky',
+									'href' 	: 'pages/headers/default/none-sticky.html'
+								},
+								{
+									'title' : 'Fullwidth',
+									'href' 	: 'pages/headers/default/fullwidth.html'
+								},
+								{
+									'title' : 'Narrow Header',
+									'href' 	: 'pages/headers/default/thin.html'
+								},
+								{
+									'title' : 'Thick Header',
+									'href' 	: 'pages/headers/default/thick.html'
+								},
+								{
+									'title' : 'Transparent',
+									'href' 	: 'pages/headers/default/transparent.html'
+								},
+								{
+									'title' : 'Transparent Dark',
+									'href' 	: 'pages/headers/default/transparent-dark.html'
+								},
+								{
+									'title' : 'Semi-Transparent',
+									'href' 	: 'pages/headers/default/semi-transparent.html'
+								},
+								{
+									'title' : 'Semi-Transparent Dark',
+									'href' 	: 'pages/headers/default/semi-transparent-dark.html'
+								},
+								
+							]
+						},
+						{
+							'title' : 'header v2',
+							'href' 	: '#',
+							'childs': [
+								{
+									'title' : 'light',
+									'href' 	: 'pages/headers/two-level/light.html'
+								},
+								{
+									'title' : 'dark',
+									'href' 	: 'pages/headers/two-level/dark.html'
+								},
+								{
+									'title' : 'thin',
+									'href' 	: 'pages/headers/two-level/thin.html'
+								},
+								{
+									'title' : 'Thick ',
+									'href' 	: 'pages/headers/two-level/thick.html'
+								},
+								{
+									'title' : 'Non-Sticky Header',
+									'href' 	: 'pages/headers/two-level/nonesticky.html'
+								},
+								{
+									'title' : 'Fullwidth',
+									'href' 	: 'pages/headers/two-level/fullwidth.html'
+								}
+							]
+							
+						}
+					]
+				},
+				{
+					'title' : 'Page Title Variations',
+					'href' 	: '#',
+					'childs': [
+						{
+							'title' : 'Title - Default',
+							'href' 	: 'pages/page-titles/page-title-default.html',
+						},
+						{
+							'title' : 'Title - Lined',
+							'href' 	: 'pages/page-titles/page-title-lined.html',
+						},
+						{
+							'title' : 'Title - Dark',
+							'href' 	: 'pages/page-titles/page-title-dark.html',
+						},
+						{
+							'title' : 'Title - Gradient',
+							'href' 	: 'pages/page-titles/page-title-gradient.html',
+						},
+						{
+							'title' : 'Title - FullScreen',
+							'href' 	: 'pages/page-titles/page-title-fullscreen.html',
+						},
+						{
+							'title' : 'Parallax Title',
+							'href' 	: 'pages/page-titles/page-title-parallax-1.html',
+						},
+						{
+							'title' : 'Parallax Bg',
+							'href' 	: 'pages/page-titles/page-title-parallax-2.html',
+						},
+						{
+							'title' : 'Parallax Awesome!',
+							'href' 	: 'pages/page-titles/page-title-parallax-3.html',
+						},
+						{
+							'title' : 'Title - Particles',
+							'href' 	: 'pages/page-titles/page-title-particles.html',
+						},
+					]
+				},
+				{
+					'title' : 'Footers',
+					'href' 	: 'pages/footers/footer-l-1.html',
+					'childs': [
+						{
+							'title' : 'Layout 1',
+							'href' 	: 'pages/footers/footer-l-1.html',
+						},
+						{
+							'title' : 'Layout 2',
+							'href' 	: 'pages/footers/footer-l-2.html',
+						},
+						{
+							'title' : 'Layout 3',
+							'href' 	: 'pages/footers/footer-l-3.html',
+						},
+						{
+							'title' : 'Light footer example',
+							'href' 	: 'pages/footers/footer-l-4.html',
+						},
+					]
+				},
+				{
+					'title' : 'General Pages',
+					'href' 	: '#',
+					'childs': [
+						{
+							'title' : 'contact page',
+							'href' 	: 'pages/general/contact-1.html'
+						},
+						{
+							'title' : 'contact page -2',
+							'href' 	: 'pages/general/contact-2.html'
+						},
+						{
+							'title' : '404',
+							'href' 	: 'pages/general/404.html'
+						},
+						{
+							'title' : '404 (2)',
+							'href' 	: 'pages/general/404-2.html'
+						},
+						{
+							'title' : 'Maintenance mode',
+							'href' 	: 'pages/general/maintenance.html'
+						},
+						{
+							'title' : 'Login / Register',
+							'href' 	: 'pages/general/login.html'
+						},
+					]
+				}
+			]
+
+		},
+		{
+			'title'	: 'Shortcodes', 
+			'href'	: '#',
+			'submenuclass': '',
+			'isMegamenu' 	: true,
+			'menu'   		: {'slug':'shortcodes','classes'  : ''}
+		},
+		{
+			'title'	: 'Academia', 
+			'href'	: '#',
+			'submenuclass': '',
+			'isMegamenu' 	: true,
+			'menu'   		: {'slug':'academics','classes'  : ''}
+		},
+		{
+			'title'		: 'Courses', 
+			'href'		: '#',
+			'childs' 	: [
+				{
+					'title'	: 'Grid List', 
+					'href'	: 'courses/course-grid.html'
+				},
+				{
+					'title'	: 'Grid with Sidebar', 
+					'href'	: 'courses/course-grid-sidebar.html'
+				},
+				{
+					'title'	: 'Regular List', 
+					'href'	: 'courses/course-regular-list.html'
+				},
+				{
+					'title'	: 'Single Course', 
+					'href'	: 'courses/course-single.html'
+				}
+			]
+		},
+		{
+			'title'	: 'Work', 
+			'href'	: '#',
+			'submenuclass': '',
+			'isMegamenu' 	: true,
+			'menu'   		: {'slug':'portfolio','classes'  : ''}
+		},
+		{
+			'title'		: 'Blog', 
+			'href'		: '#',
+			'childs' 	: [
+				{
+					'title'	: 'Grid List 3-col', 
+					'href'	: 'news/news-list-1.html'
+				},
+				{
+					'title'	: 'Grid List 4-col', 
+					'href'	: 'news/news-list-2.html'
+				},
+				{
+					'title'	: 'Grid Alt', 
+					'href'	: 'news/news-list-3.html'
+				},
+				{
+					'title'	: 'List #1', 
+					'href'	: 'news/news-list-4.html'
+				},
+				{
+					'title'	: 'List #2', 
+					'href'	: 'news/news-list-5.html'
+				},
+				{
+					'title'	: 'Single Modern', 
+					'href'	: 'news/news-single-1.html'
+				},
+				{
+					'title'	: 'Single Regular', 
+					'href'	: 'news/news-single-2.html'
+				},
+			]
+		},
+		{
+			'title'	: 'Shop',
+			'href'	: '#',
+			'submenuclass'  : '',
+			'childs' : [
+				{
+					'title'	: '2 Columns',
+					'href'	: 'shop/shop-list-2col.html'
+				},
+				{
+					'title'	: '3 Columns',
+					'href'	: 'shop/shop-list-3col.html'
+				},
+				{
+					'title'	: '4 Columns',
+					'href'	: 'shop/shop-list-4col.html'
+				},
+				{
+					'title'	: 'Single Product',
+					'href'	: 'shop/shop-single.html'
+				},
+				{
+					'title'	: 'Shopping Cart',
+					'href'	: 'shop/shop-card.html'
+				},
+			]
+		}
+
+	])
+// #####End primary menu
+
+
+
+mixin primarymenu(items)
+	each item in items
+		+navlinks(item)
+			
+
+mixin navlinks(item)
+	- var isCurrent = false
+	- var hasChild = false
+	- var menuClass = []
+	if currentMenu === item.titlessss
+		- var isCurrent = menuClass.push(CurrentMenuClass)
+	
+	if item.childs
+		- var hasChild = menuClass.push(HasChildMenuClass)
+	
+	if item.isMegamenu
+		- var itIsMega = menuClass.push(MegamenuClass,HasChildMenuClass)
+	
+	if item.submenuclass
+		- var megaclass = menuClass.push(item.submenuclass)
+	if item.menuclass
+		- var menuclass = menuClass.push(item.menuclass)
+
+	// #####Begin menu item
+	li( class=menuClass)
+		a(href=dirPrefix+item.href, title=item.title) <span>#{item.title}</span>
+		if item.childs
+			// #####Begin submenu
+			ul(class=primarySubMenuClass)
+				each childItem in item.childs
+					+navlinks(childItem)
+			// #####End menu item
+		if item.isMegamenu && item.menu
+			// #####Begin megamenu
+			ul(class=megaMenuWrapperClass+' '+item.menu.classes)
+				+loadMega(item)
+			// #####End megamenu
+	// #####End menu item
+
+mixin loadMega(item)
+	case item.menu.slug
+		when "academics": include megamenus/academics
+		when "shortcodes": include megamenus/shortcodes
+		when "portfolio": include megamenus/portfolio
+		when "home": include megamenus/home

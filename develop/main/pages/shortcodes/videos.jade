@@ -1,0 +1,38 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+  - var dirPrefix = '../../'
+  - var PSbodyClass = bodyClasses.push('sticky-header')
+  - var PSwrapperClasses = wrapperClasses.push('regular-layout')
+  - var PSheaderClasses = headerClasses.push(' trans dark ') 
+  - var pageTitle = "Videos"
+  - var PageTitleHead = "Chaos"
+  - var PageTitleDesc = ""
+  - var pageTitleClass = 'hvh-70 dark center-it ov-dark-alpha-50 owl-videobg autoplay' 
+  - var pageTitleVid = dirPrefix+"assets/img/video/08/08.mp4"
+  
+  - var currentMenu = "Shortcodes"
+  - var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+block main-area
+    section.section.slim-container
+      .container
+        .row
+          .col-md-12
+            h2.text-center Auto-play videos
+        
+        .sp-blank-50
+        .row
+          .col-md-6
+              .owl-videobg.autoplay(data-video-src=dirPrefix+"assets/img/video/04/04.mp4")
+                
+          .col-md-6
+              .owl-videobg.autoplay(data-video-src=dirPrefix+"assets/img/video/03/03.mp4")
+        .sp-blank-100
+        .row
+          .col-md-6
+            h3 Hover-play video
+            .owl-videobg.hoverPlay(data-video-src=dirPrefix+"assets/img/video/04/04.mp4")
+                
+          .col-md-6
+            h3 Click-able Hover-play video
+            a(href="#")
+              .owl-videobg.hoverPlay(data-video-src=dirPrefix+"assets/img/video/03/03.mp4")

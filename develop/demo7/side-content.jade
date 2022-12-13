@@ -1,0 +1,52 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var customStyleName = 'demo7.css'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('trans') 
+	- var pageTitle = "Side content"
+	- var bcType = "false"
+	- var headerParallaxType = 'bg'
+	- var pageTitleClass = 'h-600 set-bg'
+	- var pageTitleImage = "assets/img/bg-light.jpg"
+	- var triggerClass = 'pull-right'
+	- var triggerType = 'side-content'
+	- var triggerDir = 'left'
+	- var headMainClass =""
+block header
+	header#header(class=headerClasses)
+		.head-main(class=headMainClass)
+			.container
+				//trigger content
+				include _partials/layouts/header/trigger-content
+prepend contents
+	section(id="side-menu" class="side-content").bg-dark
+		.close-content(data-type=triggerType).dark
+			a(href="#")
+				.oli.oli-delete_sign
+		.head-main
+			.logo-wrapper.text-center
+				// standard Logo
+				a('href'="index.html", "class"="standard-logo", "data-dark-logo"=darklogoSrc)
+					img(src='assets/img/logo/logo-light.png' , alt='Logo')
+			.sp-blank-200
+			.sp-blank-100
+		.vertical-menu.dark.text-right
+			nav
+				ul#nav.p-right-80
+					li
+						a(href="overlay-menu.html" title="Home")
+							span Overlay Menu
+					li.active
+						a(href="side-content.html" title="side content")
+							span With side content
+					li
+						a(href="side-content-push.html" title="side content push")
+							span With pushy side content
+					li
+						a(href="login-form.html" title="login form")
+							span Login Form
+		
+

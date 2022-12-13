@@ -1,0 +1,151 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Masonry 4 column"
+	- var PageTitleHead = "Portfolio"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var headerParallaxType = "bg"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-grad1-alpha-60 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/portfolio/masonry/01.jpg"
+	- var pageTitleParallaxMode = "bg-title"
+	
+	- var currentMenu = "Work"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+block main-area
+	section.section
+		.container
+			// #####Begin grid filters
+			.ol-grid-filters
+				ul.default-filters
+					li.active
+						a(href="#" data-filter="*") Show All
+					li
+						a(href="#" data-filter=".art-work") Artwork
+					li
+						a(href="#" data-filter=".banner") Banner
+					li
+						a(href="#" data-filter=".marketing") Marketing
+					li
+						a(href="#" data-filter=".design") Design
+				
+				.select-filters
+					select
+						option(value="*") Show All
+						option(value=".art-work") Artwork
+						option(value=".banner") Banner
+						option(value=".marketing") Marketing
+						option(value=".design") Design
+			// #####End grid filters
+			.ol-grid.masonry.col-4.with-gutter
+				// #####Begin grid item
+				.grid-item.art-work
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/01.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/01.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.marketing.art-work.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/02.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/02.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/03.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/03.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.art-work.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/04.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/04.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.marketing.art-work
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/05.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/05.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.marketing.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/06.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/06.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.marketing
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/07.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/07.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/08.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/08.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.marketing
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/09.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/09.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.art-work.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/10.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/10.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.marketing.design
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/01.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/01.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.banner.marketing.art-work
+					.gi-wrapper.ol-hover.hover-1
+						img(src=dirPrefix+"assets/img/portfolio/masonry/02.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/masonry/02.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+				// #####End grid item

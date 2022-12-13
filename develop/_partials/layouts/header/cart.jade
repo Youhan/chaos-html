@@ -1,0 +1,30 @@
+// #####Begin cart
+.cart
+	a(href="#")
+		i.oli.oli-shopping_cart
+		span.number 5
+	.cart-inner
+		ul.cart-items
+			li.item
+				a(href="#")
+					img(src=dirPrefix+"assets/img/shop/cart/item-1.jpg", alt="")
+				.description
+					a(href="#")
+						| book or publication name here
+						span 2x$15
+				a.oli.oli-delete_sign.cart-remove-icon(href='#')
+				.clearfix
+			li.item
+				a(href="#")
+					img(src=dirPrefix+"assets/img/shop/cart/item-2.jpg", alt="")
+				.description
+					a(href="#")
+						| book or publication name here
+						span 2x$15
+				a.oli.oli-delete_sign.cart-remove-icon(href='#')
+				.clearfix
+		.subtotal
+			h3 subtotal:
+				span $60
+			a.btn.btn-small.pull-left.btn-skin-blue.btn-block(href="#") view & checkout
+// #####End cart

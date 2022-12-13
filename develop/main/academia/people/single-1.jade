@@ -1,0 +1,370 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('')
+	- var ptType = "false"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section.parallax-layer.ov-grad5-alpha-90(data-img-src=dirPrefix+"assets/img/backgrounds/06.jpg",data-parallax-mode="mode-3")
+		.container
+			.ol-user-profile
+				.avatar
+					img(src=dirPrefix+"assets/img/people/07.jpg")
+				h1.title
+					span Dr. Mirginia 
+					| Martello
+				h2.subtitle PhD<br>General Atlantic Professor<br>Stanford University
+	section.section
+		.container
+			.row
+				.col-sm-3
+					h3.with-sideline Biography
+				.col-sm-9
+					p Prof. Dr. Peter Gmeiner (*30.05.1959) received his Ph.D. in 1986 from the University of Munich. From 1987 to 1988 he was a postdoc at the University of California in Berkeley, USA. He subsequently returned to Munich as a research associate at the Institute of Pharmaceutical Chemistry. Upon receiving his Dr. Habilitus in 1992, for which he was honored with the Johann-Wolfgang-Doberreiner prize of the DPhG (1993), he was appointed at the University of Bonn as a Professor of Pharmaceutical Chemistry declining an offer for a professorship at the University of Heidelberg, at the same time. Since October 1996, he has been chaired Full Professor of Pharmaceutical / Medicinal Chemistry at the Friedrich-Alexander University Erlangen-Nurnberg. In 2000, he declined an offer.
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-4
+					h3.with-sideline Educations
+					p Prof. Dr. Peter Gmeiner (*30.05.1959) received his Ph.D. in 1986 from the University of Munich. 
+				.col-md-8
+					.row
+						.col-sm-6
+							// #####Begin timeline
+							.ol-timeline
+								// #####Begin timeline item
+								div.tl-item.pub-item.with-icon
+									span.item-section 2015
+									.elem-wrapper
+										i.oli.oli-bookmark
+									.content-wrapper
+										h3.title Doctor of Philosophy
+										.description
+											p in Mechanical Engineering <br> Stanford University
+								// #####End timeline item
+								// #####Begin timeline item
+								div.tl-item.pub-item.with-icon
+									span.item-section 2012
+									.elem-wrapper
+										i.oli.oli-bookmark
+									.content-wrapper
+										h3.title Master of Science
+										.description
+											p in Mechanical Engineering <br> Stanford University
+								// #####End timeline item
+								// #####Begin timeline item
+								div.tl-item.pub-item.with-icon
+									span.item-section 2008
+									.elem-wrapper
+										i.oli.oli-bookmark
+									.content-wrapper
+										h3.title Bachelor of Science
+										.description
+											p in Mechanical Engineering <br> Stanford University
+								// #####End timeline item
+							// #####End timeline
+						.col-sm-6
+							// #####Begin timeline
+							.ol-timeline
+								// #####Begin timeline item
+								div.tl-item.pub-item.with-icon
+									span.item-section 2015
+									.elem-wrapper
+										i.oli.oli-bookmark
+									.content-wrapper
+										h3.title Doctor of Philosophy
+										.description
+											p in Mechanical Engineering <br> Stanford University
+								// #####End timeline item
+								// #####Begin timeline item
+								div.tl-item.pub-item.with-icon
+									span.item-section 2012
+									.elem-wrapper
+										i.oli.oli-bookmark
+									.content-wrapper
+										h3.title Master of Science
+										.description
+											p in Mechanical Engineering <br> Stanford University
+								// #####End timeline item
+								// #####Begin timeline item
+								div.tl-item.pub-item.with-icon
+									span.item-section 2008
+									.elem-wrapper
+										i.oli.oli-bookmark
+									.content-wrapper
+										h3.title Bachelor of Science
+										.description
+											p in Mechanical Engineering <br> Stanford University
+								// #####End timeline item
+							// #####End timeline
+	
+	section.no-space-grid
+		.container
+			// #####Begin extended background
+			.row.extend-bg-wrapper.no-space-grid
+				.col-md-4
+					.set-bg.extend-left
+						img.set-me(src=dirPrefix+"assets/img/backgrounds/16.jpg", alt="background-image")
+					.row
+						.col-md-9
+							.inner-wrapper.m-top-80
+								h3.with-sideline Honors and Awards
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim.
+				.col-md-8
+					// #####Begin timeline tab
+					// #####Begin timeline
+					.ol-timeline-tab.h-500(data-start-from="center",data-fade-edge="true")
+						ul.tl-head
+							li 1995
+							li 1998
+							li 2000
+							li 2005
+							li 2006
+							li 2008
+							li 2010
+							li 2013
+							li 2015
+						.tl-content
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+					// #####End timeline
+					// #####End timeline tab
+			// #####End extended background
+	section.section.bg-gray
+		.container
+			.row
+				.col-sm-3
+					h3.with-sideline Courses
+					p List of coursers that are being tought, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas.
+				.col-sm-9
+					// #####Begin featured item
+					// #####Begin carousel
+					.owl-carousel.items.featured-items.owwwlab-theme.nav-top-right(data-cols="3" data-nav="true" data-margin="30" data-cols-md=2)
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+								h3.features-title Computer Architecture
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+								h3.features-title Design and Analysis of Algorithm
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+								h3.features-title Image Processing
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+								h3.features-title Design and Analysis of Algorithm
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+								h3.features-title Computer Architecture
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+								h3.features-title Design and Analysis of Algorithm
+						a(href="#").featured-item.boxed
+								.features-image
+									img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+								h3.features-title Image Processing
+					// #####End carousel
+					// #####End featured item
+	
+	section.section.set-bg.pattern
+		img(src=dirPrefix+"assets/img/backgrounds/grey.png", alt="test" class="set-me")
+		.container
+			.row
+				.col-sm-3
+					h3.with-sideline Projects
+					p List of coursers that are being tought, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas.
+				.col-sm-9
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+									| <br>McTabi et. al.
+								
+								a.link-with-icon(href="#") 
+									i.fa.fa-external-link
+									| Publisher's website
+						
+	section.section.bg-gray
+		.container
+			.row
+				.col-sm-4
+					h3.with-sideline Socia Media
+					P Find and stay connected to be updated about  lorem ipsum odoer sit amet o ina.
+					// #####Begin social icons
+					ul.social-icons
+						li
+							a(href="#")
+								i.fa.fa-facebook
+						li
+							a(href="#")
+								i.fa.fa-twitter
+						li
+							a(href="#")
+								i.fa.fa-google
+						li
+							a(href="#")
+								i.fa.fa-linkedin
+					// #####End social icons
+				.col-sm-4
+					h3.with-sideline Personal Page
+					P My personal web page is awesome place to follow my articles about sth great.
+					a.btn.btn-small.btn-round
+						i.icon.oi-external-link
+						|go to webpage
+				.col-sm-4
+					h3.with-sideline Address
+					P 428 Woodland Drive Douglasville, GA 30134
+					P Office: +1-232-7677-9826

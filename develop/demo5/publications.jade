@@ -1,0 +1,251 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var currentMenu = "Publications"
+	- var pageTitle = "Publications"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text."
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-600 center-it parallax-layer dark ov-dark-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/06.jpg"
+	- var pageTitleParallaxMode = "bg-title"
+
+block main-area
+	section.section.section-narrow.slim-container.bg-gray
+		.container
+			.row.pull-up-160
+				.col-md-4
+					a.book-el.skin-red.shadow.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+						.contents
+							.item-meta
+								span.date 12 Oct 2015
+							.title-wrapper
+								h2.title Adolescent health transition
+				.col-md-4
+					a.book-el.skin-red.shadow.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.item-meta
+								span.date 22 Jan 2012
+							.title-wrapper
+								h2.title Cancer treatment and detection
+				.col-md-4
+					a.book-el.skin-red.shadow.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.item-meta
+								span.date 15 Dec 2001
+							.title-wrapper
+								h2.title thyroid disease symptoms
+	section.slim-container
+		.container
+			.ol-timeline.scrollable-timeline
+				div.tl-item.active.pub-item.with-thumb
+					span.item-section 2015
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/01.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span Rhoderick, Emlyn Huw, and R. H. Williams. Metal-semiconductor contacts. Oxford: Clarendon Press, 1988.
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/03.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span Hay, P. Jeffrey, and Willard R. Wadt. "Ab initio effective core potentials for molecular calculations. Potentials for the transition metal atoms Sc to Hg." The Journal of Chemical Physics 82.1 (1985): 270-283.
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/04.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2013
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/05.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/06.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/07.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2012
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/08.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/09.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2010
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/10.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/01.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/03.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2007
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/04.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/05.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/06.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/07.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al

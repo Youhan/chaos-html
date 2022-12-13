@@ -1,0 +1,417 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Icon - boxes"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+	
+block main-area
+	section.section.bg-gray
+		.container
+			.row
+				// #####Begin carousel
+				.owl-carousel.items.owwwlab-theme(data-cols="3" data-nav="true")
+					.item 
+						// #####Begin iconbox v1
+						.icon-box.ib-v2
+							a(href="#")
+								i.oli.oli-lightbulb
+								h3.title publications
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v1
+					.item 
+						// #####Begin iconbox v1
+						.icon-box.ib-v2
+							a(href="#")
+								i.oli.oli-tools
+								h3.title people
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v1
+					.item 
+						// #####Begin iconbox v1
+						.icon-box.ib-v2
+							a(href="#")
+								i.oli.oli-strategy
+								h3.title Asb!
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v1
+					.item 
+						// #####Begin iconbox v1
+						.icon-box.ib-v2
+							a(href="#")
+								i.oli.oli-beaker
+								h3.title publications
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v1
+					.item 
+						// #####Begin iconbox v1
+						.icon-box.ib-v2
+							a(href="#")
+								i.oli.oli-globe
+								h3.title people
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v1
+					.item 
+						// #####Begin iconbox v1
+						.icon-box.ib-v2
+							a(href="#")
+								i.oli.oli-heart
+								h3.title Jafar!
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v1
+				// #####End carousel
+	section.section: .container: .row
+		.col-md-4.col-sm-6
+			// #####Begin iconbox v1
+			.icon-box.ib-v1
+				i.oli.oli-beaker
+				h3.title Research Driven
+				p Suitable for large list of people<br> in case you just want to list.
+			// #####End iconbox v1
+		.col-md-4.col-sm-6
+			// #####Begin iconbox v1
+			.icon-box.ib-v1
+				i.oli.oli-heart
+				h3.title Research Driven
+				p Suitable for large list of people<br> in case you just want to list.
+			// #####End iconbox v1
+		.col-md-4.col-sm-6.hidden-xs
+			// #####Begin iconbox v1
+			.icon-box.ib-v1
+				i.oli.oli-layers
+				h3.title Research Driven
+				p Suitable for large list of people<br> in case you just want to list.
+			// #####End iconbox v1
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/backgrounds/08.jpg")
+		.container
+			.row.in-light
+				.col-md-4
+					// #####Begin iconbox v3
+					.icon-box.ib-v3
+						i.oli.oli-piechart
+						h3.title
+							span In-Depth Video Tutorials
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-extra-small.btn-circle.btn-skin-dark(href='#') read more
+					// #####End iconbox v3
+				.col-md-4
+					// #####Begin iconbox v3
+					.icon-box.ib-v3
+						i.oli.oli-strategy
+						h3.title
+							span loaded with love
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-extra-small.btn-circle.btn-skin-dark(href='#') read more
+					// #####End iconbox v3
+				.col-md-4
+					// #####Begin iconbox v3
+					.icon-box.ib-v3
+						i.oli.oli-tools-2
+						h3.title
+							span free updates and support
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-extra-small.btn-circle.btn-skin-dark(href='#') read more
+					// #####End iconbox v3
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-nuclear_power_plant
+						h3.title In-Depth Video Tutorials
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-hand_planting
+						h3.title loaded with love
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-students
+						h3.title free updates and support
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+	section.section: .container
+		.row
+			.col-md-4
+				// #####Begin iconbox v4
+				.icon-box.ib-v4
+					i.oli.oli-globe
+					h6.title.with-shaded-label
+						span.shaded-label.text-uppercase Who
+						| holds the CHAOS 2016?
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				// #####End iconbox v4
+			.col-md-4
+				// #####Begin iconbox v4
+				.icon-box.ib-v4
+					i.oli.oli-trophy2
+					h6.title.with-shaded-label
+						span.shaded-label.text-uppercase What
+						| are the themes of the conf?
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				// #####End iconbox v4
+			.col-md-4
+				// #####Begin iconbox v4
+				.icon-box.ib-v4
+					i.oli.oli-lightbulb
+					h6.title.with-shaded-label
+						span.shaded-label.text-uppercase How
+						| to send abstracts?
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				// #####End iconbox v4
+	section.section.dark-wrapper.parallax-layer(data-img-src=dirPrefix+"assets/img/backgrounds/07.jpg")
+		.container
+			.row
+				.col-md-4
+					// #####Begin widget
+					.widget-heading
+						h3.widget-title.with-sideline Give me a Reason Why?
+						h4.widget-sub-title Reasons about why we are one of a kind!
+					// #####End widget
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					.sp-blank-30
+					a.btn.btn-small.btn-circle.btn-skin-red(href='#') read more
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-camera
+						h3.title reasonable offer
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+					.sp-blank-50
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-quill_with_ink
+						h3.title Drives you crazy
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-printed_OCR
+						h3.title loaded with love
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+					.sp-blank-50
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-chromatography
+						h3.title Approved by Jafar!
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+	section.section.full-width.p-top-0.p-bottom-0
+		.container
+			.row.gradient-cols-wrapper.sync-cols-height.light-grad
+				.col-md-4
+					.inner-wrapper
+						// #####Begin iconbox v3
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-greentech
+							h3.title
+								span In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v3
+						a.btn.btn-small.btn-round.btn-anim-drawer(href="#") read more
+				.col-md-4
+					.inner-wrapper
+						// #####Begin iconbox v3
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-desk_lamp
+							h3.title
+								span Awesome title
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v3
+						a.btn.btn-small.btn-round.btn-anim-drawer(href="#") read more
+				.col-md-4
+					.inner-wrapper
+						// #####Begin iconbox v3
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-rocket
+							h3.title
+								span Awesome title
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v3
+						a.btn.btn-small.btn-round.btn-anim-drawer(href="#") read more
+	section.section.full-width.p-top-0.p-bottom-0
+		.container
+			.row.gradient-cols-wrapper.sync-cols-height.dark-wrapper
+				.col-md-4
+					.inner-wrapper
+						// #####Begin iconbox v3
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-greentech
+							h3.title
+								span In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v3
+						a.btn.btn-small.btn-round.btn-anim-drawer.btn-skin-dark(href="#") read more
+				.col-md-4
+					.inner-wrapper
+						// #####Begin iconbox v3
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-desk_lamp
+							h3.title
+								span Awesome title
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v3
+						a.btn.btn-small.btn-round.btn-anim-drawer.btn-skin-dark(href="#") read more
+				.col-md-4
+					.inner-wrapper
+						// #####Begin iconbox v3
+						.icon-box.ib-v3.m-bottom-30
+							i.oli.oli-rocket
+							h3.title
+								span Awesome title
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						// #####End iconbox v3
+						a.btn.btn-small.btn-round.btn-anim-drawer.btn-skin-dark(href="#") read more
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-4
+					// #####Begin iconbox v5
+					.icon-box.ib-v5
+						i.oli.oli-telescope2
+						h3.title In-Depth Video Tutorials
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-small.btn-circle.btn-skin-red.btn-trans(href='#') read more
+					// #####End iconbox v5
+				.col-md-4
+					// #####Begin iconbox v5
+					.icon-box.ib-v5
+						i.oli.oli-lightbulb
+						h3.title loaded with love
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+						a.btn.btn-small.btn-circle.btn-skin-red.btn-trans(href='#') read more
+					// #####End iconbox v5
+				.col-md-4
+					// #####Begin iconbox v5
+					.icon-box.ib-v5.no-anim
+						i.oli.oli-linegraph
+						h3.title I am not animated
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.\
+						a.btn.btn-small.btn-circle.btn-skin-red.btn-trans(href='#') read more
+					// #####End iconbox v5
+	section.section
+		.container
+			.row
+				.col-md-6
+					// #####Begin iconbox v6
+					.icon-box.ib-v6
+						i.oli.oli-water_transportation
+						.ib-wrap
+							h3.title In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v6
+				.col-md-6
+					// #####Begin iconbox v6
+					.icon-box.ib-v6.no-anim
+						i.oli.oli-airplane_mode_on
+						.ib-wrap
+							h3.title I am not animated
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v6
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-4
+					// #####Begin iconbox v7
+					.icon-box.ib-v7
+						i.oli.oli-motorcycle
+						.ib-wrap
+							h3.title In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+							a.ib-btn(href='#') read more
+					// #####End iconbox v7
+				.col-md-4
+					// #####Begin iconbox v7
+					.icon-box.ib-v7.ib-dark
+						i.oli.oli-bicycle
+						.ib-wrap
+							h3.title In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+							a.ib-btn(href='#') read more
+					// #####End iconbox v7
+				.col-md-4
+					// #####Begin iconbox v7
+					.icon-box.ib-v7.ib-blue
+						i.oli.oli-helicopter
+						.ib-wrap
+							h3.title In-Depth Video Tutorials
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+							a.ib-btn(href='#') read more
+					// #####End iconbox v7
+	section.section
+		.container
+			.row
+				.col-md-3
+					// #####Begin iconbox v8
+					.icon-box.ib-v8.dark-overlay
+						i.oli.oli-ok
+						h3.title BEFORE SEP 14th
+						p 100 USD
+						a.ib-btn(href='#') CLOSED!
+					// #####End iconbox v8
+				.col-md-3
+					// #####Begin iconbox v8
+					.icon-box.ib-v8.ib-dark
+						i.oli.oli-minus
+						h3.title AFTER SEP 14th
+						p 140 USD
+						a.ib-btn(href='#') REGISTER NOW
+					// #####End iconbox v8
+				.col-md-3
+					// #####Begin iconbox v8
+					.icon-box.ib-v8.ib-blue
+						i.oli.oli-cancel
+						h3.title BEFORE SEP 14th
+						p 100 USD
+						a.ib-btn(href='#') REGISTER NOW
+					// #####End iconbox v8
+				.col-md-3
+					// #####Begin iconbox v8
+					.icon-box.ib-v8.ib-green
+						i.oli.oli-plus
+						h3.title AFTER SEP 14th
+						p 140 USD
+						a.ib-btn(href='#') REGISTER NOW
+					// #####End iconbox v8
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-6
+					// #####Begin iconbox v3
+					.icon-box.ib-v3.ib-boxed
+						i.oli.oli-diamond
+						h3.title
+							span In-Depth Video Tutorials
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v3
+				.col-md-6
+					// #####Begin iconbox v3
+					.icon-box.ib-v3.ib-boxed.ib-dark.set-bg
+						img(src=dirPrefix+"assets/img/page-title-bg-dark-1.jpg", alt="test" class="set-me")
+						i.oli.oli-diamond
+						h3.title
+							span In-Depth Video Tutorials
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v3
+	
+	
+	

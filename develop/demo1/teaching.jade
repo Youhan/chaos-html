@@ -1,0 +1,90 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('nav-light full-width') 
+	- var bcType = "intitle"
+	- var currentMenu = "Teaching"
+	- var pageTitle = "Teaching"
+	- var PageTitleDesc = "Simple Lists are great way to display your publications to visitors, here is a simple list shows vaiations of this grid elements."
+
+	- var pageTitleClass = 'h-500 center-it parallax-layer dark ov-grad8-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/05.jpg"
+	- var pageTitleParallaxMode = "bg"
+
+block main-area
+	section.section.section-narrow-2
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					h3.with-sideline.m-bottom-40 Teaching Philosophy
+					p
+						span.ol-dropcaps.square.dark C
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia commodo mauris, vel ultrices ante. Fusce condimentum quam ut enim bibendum, vitae placerat enim consequat. Etiam consectetur congue sapien ut bibendum. Nullam convallis ac turpis a mollis. Phasellus ac faucibus ante. Etiam rutrum varius rutrum. Cras faucibus lorem eget justo ultrices imperdiet. Curabitur in purus ullamcorper, viverra libero id, rutrum dolor. Curabitur sit amet orci pharetra, dapibus erat et, tempor ipsum. Duis rutrum porta eros sed auctor. Pellentesque et mollis erat. Nulla at mattis odio, eu ornare lorem. Nam malesuada massa a condimentum mollis. Quisque eleifend ultrices velit quis luctus.</br></br>
+						| Morbi id volutpat purus. Aliquam pellentesque commodo iaculis. Vivamus finibus ullamcorper ante at ultrices. Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est. Mauris ut vulputate nunc. Vestibulum scelerisque condimentum augue, a placerat ipsum molestie pellentesque. Donec quam purus, venenatis vitae nisi vel, facilisis accumsan eros. Aliquam mattis risus tortor, sed sagittis mi laoreet vel.</br></br>
+						|Aenean at est nec ex dignissim interdum sit amet eget ligula. Curabitur elementum urna sed ligula vestibulum, quis vestibulum massa suscipit. Suspendisse at libero purus. Aliquam blandit tempus porttitor. Sed finibus feugiat arcu, ut lobortis libero mattis eget. Vivamus maximus, ante ac facilisis tincidunt, leo sem efficitur justo, at scelerisque lorem dolor a risus. In nisl dui, congue sed est et, dictum tincidunt nisi. Aenean non vehicula metus, sed rutrum ante. Donec in libero euismod, facilisis justo ac, finibus arcu. Cras porta auctor enim vel porta. Fusce sed porttitor nisi.
+	section.section.section-narrow-2.bg-gray
+		.container
+			.heading-with-sub.text-center.m-bottom-80
+					h2.title Teaching Courses
+					h4.subtitle Listed Randomly From Past to Current
+				
+			.row.multi-columns-row.col-margin-bottom-40
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-literature
+						h3.title Awesome Heading for Iconbox
+						p 	Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-training
+						h3.title Awesome Heading for Iconbox
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-literature
+						h3.title Awesome Heading for Iconbox
+						p 	Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-training
+						h3.title Awesome Heading for Iconbox
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-literature
+						h3.title Awesome Heading for Iconbox
+						p 	Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-training
+						h3.title Awesome Heading for Iconbox
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-literature
+						h3.title Awesome Heading for Iconbox
+						p 	Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-training
+						h3.title Awesome Heading for Iconbox
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-xs-6.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-training
+						h3.title Awesome Heading for Iconbox
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+	section.section.section-narrow.set-bg.dark-wrapper
+		img.set-me(src=dirPrefix+"assets/img/bg/08.jpg", alt="background")
+		.container
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-4.vcenter.text-right
+					a.btn.btn-medium.btn-circle.btn-wide(href='#') 
+						span Submit
+						
+				.col-sm-8.vcenter
+					h2.title Apply for Being a TA and Join us at Stanford
+					h4.sub-title Absolutely Stunning Design &amp; Functionality Common Things Expected

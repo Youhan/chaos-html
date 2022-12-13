@@ -1,0 +1,120 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Typography"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles  parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+	
+block main-area
+	section.section
+		.container
+			.row
+				.col-md-6
+					// #####Begin heading
+					.heading-with-sub
+						h3.title heading with subtitle
+						h4.subtitle I'm the subtitle, would you please notice me!?
+					// #####End heading
+				.col-md-6
+					// #####Begin heading
+					.heading-with-sub
+						h3.title heading with lead paragraph
+						p.lead Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+					// #####End heading
+	section.section.bg-gray
+		// #####Begin heading
+		.heading-with-sub.text-center
+			h2.title larger and centerd for sections
+			h3.subtitle Heading with sub class supports H1-H6 variants for title and subtitle to cover different sections and styles. 
+		// #####End heading
+	
+	section.section
+		.container
+			.row
+				.col-md-6
+					// #####Begin heading
+					.heading-with-sub
+						h3.title.with-sideline Heading with side line and sub
+						h4.subtitle I'm sutiable for heading of columns
+					// #####End heading
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor
+				.col-md-6
+					h3.with-sideline Simple h1-h6 with a side line
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			h4.with-underline title with underline
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+		.col-md-4
+			h4.with-underline suitable for widgets
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+		.col-md-4
+			h4.with-underline or single columns
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+	
+	section.section: .container: .row
+		.col-md-4
+			h3.large-text Very Large Text or Title
+			p.lead The size of text is regardless of html tag, for titles that are large than h1 and im going to keep talking for the sake of a longer text!
+		.col-md-7.col-md-offset-1
+			h3.primary-font Body font Sintony
+			p.lead.m-bottom-30 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed
+			h3.secondry-font Headings font Play
+			p.lead.m-bottom-30 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed
+			h3.sans-font Sans font Merriweather
+			p.lead Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed
+	section.section.p-top-30.bg-gray: .container
+		p.highlight P tag with class highlight for important paragraphs and Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+		.row
+			.col-md-4
+				h3.with-underline tight paragraphs
+				p.tight Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+			.col-md-4
+				h3.with-underline loose paragraphs
+				p.loose Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+			.col-md-4
+				h3.with-underline lead paragraphs
+				p.lead Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+	section.section
+		.container
+			.row
+				.col-md-6
+					.sp-blank-60
+					h6.theme-color text with theme color
+					h6 Lorem ipsum dolor sit amet
+					h5 Lorem ipsum dolor sit amet
+					h4 Lorem ipsum dolor sit amet
+					h3 Lorem ipsum dolor sit amet
+					h2 Lorem ipsum dolor sit amet
+					h1 Lorem ipsum dolor sit amet
+				.col-md-6
+					h6.with-shaded-label 
+						span.shaded-label CHAOS
+						|Ipsum dolor sit amet
+					h5.with-shaded-label 
+						span.shaded-label CHAOS
+						|Ipsum dolor sit amet
+					h4.with-shaded-label 
+						span.shaded-label CHAOS
+						|Ipsum dolor sit amet
+					h3.with-shaded-label 
+						span.shaded-label CHAOS
+						|Ipsum dolor sit amet
+					h2.with-shaded-label 
+						span.shaded-label CHAOS
+						|Ipsum dolor sit amet
+					h1.with-shaded-label 
+						span.shaded-label CHAOS
+						|Ipsum dolor sit amet
+				
+	

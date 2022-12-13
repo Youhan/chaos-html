@@ -1,0 +1,23 @@
+extends ../lo-normal
+
+append config
+	- var bodyclass =  bodyClasses.push('has-double-sidebars double-right-sidebar')
+
+block main-contents
+	section.section: .container
+		.row
+			// #####Begin main area
+			.col-md-6.col-sm-12
+				#main-area
+					block main-area
+			// #####End main area
+			// #####Begin sidebar
+			.col-md-3.col-sm-6
+				.sidebar.right.first
+					block sidebar-1
+			// #####End sidebar
+			// #####Begin sidebar
+			.col-md-3.col-sm-6
+				.sidebar.right.second
+					block sidebar-2
+			// #####End sidebar

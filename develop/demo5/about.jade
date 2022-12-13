@@ -1,0 +1,203 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var currentMenu = "Dr. John Doe"
+	- var pageTitle = "Dr. John Doe"
+	- var PageTitleHead = "About"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400  bg-white parallax-layer dark ov-dark-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/03.jpg"
+	- var pageTitleParallaxMode = "title"
+
+
+block main-area
+	section.section
+		.container
+			.row
+				.col-sm-3
+					img(src=dirPrefix+"assets/img/people/09.jpg", alt="")
+					.sp-blank-20
+					h2 John Doe
+					ul.list-unstyled
+						li 
+							strong PhD
+						li
+							|General Atlantic Professor
+						li 
+							|Stanford University Graduate School of Business
+					
+					a.ol-iconic-link.m-top-30.m-bottom-50(href='#')
+						i.oli.oli-download
+						| Download CV
+		
+				.col-sm-9
+					p Prof. Dr. John Doe received his Ph.D. in 1986 from the University of Munich. From 1987 to 1988 he was a postdoc at the University of California in Berkeley, USA. He subsequently returned to Munich as a research associate at the Institute of Pharmaceutical Chemistry. Upon receiving his Dr. Habilitus in 1992, for which he was honored with the Johann-Wolfgang-Doberreiner prize of the DPhG (1993), he was appointed at the University of Bonn as a Professor of Pharmaceutical Chemistry declining an offer for a professorship at the University of Heidelberg, at the same time. Since October 1996, he has been chaired Full Professor of Pharmaceutical / Medicinal Chemistry at the Friedrich-Alexander University Erlangen-Nurnberg. In 2000, he declined an offer.
+					p He graduated with nearly as many hours in zoology and math as he had in psychology so it was probably inevitable that he gravitate to experimental psychology. He was admitted to Ohio State to work with D.D. Wickens. Wick was a wonderful mentor and was exceedingly patient with a student that wanted to do everything but did not focus on anything long enough to do it well. The job market was tough in 1972 and Engle was lucky to land a job at King College in Tennessee. His two years there, with 10 classes per year, made him a teacher. Fortunately, two of his classes each year were senior research seminars, which he used to conduct experiments. He was limited in equipment to a tape recorder and slide projector, so he did research on modality effects in short-term memory. At the end of two years, he had two publications, enough to land him a job at the University of South Carolina where he spent the next 21 years.
+					.sp-blank-50
+
+					h3 Research Interests
+					ol.with-shaded-label.ol-greek
+						li The nature and causes of limitations in working memory capacity
+						li The role of those differences in real-world cognitive tasks
+						li The association of working memory capacity and cognitive control to fluid intelligence
+
+					.sp-blank-80
+					h3 Educations
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget solPhasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.licitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+					.ol-timeline
+						div.tl-item.pub-item.with-icon
+							span.item-section 2015
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Doctor of Philosophy
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						div.tl-item.pub-item.with-icon
+							span.item-section 2012
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Master of Science
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						div.tl-item.pub-item.with-icon
+							span.item-section 2008
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Bachelor of Science
+								.description
+									p in Mechanical Engineering <br> Stanford University
+					.sp-blank-80
+
+					h3 Positions
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget solPhasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.licitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+					.ol-timeline
+						div.tl-item.pub-item.with-icon
+							span.item-section 2015
+							.elem-wrapper
+								i.oli.oli-desk_lamp
+							.content-wrapper
+								h3.title General Atlantic Professor
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						div.tl-item.pub-item.with-icon
+							span.item-section 2012
+							.elem-wrapper
+								i.oli.oli-desk_lamp
+							.content-wrapper
+								h3.title Assistance Professor
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						div.tl-item.pub-item.with-icon
+							span.item-section 2005
+							.elem-wrapper
+								i.oli.oli-desk_lamp
+							.content-wrapper
+								h3.title Baghale Seller
+								.description
+									p in Daneshjo Blvd. <br> Shiraz Hafezie
+
+					.sp-blank-80
+
+					h3 Selected Publications
+					p.m-bottom-50 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget solPhasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.licitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+					.wrapper
+						.pub-item.with-icon
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+								.description
+									.citation 
+										| Achievements in the Life Sciences 2014
+										| <br>McTabi et. al.
+									
+									a.link-with-icon(href="#") 
+										i.fa.fa-external-link
+										| Publisher's website
+						.pub-item.with-icon
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+								.description
+									.citation 
+										| Achievements in the Life Sciences 2014
+										| <br>McTabi et. al.
+									
+									a.link-with-icon(href="#") 
+										i.fa.fa-external-link
+										| Publisher's website
+						.pub-item.with-icon
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+								.description
+									.citation 
+										| Achievements in the Life Sciences 2014
+										| <br>McTabi et. al.
+									
+									a.link-with-icon(href="#") 
+										i.fa.fa-external-link
+										| Publisher's website
+
+
+					.sp-blank-80
+					h3 Honors &amp; Awards
+					p Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est.
+
+					.ol-timeline
+						div.tl-item.pub-item.with-icon
+							span.item-section 2015
+							.elem-wrapper
+								i.oli.oli-university
+							.content-wrapper
+								h3.title Nobel Prize
+								.description
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+
+						div.tl-item.pub-item.with-icon
+							span.item-section 2000
+							.elem-wrapper
+								i.oli.oli-literature
+							.content-wrapper
+								h3.title Nuffield Foundation New Lecturer Award
+								.description
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+						
+						div.tl-item.pub-item.with-icon
+							span.item-section 1999
+							.elem-wrapper
+								i.oli.oli-literature
+							.content-wrapper
+								h3.title Invaders And Guardians Award
+								.description
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+
+						div.tl-item.pub-item.with-icon
+							span.item-section 1996
+							.elem-wrapper
+								i.oli.oli-university
+							.content-wrapper
+								h3.title Influence Of The Land Award
+								.description
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut.
+						
+						
+						
+
+
+					
+
+					

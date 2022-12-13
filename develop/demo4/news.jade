@@ -1,0 +1,151 @@
+extends /_layouts/lo-normal/fullwidth
+append config
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var bcType = "intitle"
+	- var currentMenu = "News"
+	- var PageTitleHead = "Chaos"
+	- var pageTitle = "Laboratory News"
+	- var pageTitleClass = 'h-500 parallax-layer center-it dark ov-grad1-alpha-70'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/013.jpg"
+	- var pageTitleParallaxMode = "bg"
+block main-area
+	section.slim-container.bg-gray: .container
+		// #####Begin features news carousel
+		.featured-news-box.parallax-layer.pull-up-150.ov-grad3-alpha-40(data-img-src=dirPrefix+"assets/img/bg/008.jpg")
+			
+			// #####Begin carousel
+			ul.featured-news.owl-carousel.items.owwwlab-theme(data-cols-all="1" data-margin="0" data-nav="false" data-dots="true" data-autoplaytime=5000)
+				li.item
+					.date 24 Oct 2015
+					h3.title 
+						a(href="news-single.html") New software being developed to help answer complex biological questions and lorem ipsum
+				li.item
+					.date 24 Oct 2015
+					h3.title 
+						a(href="news-single.html") Planning permission granted for new centre for food and health
+				li.item
+					.date 24 Oct 2015
+					h3.title 
+						a(href="news-single.html") Thai student stresses benefits of learning Welsh
+				li.item
+					.date 24 Oct 2015
+					h3.title 
+						a(href="news-single.html") Undergrads Dive Deep for Submarine Competition
+			// #####End carousel
+		// #####End features news carousel
+	section.section.section-narrow.slim-container.bg-gray: .container
+		// #####Begin row with multiple columns
+		.row.multi-columns-row
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-blue(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Adolescent health transition
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-theme(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Silver City
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-yellow(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Wounded Change
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-green(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Wheel's Atlas
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-purple(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Ice of the Fortress
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-blue(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Jewel's Time
+				// #####End  book element
+			
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-red(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title East Crown
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-yellow(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Shaman in the Cauldron
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-lemon(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The Undead's Changer
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-red(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The City of the Inheritance
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-cyan(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title Breath in the Thief
+				// #####End  book element
+			.col-md-4.m-bottom-50
+				// #####Begin  book element
+				a.book-el.skin-blue(href="news-single.html")
+					.contents
+						.item-meta
+							span.date 12 Oct 2015
+						.title-wrapper
+							h2.title The God of the Albion
+				// #####End  book element
+			
+		// #####End row with multiple columns

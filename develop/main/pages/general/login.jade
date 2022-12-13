@@ -1,0 +1,51 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push("dark trans") 
+	
+	- var currentMenu = "Features"
+	- var bcType = "false"
+	- var ptType = "false"
+	
+block main-area
+	section.section.parallax-layer.hvh-100.p-top-120.p-bottom-60.tb-vcenter-wrapper(data-img-src=dirPrefix+"assets/img/backgrounds/011.jpg")
+		.vcenter
+			.container
+				.row
+					.col-md-6.col-md-offset-3.ofx-auto
+						// #####Begin tab element
+						.login-form.ol-tab
+							.login-form-inner
+								// #####Begin tab navigation
+								ul.tab-navigation
+									li.tab
+										a(href="#login") LOGIN
+									li.tab.active
+										a(href="#register") REGISTER
+								// #####End tab navigation
+								.tab-content
+									// #####Begin tab panel item
+									.tab-pane#login
+										h6.title Login
+										form(action="/" method="post" role='form')
+											.form-group
+												input#email.form-control(type='text', name='email' placeholder='email')
+												input#password.form-control(type='password', name='password' placeholder='password')
+												input.btn.btn-small.btn-block(type='submit', value='Login')
+									// #####End tab panel item
+									// #####Begin tab panel item
+									.tab-pane.active#register
+										h6.title Creat New Account
+										form(action="/" method="post" role='form')
+											.form-group
+												input#username.form-control(type='text', name='name' placeholder='name')
+												input#email.form-control(type='text', name='email' placeholder='email')
+												input#password.form-control(type='password', name='password' placeholder='password')
+												input#password.form-control(type='password', name='password' placeholder='confirm password')
+												input.btn.btn-small.btn-block(type='submit', value='register')
+									// #####End tab panel item
+						.login-copyright Copyrights &copy; All Rights Reserved by owwwlab Inc.
+								
+						// #####End tab element

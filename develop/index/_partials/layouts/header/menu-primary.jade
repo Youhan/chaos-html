@@ -1,0 +1,70 @@
+ul#primary-menu(class=primaryMenuClass data-gumshoe)
+	+primarymenu([
+		{
+			'title'		: 'Home', 
+			'href'		: '#index_head',
+			'scrolllable': true
+		},
+		{
+			'title'		: 'Demos', 
+			'href'		: '#index_demos',
+			'scrolllable': true
+		},
+		{
+			'title'		: 'Pages', 
+			'href'		: '#index_pages',
+			'scrolllable': true
+		},
+		{
+			'title'		: 'Purchase $20', 
+			'href'		: 'http://themeforest.net/item/chaos-academic-driven-multipurpose-template/16297747?ref=owwwlab',
+			'submenuclass'	: 'nav-btn'
+		}
+	])
+
+
+
+
+mixin primarymenu(items)
+	each item in items
+		+navlinks(item)
+			
+
+mixin navlinks(item)
+	- var isCurrent = false
+	- var hasChild = false
+	- var menuClass = []
+	if currentMenu === item.title
+		- var isCurrent = menuClass.push(CurrentMenuClass)
+	if item.childs
+		- var hasChild = menuClass.push(HasChildMenuClass)
+	if item.isMegamenu
+		- var itIsMega = menuClass.push(MegamenuClass,HasChildMenuClass)
+	if item.submenuclass
+		- var megaclass = menuClass.push(item.submenuclass)
+
+	if item.menuclass
+		- var menuclass = menuClass.push(item.menuclass)
+
+	-var atts = {}
+	if item.scrolllable
+		-var atts = {'data-scroll': ''}
+
+	li( class=menuClass)
+		a(href= dirPrefix+item.href, title=item.title)&attributes(atts) <span>#{item.title}</span>
+		if item.childs
+			ul(class=primarySubMenuClass)
+				each childItem in item.childs
+					+navlinks(childItem)
+		if item.isMegamenu && item.menu
+			ul(class=megaMenuWrapperClass+' '+item.menu.classes)
+				+loadMega(item.menu)
+
+
+mixin loadMega(megamenu)
+	if megamenu.slug === "academics"
+		include megamenus/academics
+	else if megamenu.slug === "shortcodes"
+		include megamenus/shortcodes
+
+

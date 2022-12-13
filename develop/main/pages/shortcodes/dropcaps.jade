@@ -1,0 +1,48 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Dropcaps"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+	
+block main-area
+	section.section
+		.container
+			.row
+				.col-md-4
+					p
+						span.ol-dropcaps.square.bordered C
+						| #{lorem}
+				.col-md-4
+					p
+						span.ol-dropcaps.square.filled.skin-dark C
+						| #{lorem}
+				.col-md-4
+					p
+						span.ol-dropcaps.square.colored C
+						| #{lorem}
+			
+			.sp-blank-100
+			.row
+				.col-md-4
+					p
+						span.ol-dropcaps.circle.bordered C
+						| #{lorem}
+				.col-md-4
+					p
+						span.ol-dropcaps.circle.filled.skin-dark C
+						| #{lorem}
+				.col-md-4
+					p
+						span.ol-dropcaps.circle.colored C
+						| #{lorem}

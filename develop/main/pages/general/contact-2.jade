@@ -1,0 +1,57 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push("") 
+	- var pageTitle = "Contact Page #2"
+	- var currentMenu = "Features"
+	- var pageTitleClass = 'ol-particles'
+	- var loadGmapScript = true
+	
+block main-area
+	section.h-400
+		#gmap(data-address="Footscray VIC 3011 Australia")
+	section.section.slim-container
+		.container
+			.row
+				.col-md-6.text-center.boxed-contact-form
+					
+					.heading-with-sub
+						h4.subtitle You my wait for a couple of days
+					.sp-line-40.m-bottom-20
+					form#contact-form(action=dirPrefix+'php/contact/contact.php')
+						label(for="name") Name
+						input.m-bottom-20.form-control(type="text", name="name")
+						label(for="email") Email
+						input.m-bottom-20.form-control(type="email", name="email")
+						label(for="subject") Subject
+						input.m-bottom-20.form-control(type="text", name="subject")
+						
+						label Message
+						textarea.m-bottom-20.form-control(rows=6 type="textarea" name="message")
+						input.btn.btn-medium.btn-skin-dark.btn-thick-border.btn-block(type='submit', value='Send it')
+				.col-md-5.col-md-offset-1
+						h4.with-underline How to find us?
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						ul.icon-list
+							li
+								i.oli.oli-envelope
+								a(href="mailto:email@email.com") email@email.com
+							li
+								i.oli.oli-map
+								|Footscray VIC 3011, Australia
+							li
+								i.oli.oli-phone
+								|Office: 222-22-222-22
+							li
+								i.oli.oli-phone
+								|Laboratory: 222-22-222-22
+
+						h4.with-underline.m-top-50 Need Forms?
+						a.ol-iconic-link.m-bottom-20(href="#") 
+							i.oli.oli-download_2
+							|Download Forms
+						a.ol-iconic-link(href="#")
+							i.oli.oli-download_2
+							|Download Assessment Example

@@ -1,0 +1,148 @@
+extends ../../_layouts/lo-normal/right_sidebar
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "News & Blog"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/bg-dark-01.jpg"
+	
+	- var currentMenu = "News"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. "
+	
+block main-area
+	// #####Begin posts list
+	.news-posts.date-aside-list
+		.post
+			.post-header
+				a.post-thumb.set-bg(href="#")
+					img.set-me(src=dirPrefix+"assets/img/news/thumb-1.jpg")
+			.post-contents
+				.published_date
+					.day 23
+					.month sep
+				.aside
+					h3.title
+						a(href="#") Undergrads Dive Deep for Submarine Competition
+					ul.meta
+						li.author
+							| by 
+							a(href="#") Admin
+						li.cats
+							| in 
+							a(href="#") Research News
+					.post-excerpt
+						| #{lorem}									
+					a.read-more.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href="#") 
+						i.icon.oi-forward
+						span Read More
+		.sp-line-75
+		.post
+			.post-header
+				a.post-thumb.set-bg(href="#")
+					img.set-me(src=dirPrefix+"assets/img/news/thumb-2.jpg")
+			.post-contents
+				.published_date
+					.day 20
+					.month oct
+					.year 2015
+				.aside
+					h3.title
+						a(href="#") Undergrads Dive Deep for Submarine Competition
+					ul.meta
+						li.author
+							| by 
+							a(href="#") Admin
+						li.cats
+							| in 
+							a(href="#") Research News
+					.post-excerpt
+						| #{lorem}									
+					a.read-more.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href="#") 
+						i.icon.oi-forward
+						span Read More
+		.sp-line-75
+		.post
+			.post-header
+				a.post-thumb.set-bg(href="#")
+					img.set-me(src=dirPrefix+"assets/img/news/thumb-3.jpg")
+			.post-contents
+				.published_date
+					.day 18
+					.month sep
+					.year 2015
+				.aside
+					h3.title
+						a(href="#") Undergrads Dive Deep for Submarine Competition
+					ul.meta
+						li.author
+							| by 
+							a(href="#") Admin
+						li.cats
+							| in 
+							a(href="#") Research News
+					.post-excerpt
+						| #{lorem}									
+					a.read-more.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href="#") 
+						i.icon.oi-forward
+						span Read More
+		.sp-line-75
+		.post
+			.post-header
+				a.post-thumb.set-bg(href="#")
+					img.set-me(src=dirPrefix+"assets/img/news/thumb-4.jpg")
+			.post-contents
+				.published_date
+					.day 8
+					.month sep
+					.year 2015
+				.aside
+					h3.title
+						a(href="#") Undergrads Dive Deep for Submarine Competition
+					ul.meta
+						li.author
+							| by 
+							a(href="#") Admin
+						li.cats
+							| in 
+							a(href="#") Research News
+					.post-excerpt
+						| #{lorem}									
+					a.read-more.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href="#") 
+						i.icon.oi-forward
+						span Read More
+		
+		.sp-line-75
+		.post
+			.post-header
+				a.post-thumb.set-bg(href="#")
+					img.set-me(src=dirPrefix+"assets/img/news/thumb-5.jpg")
+			.post-contents
+				.published_date
+					.day 8
+					.month sep
+					.year 2015
+				.aside
+					h3.title
+						a(href="#") Undergrads Dive Deep for Submarine Competition
+					ul.meta
+						li.author
+							| by 
+							a(href="#") Admin
+						li.cats
+							| in 
+							a(href="#") Research News
+					.post-excerpt
+						| #{lorem}									
+					a.read-more.btn.btn-medium.btn-round.btn-icon-right.btn-anim-i(href="#") 
+						i.icon.oi-forward
+						span Read More
+	// #####End posts list
+	.sp-blank-100
+	include ../../_partials/blocks/paginations/lined
+block sidebar-1
+	include ../../_partials/blocks/pages/sidebar-blog

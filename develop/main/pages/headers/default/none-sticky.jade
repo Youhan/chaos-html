@@ -1,0 +1,16 @@
+extends ../../../../_layouts/lo-normal/fullwidth
+
+append config
+
+	- var dirPrefix = '../../../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Header v1 - None sticky"
+	
+	- var currentMenu = "Features"
+
+
+	
+block main-area
+	include ../../../../_partials/blocks/pages/main-area-fullwidth

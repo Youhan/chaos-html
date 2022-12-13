@@ -1,0 +1,185 @@
+extends ../../../_layouts/lo-normal/right_sidebar
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Current Vacancies"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined'
+	
+	- var currentMenu = "Academia"
+block main-area
+	.search-box.inline-filters
+		.row.form-inline
+			.col-sm-10.col-xs-8.form-group.with-filter
+				input.form-control(type='text', placeholder='Search Jobs and Fellowships...')
+				a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+					i.icon.oi-filter
+			.col-sm-2.col-xs-4.form-group
+				input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+		.row.filters
+			a.clear-selectize(href="#") Clear Filters
+			.col-sm-6
+				.form-group
+					label Job Type:
+					select.selectize(data-placeholder='Select Types...', multiple='multiple')
+						option(value='')
+						option(value='Journal Article') Senior Researcher
+						option(value='Conference Paper') PHD Fellowship
+						option(value='Report') Labratory Manager
+						option(value='Book') Junior Researcher
+			.col-sm-6
+				.form-group
+					label Category:
+					select.selectize(data-placeholder='Select Types...', multiple='multiple')
+						option(value='')
+						option(value='Physics') Physics
+						option(value='Algebra') Algebra
+						option(value='Jafarology') Jafarology
+	.sp-blank-100
+	// #####Begin vacancy list
+	.vac-list
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Research Assistant Position in Transport-Regulated Plant Immunity
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Postdoctoral position – Multi-scale genomic interrogation of the Angiosperm immune receptor repertoire using resistance gene enrichment sequencing
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Research Assistant Position in Transport-Regulated Plant Immunity
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Part-Time Laboratory Technician
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Design principles of paired intracellular plant immune receptor complexes
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Full-Time Laboratory Technician – Only for Panjeh
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Research Assistant Position in Transport-Regulated Plant Immunity
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+		.pub-item.with-icon
+			.elem-wrapper
+				i.oli.oli-armchair
+			.content-wrapper
+				h3.title
+					a(href="#") Research Assistant Position in Transport-Regulated Plant Immunity
+				.description 
+					p Applications are invited for a postdoctoral researcher to join the Laboratory of Prof. Jonathan Jones to study genomic diversity of intracellular plant immune receptor genes.
+					ul.meta
+						li
+							i.icon.oi-folder(title="Category")
+							span Biological Chemistry
+						li
+							i.icon.oi-timer(title="Deadline")
+							span 12 Jun 2015
+	// #####End vacancy list
+	.sp-blank-100
+	include ../../../_partials/blocks/paginations/lined
+block sidebar-1
+	// #####Begin widget
+	.widget
+		h4.with-underline navigations
+		include ../../../_partials/blocks/sidenavs/01
+		
+	// #####End widget
+	// #####Begin widget
+	.widget
+		h4.with-underline Newsletter
+		.newsletter-form.small.skin-dark
+			.nl-title
+				h3 Vacancies Newsletter
+			.nl-form
+				.form-with-border
+					input.form-control(type='text', placeholder='Email Address...')
+				input.btn.btn-small.btn-circle.btn-block(type='submit', value='Submit')
+	// #####End widget

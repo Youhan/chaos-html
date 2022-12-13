@@ -1,0 +1,21 @@
+- var lightlogoSrc = dirPrefix+"assets/img/logo/logo-light.png"
+- var darklogoSrc  = dirPrefix+"assets/img/logo/logo-dark.png"
+- var lightlogoSrc2x = dirPrefix+"assets/img/logo/logo-light@2x.png"
+- var darklogoSrc2x  = dirPrefix+"assets/img/logo/logo-dark@2x.png"
+
+.head-main(class=headMainClass)
+	.container
+		.logo-wrapper
+			// standard Logo
+			a('href'=dirPrefix+"index.html").hidden-sticky
+				img.logo-light.ol-retina('src'=lightlogoSrc, alt=templateName)
+				img.logo-dark.ol-retina('src'=darklogoSrc, alt=templateName)
+			a('href'=dirPrefix+"index.html").visible-sticky
+				img.logo-chaos.ol-retina('src'=dirPrefix+"assets/img/logo/logo-chaos.png", alt=templateName)
+			
+		// primary navigation
+		include header/menu-primary
+
+		//etc
+		.header-icons
+			include header/humburger

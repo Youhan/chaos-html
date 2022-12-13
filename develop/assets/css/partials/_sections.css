@@ -1,0 +1,41 @@
+
+.parallax-layer{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	
+	.ol-inner-wrapper{
+		position: relative;
+		height:100%;
+		z-index: 10;
+	}
+	.parallax-bg-elem{
+		z-index: -2;
+	}
+}
+.parallax-bg-elem{
+	position: absolute !important;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	.parallax-mode-8 & {
+		
+	}
+}
+
+.parallax-mode-header-content{
+	overflow:visible !important;
+}
+
+
+
+.parallax-layer{
+	>*,&:before{
+		transform: translate3d(0px, 0px, 0.1px);
+	}
+}

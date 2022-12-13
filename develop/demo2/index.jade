@@ -1,0 +1,210 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header homepage')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout bg-white')
+	- var PSheaderClasses = headerClasses.push('trans dark sticky-light slim-container') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var ptType="false"
+
+block contents
+	section#contents
+		.head-wrapper
+			header#header(class=headerClasses, data-sticky-threshold = -300)
+				include ../_partials/layouts/header-home
+
+			.page-head.h-700.parallax-layer(data-img-src=dirPrefix+"assets/img/bg/06-1.jpg",data-parallax-mode="mode-title")
+				.container
+					.tb-vcenter-wrapper
+						.vcenter
+							.ol-user-profile.parallax-layer(data-parallax-mode="mode-header-demo-2")
+								.avatar
+									img(src=dirPrefix+"assets/img/people-01.jpg")
+								h1.title
+									span Dr.Chaos
+									| McTabi
+								h2.subtitle Postdoc Candidate @ Stanford University
+							
+		.page-contents
+			block main-contents
+				block main-area
+					section.section.slim-container.p-bottom-80
+						.container
+							p
+								span.ol-dropcaps.square.dark C
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia commodo mauris, vel ultrices ante. Fusce condimentum quam ut enim bibendum, vitae placerat enim consequat. Etiam consectetur congue sapien ut bibendum. Nullam convallis ac turpis a mollis. Phasellus ac faucibus ante. Etiam rutrum varius rutrum. Cras faucibus lorem eget justo ultrices imperdiet. Curabitur in purus ullamcorper, viverra libero id, rutrum dolor. Curabitur sit amet orci pharetra, dapibus erat et, tempor ipsum. Duis rutrum porta eros sed auctor. Pellentesque et mollis erat. Nulla at mattis odio, eu ornare lorem. Nam malesuada massa a condimentum mollis. Quisque eleifend ultrices velit quis luctus.</br></br>
+								| Morbi id volutpat purus. Aliquam pellentesque commodo iaculis. Vivamus finibus ullamcorper ante at ultrices. Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est. Mauris ut vulputate nunc. Vestibulum scelerisque condimentum augue, a placerat ipsum molestie pellentesque. Donec quam purus, venenatis vitae nisi vel, facilisis accumsan eros. Aliquam mattis risus tortor, sed sagittis mi laoreet vel.</br></br>
+								|Aenean at est nec ex dignissim interdum sit amet eget ligula. Curabitur elementum urna sed ligula vestibulum, quis vestibulum massa suscipit. Suspendisse at libero purus. Aliquam blandit tempus porttitor. Sed finibus feugiat arcu, ut lobortis libero mattis eget. Vivamus maximus, ante ac facilisis tincidunt, leo sem efficitur justo, at scelerisque lorem dolor a risus. In nisl dui, congue sed est et, dictum tincidunt nisi. Aenean non vehicula metus, sed rutrum ante. Donec in libero euismod, facilisis justo ac, finibus arcu. Cras porta auctor enim vel porta. Fusce sed porttitor nisi.
+					section.slim-container
+						.container
+							.row
+								.col-md-6
+									h3 Educations
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+									.ol-timeline
+										div.tl-item.pub-item.with-icon
+											span.item-section 2015
+											.elem-wrapper
+												i.oli.oli-bookmark
+											.content-wrapper
+												h3.title Doctor of Philosophy
+												.description
+													p in Mechanical Engineering <br> Stanford University
+										div.tl-item.pub-item.with-icon
+											span.item-section 2012
+											.elem-wrapper
+												i.oli.oli-bookmark
+											.content-wrapper
+												h3.title Master of Science
+												.description
+													p in Mechanical Engineering <br> Stanford University
+										div.tl-item.pub-item.with-icon
+											span.item-section 2008
+											.elem-wrapper
+												i.oli.oli-bookmark
+											.content-wrapper
+												h3.title Bachelor of Science
+												.description
+													p in Mechanical Engineering <br> Stanford University
+								.col-md-6
+									h3 Positions
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+									.ol-timeline
+										div.tl-item.pub-item.with-icon
+											span.item-section 2015
+											.elem-wrapper
+												i.oli.oli-desk_lamp
+											.content-wrapper
+												h3.title General Atlantic Professor
+												.description
+													p in Mechanical Engineering <br> Stanford University
+										div.tl-item.pub-item.with-icon
+											span.item-section 2012
+											.elem-wrapper
+												i.oli.oli-desk_lamp
+											.content-wrapper
+												h3.title Assistance Professor
+												.description
+													p in Mechanical Engineering <br> Stanford University
+										div.tl-item.pub-item.with-icon
+											span.item-section 2005
+											.elem-wrapper
+												i.oli.oli-desk_lamp
+											.content-wrapper
+												h3.title Baghale Seller
+												.description
+													p in Daneshjo Blvd. <br> Shiraz Hafezie
+
+
+					section.section.section-narrow.slim-container
+						.container
+							.row
+								.col-md-12
+									h3 Research Projects
+									p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+
+									.owl-carousel.items.featured-items.owwwlab-theme.nav-center(data-cols="3" data-nav="true" data-margin="30" data-cols-md=2, data-loop=true)
+										a(href="#").featured-item.boxed
+												.features-image.ov-light-alpha-50
+													img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+												h3.features-title Computer Architecture
+										a(href="#").featured-item.boxed
+												.features-image.ov-light-alpha-50
+													img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+												h3.features-title Analysis of Algorithm
+										a(href="#").featured-item.boxed
+												.features-image.ov-light-alpha-50
+													img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+												h3.features-title Image Processing
+										a(href="#").featured-item.boxed
+												.features-image.ov-light-alpha-50
+													img(src=dirPrefix+"assets/img/featured-items/04.jpg", alt='image')
+												h3.features-title Analysis of Algorithm
+										a(href="#").featured-item.boxed
+												.features-image.ov-light-alpha-50
+													img(src=dirPrefix+"assets/img/featured-items/05.jpg", alt='image')
+												h3.features-title Computer Architecture
+										a(href="#").featured-item.boxed
+												.features-image.ov-light-alpha-50
+													img(src=dirPrefix+"assets/img/featured-items/06.jpg", alt='image')
+												h3.features-title Language processing
+					section.section.slim-container.p-bottom-0.p-top-0
+						.container
+							h3 Honors &amp; Awards
+							p Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est.
+
+							.ol-timeline
+								div.tl-item.pub-item.with-icon
+									span.item-section 2015
+									.elem-wrapper
+										i.oli.oli-university
+									.content-wrapper
+										h3.title Nobel Prize
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+
+								div.tl-item.pub-item.with-icon
+									span.item-section 2000
+									.elem-wrapper
+										i.oli.oli-literature
+									.content-wrapper
+										h3.title Nuffield Foundation New Lecturer Award
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+								
+								div.tl-item.pub-item.with-icon
+									.elem-wrapper
+										i.oli.oli-literature
+									.content-wrapper
+										h3.title Invaders And Guardians Award
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+
+								div.tl-item.pub-item.with-icon
+									.elem-wrapper
+										i.oli.oli-university
+									.content-wrapper
+										h3.title Influence Of The Land Award
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. 
+								
+								div.tl-item.pub-item.with-icon
+									span.item-section 1994
+									.elem-wrapper
+										i.oli.oli-like
+									.content-wrapper
+										h3.title Descendant Without Duty Award
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+								
+								div.tl-item.pub-item.with-icon
+									span.item-section 1980
+									.elem-wrapper
+										i.oli.oli-biomass
+									.content-wrapper
+										h3.title Losing The Future Award
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+								
+								div.tl-item.pub-item.with-icon
+									span.item-section 1950
+									.elem-wrapper
+										i.oli.oli-university
+									.content-wrapper
+										h3.title Turtles Of The Sea Award
+										.description
+											p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+										
+
+	// end #contents
+	
+	block pagefooter
+		include ../_partials/layouts/footer
+		// end #footer
+
+	
+			

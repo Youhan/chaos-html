@@ -1,0 +1,16 @@
+extends ../../../_layouts/lo-normal/right_left_sidebar
+
+append config
+	- var pageSpecificBodyClass = bodyClasses.push('sticky-header  bg-image')
+	- var pagewrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push("") 
+	- var pageTitle = "Boxed Layout Right and Left Sidebar"
+	- var dirPrefix = '../../'
+	- var currentMenu = "pages"
+
+block main-area
+	include ../../../_partials/blocks/pages/main-area
+block sidebar-1
+	include ../../../_partials/blocks/pages/sidebar-1
+block sidebar-2
+	include ../../../_partials/blocks/pages/sidebar-2

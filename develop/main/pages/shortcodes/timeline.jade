@@ -1,0 +1,399 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Timelines"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "Awesome way to show time related elements!"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 parallax-layer ov-light-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/06.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	section.section
+		.container
+			.row
+				.col-md-6
+					h3 Educations
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####Begin timeline
+					.ol-timeline
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2015
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Doctor of Philosophy
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2012
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Master of Science
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2008
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Bachelor of Science
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+					// #####End timeline
+				.col-md-6
+					h3 Positions
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####Begin timeline
+					.ol-timeline
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2015
+							.elem-wrapper
+								i.oli.oli-desk_lamp
+							.content-wrapper
+								h3.title General Atlantic Professor
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2012
+							.elem-wrapper
+								i.oli.oli-desk_lamp
+							.content-wrapper
+								h3.title Assistance Professor
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2005
+							.elem-wrapper
+								i.oli.oli-desk_lamp
+							.content-wrapper
+								h3.title Baghale Seller
+								.description
+									p in Daneshjo Blvd. <br> Shiraz Hafezie
+						// #####End timeline item
+					// #####End timeline
+	section.section.bg-gray
+		.container
+			h3 Honors &amp; Awards
+			p Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est.
+			// #####Begin timeline
+			.ol-timeline
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 2015
+					.elem-wrapper
+						i.oli.oli-university
+					.content-wrapper
+						h3.title Nobel Prize
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 2000
+					.elem-wrapper
+						i.oli.oli-literature
+					.content-wrapper
+						h3.title Nuffield Foundation New Lecturer Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-literature
+					.content-wrapper
+						h3.title Invaders And Guardians Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-university
+					.content-wrapper
+						h3.title Influence Of The Land Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. 
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 1994
+					.elem-wrapper
+						i.oli.oli-like
+					.content-wrapper
+						h3.title Descendant Without Duty Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 1980
+					.elem-wrapper
+						i.oli.oli-biomass
+					.content-wrapper
+						h3.title Losing The Future Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section 1950
+					.elem-wrapper
+						i.oli.oli-university
+					.content-wrapper
+						h3.title Turtles Of The Sea Award
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+			// #####End timeline
+	section.section.p-bottom-0
+		.container
+			h3 Scrollable Dates
+			p Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est. Mauris sit amet pellentesque ipsum, eget mollis leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac ultrices augue, molestie cursus est.
+			// #####Begin timeline
+			.ol-timeline.scrollable-timeline
+				// #####Begin timeline item
+				div.tl-item.active.pub-item.with-thumb
+					span.item-section 2015
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/01.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Horseload anileness disquisitionary precommune roper rantingly veininess
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Hellgrammite amoebid diterpene Iriartea Hispanicism discountenance alumnal airified fissirostral.
+						.description
+							.citation
+								span Rhoderick, Emlyn Huw, and R. H. Williams. Metal-semiconductor contacts. Oxford: Clarendon Press, 1988.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/03.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Crustade propopery campaniliform somewhere onyxis 
+						.description
+							.citation
+								span Hay, P. Jeffrey, and Willard R. Wadt. "Ab initio effective core potentials for molecular calculations. Potentials for the transition metal atoms Sc to Hg." The Journal of Chemical Physics 82.1 (1985): 270-283.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/04.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") mullenize Porokoto promythic reshuttle rainbowy carpentry pericarditis longanimous presbyope epicoeliac
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2013
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/05.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Myotrophy muskat gravimetric Puritaness geotonic chalkworker smilacin rivalry inky nontraditional sugarer owllike polys
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/06.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Nassidae peritoneally unevacuated tropal starship systematism clockwise!
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/07.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Unutterableness lymphotome irisroot betrothal troctolite myriotrichiaceou!
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2012
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/08.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Ejectivity stolewise revealable excluding leprose
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/09.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") pickleworm dislike misalter antenna spirituousness Campephagidae
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2010
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/01.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Vernonieae windore undersort schlieren phasma sympodial
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") glyoxylic adipose gynecopathy imparadise
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/03.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") comprehension Hominian cognisance squealing metrodynia marrowsky 
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/04.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") semipolar osphyocele disoxygenate Nerium reflectometry slows ague mopboard actinologous
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					span.item-section 2007
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/05.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") meteorologic distater rectifier laudatory
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/05.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") Labyrinthulidae synosteology blastozooid nondeposition thermometamorphism
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/06.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") cholorrhea smash nondiabetic radiopacity lecythid caffeate alarmism
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-thumb
+					.elem-wrapper
+						img.pub-thumbnail(src=dirPrefix+"assets/img/publications/07.jpg", alt="item thumbnail")
+					.content-wrapper
+						h3.title
+							a(href="#") aliseptal phrenohepatic griddle siphonosome minkery heptoxide undallying Hypoparia
+						.description
+							.citation
+								span 
+									a(href="#") Psychonomic Bulletin and Review 2014 
+									span.block-elem foster et al
+				// #####End timeline item
+			// #####End timeline

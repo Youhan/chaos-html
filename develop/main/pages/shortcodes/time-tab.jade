@@ -1,0 +1,166 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Time Tab"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "Gentle way to show large time based elements!"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 bg-white'
+	// - var pageTitleImage = dirPrefix+"assets/img/backgrounds/06.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	section.bg-gray
+		.container
+			// #####Begin extended background
+			.row.extend-bg-wrapper.no-space-grid.h-500
+				.col-md-4
+					.set-bg.extend-left
+						img.set-me(src=dirPrefix+"assets/img/backgrounds/08.jpg", alt="background-image")
+					.row
+						.col-md-9
+							.inner-wrapper.m-top-80
+								// #####Begin widget
+								.widget-heading
+									// #####Begin widget
+									h3.widget-title.with-sideline Honors and Awards
+									// #####End widget
+								// #####End widget
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim.
+				.col-md-8
+					// #####Begin timeline tab
+					.ol-timeline-tab(data-start-from="center",data-fade-edge="true")
+						ul.tl-head
+							li 1995
+							li 1998
+							li 2000
+							li 2005
+							li 2006
+							li 2008
+							li 2010
+							li 2013
+							li 2015
+						.tl-content
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+							// #####Begin timeline item
+							.tl-item
+								h4.title Distinguished Scientific Achievement Award
+								.description 
+									p 
+										| in 1995 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+									p
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at.
+								
+								a.btn.btn-small.btn-round.btn-icon-right.btn-anim-i
+									i.icon.oi-forward
+									span read more
+							// #####End timeline item
+					// #####End timeline tab
+			// #####End extended background

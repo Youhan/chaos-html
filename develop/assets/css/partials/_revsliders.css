@@ -1,0 +1,16 @@
+.ol-d6-slider{
+	.rev-scroll-btn{
+		border-width: 1px !important;
+	}
+	color:#fff;
+	h1,h2,h3{
+		color:#fff;
+		text-shadow:0 1px 1px rgba(0,0,0,0.5);
+	}
+	.tp-caption{
+		i{
+			font-size: 30px !important;
+			line-height: 30px !important;
+		}
+	}
+}

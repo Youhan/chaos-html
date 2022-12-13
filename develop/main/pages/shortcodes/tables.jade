@@ -1,0 +1,275 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "tables"
+	- var PageTitleHead = "chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 People tables
+		table.table.chaos-table.table-striped
+			thead
+				tr
+					th Name
+					th Position
+					th Email
+					th Phone
+			tbody
+				tr
+					td 
+						a(href="#").name-avatar
+							.avatar.avatar-xs
+								img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+							span.name Abdulla, Tariq
+					td research fellow
+					td.bold
+						a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+					td +44 55 66 43
+				tr
+					td 
+						a(href="#").name-avatar
+							.avatar.avatar-xs
+								img(src=dirPrefix+'assets/img/avatars/02.jpg', alt='Owl Image')
+							span.name Ahmad, Irqufen
+					td research fellow
+					td.bold
+						a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+					td +44 55 66 43
+				tr
+					td 
+						a(href="#").name-avatar
+							.avatar.avatar-xs
+								img(src=dirPrefix+'assets/img/avatars/03.jpg', alt='Owl Image')
+							span.name Abdulla, Ahmad
+					td research fellow
+					td.bold
+						a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+					td +44 55 66 43
+				tr
+					td 
+						a(href="#").name-avatar
+							.avatar.avatar-xs
+								img(src=dirPrefix+'assets/img/avatars/no-avatar.png', alt='Owl Image')
+							span.name Rodriguez, Manuel
+					td research fellow
+					td.bold
+						a(href="mailto:info@owwwlab.com") johndoe@hotmail.com
+					td +44 55 66 43
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 basic table
+		table.table
+			thead
+				tr
+					th #
+					th first name
+					th last name
+					th username
+			tbody
+				tr
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr
+					td 3
+					td John
+					td von Neumann
+					td @John
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 striped table
+		table.table.table-striped
+			thead
+				tr
+					th #
+					th first name
+					th last name
+					th username
+			tbody
+				tr
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr
+					td 3
+					td John
+					td von Neumann
+					td @John
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 bordered table
+		table.table.table-bordered
+			thead
+				tr
+					th #
+					th first name
+					th last name
+					th username
+			tbody
+				tr
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr
+					td 3
+					td John
+					td von Neumann
+					td @John
+	
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 hover table
+		table.table.table-hover
+			thead
+				tr
+					th #
+					th first name
+					th last name
+					th username
+			tbody
+				tr
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr
+					td 3
+					td John
+					td von Neumann
+					td @John
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 condensed table
+		table.table.table-condensed
+			thead
+				tr
+					th #
+					th first name
+					th last name
+					th username
+			tbody
+				tr
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr
+					td 3
+					td John
+					td von Neumann
+					td @John
+			
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 contextual tables
+		table.table
+			thead
+				tr
+					th #
+					th first name
+					th last name
+					th username
+			tbody
+				tr.active
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr.success
+					td 3
+					td John
+					td von Neumann
+					td @John
+				tr
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr.info
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr
+					td 3
+					td John
+					td von Neumann
+					td @John
+				tr.warning
+					td 1
+					td Albert
+					td Einstein
+					td @Albert
+				tr
+					td 2
+					td Max
+					td Planck
+					td @Max
+				tr.danger
+					td 3
+					td John
+					td von Neumann
+					td @John
+	
+	section.section.slim-container: .container
+		h3.text-capitalize.m-bottom-60 responsive table
+		.table-responsive
+			table.table
+				thead
+					tr
+						th #
+						th first name
+						th last name
+						th username
+				tbody
+					tr
+						td 1
+						td Albert
+						td Einstein
+						td @Albert
+					tr
+						td 2
+						td Max
+						td Planck
+						td @Max
+					tr
+						td 3
+						td John
+						td von Neumann
+						td @John

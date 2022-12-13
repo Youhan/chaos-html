@@ -1,0 +1,775 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ')
+	- var headerType = v2
+	- var pageTitle = "CHARTS"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+	
+block main-area
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#horizontalBarChart
+				script.
+					var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+					var randomScalingFactor = function() {
+						return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function() {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',.7)';
+					};
+					var horizontalBarChartData = {
+						labels: ["January", "February", "March", "April", "May", "June", "July"],
+						datasets: [{
+							label: 'Dataset 1',
+							backgroundColor: "rgba(220,220,220,0.5)",
+							data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+						}, {
+							hidden: true,
+							label: 'Dataset 2',
+							backgroundColor: "rgba(151,187,205,0.5)",
+							data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+						}, {
+						label: 'Dataset 3',
+						backgroundColor: "rgba(151,187,205,0.5)",
+						data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+						}]
+					};
+
+					var chart1 = function() {
+						var ctx = document.getElementById("horizontalBarChart").getContext("2d");
+						window.myHorizontalBar = new Chart(ctx, {
+							type: 'horizontalBar',
+							data: horizontalBarChartData,
+							options: {
+								// Elements options apply to all of the options unless overridden in a dataset
+								// In this case, we are setting the border of each horizontal bar to be 2px wide and green
+								elements: {
+									rectangle: {
+										borderWidth: 2,
+										borderColor: 'rgb(0, 255, 0)',
+										borderSkipped: 'left'
+									}
+								},
+								responsive: true,
+								legend: {
+									position: 'right',
+								},
+								title: {
+									display: true,
+									text: 'Chart.js Horizontal Bar Chart'
+								}
+							}
+						});
+					};
+	
+	//- bar-multi
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#bar-multi
+				script.
+					var randomScalingFactor = function() {
+						return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function() {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',.7)';
+					};
+					var barChartData = {
+						labels: ["January", "February", "March", "April", "May", "June", "July"],
+						datasets: [{
+							label: 'Dataset 1',
+							backgroundColor: "rgba(220,220,220,0.5)",
+							yAxisID: "y-axis-1",
+							data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+						}, {
+							label: 'Dataset 2',
+							backgroundColor: "rgba(151,187,205,0.5)",
+							yAxisID: "y-axis-2",
+							data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+						}, {
+							label: 'Dataset 3',
+							backgroundColor: [randomColor(), randomColor(), randomColor(), randomColor(), randomColor(), randomColor(), randomColor()],
+							yAxisID: "y-axis-1",
+							data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+						}]
+					};
+					var chart2 = function() {
+						var ctx2 = document.getElementById("bar-multi").getContext("2d");
+						window.myBar = Chart.Bar(ctx2, {
+							data: barChartData, 
+							options: {
+								responsive: true,
+								hoverMode: 'label',
+								hoverAnimationDuration: 400,
+								stacked: false,
+								title:{
+									display:true,
+									text:"Chart.js Bar Chart - Multi Axis"
+								},
+								scales: {
+									yAxes: [{
+										type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+										display: true,
+										position: "left",
+										id: "y-axis-1",
+									}, {
+										type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+										display: true,
+										position: "right",
+										id: "y-axis-2",
+										gridLines: {
+											drawOnChartArea: false
+										}
+									}],
+								}
+							}
+						});
+					};			
+
+	//- Bobble
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#Bobble
+				script.
+					var DEFAULT_DATASET_SIZE = 7;
+					var addedCount = 0;
+					var randomScalingFactor = function() {
+						return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function() {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',.7)';
+					};
+					var bubbleChartData = {
+						animation: {
+							duration: 10000
+						},
+						datasets: [{
+							label: "My First dataset",
+							backgroundColor: randomColor(),
+							data: [{
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}]
+						}, {
+							label: "My Second dataset",
+							backgroundColor: randomColor(),
+							data: [{
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+								r: Math.abs(randomScalingFactor()) / 5,
+							}]
+						}]
+					};
+					var chart3 = function() {
+						var ctx = document.getElementById("Bobble").getContext("2d");
+						window.myChart = new Chart(ctx, {
+							type: 'bubble',
+							data: bubbleChartData,
+							options: {
+								responsive: true,
+								title:{
+									display:true,
+									text:'Chart.js Bubble Chart'
+								},
+							}
+						});
+					};
+	
+	//- doughnut
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#doughnutchart
+				script.
+					var randomScalingFactor = function() {
+						return Math.round(Math.random() * 100);
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function(opacity) {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+					};
+					var config = {
+						type: 'doughnut',
+						data: {
+							datasets: [{
+								data: [
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+								],
+								backgroundColor: [
+									"#F7464A",
+									"#46BFBD",
+									"#FDB45C",
+									"#949FB1",
+									"#4D5360",
+								],
+								label: 'Dataset 1'
+							}, {
+								hidden: true,
+								data: [
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+								],
+								backgroundColor: [
+									"#F7464A",
+									"#46BFBD",
+									"#FDB45C",
+									"#949FB1",
+									"#4D5360",
+								],
+								label: 'Dataset 2'
+							}, {
+								data: [
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+								],
+								backgroundColor: [
+									"#F7464A",
+									"#46BFBD",
+									"#FDB45C",
+									"#949FB1",
+									"#4D5360",
+								],
+								label: 'Dataset 3'
+							}],
+							labels: [
+								"Red",
+								"Green",
+								"Yellow",
+								"Grey",
+								"Dark Grey"
+							]
+						},
+						options: {
+							responsive: true,
+							legend: {
+								position: 'top',
+							},
+							title: {
+								display: true,
+								text: 'Chart.js Doughnut Chart'
+							},
+							animation: {
+								animateScale: true,
+								animateRotate: true
+							}
+						}
+					};
+					var chart4 = function() {
+						var ctx4 = document.getElementById("doughnutchart").getContext("2d");
+						window.myDoughnut = new Chart(ctx4, config);
+					};
+	
+	//- line-legend
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#lineLegend
+				script.
+					var MONTHS5 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+					var randomScalingFactor5 = function() {
+						return Math.round(Math.random() * 100 * (Math.random() > 0.5 ? -1 : 1));
+					};
+					var randomColorFactor5 = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor5 = function(opacity) {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+					};
+					var config5 = {
+						type: 'line',
+						data: {
+							labels: ["January", "February", "March", "April", "May", "June", "July"],
+							datasets: [{
+								label: "My First dataset",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+								fill: false,
+								borderDash: [5, 5],
+							}, {
+								label: "My Second dataset",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+								fill: false,
+								borderDash: [5, 5],
+							}, {
+								label: "My Third dataset - No bezier",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+								lineTension: 0,
+								fill: false,
+							}, {
+								label: "My Fourth dataset",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+								fill: false,
+							}]
+						},
+						options: {
+							responsive: true,
+							legend: {
+								position: 'bottom',
+							},
+							hover: {
+								mode: 'label'
+							},
+							scales: {
+								xAxes: [{
+									display: true,
+									scaleLabel: {
+										display: true,
+										labelString: 'Month'
+									}
+								}],
+								yAxes: [{
+									display: true,
+									scaleLabel: {
+										display: true,
+										labelString: 'Value'
+									}
+								}]
+							},
+							title: {
+								display: true,
+								text: 'Chart.js Line Chart - Legend'
+							}
+						}
+					};
+					$.each(config5.data.datasets, function(i, dataset) {
+						var background = randomColor5(0.5);
+						dataset.borderColor = background;
+						dataset.backgroundColor = background;
+						dataset.pointBorderColor = background;
+						dataset.pointBackgroundColor = background;
+						dataset.pointBorderWidth = 1;
+					});
+					var chart5 = function() {
+						var ctx5 = document.getElementById("lineLegend").getContext("2d");
+						window.myLine = new Chart(ctx5, config5);
+					};
+
+	//- line
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#line
+				script.
+					var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		
+					var randomScalingFactor = function() {
+						return Math.round(Math.random() * 100);
+						//return 0;
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function(opacity) {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+					};
+					var config6 = {
+						type: 'line',
+						data: {
+							labels: ["January", "February", "March", "April", "May", "June", "July"],
+							datasets: [{
+								label: "My First dataset",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+								fill: false,
+								borderDash: [5, 5],
+							}, {
+								hidden: true,
+								label: 'hidden dataset',
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+							}, {
+								label: "My Second dataset",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+							}]
+						},
+						options: {
+							responsive: true,
+							title:{
+								display:true,
+								text:'Chart.js Line Chart'
+							},
+							tooltips: {
+								mode: 'label',
+								callbacks: {
+									// beforeTitle: function() {
+									//     return '...beforeTitle';
+									// },
+									// afterTitle: function() {
+									//     return '...afterTitle';
+									// },
+									// beforeBody: function() {
+									//     return '...beforeBody';
+									// },
+									// afterBody: function() {
+									//     return '...afterBody';
+									// },
+									// beforeFooter: function() {
+									//     return '...beforeFooter';
+									// },
+									// footer: function() {
+									//     return 'Footer';
+									// },
+									// afterFooter: function() {
+									//     return '...afterFooter';
+									// },
+								}
+							},
+							hover: {
+								mode: 'dataset'
+							},
+							scales: {
+								xAxes: [{
+									display: true,
+									scaleLabel: {
+										display: true,
+										labelString: 'Month'
+									}
+								}],
+								yAxes: [{
+									display: true,
+									scaleLabel: {
+										display: true,
+										labelString: 'Value'
+									},
+									ticks: {
+										suggestedMin: -10,
+										suggestedMax: 250,
+									}
+								}]
+							}
+						}
+					};
+					$.each(config6.data.datasets, function(i, dataset) {
+						dataset.borderColor = randomColor(0.4);
+						dataset.backgroundColor = randomColor(0.5);
+						dataset.pointBorderColor = randomColor(0.7);
+						dataset.pointBackgroundColor = randomColor(0.5);
+						dataset.pointBorderWidth = 1;
+					});
+					var chart6 = function() {
+						var ctx6 = document.getElementById("line").getContext("2d");
+						window.myLine = new Chart(ctx6, config6);
+					};
+	
+	//- pie
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#pie
+				script.
+					var randomScalingFactor = function() {
+						return Math.round(Math.random() * 100);
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function(opacity) {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+					};
+					var config7 = {
+						type: 'pie',
+						data: {
+							datasets: [{
+								data: [
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+									randomScalingFactor(),
+								],
+								backgroundColor: [
+									"#F7464A",
+									"#46BFBD",
+									"#FDB45C",
+									"#949FB1",
+									"#4D5360",
+								],
+							}],
+							labels: [
+								"Red",
+								"Green",
+								"Yellow",
+								"Grey",
+								"Dark Grey"
+							]
+						},
+						options: {
+							responsive: true,
+							title:{
+								display:true,
+								text:'Chart.js Pie Chart'
+							},
+							legend: {
+								position: 'bottom',
+							},
+						}
+					};
+					var chart7 = function() {
+						var ctx7 = document.getElementById("pie").getContext("2d");
+						window.myPie = new Chart(ctx7, config7);
+					};
+	
+	//- radar
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#radar
+				script.
+					var randomScalingFactor = function() {
+						return Math.round(Math.random() * 100);
+					};
+					var randomColorFactor = function() {
+						return Math.round(Math.random() * 255);
+					};
+					var randomColor = function(opacity) {
+						return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+					};
+					var config = {
+						type: 'radar',
+						data: {
+							labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+							datasets: [{
+								label: "My First dataset",
+								backgroundColor: "rgba(220,220,220,0.2)",
+								pointBackgroundColor: "rgba(220,220,220,1)",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+							}, {
+								label: 'Hidden dataset',
+								hidden: true,
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+							}, {
+								label: "My Second dataset",
+								backgroundColor: "rgba(151,187,205,0.2)",
+								pointBackgroundColor: "rgba(151,187,205,1)",
+								pointHoverBackgroundColor: "#fff",
+								data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+							},]
+						},
+						options: {
+							legend: {
+								position: 'top',
+							},
+							title: {
+								display: true,
+								text: 'Chart.js Radar Chart'
+							},
+							scale: {
+							  reverse: false,
+							  gridLines: {
+								color: ['black', 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+							  },
+							  ticks: {
+								beginAtZero: true
+							  }
+							}
+						}
+					};
+					var chart8 = function() {
+						window.myRadar = new Chart(document.getElementById("radar"), config);
+					};
+	//- scatter
+	section.section
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					canvas#scatter
+				script.
+					var randomScalingFactor = function() {
+						return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+					};
+					var randomColor = function(opacity) {
+						return 'rgba(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + (opacity || '.3') + ')';
+					};
+					var scatterChartData = {
+						datasets: [{
+							label: "My First dataset",
+							data: [{
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}]
+						}, {
+							label: "My Second dataset",
+							data: [{
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}, {
+								x: randomScalingFactor(),
+								y: randomScalingFactor(),
+							}]
+						}]
+					};
+					$.each(scatterChartData.datasets, function(i, dataset) {
+						dataset.borderColor = randomColor(0.4);
+						dataset.backgroundColor = randomColor(0.1);
+						dataset.pointBorderColor = randomColor(0.7);
+						dataset.pointBackgroundColor = randomColor(0.5);
+						dataset.pointBorderWidth = 1;
+					});
+					var chart9 = function() {
+						var ctx = document.getElementById("scatter").getContext("2d");
+						window.myScatter = Chart.Scatter(ctx, {
+							data: scatterChartData,
+							options: {
+								title: {
+									display: true,
+									text: 'Chart.js Scatter Chart'
+								},
+								scales: {
+									xAxes: [{
+										position: 'top',
+										gridLines: {
+											zeroLineColor: "rgba(0,255,0,1)"
+										},
+										scaleLabel: {
+											display: true,
+											labelString: 'x axis'
+										}
+									}],
+									yAxes: [{
+										position: 'right',
+										gridLines: {
+											zeroLineColor: "rgba(0,255,0,1)"
+										},
+										scaleLabel: {
+											display: true,
+											labelString: 'y axis'
+										}
+									}]
+								}
+							}
+						});
+					};
+	
+	script.
+		window.onload = function(){
+			chart1();
+			chart2();
+			chart3();
+			chart4();
+			chart5();
+			chart6();
+			chart7();
+			chart8();
+			chart9();
+		}

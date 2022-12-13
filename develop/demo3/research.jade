@@ -1,0 +1,122 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('side-header slim-container')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var currentMenu = "Research"
+	- var pageTitle = "Research"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white shadow-line ol-particles'
+	
+block main-area
+	section.section.section-narrow
+		.container
+			p.m-bottom-80 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur.
+
+			.row
+				.col-md-4
+					h3 Reseach Affiliates
+					p.m-bottom-30 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					a.btn.btn-anim-drawer.btn-round.btn-small(href="#")
+						span READ MORE
+				.col-md-8
+					
+					ul.clients-grid
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+						
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+
+	section.section.bg-gray
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-30
+				.col-md-4
+					h3 Reseach Projects
+					p.m-bottom-30 Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					a.btn.btn-anim-drawer.btn-round.btn-small(href="#")
+						span READ MORE
+				.col-md-4
+					// #####Begin featured item
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/01.jpg", alt='image')
+						h3.features-title Computer Architecture
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/02.jpg", alt='image')
+						h3.features-title Computer Architecture
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/03.jpg", alt='image')
+						h3.features-title Computer Architecture
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/04.jpg", alt='image')
+						h3.features-title Computer Architecture
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					a(href="#").featured-item.boxed
+						.features-image.ov-light-alpha-50
+							img(src=dirPrefix+"assets/img/featured-items/06.jpg", alt='image')
+						h3.features-title Computer Architecture
+					// #####End featured item
+			// #####End row with multiple columns
+	
+	section.section.ov-dark-alpha-40.dark-wrapper.bg-gray.parallax-layer.ol-particles(data-img-src=dirPrefix+"assets/img/bg/06.jpg", data-parallax-mode="mode-5")
+		.container
+			// #####Begin call to action
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-5.vcenter.text-right
+					a.btn.btn-medium.btn-wide.btn-trans.btn-skin-white.btn-circle(href='#') 
+						span view
+				.col-sm-7.vcenter.text-left
+					h2.title CHAOS Happens
+					h4.sub-title When the quality screems out!
+					
+			// #####End call to action
+
+		
+
+
+
+

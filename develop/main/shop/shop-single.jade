@@ -1,0 +1,341 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+  - var dirPrefix = '../'
+  - var PSbodyClass = bodyClasses.push('sticky-header shop-page')
+  - var PSwrapperClasses = wrapperClasses.push('regular-layout')
+  - var PSheaderClasses = headerClasses.push(' ') 
+  - var pageTitle = "Shop - Single item"
+  - var PageTitleHead = ""
+  - var PageTitleDesc = "A Simple Shop for Your Academic Products"
+  - var pageTitleClass = 'h-250'
+  - var currentMenu = "Shop"
+block main-area
+  .section
+    .container
+      .row
+        .col-md-4
+          .tj-lightbox-gallery
+            .post-prev-img
+              a.ol-lightbox.mfp-image(href=dirPrefix+'assets/img/shop/item-01.jpg' title="Main preview")
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            
+            // #####Begin carousel
+            .owl-carousel.items.owwwlab-theme.nav-top-right.pull-up-20(data-margin=10 data-cols="4" data-cols-sm =4 data-cols-xs=4 data-cols-xxs=3 data-nav="true")
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #1")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #2")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #3")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #4")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #5")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #6")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+              .item
+                a.mfp-image.ol-lightbox(href=dirPrefix+'assets/img/shop/item-01.jpg' title="preview #7")
+                  img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='image')
+            // #####End carousel
+        
+        .col-sm-8.col-md-5
+          h2.m-bottom-0 Shop Single Product Title
+          .sp-line-50
+          .row
+            .col-xs-6
+              del.section-text $50.00
+              | &nbsp 
+              strong $25.99
+            .col-xs-6.text-right
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-o
+              | &nbsp (3 reviews)
+          .sp-line-50
+          div
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et dui id dui suscipit pharetra vitae quis urna. Ut scelerisque quam quis erat tincidunt, vel vehicula turpis bibendum.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et dui id dui suscipit pharetra.
+         
+          .sp-line-50
+          form.form.form-inline(method='post', action='#')
+            input.form-control(type='number', min='1', max='100', value='1')
+            a.btn.btn-skin-dark.btn-small(href='#') Add to Cart
+          .sp-line-50
+          .section-text.small
+            div SKU: 2134
+            div
+              | Category: 
+              a(href='#')  Polo shirts
+            div
+              | Tags: 
+              a(href='#') polo shirt
+              | , 
+              a(href='#') men
+        .col-sm-4.col-md-3
+          // #####Begin iconbox v4
+          .icon-box.ib-v4
+            i.oli.oli-download_2
+            h3.title Instant Download
+            p
+              | Phasellus lectus sem, egestas eget sollicitudin ut.
+          // #####End iconbox v4
+          .sp-blank-20    
+          // #####Begin iconbox v4
+          .icon-box.ib-v4
+            i.oli.oli-gift
+            h3.title Gift Included
+            p
+              | Phasellus lectus sem, egestas eget sollicitudin ut.
+          // #####End iconbox v4
+          .sp-blank-20    
+          // #####Begin iconbox v4
+          .icon-box.ib-v4
+            i.oli.oli-wallet2
+            h3.title 14 Days Moneyback
+            p
+              | Phasellus lectus sem, egestas eget sollicitudin ut.
+          // #####End iconbox v4
+      .sp-blank-100
+      // #####Begin tab element
+      .ol-tab
+        // #####Begin tab navigation
+        ul.tab-navigation
+          li.active
+            a(href='#') Description
+          li
+            a(href='#') Parameters
+          li
+            a(href='#') Reviews (3)
+        // #####End tab navigation
+        .tab-content
+          // #####Begin tab panel item
+          .tab-pane.pad-40.active
+            p
+              span.ol-dropcaps.circle.bordered.light I
+              |ntegral Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa esse obcaecati repudiandae veniam amet modi recusandae optio earum sequi accusantium culpa vitae iste sit commodi eaque voluptatem officia quam. Molestiae nobis quidem atque explicabo eum facilis libero porro in fugiat pariatur molestias maiores.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie, sagittis elit ac, vulputate odio. Fusce quam augue, gravida tincidunt dui nec, tempor iaculis justo. Aliquam tortor leo, pharetra non congue sit amet, bibendum sit amet enim. Nullam sit amet malesuada justo.
+            .sp-blank-0
+          // #####End tab panel item
+          
+          // #####Begin tab panel item
+          .tab-pane.pad-40
+            .sp-blank-20
+            table.table.table-bordered.table-striped
+              tbody
+                tr
+                  th
+                    | Parameter
+                  th
+                    | Value
+                tr
+                  td
+                    | Volumes
+                  td
+                    | 20
+                tr
+                  td
+                    | Issues
+                  td
+                    | 12
+                tr
+                  td
+                    | Type
+                  td
+                    | Digital, hard cover
+                
+          // #####End tab panel item
+          // #####Begin tab panel item
+          .tab-pane.pad-40
+            
+            h4.m-bottom-50 Reviews 
+            // #####Begin comments
+            ul.comments
+              // #####Begin single comment
+              li.comment
+                .avatar
+                  img(alt='alt', src='../assets/img/people/01.jpg')
+                .comment-body
+                  .comment-meta
+                    ul
+                      li.author-name
+                        a.url(href='#', rel='external nofollow') John Doe  
+                        span - 
+                      li 
+                        | September 16, 2014 at 7:03 am 
+                        span - 
+                      li
+                        span
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star-o
+                  .comment-content
+                    p
+                      | The Online Etymology Dictionary explains that the origin of “job” is from the obsolete phrase “jobbe of work” in the sense of “piece of work”, and most dictionaries list the Middle English “gobbe” meaning “lump” (gob) as the origin of “jobbe”. Attempts to link the word to the biblical character Job seem to be folk etymology.
+              // #####End single comment
+              // #####Begin single comment
+              li.comment
+                .avatar
+                  img(alt='alt', src='../assets/img/people/03.jpg')
+                .comment-body
+                  .comment-meta
+                    ul
+                      li.author-name
+                        a.url(href='#', rel='external nofollow') John Doe 
+                        span -
+                      li 
+                        | September 16, 2014 at 7:03 am 
+                        span -
+                      li
+                        span
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star-o
+                  .comment-content
+                    p
+                      | The Online Etymology Dictionary explains that the origin of “job” is from the obsolete phrase “jobbe of work” in the sense of “piece of work”, and most dictionaries list the Middle English “gobbe” meaning “lump” (gob) as the origin of “jobbe”. Attempts to link the word to the biblical character Job seem to be folk etymology.
+                
+              // #####End single comment
+              // #####Begin single comment
+              li.comment
+                .avatar
+                  img(alt='alt', src='../assets/img/people/02.jpg')
+                .comment-body
+                  .comment-meta
+                    ul
+                      li.author-name
+                        a.url(href='#', rel='external nofollow') John Doe 
+                        span -
+                      li 
+                        | September 16, 2014 at 7:03 am 
+                        span -
+                      li
+                        span
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star
+                          i.fa.fa-star-o
+                  .comment-content
+                    p
+                      | The Online Etymology Dictionary explains that the origin of “job” is from the obsolete phrase “jobbe of work” in the sense of “piece of work”, and most dictionaries list the Middle English “gobbe” meaning “lump” (gob) as the origin of “jobbe”. Attempts to link the word to the biblical character Job seem to be folk etymology.
+              // #####End single comment
+            // #####End comments
+            .sp-blank-50
+            h4.m-bottom-50 Submit Review 
+            
+            form.comment-form(action='#')
+              .row
+                .col-sm-6
+                  input.input-lg.form-control(type='text', placeholder='Name *', name='name')
+                .col-sm-6
+                  input.input-lg.form-control(type='email', placeholder='Email *', name='email')
+              .sp-blank-20
+              select.form-control
+                option -- Select Rating --
+                option(value='1') 1
+                option(value='2') 2
+                option(value='3') 3
+                option(value='4') 4
+                option(value='5') 5
+              .sp-blank-20 
+              textarea.input-lg.form-control(rows='6', placeholder='Message...')
+              .sp-blank-20
+              input.btn.btn-medium.btn-block.btn-thick-border(type='submit', value='Post')
+            .sp-blank-10
+          // #####End tab panel item
+      // #####End tab element
+  .section.bg-gray
+    .container
+      h2.text-center Related Products
+      .sp-blank-30
+      // #####Begin carousel
+      .owl-carousel.items.owwwlab-theme(data-margin=30 data-nav="true")  
+        .item
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .item
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .item
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        .item
+          // #####Begin shop item
+          .shop-item  
+            .post-prev-img
+              a(href='shop-single.html')
+                img(src=dirPrefix+'assets/img/shop/item-01.jpg', alt='item')
+              .intro-label
+                span.label.label-danger.bg-red Sale
+            h4.post-prev-title.text-center
+              a(href='shop-single.html') Scientific Reports Collection
+            .post-prev-text.text-center
+              del $120.00
+              strong $100.00
+            .post-prev-more.text-center
+              a.btn.btn-block.btn-small.btn-thick-border(href='#')
+                i.icon.oi-shopping-cart
+                |  Add to cart
+          // #####End shop item
+        
+      // #####End carousel

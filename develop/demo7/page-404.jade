@@ -1,0 +1,19 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var customStyleName = 'demo7.css'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('bg-green') 
+	- var bcType = "false"
+	- var ptType = "false"
+	- var triggerClass = 'pull-right'
+block main-area
+	section.section
+		.container
+			.page-404.text-center.p-top-50.p-bottom-50
+				h1.title.m-bottom-10 404
+				.shadow-line
+				h3.text-capitalize.p-top-50 OOOPPSS!<br>
+					|Our recent research showes that the page no longer exists.

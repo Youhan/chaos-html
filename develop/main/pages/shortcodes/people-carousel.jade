@@ -1,0 +1,141 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "People Carousel"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "A Very Dedicated Element to Use for your Precious Staff"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 parallax-layer ov-light-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/06.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	
+block main-area
+	section.section.bg-gray: .container: .row
+		.col-md-5
+			// #####Begin carousel
+			.people-carousel.set-bg.shadow.ov-light-alpha-50.owl-carousel.items.owwwlab-theme(data-img-src=dirPrefix+"assets/img/backgrounds/summ-bg.jpg", data-cols-all=1, data-margin=0, data-nav="true", data-loop="true")
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/06.jpg")
+					h3.title Rebbeca Culbertson
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/05.jpg")
+					h3.title Quinlan Granville
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/04.jpg")
+					h3.title Renato Schiller
+					h4.sub-title PHD Candidate
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/03.jpg")
+					h3.title Wynell Lariviere
+					h4.sub-title Baghalilogist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/02.jpg")
+					h3.title Jane Doe
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profil
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/01.jpg")
+					h3.title Carole Stangle
+					h4.sub-title Nanatolist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-red.btn-circle(href="about-people.html") view profile
+			// #####End carousel
+		.col-md-7.p-left-40.p-top-40.ol-animate.fadeInRight
+			// #####Begin heading
+			.heading-with-sub
+				h3.title People @ Chaos
+				h4.subtitle Awesome People working hrere
+			// #####End heading
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			a.btn.btn-circle.btn-small(href="about-people.html") Read more
+	section.section: .container: .row
+		.col-md-5
+			// #####Begin carousel
+			.people-carousel.parallax-layer.ov-grad3-alpha-90.owl-carousel.items.owwwlab-theme(data-img-src=dirPrefix+"assets/img/backgrounds/14.jpg", data-cols-all=1, data-margin=0, data-nav="true", data-loop="true")
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/06.jpg")
+					h3.title Rebbeca Culbertson
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-dark.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/05.jpg")
+					h3.title Quinlan Granville
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-dark.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/04.jpg")
+					h3.title Renato Schiller
+					h4.sub-title PHD Candidate
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-dark.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/03.jpg")
+					h3.title Wynell Lariviere
+					h4.sub-title Baghalilogist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-dark.btn-circle(href="about-people.html") view profile
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/02.jpg")
+					h3.title Jane Doe
+					h4.sub-title Principal Investigator
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-dark.btn-circle(href="about-people.html") view profil
+				.item
+					.avatar
+						img(src=dirPrefix+"assets/img/people/01.jpg")
+					h3.title Carole Stangle
+					h4.sub-title Nanatolist
+					.description
+						| Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					a.btn.btn-small.btn-skin-dark.btn-circle(href="about-people.html") view profile
+			// #####End carousel
+		.col-md-7.p-left-40.p-top-40.ol-animate.fadeInRight
+			// #####Begin heading
+			.heading-with-sub
+				h3.title Customizable
+				h4.subtitle Awesome People working hrere
+			// #####End heading
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta.
+			a.btn.btn-circle.btn-small(href="about-people.html") Read more

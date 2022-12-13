@@ -1,0 +1,31 @@
+.extend-bg-wrapper{
+	.extend-left,.extend-right{
+		position: absolute;
+		top:0;
+		right:0;
+		height: 100%;
+	}
+	.extend-right{
+		right: auto;
+		left:0;
+	}
+
+	.fill-wrapper{
+		height: 100%;
+	}
+
+	&.extend-destroy {
+		height:auto !important;
+		.extend-left,.extend-right{
+			position: static;
+			height: auto !important;
+		}
+
+		.vertical-center-transform{
+			position: initial;
+			transform:none;
+		}
+
+		
+	}
+}

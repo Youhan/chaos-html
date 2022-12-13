@@ -1,0 +1,446 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "seminar page"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var lorem = "Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta aliquet sed!"
+	
+	- var currentMenu = "Publications"
+block page-title
+	.page-head.h-700.parallax-layer.tb-vcenter-wrapper.dark(data-img-src=dirPrefix+"assets/img/backgrounds/10.jpg", alt="background-image")
+		
+		
+		.container
+			.tb-vcenter-wrapper
+				.title-wrapper.vcenter.parallax-layer(data-parallax-mode="mode-header-content")
+					h1.title.alt Remembering Prof. Jafar Doe!
+					h2.description.alt TALK
+					.sp-blank-30
+					.row
+						.col-sm-4
+							.info-wrapper.bg-red.extend-bg-color.left
+								|20 Sep 2015
+								br
+								|08:00 - 12:00
+						.col-sm-4.m-top-15
+							a.btn.btn-medium.btn-wide.btn-trans.btn-skin-white.btn-thick-border.btn-circle REGISTER NOW
+					.sp-blank-10
+					.info-wrapper
+						|Room 103 
+						br
+						|CHAOS Institute of the Americas
+block main-area
+	section.section.bg-gray.with-social-share
+		.container
+			.social-share.right
+				.trigger.circle-icon.double.skin-red.size-md.text-center
+					i.oli.oli-share
+				.items
+					a(href="#") FACEBOOK
+					a(href="#") TWITTER
+					a(href="#") GOOGLE+
+			.row
+				.col-sm-3
+					h3.with-sideline About
+				.col-sm-9
+					p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne, nusquam luptatum moderatius at vix.
+					p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.sp-blank-30
+					.caption-img.left-align.off-container
+						img(src=dirPrefix+"assets/img/people/10.jpg", alt="Doctor Doe")
+						.caption Prpf. Jafar Doe
+					// #####Begin widget
+					.widget-heading
+						// #####Begin widget
+						h5.widget-title Who is Prof. Javar Doe?
+						// #####End widget
+					// #####End widget
+					p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne, nusquam luptatum moderatius at vix.
+					p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					p  His in saepe quodsi definitiones, et mea fabulas lobortis maluisset. Possim dolorem epicuri eam te. Nec impetus accusamus ea, vel in sint utroque, wisi nulla ex eum. Id liber vocent has, no cum dolore honestatis, nec sanctus principes dissentias at. Pro impetus sententiae in, his populo nominavi luptatum an. Dico commodo disputando est id, ius putant tractatos reformidans eu. His in saepe quodsi definitiones, et mea fabulas lobortis maluisset. Possim dolorem epicuri eam te. Nec impetus accusamus ea, vel in sint utroque, wisi nulla ex eum. Id liber vocent has, no cum dolore honestatis, nec sanctus principes dissentias at. Pro impetus sententiae in, his populo nominavi luptatum an. Dico commodo disputando est id, ius putant tractatos reformidans eu.
+	section.section: .container
+			.row
+				.col-sm-3
+					h3.with-sideline Speakers
+					p These people wil speak for you, so listen carefully!
+				.col-sm-9
+					// #####Begin carousel
+					.owl-carousel.items.owwwlab-theme.nav-top-right(data-cols="3" data-nav="true" data-margin="30" data-cols-md="3")
+						// #####Begin person card
+						.vc-card.boxed
+							a(href="#")
+								img(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. Mick Roscoe
+								.subtitle
+									| Associate Dean
+							.links
+								a(href="#" data-toggle="tooltip" data-original-title="Linkedin")
+									i.fa.fa-linkedin
+								a(href="#" data-toggle="tooltip" data-original-title="Google+")
+									i.fa.fa-google-plus
+								a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+									i.fa.fa-facebook
+								a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+									i.fa.fa-twitter
+						// #####End person card
+						// #####Begin person card
+						.vc-card.boxed
+							a(href="#")
+								img(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr. Tristram Jack
+								.subtitle
+									| Associate Dean
+							.links
+								a(href="#" data-toggle="tooltip" data-original-title="Linkedin")
+									i.fa.fa-linkedin
+								a(href="#" data-toggle="tooltip" data-original-title="Google+")
+									i.fa.fa-google-plus
+								a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+									i.fa.fa-facebook
+								a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+									i.fa.fa-twitter
+						// #####End person card
+						// #####Begin person card
+						.vc-card.boxed
+							a(href="#")
+								img(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+							.vc-card-wrapper
+								a.title(href="#") Dr.Prof. John Doe
+								.subtitle
+									| Associate Dean, physics head
+							.links
+								a(href="#" data-toggle="tooltip" data-original-title="Linkedin")
+									i.fa.fa-linkedin
+								a(href="#" data-toggle="tooltip" data-original-title="Google+")
+									i.fa.fa-google-plus
+								a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+									i.fa.fa-facebook
+								a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+									i.fa.fa-twitter
+						// #####End person card
+					// #####End carousel
+	
+	section.section.bg-gray: .container
+		h2.pull-left Event Agenda
+		.sp-blank-30
+		// #####Begin schedule item
+		.ol-agenda.sticky-type
+			ul.filters
+				li.active
+					a(href="#" data-filter="*") All
+				li
+					a(href="#" data-filter="room-1") Main Hall
+				li
+					a(href="#" data-filter="room-2") Conference Hall
+				li
+					a(href="#" data-filter="room-3") Room #3
+			// #####Begin agenda section
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 05
+						span JUL 2016 
+				.section-body
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Registration - Conference
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Conference Hall
+						.contents
+							h3.title Registration - Workshops
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title Openning Party!
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.		
+			// #####End agenda section
+			// #####Begin agenda section
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 06
+						span JUL 2016 
+				.section-body
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Professional Consort
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title Sir Jamie B. McMahan
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title The Dangerous Angel
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title Sir Jamie B. McMahan
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Words of Storms
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title The Blade of the Streams
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title Snow in the Dragon
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-2")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Conference Hall
+						.contents
+							h3.title The Flowers's Girlfriend
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title The Splintered Flames
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:30am - 9:30am
+							span Room #3
+						.contents
+							h3.title Husband in the Game
+							h4.subtitle An awesome title for his lecture here
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+			// #####End agenda section
+			// #####Begin agenda section
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 07
+						span JUL 2016 
+				.section-body
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title The Woman of the Mage
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title The Willow's Game
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-3")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Room #3
+						.contents
+							h3.title The Final Game
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+					.item(data-filter="room-1")
+						.info
+							span 
+								strong 8:00am - 8:30am
+							span Main Hall
+						.contents
+							h3.title Goodby Party!
+							h4.subtitle Let's get a coffee or two!
+							.extra-description
+								p Lorem ipsum dolor sit amet, delenit forensibus qui ea. Id eam dolore veritus deleniti. Choro signiferumque pro eu. Eu pri quaestio electram adipiscing, quot tota cum ne.
+								p Ornatus commune et sed. Quis mnesarchum interpretaris ea cum. Ei quo graeci commodo imperdiet, has et primis meliore, vim et facer ubique atomorum. Sed mundi recusabo appellantur ei. Ei cum novum ornatus eloquentiam, nisl modus eu has. Oratio essent gloriatur vix ea, eu qui tale nostrum adolescens.
+			// #####End agenda section
+		// #####End schedule item
+	section.section
+		.container
+			
+			// #####Begin heading
+			.heading-with-sub.text-center.m-bottom-60
+				h2.title Don&#39;t take it from us, see what other people say!
+				h4.subtitle Here is an awesome quick description about.	
+				
+			// #####End heading
+			.row
+				.col-md-4
+					// #####Begin single testimonial
+					.testimonial-item
+						.avatar.avatar-sm
+							img(src=dirPrefix+'assets/img/avatars/05.jpg', alt='Owl Image')
+						.texts
+							p #{lorem}
+							h4.their-name Martha M. Masters
+							div.their-cite 
+								| Marketing -
+								a(href="#") Google
+					// #####End single testimonial
+				.col-md-4
+					// #####Begin single testimonial
+					.testimonial-item
+						.avatar.avatar-sm
+							img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+						.texts
+							p #{lorem}
+							h4.their-name Martha M. Masters
+							div.their-cite 
+								| Marketing -
+								a(href="#") Google
+					// #####End single testimonial
+				.col-md-4
+					// #####Begin single testimonial
+					.testimonial-item
+						.avatar.avatar-sm
+							img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+						.texts
+							p #{lorem}
+							h4.their-name Martha M. Masters
+							div.their-cite 
+								| Marketing -
+								a(href="#") Google
+					// #####End single testimonial
+			
+	section.section.pad-0.bg-gray
+		.container
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.partner-logos(data-cols="6", data-cols-sm =3, data-cols-xs=2, data-cols-xxs=2, data-loop="true")
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='image')
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='image')
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='image')
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='image')
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='image')
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='image')
+				.item.partner-logo
+					img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='image')
+			// #####End carousel
+	
+	section.section.dark-wrapper.parallax-layer.ov-dark-alpha-70(data-img-src=dirPrefix+"assets/img/backgrounds/15.jpg", alt="background-image")
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h1.title Take your seat!
+				h6.subtitle Registration is free of charge and it is open to public
+			// #####End heading
+			.sp-blank-20
+			.row
+				.col-md-3.col-md-offset-3
+					// #####Begin iconbox v8
+					.icon-box.ib-v8.dark-overlay
+						i.oli.oli-today
+						h3.title BEFORE SEP 14th
+						p 100 USD
+						a.ib-btn(href='#') CLOSED!
+					// #####End iconbox v8
+				.col-md-3
+					// #####Begin iconbox v8
+					.icon-box.ib-v8.ib-blue
+						i.oli.oli-today
+						h3.title AFTER SEP 14th
+						p 140 USD
+						a.ib-btn(href='#') REGISTER NOW
+					// #####End iconbox v8

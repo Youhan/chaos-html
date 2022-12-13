@@ -1,0 +1,127 @@
+extends /_layouts/lo-normal/fullwidth
+append config
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var bcType = "intitle"
+	- var currentMenu = "Publications"
+	- var PageTitleHead = "Magazine"
+	- var pageTitle = "Spaceport"
+	- var pageTitleClass = 'h-500 parallax-layer center-it dark ov-blue-alpha-60'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/009.jpg"
+	- var pageTitleParallaxMode = "bg"
+block main-area
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			// #####Begin heading
+			.heading-with-sub
+				h3.title Issue 12 - Fall 2015
+				h4.subtitle Providing Technical and Analytical Expertise to Space Programs in Service of the National Interest
+			// #####End heading
+			p
+				|Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur.
+			a.ol-iconic-link(href="#").m-top-30.m-bottom-30
+				i.oli.oli-download
+				|Download PDF
+			// #####Begin social icons
+			ul.social-icons.shape-circle.skin-white
+				li
+					a(href="#")
+						i.fa.fa-facebook
+				li
+					a(href="#")
+						i.fa.fa-twitter
+				li
+					a(href="#")
+						i.fa.fa-google-plus
+				li
+					a(href="#")
+						i.fa.fa-linkedin
+				li
+					a(href="#")
+						i.fa.fa-skype
+				li
+					a(href="#")
+						i.fa.fa-dribbble
+			// #####End social icons
+		.col-md-8
+			.issuuembed(data-configid='23762006/33691266', style='width:525px; height:371px;')
+				script(type='text/javascript', src='https://e.issuu.com/embed.js', async='true')
+	section.section.bg-pattern-1: .container
+		h2.text-center.m-bottom-40 List of Published Issues
+		// #####Begin carousel
+		.owl-carousel.items.owwwlab-theme.nav-top-center(data-cols="6"  data-margin="30" data-nav="true")
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-theme(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+				.contents
+					.item-meta
+						span issue 19
+					.title-wrapper
+						h2.title Fall 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-lemon(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+				.contents
+					.item-meta
+						span issue 20
+					.title-wrapper
+						h2.title Autumn 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-purple(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+				.contents
+					.item-meta
+						span issue 21
+					.title-wrapper
+						h2.title Summer 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-red(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+				.contents
+					.item-meta
+						span issue 22
+					.title-wrapper
+						h2.title Spring 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-blue(href="#")
+				
+				.contents
+					.item-meta
+						span issue 23
+					.title-wrapper
+						h2.title Fall 2015
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-red(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+				.contents
+					.item-meta
+						span issue 24
+					.title-wrapper
+						h2.title Autumn 2015
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-green(href="#")
+				.contents
+					.item-meta
+						span issue 25
+					.title-wrapper
+						h2.title Summer 2015
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-yellow(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+				.contents
+					.item-meta
+						span issue 25
+					.title-wrapper
+						h2.title Spring 2015
+			// #####End  book element
+			
+			
+		// #####End carousel

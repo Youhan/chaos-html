@@ -1,0 +1,175 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Grid 4 column"
+	- var PageTitleHead = "Portfolio"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var headerParallaxType = "bg"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/portfolio/03.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Work"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+block main-area
+	section.section
+		.container
+			// #####Begin grid filters
+			.ol-grid-filters
+				ul.default-filters
+					li.active
+						a(href="#" data-filter="*") Show All
+					li
+						a(href="#" data-filter=".art-work") Artwork
+					li
+						a(href="#" data-filter=".banner") Banner
+					li
+						a(href="#" data-filter=".marketing") Marketing
+					li
+						a(href="#" data-filter=".design") Design
+				
+				.select-filters
+					select
+						option(value="*") Show All
+						option(value=".art-work") Artwork
+						option(value=".banner") Banner
+						option(value=".marketing") Marketing
+						option(value=".design") Design
+			// #####End grid filters
+			.ol-grid.grid.col-4
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing.art-work.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/03.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/04.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.marketing.art-work
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/05.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/05.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.marketing.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/06.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/06.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/07.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/08.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/09.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/09.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.art-work.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/10.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/10.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing.design
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item
+				// #####Begin grid item
+				.grid-item.ratio-2.banner.marketing.art-work
+					.gi-wrapper.ol-hover.hover-1
+						.img-layer.set-bg
+							img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='image hover')
+						.ol-overlay.ov-dark-alpha-80
+						.icons
+							a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+							a(href="#"): i.oli.oli-right
+								
+				// #####End grid item

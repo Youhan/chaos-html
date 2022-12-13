@@ -1,0 +1,391 @@
+.ol-grid{
+	width:100%;
+	.grid-sizer{width: 100%;}
+	.grid-item { width: 25%; float:left; }
+	
+	&.col-1 .grid-item {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $chaos_sidenav_border;
+	}
+	&.col-2{
+		.grid-sizer,.grid-item {width: 50%; }
+	}
+	&.col-3{
+		.grid-sizer,.grid-item { width: 33.3%; }
+	}
+	&.col-4{
+		.grid-sizer,.grid-item { width: 25%; }
+	}
+	&.col-5{
+		.grid-sizer,.grid-item { width: 20%; }
+	}
+		
+	&.grid{
+		.gi-wrapper{
+			display: block;
+			width: 100%;
+			height: 0;
+			display: block;
+			padding: 0 0 100%;
+			margin-bottom: 0;
+			position: relative;
+			padding-bottom: 100%;
+			overflow: hidden;
+		}
+		.ratio-1{
+			.gi-wrapper{
+				padding-bottom: 50% !important;
+			}
+		}
+		.ratio-2{
+			.gi-wrapper{
+				padding-bottom: 70% !important;
+			}
+		}
+		.ratio-3{
+			.gi-wrapper{
+				padding-bottom: 200% !important;
+			}
+		}
+		.width-2x { 
+			width: 100%;
+		}
+		&.col-2{
+			.width-2x { width: 100%; }
+		}
+		&.col-3{
+			.width-2x { width: 66.6%; }
+		}
+		&.col-4{
+			.width-2x { width: 50%; }
+		}
+		&.col-5{
+			.width-2x { width: 40%; }
+		}
+
+	}
+	&.masonry{
+		/* feeling lonely here */
+	}
+	
+	&.with-gutter{
+		margin-left: -5px;
+		margin-right: -5px;
+
+		.grid-item{
+			padding: 5px;
+		}
+
+		&.gutter-15{
+			margin-left: -15px;
+			margin-right: -15px;
+			margin:-15px -15px 0 -15px;
+
+			.grid-item{
+				padding: 15px;
+			}
+		}
+	}
+	/* used for one column grid*/
+	.gi-desc{
+		padding: 0 5px;
+		margin-bottom: 25px;
+		> a{ 
+			text-decoration: none;
+			&:hover .title,
+			&:focus .title{
+				color: $chaos_theme_color;		
+			}
+		}
+		.title{
+			margin-top: 15px;
+			margin-bottom: 0;	
+		}
+		.tags{
+			margin-top: 15px;
+			i{
+				font-size: 12px;
+				margin-right: 5px;
+			}
+			a{
+				font-size: 12px;	
+				text-decoration: none;
+				color: $chaos_textinlight;
+				&:hover,
+				&:focus{
+					color: $chaos_theme_color;		
+				}
+			}
+		}
+		p{
+			margin-top: 25px;
+		}
+		.btn{
+			margin-top: 30px;
+		}
+	}
+
+	&:before{
+		content: none;
+	}
+
+	.dark-wrapper &{
+		.gi-desc{
+			.tags a{
+				color: #cbcbcb;
+			}
+		}
+		&.col-1 .grid-item{
+			border-bottom-color: #4b4b4b;
+		}
+	}
+}
+
+
+.ol-grid-filters{
+	
+	.default-filters{
+		position: relative;
+		list-style: none;
+		padding: 0;
+		margin: 0 0 50px;
+		text-align: center;
+		li{
+			display: inline-block;
+			a{
+				text-decoration: none;
+				color: $chaos_textinlight;
+				padding: 10px 20px;
+				display: block;
+			}
+			&.active{
+				border: 1px solid $chaos_textinlight;
+				border-radius: 60px;
+			}
+		}
+		
+	}
+	
+	.select-filters{
+		color: $chaos_textinlight;
+	    line-height: 1;
+	    border-radius: 20px;
+	    border: 1px solid $chaos_textinlight;
+	    display: none;
+	    margin:0 20px 30px !important;
+	    position: relative;
+		
+	    &:after{
+	    	position: absolute;
+	    	content: "\e9ca";
+	    	height: 40px;
+	    	top: 0;
+	    	right: 20px;
+	    	font-family: "ol-icon-set";
+	    	font-size: 18px;
+	    	line-height: 40px;
+	    	text-align: center;
+	    }
+	    select{
+			width: 100%;
+			height: 40px;
+			padding: 5px;
+			background: transparent;
+			
+	        -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+		    border: none;
+		    background: transparent;
+		    color: transparent;
+
+		    &:focus{
+		    	outline:none;
+		    }
+		    position:relative;
+		    z-index:1;
+
+		    option{
+		    	color:#4b4b4b;
+		    }
+
+		}
+
+		.select-value{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+			text-align: center;
+    		line-height: 40px;
+		}
+	}
+
+	
+
+	.dark-wrapper &{
+		.grid-filter{
+			a{
+				color: #cbcbcb;
+			}
+			&.active{
+				border-color: #f5f5f5;
+				a{
+					color: #f5f5f5;
+				}
+			}
+
+			&:hover,
+			&:focus{
+				a{
+					color: #fff;
+				}
+			}
+		}	
+	}
+}
+
+.grid-item{
+	display: block;
+
+	&:hover,&:focus{
+		outline:none;
+		text-decoration: none;
+
+		.caption{
+			color:#000;
+		}
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.ol-grid{
+		&.col-2,&.col-3,&.col-4,&.col-5{
+			.grid-sizer,.grid-item {width: 50%; }
+		}
+		.ratio-1 .gi-wrapper,
+		.ratio-2 .gi-wrapper{
+			padding-bottom: 100%;
+		}
+		.width-2x{
+			width: 50% !important;
+		}
+
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.ol-grid{
+		&.col-2,&.col-3,&.col-4,&.col-5{
+			.grid-sizer,.grid-item {width: 100%; }
+		}
+		&.with-gutter .grid-item{
+			padding-left: 0;
+			padding-right:0;
+		}
+		.width-2x{
+			width: 100% !important;
+		}
+	}
+
+
+	.ol-grid-filters{
+		.default-filters{
+			display: none;
+		}
+		.select-filters{
+			display: block;
+		}
+	}	
+}
+
+
+
+/* navigation box */
+.nav-box{
+	a&:hover, a{
+		text-decoration: none;
+		color: $chaos_dark_lighter;
+		display: block;
+		.widget-heading{
+			.sub-title{
+				left: -12px;
+			}
+			&.right .sub-title{
+				left: auto;
+				right: -12px;
+			}
+		}
+	}
+	.widget-heading{
+		display: inline-block;
+		margin: 0 12px;
+		color: $chaos_textinlight;
+		.title{
+			font-size: 14px;
+			margin-bottom: 0;
+			color: $chaos_textinlight;
+		}
+		.sub-title{
+			position: relative;
+			font-size: 14px;
+			margin-top: 5px;
+		}
+		&.alt{
+			color: $chaos_dark_lighter;
+			.title{
+				font-size: 16px;
+				color: $chaos_dark_lighter;
+			}
+		} 
+		&.with-icon{
+			padding-left: 40px;
+			position: relative;
+			&:after{
+				position: absolute;
+				content: "\e2f5";
+				height: 100%;
+				top: 50%;
+				left: 0;
+				margin-top: -15px;
+				font-family: owlabicon;
+				font-size: 22px;
+			}
+			&.alt:after{
+				top: 0;
+				margin-top: -9px;
+				content: "\e2f8";
+				font-size: 28px
+			}
+			&.right{
+				padding: 0;
+				padding-right: 40px;
+				&:after{
+					left: auto;
+					right: 0;
+					content: "\e2f4";
+				}
+				&.alt:after{
+					top: 0;
+					margin-top: -9px;
+					content: "\e314";
+					font-size: 28px
+				}
+			}
+		}
+	}
+	.dark-wrapper &,
+	& .dark-wrapper{
+		.alt .title,
+		.sub-title,
+		.with-icon:after{
+			color: #fff;
+		}
+	}
+}

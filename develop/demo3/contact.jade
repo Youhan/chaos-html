@@ -1,0 +1,66 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('side-header slim-container')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var currentMenu = "Contact Me"
+	- var pageTitle = "Contact Me"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white shadow-line ol-particles'
+
+block main-area
+	section.section.section-narrow
+		.container
+			.row
+				.col-md-6
+					// #####Begin accordion
+					.ol-accordion
+						// #####Begin accordion item
+						.ac-item.open
+							.item-head
+								i.icon.oi-plus
+								span Postal Address
+							.item-body
+								p PO Box 88900 Collins Street West Victoria 5433 Australia
+						// #####End accordion item
+						// #####Begin accordion item
+						.ac-item
+							.item-head
+								i.icon.oi-plus
+								span Office
+							.item-body
+								p Cambridge, MA 02138, United States
+						// #####End accordion item
+						// #####Begin accordion item
+						.ac-item
+							.item-head
+								span Phone
+							.item-body
+								p 023 434 534 234</br>
+								|CHAOS Interal: 32231</br>
+								|International: +44 34 2332 7568
+						// #####End accordion item
+						// #####Begin accordion item
+						.ac-item
+							.item-head
+								span Fax
+							.item-body
+								p 023 434 534 234</br>
+								|CHAOS Interal: 32231</br>
+								|International: +44 34 2332 7568
+						// #####End accordion item
+					// #####End accordion
+				.col-md-6
+
+					form#contact-form(action=dirPrefix+'php/contact/contact.php')
+						label(for="name") Name
+						input.m-bottom-20.form-control(type="text", name="name")
+						label(for="email") Email
+						input.m-bottom-20.form-control(type="email", name="email")
+						label(for="subject") Subject
+						input.m-bottom-20.form-control(type="text", name="subject")
+						label Message
+						textarea.m-bottom-20.form-control(rows=6 type="textarea" name="message")
+						input.btn.btn-medium.btn-skin-dark.btn-thick-border.btn-block(type='submit', value='Send it')

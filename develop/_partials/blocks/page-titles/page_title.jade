@@ -1,0 +1,49 @@
+//-handle parallax mods
+
+- var bgParMode =''
+- var titleParMode = ''
+- var titleClass = ''
+
+if pageTitleParallaxMode === 'bg'
+	- var bgParMode = 'mode-title'
+else if pageTitleParallaxMode === 'title'
+	- var titleParMode = 'mode-header-content'
+	- var titleClass = 'parallax-layer'
+else if pageTitleParallaxMode == 'bg-title'
+	- var bgParMode = 'mode-title'
+	- var titleParMode = 'mode-header-content'
+	- var titleClass = 'parallax-layer'
+else
+	- var bgParMode =''
+	- var titleParMode = ''
+	- var titleClass = ''
+
+
+if ptType != "false"
+	// #####Begin page head
+	.page-head(class=pageTitleClass)&attributes( pageTitleImage != '' ? {'data-img-src':pageTitleImage} : {} )&attributes( bgParMode != '' ? {'data-parallax-mode':bgParMode} : {} )&attributes( pageTitleParallaxFactor != '' ? {'data-bg-parallax-factor':pageTitleParallaxFactor} : {} )&attributes( pageTitleVid != '' ? {'data-video-src':pageTitleVid} : {} )
+
+		if gmap
+			- var loadGmapScript = ture
+			#gmap(data-address="Footscray VIC 3011 Australia")
+			
+		//- .overflow-wrapper
+			
+		.container
+			.tb-vcenter-wrapper
+				.title-wrapper.vcenter&attributes(titleParMode!=""?{"class":titleClass,"data-parallax-mode":titleParMode}:{})
+					if (PageTitleHead != "")
+						h4.head #{PageTitleHead}
+
+					h1.title #{pageTitle}
+
+					if (PageTitleDesc != "")
+						h2.description #{PageTitleDesc}
+
+				if bcType === 'intitle'
+					.breadcrumb-wrapper.vcenter&attributes(titleParMode!=""?{"class":titleClass,"data-parallax-mode":titleParMode}:{})
+						include breadcrumbs
+
+	// #####End page head
+		
+		

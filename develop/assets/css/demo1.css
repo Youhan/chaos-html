@@ -1,0 +1,21 @@
+#header{
+	&.is-sticky{
+		.head-main{
+			text-align: right;
+		}
+	}
+}
+
+#footer #footer-main{
+	background-color: #eee;
+	border-top:1px solid #ddd;
+
+	[class^="sp-line-"]:after, [class^="sp-trans-"]:after{
+		background-color:#dcdcdc;
+	}
+}
+
+
+.mobile-menu .head-main{
+	text-align: right !important;
+}

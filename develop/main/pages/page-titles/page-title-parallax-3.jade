@@ -1,0 +1,23 @@
+extends ../../../_layouts/lo-normal/fullwidth
+
+append config
+
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Parallax Background"
+	- var PageTitleHead = "Awesome"
+	- var PageTitleDesc = "With these page titles you can do anything you want! Customize your page titles and give them meanings. We have an awesome documentation on this."
+	- var bcType = "false"
+
+	- var pageTitleClass = 'hvh-60 ov-light-alpha-20 parallax-layer'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/05.jpg"
+	- var pageTitleParallaxMode = "bg"
+	
+	- var currentMenu = "Features"
+
+
+	
+block main-area
+	include ../../../_partials/blocks/pages/main-area-fullwidth

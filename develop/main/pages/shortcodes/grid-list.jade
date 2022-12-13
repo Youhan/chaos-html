@@ -1,0 +1,303 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' light') 
+	- var pageTitle = "Grid Elements"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+	
+block main-area
+	// journal elements
+	section.section.bg-gray.slim-container
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-40
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Postgraduate mixer at the Chelsea MA show
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Meeting
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el(href="#")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Remembering Dr. Jafar
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-blue(href="#")
+						.contents
+							.header
+								h6 11 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Physics
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-green(href="#")
+						.contents
+							.header
+								h6 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Relational Geographies- Design your place and lorem ipsum odor sit ...
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.shadow.skin-purple(href="#")
+						.contents
+							.header
+								h6 30 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Introduction to Workflow: for Staff
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.shadow.skin-yellow(href="#")
+						.contents
+							.header
+								h6 12 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-sm-6.col-md-4
+					// #####Begin journal element
+					a.journal-el.shadow.skin-red(href="#")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Introduction to Workflow: for Staff
+					// #####End journal element
+			// #####End row with multiple columns
+	section.section.slim-container
+		.container
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-40
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 215
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Adolescent health transition
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 545
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer, cancer treatment, cancer detection
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 434
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Sexual Jafar
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 44
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Adolescent health transition
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.skin-blue(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 23
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.skin-green(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 20
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer, cancer treatment, cancer detection
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.shadow.skin-purple(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 234
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Adolescent
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.shadow.skin-yellow(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 43
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title Cancer, cancer treatment, cancer detection
+					// #####End  book element
+				.col-sm-6.col-md-4
+					// #####Begin  book element
+					a.book-el.shadow.skin-red(href="#")
+						.contents
+							.item-meta
+								i.oli.oli-bookmark
+								span.side-info 4525
+							.title-wrapper
+								h6.sub-title Series:
+								h2.title treatment detection
+					// #####End  book element
+			// #####End row with multiple columns
+	
+	section.section.bg-pattern-3: .container
+		h2.text-center.m-bottom-40 Mini Items
+		// #####Begin carousel
+		.owl-carousel.items.owwwlab-theme.nav-top-center(data-cols="6"  data-margin="30" data-nav="true" data-loop="true")
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-theme(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+				.contents
+					.item-meta
+						span issue 19
+					.title-wrapper
+						h2.title Fall 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-lemon(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+				.contents
+					.item-meta
+						span issue 20
+					.title-wrapper
+						h2.title Autumn 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-purple(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+				.contents
+					.item-meta
+						span issue 21
+					.title-wrapper
+						h2.title Summer 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-red(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+				.contents
+					.item-meta
+						span issue 22
+					.title-wrapper
+						h2.title Spring 2014
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-blue(href="#")
+				
+				.contents
+					.item-meta
+						span issue 23
+					.title-wrapper
+						h2.title Fall 2015
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-red(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+				.contents
+					.item-meta
+						span issue 24
+					.title-wrapper
+						h2.title Autumn 2015
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-green(href="#")
+				.contents
+					.item-meta
+						span issue 25
+					.title-wrapper
+						h2.title Summer 2015
+			// #####End  book element
+			// #####Begin  book element
+			a.book-el.mini.shadow.set-bg.skin-yellow(href="#")
+				img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+				.contents
+					.item-meta
+						span issue 25
+					.title-wrapper
+						h2.title Spring 2015
+			// #####End  book element
+		// #####End carousel
+	
+		

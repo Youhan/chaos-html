@@ -1,0 +1,176 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout-padding')
+	- var PSheaderClasses = headerClasses.push(' light sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Gallery"
+	- var pageTitle = "Gallery"
+	- var PageTitleHead = "My Awesome"
+	- var PageTitleDesc = ""
+	- var bcType = "false"
+	- var pageTitleClass = 'h-400 center-it parallax-layer dark'
+	- var pageTitleImage = dirPrefix+"assets/img/page-title-bg-dark-1.jpg"
+	- var pageTitleParallaxMode = 'bg-title'
+
+
+block main-area
+	section.section.slim-container
+		.container
+			// #####Begin grid filters
+			.ol-grid-filters
+				ul.default-filters
+					li.active
+						a(href="#" data-filter="*") Show All
+					li
+						a(href="#" data-filter=".art-work") Artwork
+					li
+						a(href="#" data-filter=".banner") Banner
+					li
+						a(href="#" data-filter=".marketing") Marketing
+					li
+						a(href="#" data-filter=".design") Design
+				
+				.select-filters
+					select
+						option(value="*") Show All
+						option(value=".art-work") Artwork
+						option(value=".banner") Banner
+						option(value=".marketing") Marketing
+						option(value=".design") Design
+			// #####End grid filters
+			.ol-grid.masonry.col-2.with-gutter.ol-lightbox-gallery
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/01.jpg").grid-item.ol-lightbox.art-work
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/01.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title oftentimes urotoxin
+						h4.subtitle Nov 2013
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/02.jpg").grid-item.ol-lightbox.banner.marketing.art-work.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/02.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title forewritten midvein
+						h4.subtitle Mar 2016
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/03.jpg").grid-item.ol-lightbox.banner.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/03.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title aqueomercurial hypocrisy
+						h4.subtitle Jan 2014
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/04.jpg").grid-item.ol-lightbox.art-work.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/04.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title archetypally ostiolar
+						h4.subtitle Dec 2015
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/05.jpg").grid-item.ol-lightbox.marketing.art-work
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/05.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title archipelagic overdry
+						h4.subtitle Sep 2015
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/06.jpg").grid-item.ol-lightbox.marketing.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/06.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title proration peptohydrochloric
+						h4.subtitle Feb 2014
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/07.jpg").grid-item.ol-lightbox.banner.marketing
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/07.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title Thomaean pultaceous
+						h4.subtitle Nov 2013
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/08.jpg").grid-item.ol-lightbox.banner.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/08.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title calibrator etna
+						h4.subtitle Dec 2014
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/09.jpg").grid-item.ol-lightbox.banner.marketing
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/09.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title febricula bullocker
+						h4.subtitle Jun 2015
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/10.jpg").grid-item.ol-lightbox.art-work.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/10.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title advisor sericated
+						h4.subtitle Jul 2014
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/01.jpg").grid-item.ol-lightbox.banner.marketing.design
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/01.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title semiprosthetic unacclimatized
+						h4.subtitle Nov 2013
+				// #####End grid item
+				// #####Begin grid item
+				a(href=dirPrefix+"assets/img/gallery/02.jpg").grid-item.ol-lightbox.banner.marketing.art-work
+					.gi-wrapper.ol-hover.hover-4
+						img(src=dirPrefix+"assets/img/gallery/02.jpg", alt='image hover')
+						.ol-overlay.ov-grad6-alpha-80
+						.cover.ov-dark-alpha-95
+						.icons
+							i.oli.oli-search
+						h3.title subclavioaxillary geomaly
+						h4.subtitle Sep 2013
+				// #####End grid item

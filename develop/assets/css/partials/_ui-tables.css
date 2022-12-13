@@ -1,0 +1,43 @@
+.chaos-table{
+	a{
+		text-decoration: none;
+		color: $chaos_textinlight;
+		&:hover{
+			color: $chaos_theme_color;
+		}
+	}
+	thead{
+		tr{
+			th{
+				font-size: 15px;
+				font-weight: bold;
+				font-weight: 700;
+				padding-bottom: 5px;
+			}
+		}
+	}
+	tbody tr{		
+		td{
+			vertical-align: middle;
+		}
+	}
+	th,
+	td{
+		&:first-child{
+			padding-left: 40px;
+		}
+		&:last-child{
+			padding-right: 40px;
+		}
+	}
+
+	
+}
+
+
+.table{
+	td.bold{
+		font-weight: bold;
+		font-weight: 700;
+	}
+}

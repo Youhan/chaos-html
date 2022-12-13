@@ -1,0 +1,30 @@
+.call-out{
+	position: relative;
+	.title{
+		font-size: 22px;
+		letter-spacing: 1.5px;
+		margin-bottom: 10px;
+	}
+	.sub-title{
+		font-family: $font_sans;
+		color:$chaos_textinlight;
+		font-size: 14px;
+		font-weight: normal;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 30px;
+
+		.dark-wrapper &{
+			color:$chaos_textindark_lighter;
+		}
+	}
+	.callout-icon{
+		float:left;
+		font-size: 40px;
+		position: relative;
+		top: 2px;
+	}
+	.callout-texts{
+		margin-left:70px;
+	}
+}

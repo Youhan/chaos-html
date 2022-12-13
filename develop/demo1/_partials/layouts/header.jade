@@ -1,0 +1,17 @@
+
+.head-main(class=headMainClass)
+	.container
+		.logo-wrapper(class=logoWrapperClass)
+			// standard Logo
+			a('href'=dirPrefix+"index.html", "class"="standard-logo").text-logo
+				img('src'=dirPrefix+"assets/img/avatar.jpg", alt='Dr. Chaos Mctabi')
+				.text-wrapper
+					h1.title Dr Chaos 
+						span McTabi
+			
+		// primary navigation
+		include header/menu-primary
+
+		// #####Begin icons beside menu
+		.header-icons
+			include header/humburger

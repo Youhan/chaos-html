@@ -1,0 +1,380 @@
+
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark trans sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var PageTitleHead = "Chaos theme"
+	- var pageTitle = "Home 9"
+	- var pageTitleClass = 'h-700 parallax-layer center-it dark ov-blue-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/18.jpg"
+	- var pageTitleParallaxMode = "bg"
+	-loadeExtraAssets.push('revolution')
+block page-title
+	// #####Begin page head
+	.page-head.dark.bg-blue.auto-height
+		include /_partials/blocks/sliders/slider-h4
+	// #####End page head
+mixin list()
+	a(href="#" data-toggle="tooltip" data-original-title="homepage")
+		i.fa.fa-home
+	a(href="#" data-toggle="tooltip" data-original-title="Biography")
+		i.fa.fa-user
+	a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+		i.fa.fa-facebook
+	a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+		i.fa.fa-twitter
+block main-area
+	section.section: .container: .row
+		.col-md-4
+			mixin ibv2('oli oli-launched_rocket',"For Learners")
+		.col-md-4
+			mixin ibv2('oli oli-test_tube',"For Teachers")
+		.col-md-4
+			mixin ibv2('oli oli-sprout',"For Universities")
+	// courser
+	section.section.slim-container.bg-gray: .container
+		// #####Begin heading
+		.heading-with-sub.text-center
+			h2.title Featured Courses
+			h4.subtitle Here is a great way that Chaos displays your courses
+		// #####End heading
+		.sp-blank-50
+		// #####Begin row with multiple columns
+		.row.multi-columns-row.col-margin-bottom-50
+				.col-sm-6.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/courses/01.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/01.jpg")
+								.side-info
+									span.course-instructor Mathilda Griffin
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 23$
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+									.sub-meta
+										span 45 Students
+					// #####End course element
+				.col-sm-6.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-blue(href="#")
+						img.set-me(src=dirPrefix+"assets/img/courses/02.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/02.jpg")
+									img(src=dirPrefix+"assets/img/avatars/03.jpg")
+									img(src=dirPrefix+"assets/img/avatars/04.jpg")
+								.side-info
+									span.course-instructor Multiple Instructors
+							.title-wrapper
+								h6.sub-title Life
+								h2.title How To<br> become a teacher<br>Complete guide
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span Free
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-half-full
+									.sub-meta
+										span 12 Chapters	
+					// #####End course element
+				.col-sm-6.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-yellow(href="#")
+						img.set-me(src=dirPrefix+"assets/img/courses/03.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/05.jpg")
+								.side-info
+									span.course-instructor Norman Cole
+							.title-wrapper
+								h6.sub-title Underground
+								h2.title NinjaScript programmer
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 299$
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 36 Sessions	
+					// #####End course element
+				.col-sm-6.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-green(href="#")
+						img.set-me(src=dirPrefix+"assets/img/courses/04.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/06.jpg")
+								.side-info
+									span.course-instructor Mathilda Griffin
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span Free
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-half-full
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-sm-6.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-purple(href="#")
+						img.set-me(src=dirPrefix+"assets/img/courses/01.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/07.jpg")
+								.side-info
+									span.course-instructor Mathilda Griffin
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 230$
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				.col-sm-6.col-md-4
+					// #####Begin course element
+					a.course-el.set-bg.skin-blue(href="#")
+						img.set-me(src=dirPrefix+"assets/img/courses/02.jpg")
+						.contents
+							.item-meta
+								.authors-thumb
+									img(src=dirPrefix+"assets/img/avatars/07.jpg")
+									img(src=dirPrefix+"assets/img/avatars/08.jpg")
+									img(src=dirPrefix+"assets/img/avatars/04.jpg")
+								.side-info
+									span.course-instructor Multiple Instructors
+							.title-wrapper
+								h6.sub-title Coding
+								h2.title Become a PHP master now
+								.course-shop-data
+									button.course-purchase-btn
+										i.oli.oli-shopping_bag_filled
+										span 15$
+									.ol-review-rates
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									.sub-meta
+										span 45 Students	
+					// #####End course element
+				
+		// #####End row with multiple columns
+	// call out 
+	section.section.parallax-layer.ov-light-alpha-80(data-img-src=dirPrefix+"assets/img/backgrounds/22.jpg")
+		.container
+			.row
+				// #####Begin call to action
+				.call-out.tb-vcenter-wrapper
+					.col-md-8.col-md-push-4.vcenter
+						h2.title Join Our Teacher Commiunity Now!
+						h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+						
+					.col-md-4.col-md-pull-8.vcenter.text-right
+						a.btn.btn-medium.btn-circle.btn-skin-blue(href='#') 
+							i.oli.oli-unlock-filled
+							span Apply now
+				// #####End call to action
+	//some facts
+	section.section.bg-gray
+		.container
+			.row.multi-columns-row.col-margin-bottom-30
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 34K+
+						span Students
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 315+
+						span Learning Programs
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 500+
+						span Teachers
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+				.col-md-3.col-sm-6
+					h5.with-shaded-label
+						span.shaded-label.darken 100+
+						span Institutes
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet.
+					a.btn.btn-small.btn-circle(href="#") read more
+	// people
+	section.section: .container
+		// #####Begin heading
+		.heading-with-sub.text-center
+			h2.title Featured Teachers
+			h4.subtitle Here is a great way that Chaos displays your People
+		// #####End heading
+		.sp-blank-50
+		.row.multi-columns-row.col-margin-bottom-30
+			.col-md-3.col-sm-6
+				// #####Begin person card
+				.vc-card.boxed
+					a(href="#")
+						img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+					.vc-card-wrapper
+						a.title(href="#") Dr.Prof. Kerr Waylon
+						.subtitle
+							| Dean
+					.links
+						+list()
+				// #####End person card
+			.col-md-3.col-sm-6
+				// #####Begin person card
+				.vc-card.boxed
+					a(href="#")
+						img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+					.vc-card-wrapper
+						a.title(href="#") Dr. Celestine Wilfred
+						.subtitle
+							| Associate Dean, Degree Programmes
+					.links
+						+list()
+				// #####End person card
+			.col-md-3.col-sm-6
+				// #####Begin person card
+				.vc-card.boxed
+					a(href="#")
+						img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+					.vc-card-wrapper
+						a.title(href="#") Dr.Prof. Woody Terence
+						.subtitle
+							| Associate Dean, marketting
+					.links
+						+list()
+				// #####End person card
+		
+			.col-md-3.col-sm-6
+				// #####Begin person card
+				.vc-card.boxed
+					a(href="#")
+						img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+					.vc-card-wrapper
+						a.title(href="#") Dr. Quinlan Granville
+						.subtitle
+							| Associate Dean
+					.links
+						+list()
+				// #####End person card
+	// pricing table
+	section.section.parallax-layer.ov-light-alpha-60.slim-container(data-img-src=dirPrefix+"assets/img/backgrounds/47.jpg"): .container
+		// #####Begin row with multiple columns
+		.row.multi-columns-row.col-margin-bottom-70
+			.col-md-4
+				// #####Begin pricing table
+				.ol-price-table.skin-blue
+					.head.shadow.text-center
+						.contents
+							h3.title Members
+							h6.subtitle Registration
+					.body
+						ul.list-unstyled
+							li 
+								|Befor May 14th
+								span.pull-right $230
+							li 
+								|After May 14th
+								span.pull-right $330
+							li 
+								|onsite
+								span.pull-right $330
+						.text-center
+							a.btn.btn-skin-blue.btn-circle.btn-small.btn-wide(href="#") Register Now
+				// #####End pricing table
+			.col-md-4
+				// #####Begin pricing table
+				.ol-price-table.skin-blue.featured
+					.head.shadow.text-center
+						.contents
+							h3.title Students
+							h6.subtitle Registration
+					.body
+						ul.list-unstyled
+							li 
+								|Befor May 14th
+								span.pull-right $230
+							li 
+								|After May 14th
+								span.pull-right $330
+							li 
+								|onsite
+								span.pull-right $330
+						.text-center
+							a.btn.btn-skin-blue.btn-circle.btn-small.btn-wide(href="#") Register Now
+				// #####End pricing table
+			.col-md-4
+				// #####Begin pricing table
+				.ol-price-table.skin-blue
+					.head.shadow.text-center
+						.contents
+							h3.title Members
+							h6.subtitle Registration
+					.body
+						ul.list-unstyled
+							li 
+								|Befor May 14th
+								span.pull-right $230
+							li 
+								|After May 14th
+								span.pull-right $330
+							li 
+								|onsite
+								span.pull-right $330
+						.text-center
+							a.btn.btn-skin-blue.btn-circle.btn-small.btn-wide(href="#") Register Now
+				// #####End pricing table
+		// #####End row with multiple columns
+prepend customjs
+	include /_partials/blocks/sliders/slider-h4-js

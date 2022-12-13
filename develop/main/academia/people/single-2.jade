@@ -1,0 +1,113 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('')
+	- var pageTitle = ""
+	- var PageTitleHead = ""
+	- var PageTitleDesc = ""
+	- var pageTitleClass = 'h-300 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section.p-top-50
+		.container
+			.row
+				.col-sm-4.col-md-3.pull-up-240
+					img(src=dirPrefix+"assets/img/people/09.jpg", alt="")
+					.sp-blank-20
+					a.ol-iconic-link.skin-red.m-bottom-10(href="#")
+						i.oli.oli-download_2
+						| Download CV
+					.sp-blank-40
+					// #####Begin widget
+					.widget
+						h4.with-undeline contact
+						// #####Begin list with icon
+						ul.icon-list.pad-0
+							li: a(href="#")
+								i.fa.fa-envelope
+								|gh.dowlat[at]]psych.gatech.edu
+							li: a(href="#")
+								i.fa.fa-phone
+								|404-894-1822
+							li: a(href="#")
+								i.fa.fa-phone
+								|404-894-4432
+							li: a(href="#")
+								i.fa.fa-map-marker
+								|JS Coon 342
+						// #####End list with icon
+					// #####End widget
+					// #####Begin widget
+					.widget
+						h4.with-undeline Social Media
+						// #####Begin social icons
+						ul.social-icons.shape-circle
+							li
+								a(href="#")
+									i.fa.fa-facebook
+							li
+								a(href="#")
+									i.fa.fa-twitter
+							li
+								a(href="#")
+									i.fa.fa-google
+						// #####End social icons
+					// #####End widget
+				.col-sm-8.col-md-8.col-md-offset-1
+					h2 Dr. Delores Radway
+					ul.list-unstyled
+						li phD
+						li General Atlantic Professor
+						li Stanford University Graduate School of Business
+					.sp-blank-60
+					h3.with-sideline.m-bottom-40 Biography
+					p Prof. Dr. Peter Gmeiner (*30.05.1959) received his Ph.D. in 1986 from the University of Munich. From 1987 to 1988 he was a postdoc at the University of California in Berkeley, USA. He subsequently returned to Munich as a research associate at the Institute of Pharmaceutical Chemistry. Upon receiving his Dr. Habilitus in 1992, for which he was honored with the Johann-Wolfgang-Doberreiner prize of the DPhG (1993), he was appointed at the University of Bonn as a Professor of Pharmaceutical Chemistry declining an offer for a professorship at the University of Heidelberg, at the same time. Since October 1996, he has been chaired Full Professor of Pharmaceutical / Medicinal Chemistry at the Friedrich-Alexander University Erlangen-Nurnberg. In 2000, he declined an offer.
+					.sp-blank-50
+					h3.with-sideline.m-bottom-40 Educations
+					// #####Begin timeline
+					.ol-timeline
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2015
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Doctor of Philosophy
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2012
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Master of Science
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+						// #####Begin timeline item
+						div.tl-item.pub-item.with-icon
+							span.item-section 2008
+							.elem-wrapper
+								i.oli.oli-bookmark
+							.content-wrapper
+								h3.title Bachelor of Science
+								.description
+									p in Mechanical Engineering <br> Stanford University
+						// #####End timeline item
+					// #####End timeline
+					.sp-blank-50
+					h3.with-sideline.m-bottom-40 Research Interests
+					ol.with-shaded-label.ol-greek
+						li The nature and causes of limitations in working memory capacity
+						li The role of those differences in real-world cognitive tasks
+						li The association of working memory capacity and cognitive control to fluid intelligence
+						li The nature and causes of limitations in working memory capacity
+						li The role of those differences in real-world cognitive tasks
+					

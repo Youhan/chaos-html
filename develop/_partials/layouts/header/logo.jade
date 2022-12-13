@@ -1,0 +1,11 @@
+- var lightlogoSrc = dirPrefix+"assets/img/logo/logo-light.png"
+- var darklogoSrc  = dirPrefix+"assets/img/logo/logo-dark.png"
+- var lightlogoSrc2x = dirPrefix+"assets/img/logo/logo-light@2x.png"
+- var darklogoSrc2x  = dirPrefix+"assets/img/logo/logo-dark@2x.png"
+// #####Begin logo wrapper
+.logo-wrapper
+	// standard Logo
+	a('href'=dirPrefix+"index.html")
+		img.logo-light.ol-retina('src'=lightlogoSrc, alt=templateName)
+		img.logo-dark.ol-retina('src'=darklogoSrc, alt=templateName)
+// #####End logo wrapper

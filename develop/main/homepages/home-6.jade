@@ -1,0 +1,262 @@
+
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('trans sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var footerLayout = 3
+	
+block page-title
+	// #####Begin page head
+	.page-head.parallax-layer.ov-light-alpha-70.h-700(data-img-src=dirPrefix+"assets/img/backgrounds/46.jpg", data-parallax-mode="mode-title")
+		.container
+			.tb-vcenter-wrapper
+				.row.vcenter
+					.col-md-9
+						h5 WELCOME .
+						.sp-blank-15
+						h1.large-text
+							|This Is The Most 
+							span.ol-text-rotate.bg-gray.p-right-10.p-left-10(data-words='{"w1":"Hilarious", "w2":"Surprising", "w3":"Fascinating", "w4":"Marvelous", "w5":"Amazing"}')
+							br
+							span.theme-color CHAOS 
+							| in the World!
+					.col-md-3
+						.sp-blank-40.hidden-xs
+						.text-right-md.text-right-lg
+							a.btn.btn-medium.btn-circle.btn-skin-dark(href="#") Work with us
+	// #####End page head
+block main-area
+	section.section.bg-gray: .container: .row: .col-md-12
+		p.pull-up-320.pull-up-sm-0
+			mixin lorem(55)
+		.sp-blank-40
+		// #####Begin grid filters
+		.ol-grid-filters
+			ul.default-filters
+				li.active
+					a(href="#" data-filter="*") Show All
+				li
+					a(href="#" data-filter=".art-work") Artwork
+				li
+					a(href="#" data-filter=".banner") Banner
+				li
+					a(href="#" data-filter=".marketing") Marketing
+				li
+					a(href="#" data-filter=".design") Design
+			
+			.select-filters
+				select
+					option(value="*") Show All
+					option(value=".art-work") Artwork
+					option(value=".banner") Banner
+					option(value=".marketing") Marketing
+					option(value=".design") Design
+		// #####End grid filters
+		.ol-grid.grid.col-3
+			// #####Begin grid item
+			.grid-item.art-work
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/21.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/21.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") oftentimes urotoxin
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.width-2x.ratio-1.banner.marketing.art-work.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/22.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/22.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") forewritten midvein
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/23.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/23.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") aqueomercurial hypocrisy
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.ratio-1.art-work.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/27.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/27.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") archetypally ostiolar
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.marketing.art-work
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/25.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/25.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") archipelagic overdry
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.width-2x.ratio-1.marketing.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/28.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/28.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") proration peptohydrochloric
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/24.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/24.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") Thomaean pultaceous
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-3.banner.marketing
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/45.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/45.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") febricula bullocker
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/26.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/26.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") calibrator etna
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.art-work.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/33.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/33.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") advisor sericated
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/34.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/34.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") semiprosthetic unacclimatized
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.banner.marketing.art-work
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/backgrounds/31.jpg", alt='image hover')
+					.ol-overlay.ov-light-alpha-60
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/backgrounds/31.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") subclavioaxillary geomaly
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			.grid-sizer
+		.sp-blank-150
+		h2.text-center.m-bottom-50 Take it from our Customers!
+		// testimonial carousel
+		// #####Begin carousel
+		.owl-carousel.items.owwwlab-theme.nav-top-center.single-shot(data-cols="1", data-nav="true", data-loop="true")
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				
+				.their-quote
+					p
+						mixin lorem(20)
+				.their-info
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.their-quote
+					p
+						mixin lorem(20)
+				.their-info
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+			// #####Begin single testimonial
+			.item: .testimonial-item
+				.their-quote
+					p
+						mixin lorem(20)
+				.their-info
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+					h4.their-name Martha M. Masters
+					div.their-cite 
+						| Marketing -
+						a(href="#") Google
+			// #####End single testimonial
+		// #####End carousel

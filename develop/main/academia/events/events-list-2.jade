@@ -1,0 +1,162 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Events & Seminars"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "It is all happening at CHAOS!"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section.slim-container
+		.container
+			
+			form.search-box.inline-filters.pull-up-220.pull-up-xs-140
+				.row.form-inline
+					
+					.col-sm-10.col-xs-8.form-group.with-filter
+						input.form-control(type='text', placeholder='Search', name="q")
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+							i.icon.oi-filter
+					.col-sm-2.col-xs-4.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Event Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple', name="type")
+								option(value='')
+								option(value='Conference') Conference
+								option(value='Seminar') Seminar
+								option(value='Concert') Concert
+								option(value='Workshop') Workshop
+								option(value='Talk') Talk
+								option(value='Celebration') Celebration
+								option(value='Lecture') Lecture
+								option(value='Film') Film
+								option(value='Exhibit') Exhibit
+						.form-group
+							label Target audiences:
+							select.selectize(data-placeholder='Select Year', multiple='multiple', name="targets")
+								option(value='') 
+								option(value='children') Children
+								option(value='friends-of-the-university') Friends of the University
+								option(value='general-public') General Public
+								option(value='faculty') Faculty
+								option(value='staff') Staff
+								option(value='graduate-students') Graduate Students
+								option(value='under-graduate-students') Under Graduate Students
+					.col-sm-6
+						.form-group
+							label Date From:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="datefrom")
+						.form-group
+							label Date To:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="dateto")
+			
+			.sp-blank-75
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-50
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/04.jpg")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/03.jpg")
+						.contents
+							.header
+								h6 5 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Postgraduate mixer at the Chelsea MA show
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.header
+								h6 8 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Meeting
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el(href="#")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Remembering Dr. Jafar
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-blue(href="#")
+						.contents
+							.header
+								h6 11 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Physics
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-green(href="#")
+						.contents
+							.header
+								h6 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Relational Geographies- Design your place and lorem ipsum odor sit ...
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-purple(href="#")
+						.contents
+							.header
+								h6 30 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Introduction to Workflow: for Staff
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-yellow(href="#")
+						.contents
+							.header
+								h6 12 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Relational Geographies
+					// #####End journal element
+				.col-md-4
+					// #####Begin journal element
+					a.journal-el.skin-red(href="#")
+						.contents
+							.header
+								h6 11 Sep - 21 Sep 2015
+							.footer
+								h6.sub-title Expo
+								h2.title Introduction to Workflow: for Staff
+					// #####End journal element
+			// #####End row with multiple columns
+			.sp-blank-100
+			include ../../../_partials/blocks/paginations/lined		

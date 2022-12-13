@@ -1,0 +1,203 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Grid Gallery"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 center-it parallax-layer ov-light-alpha-50'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/06.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	section.section.slim-container: .container: .row
+		.ol-grid.grid.col-4.ol-lightbox-gallery
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/01.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/02.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/03.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/04.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/05.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/05.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/06.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/06.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/07.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/08.jpg").grid-item.ratio-2.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+	section.section.slim-container.bg-pattern-3: .container: .row
+		.ol-grid.grid.col-4.ol-lightbox-gallery.with-gutter
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/01.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/02.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/03.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/04.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/05.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/05.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/06.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/06.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/07.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/08.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+	section.section.slim-container: .container: .row
+		.ol-grid.grid.col-4.with-gutter.ol-lightbox-gallery
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/01.jpg").grid-item.ratio-3.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/07.jpg").grid-item.ratio-3.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/03.jpg").grid-item.ratio-3.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/04.jpg").grid-item.ratio-3.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+	

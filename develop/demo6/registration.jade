@@ -1,0 +1,135 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var ptType = "false"
+	- var currentMenu = "Registration"
+
+
+block main-area
+	section.section.slim-container.parallax-layer.ol-particles.dark(data-img-src="assets/img/bg/03.jpg"): .container
+		.ol-countdown.text-center(data-countdown="2020/12/12 15:03:25")
+		.sp-blank-100
+		.row
+			.col-md-4
+				.ol-price-table.skin-blue
+					.head.shadow.text-center
+						.contents
+							h3.title Members
+							h6.subtitle Registration
+					.body
+						ul.list-unstyled
+							li 
+								|Befor May 14th
+								span.pull-right $230
+							li 
+								|After May 14th
+								span.pull-right $330
+							li 
+								|onsite
+								span.pull-right $330
+						.text-center
+							a.btn.btn-skin-blue.btn-circle.btn-small.btn-wide(href="#") Register Now
+			.col-md-4
+				.ol-price-table.skin-blue.featured
+					.head.shadow.text-center
+						.contents
+							h3.title Students
+							h6.subtitle Registration
+					.body
+						ul.list-unstyled
+							li 
+								|Befor May 14th
+								span.pull-right $230
+							li 
+								|After May 14th
+								span.pull-right $330
+							li 
+								|onsite
+								span.pull-right $330
+						.text-center
+							a.btn.btn-skin-blue.btn-circle.btn-small.btn-wide(href="#") Register Now
+			.col-md-4
+				.ol-price-table.skin-blue
+					.head.shadow.text-center
+						.contents
+							h3.title Members
+							h6.subtitle Registration
+					.body
+						ul.list-unstyled
+							li 
+								|Befor May 14th
+								span.pull-right $230
+							li 
+								|After May 14th
+								span.pull-right $330
+							li 
+								|onsite
+								span.pull-right $330
+						.text-center
+							a.btn.btn-skin-blue.btn-circle.btn-small.btn-wide(href="#") Register Now
+
+	section.section: .container
+		.row
+			.col-md-6
+				h3 Author Registration
+				p Asellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+				p scowman Jethro tuilyie tormentedly bespeakable irrelevance flageolet pear kerasin rann outpass unfurlable goyazite neurospasm cunnilinctus Evaniidae prerestrict seacunny psilosophy caseworker popjoy interflow albite fruitlessness.
+				.sp-blank-60
+				h3 Refund Policy
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.  eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+
+			.col-md-6
+				h3 Regular Registration
+				p 
+					span.ol-dropcaps.circle P
+					| nequalness erythrolysin broadtail mispatch fabulously cystal tonsillotome maccoboy pyolabyrinthitis disembosom Mespot workroom vacuometer kartel perityphlitis troublousness prefecture contentiously inarguably parachaplain astrain Geryoniidae alo tribrachmikadoism lecanomantic cecidiologist clinology dita trochi vagabondia chinwood infantilism hydroperitoneum foyaitic thready malm platyope matchably hootay disastrous gyrally celebrater melancholy unsealing probation aleurone proemial
+				.sp-blank-60
+				h3 Letter of Invitation
+				p intimal scrannel Xanthosoma unassassinated pantas hoofbeat parent vistal paruria Glaniostomi affableness Karharbari Basiliscus tectospondylic stratoplane neutron matricidal antiskidding speakableness foxwood subindicative wareman hearts intergrapple
+				ol.with-shaded-label
+					li Registration Confirmation umber
+					li Full name including Salutation (Mr., Ms., Mrs.) in the order of Salutation, Given (First) Name, Family (Last) Name
+					li Paper number AND Title
+					li Email address, mailing address and affiliation (business or school)
+					li Letters will be mailed upon request only. If you require expedited shipping, please indicate this and register for expedited shipping ($50 US)
+				
+
+
+	section.section.section-narrow-2.dark-wrapper.parallax-layer.ov-grad1-alpha-90.text-center(data-img-src="assets/img/bg/01.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-40
+			h2.title Take Your Seat!
+			h4.subtitle The nubmer of available seats are limited so please make Jafar rich soon!
+		a.btn.btn-skin-blue.btn-wide.btn-thick-border.btn-circle.btn-medium(href="registration.html") Register Now
+	
+	// logo carousel
+	section: .container
+		.owl-carousel.items.owwwlab-theme(
+			data-cols-xxs=2,
+			data-cols-xs=3,
+			data-cols-sm=4,
+			data-cols-md=5,
+			data-cols-lg=6,
+			data-margin=50,
+			data-loop="true"
+			)
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/01.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/02.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/03.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/04.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/05.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/06.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/07.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/08.png")

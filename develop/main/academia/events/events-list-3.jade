@@ -1,0 +1,164 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Events & Seminars"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "It is all happening at CHAOS!"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-400 center-it bg-white'
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section.bg-gray.slim-container
+		.container
+			
+			form.search-box.inline-filters.pull-up-220.pull-up-xs-140
+				.row.form-inline
+					
+					.col-sm-10.col-xs-8.form-group.with-filter
+						input.form-control(type='text', placeholder='Search', name="q")
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+							i.icon.oi-filter
+					.col-sm-2.col-xs-4.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Event Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple', name="type")
+								option(value='')
+								option(value='Conference') Conference
+								option(value='Seminar') Seminar
+								option(value='Concert') Concert
+								option(value='Workshop') Workshop
+								option(value='Talk') Talk
+								option(value='Celebration') Celebration
+								option(value='Lecture') Lecture
+								option(value='Film') Film
+								option(value='Exhibit') Exhibit
+						.form-group
+							label Target audiences:
+							select.selectize(data-placeholder='Select Year', multiple='multiple', name="targets")
+								option(value='') 
+								option(value='children') Children
+								option(value='friends-of-the-university') Friends of the University
+								option(value='general-public') General Public
+								option(value='faculty') Faculty
+								option(value='staff') Staff
+								option(value='graduate-students') Graduate Students
+								option(value='under-graduate-students') Under Graduate Students
+					.col-sm-6
+						.form-group
+							label Date From:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="datefrom")
+						.form-group
+							label Date To:
+							input.form-control.pickdate(type='text', placeholder='Pick a date...', name="dateto")
+			
+			.sp-blank-75
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-50
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.item-meta
+								h6.date 14 Oct 2015
+								h6.cat Talk
+							.title-wrapper
+								h2.title Using the Sawtooth Wave to Create Some Beautiful Images
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg.skin-blue(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+						.contents
+							.item-meta
+								h6.date 12 Oct 2015
+								h6.cat Seminar
+							.title-wrapper
+								h2.title Create Some Beautiful Images
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.skin-purple(href="#")
+						.contents
+							.item-meta
+								h6.date 5 Oct 2015
+								h6.cat Expo
+							.title-wrapper
+								h2.title Using the Sawtooth
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.item-meta
+								h6.date 14 Oct 2015
+								h6.cat Talk
+							.title-wrapper
+								h2.title Using the Sawtooth Wave to Create Some Beautiful Images
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg.skin-blue(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+						.contents
+							.item-meta
+								h6.date 12 Oct 2015
+								h6.cat Seminar
+							.title-wrapper
+								h2.title Create Some Beautiful Images
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.skin-purple(href="#")
+						.contents
+							.item-meta
+								h6.date 5 Oct 2015
+								h6.cat Expo
+							.title-wrapper
+								h2.title Using the Sawtooth
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/02.jpg")
+						.contents
+							.item-meta
+								h6.date 14 Oct 2015
+								h6.cat Talk
+							.title-wrapper
+								h2.title Using the Sawtooth Wave to Create Some Beautiful Images
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.set-bg.skin-blue(href="#")
+						img.set-me(src=dirPrefix+"assets/img/publications/grid/01.jpg")
+						.contents
+							.item-meta
+								h6.date 12 Oct 2015
+								h6.cat Seminar
+							.title-wrapper
+								h2.title Create Some Beautiful Images
+					// #####End  book element
+				.col-md-4
+					// #####Begin  book element
+					a.book-el.skin-purple(href="#")
+						.contents
+							.item-meta
+								h6.date 5 Oct 2015
+								h6.cat Expo
+							.title-wrapper
+								h2.title Using the Sawtooth
+					// #####End  book element
+			// #####End row with multiple columns
+			.sp-blank-100
+			include ../../../_partials/blocks/paginations/lined		

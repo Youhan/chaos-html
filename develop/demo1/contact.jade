@@ -1,0 +1,72 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('nav-light full-width') 
+	- var bcType = "intitle"
+	- var currentMenu = "Contact"
+	- var pageTitle = "contact"
+	- var PageTitleDesc = "Simple Lists are great way to display your publications to visitors, here is a simple list shows vaiations of this grid elements."
+
+	- var pageTitleClass = 'h-500 center-it parallax-layer dark ov-grad8-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/07.jpg"
+	- var pageTitleParallaxMode = "bg"
+
+block main-area
+	section.section.section-narrow-2.slim-container
+		.container
+			.row
+				.col-md-6
+					.ol-accordion
+						.ac-item.open
+							.item-head
+								i.icon.oi-plus
+								span Postal Address
+							.item-body
+								p 
+									| PO Box 88900 Collins Street West Victoria 5433 Australia
+									mixin lorem(39)
+								p
+									mixin lorem(20)
+
+						.ac-item
+							.item-head
+								i.icon.oi-plus
+								span Office
+							.item-body
+								p Cambridge, MA 02138, United States
+						.ac-item
+							.item-head
+								span Phone
+							.item-body
+								p 
+								|023 434 534 234</br>
+								|CHAOS Interal: 32231</br>
+								|International: +44 34 2332 7568
+						.ac-item
+							.item-head
+								span Fax
+							.item-body
+								p 
+								|023 434 534 234</br>
+								|CHAOS Interal: 32231</br>
+								|International: +44 34 2332 7568
+				
+							
+				.col-md-6
+					.heading-with-sub
+						h3.title Contact Me
+						h4.subtitle You my wait for a couple of days
+
+					form#contact-form(action=dirPrefix+'php/contact/contact.php')
+						label(for="name") Name
+						input.m-bottom-20.form-control(type="text", name="name")
+						label(for="email") Email
+						input.m-bottom-20.form-control(type="email", name="email")
+						label(for="subject") Subject
+						input.m-bottom-20.form-control(type="text", name="subject")
+						label Message
+						textarea.m-bottom-20.form-control(rows=6 type="textarea" name="message")
+						input.btn.btn-medium.btn-skin-dark.btn-thick-border.btn-block(type='submit', value='Send it')

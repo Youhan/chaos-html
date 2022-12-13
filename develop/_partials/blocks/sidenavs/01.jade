@@ -1,0 +1,37 @@
+mixin list()
+	li: a(href="#") item
+	li: a(href="#") item
+	li: a(href="#") item
+mixin listc()
+	li: a(href="#") item
+	li.current-menu-parent: a(href="#") Current item
+	li: a(href="#") item
+	li: a(href="#") item
+	li: a(href="#") item
+// #####Begin sidebar navigation
+ul.ol-side-navigation.skin-dark
+	li.menu-item-has-children
+		a(href="#") level 1
+		// #####Begin sub-menu
+		ul.sub-menu
+			+list()
+		// #####End sub-menu
+	li.menu-item-has-children.current-menu-parent
+		a(href="#") level 1
+		// #####Begin sub-menu
+		ul.sub-menu
+			+listc()
+		// #####End sub-menu
+	li.menu-item-has-children
+		a(href="#") level 1
+		// #####Begin sub-menu
+		ul.sub-menu
+			+list()
+		// #####End sub-menu
+	li.menu-item-has-children
+		a(href="#") level 1
+		// #####Begin sub-menu
+		ul.sub-menu
+			+list()
+		// #####End sub-menu
+// #####End sidebar navigation

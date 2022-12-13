@@ -1,0 +1,198 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Grid fullwidth"
+	- var PageTitleHead = "Portfolio"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var headerParallaxType = "bg"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/portfolio/03.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Work"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+block main-area
+	section.section
+		// #####Begin grid filters
+		.ol-grid-filters
+			ul.default-filters
+				li.active
+					a(href="#" data-filter="*") Show All
+				li
+					a(href="#" data-filter=".art-work") Artwork
+				li
+					a(href="#" data-filter=".banner") Banner
+				li
+					a(href="#" data-filter=".marketing") Marketing
+				li
+					a(href="#" data-filter=".design") Design
+			
+			.select-filters
+				select
+					option(value="*") Show All
+					option(value=".art-work") Artwork
+					option(value=".banner") Banner
+					option(value=".marketing") Marketing
+					option(value=".design") Design
+		// #####End grid filters
+		.ol-grid.grid.col-3
+			// #####Begin grid item
+			.grid-item.ratio-2.art-work
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") oftentimes urotoxin
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.marketing.art-work.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") forewritten midvein
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/03.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") aqueomercurial hypocrisy
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.art-work.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/04.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") archetypally ostiolar
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.marketing.art-work
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/05.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/05.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") archipelagic overdry
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.marketing.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/06.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/06.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") proration peptohydrochloric
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.marketing
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/07.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") Thomaean pultaceous
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/08.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") calibrator etna
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.marketing
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/09.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/09.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") febricula bullocker
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.art-work.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/10.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/10.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") advisor sericated
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.marketing.design
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/01.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") semiprosthetic unacclimatized
+					h4.subtitle: a(href="#") Category
+			// #####End grid item
+			// #####Begin grid item
+			.grid-item.ratio-2.banner.marketing.art-work
+				.gi-wrapper.ol-hover.hover-4
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='image hover')
+					.ol-overlay.ov-grad1-alpha-20
+					.cover.ov-dark-alpha-95
+					.icons
+						a(href=dirPrefix+"assets/img/portfolio/02.jpg").ol-lightbox: i.oli.oli-search
+						a(href="#"): i.oli.oli-right
+					h3.title: a(href="#") subclavioaxillary geomaly
+					h4.subtitle: a(href="#") Category
+			// #####End grid item

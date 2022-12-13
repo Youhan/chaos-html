@@ -1,0 +1,138 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('side-header slim-container')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var currentMenu = "Project Single"
+	- var pageTitle = "Project Title Goes Here"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'lined bg-white shadow-line ol-particles'
+	
+
+
+
+block main-area
+	section.section.section-narrow
+		.container
+			// #####Begin carousel
+			.owl-carousel.items.owwwlab-theme.nav-center.m-bottom-60(data-cols="1" data-nav="true" data-margin="20" data-cols-md=2, data-loop="true")
+				img(src=dirPrefix+"assets/img/bg/11.jpg", alt='image')
+				img(src=dirPrefix+"assets/img/bg/12.jpg", alt='image')
+				img(src=dirPrefix+"assets/img/bg/13.jpg", alt='image')
+			// #####End carousel
+			h3 Description
+			p Of the half million people who die each year in England, less than one in five die at home, yet home is where most would prefer to die. Some receive excellent care, but many do not. The NHS is seeking to raise the standard of care for all and enable more to die at home. The key question this study addresses is: for whom is home death "good"? Is it possible to identify:
+			ul.list-unstyled.m-bottom-60
+				li a) Those for whom a "good death" at home is achievable, for whom greater effort is needed to optimise home care? 
+				li b) Those for whom "a good death" at home is rarely achievable, for whom inpatient care should be accepted and planned?
+			h3 Project Aims
+			ol.m-bottom-60.with-shaded-label
+				li To identify the patterns of care need of people approaching the end
+				li To map their current pathways of care provision and place of death.
+				li To confirm these patterns of need and care pathways with carers, GPs and DNs.
+				li To investigate the health costs of the identified care pathways.
+				li To develop a toolkit for Primary Care Teams to review care and better align patient needs to care provision.
+			h3 Methodology
+			p Of the half million people who die each year in England, less than one in five die at home, yet home is where most would prefer to die. Some receive excellent care, but many do not.
+			// #####Begin timeline
+			.ol-timeline
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section Phase 1
+					.elem-wrapper
+						i.oli.oli-ok
+					.content-wrapper
+						h3.title Summary of records
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section Phase 2
+					.elem-wrapper
+						i.oli.oli-ok
+					.content-wrapper
+						h3.title Gathering data from our data sets
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section Phase 3
+					.elem-wrapper
+						i.oli.oli-ok
+					.content-wrapper
+						h3.title Compare Gps with GDs
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+				// #####Begin timeline item
+				div.tl-item.pub-item.with-icon
+					span.item-section Phase 4
+					.elem-wrapper
+						i.oli.oli-cancel
+					.content-wrapper
+						h3.title Develope the next generation of PFDs
+						.description
+							p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis.
+				// #####End timeline item
+			// #####End timeline
+	section.section.bg-gray
+		.container
+			.row
+				.col-md-6
+					h3.m-bottom-40 Organization
+					.dl-horizontal.text-left
+						dt Start date
+						dd 21 July 2012
+						dt End Date
+						dd 21 July 2016
+						dt Contact Person
+						dd Dr. John Doe
+						dt Contact Details
+						dd 
+							| Primary Care Unit
+							| <br>Institute of Public Health
+							| <br>University Forvie Site, Robinson Way
+							| <br>Telephone: (01223) 746719
+							| <br>Fax: 01223 762515
+							| <br>E-mail: rm582@medschl.cam.ac.uk
+						dt Funding Organization
+						dd NIHR Research for Patient Benefit
+						dt Funding Reference
+						dd PG34ED
+						dt Funding Amount
+						dd &pound;249,748
+				.col-md-6
+					h3.m-bottom-40 Affiliates
+					ul.clients-grid.grid-3
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+	section.section.ov-dark-alpha-40.dark-wrapper.bg-gray.parallax-layer.ol-particles(data-img-src=dirPrefix+"assets/img/bg/06.jpg", data-parallax-mode="mode-5")
+		.container
+			// #####Begin call to action
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-5.vcenter.text-right
+					a.btn.btn-medium.btn-wide.btn-trans.btn-circle.btn-skin-white(href='#') View
+				.col-sm-7.vcenter.text-left
+					h2.title CHAOS Happens
+					h4.sub-title When the quality screems out!
+			// #####End call to action

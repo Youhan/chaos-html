@@ -1,0 +1,37 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var customStyleName = 'demo7.css'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('bg-green') 
+	- var bcType = "false"
+	- var ptType = "false"
+	- var triggerClass = 'pull-right'
+block main-area
+	section.section
+		.container
+			.page-maintenance.text-center.p-top-50.p-bottom-50
+				.icon
+					i.oli.oli-attention
+				h1.title.m-top-30.m-bottom-0 MAINTENANCE MODE
+				.description.m-bottom-40 We are currently working on our website, we&#39;ll be back soon!
+				.shadow-line
+				.sp-blank-30
+			.row
+				.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-laptop
+						h3.title Why is the site down?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-laptop
+						h3.title Why is the site down?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+				.col-md-4
+					.icon-box.ib-v4
+						i.oli.oli-laptop
+						h3.title Why is the site down?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.

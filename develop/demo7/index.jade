@@ -1,0 +1,106 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var customStyleName = 'demo7.css'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('bg-green') 
+	- var pageTitle = "Join us for the worlds most chaotic"
+	- var PageTitleHead = "Feb 23th-26th in Paris, France"
+	- var PageTitleDesc = "conference on Agricultural Biochemistry"
+	- var bcType = "false"
+	- var headerParallaxType = 'bg'
+	- var pageTitleClass = 'h-600 set-bg'
+	- var pageTitleImage = "assets/img/bg-light.jpg"
+	- var triggerClass = 'pull-right'
+	- var triggerType = 'overlay-content'
+	- var triggerDir = 'left'
+	- var headMainClass =""
+prepend contents
+	section(class=triggerType).bg-white.set-bg.bg-pattern
+		img(src="assets/img/straws.png").set-me
+		.container
+			.row
+				.col-md-4.bg-dark.hvh-100.p-left-80.ofx-hidden.ofy-auto
+					.head-main
+						.logo-wrapper.text-left
+							// standard Logo
+							a('href'="index.html", "class"="standard-logo", "data-dark-logo"=darklogoSrc)
+								img(src='assets/img/logo/logo-light.png' , alt='Logo')
+					.sp-blank-200
+					.sp-blank-100
+					.vertical-menu.dark.text-right
+						nav
+							ul#nav.p-right-80
+								li.active
+									a(href="index.html" title="Home")
+										span Home
+								li
+									a(href="#" title="About CHAOS")
+										span About CHAOS
+								li
+									a(href="#" title="Registration")
+										span Registration
+								li
+									a(href="#" title="Agenda")
+										span Agenda
+								li
+									a(href="#" title="Venue")
+										span Venue
+								li
+									a(href="#" title="FAQ")
+										span FAQ
+								li
+									a(href="overlay-menu.html" title="variations")
+										span variations
+				.col-md-8.bg-white.hvh-100.p-right-80.p-left-80.ofx-auto
+					.head-main(class=headMainClass)
+						// primary navigation
+						nav(id="primary-menu")
+							ul(id="nav")
+								li
+									a(href="index.html" title="Register Now")
+										span Register Now
+								li
+									a(href="faq.html" title="FAQ")
+										span FAQ
+						// trogger content
+						.close-content(data-type=triggerType).pull-right
+							a(href="#")
+								.oli.oli-delete_sign
+					.sp-blank-200
+					.sp-blank-50
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin in a good manner
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+					.pub-item.with-icon
+						.elem-wrapper
+							i.oli.oli-bookmark
+						.content-wrapper
+							h3.title Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+							.description
+								.citation 
+									| Achievements in the Life Sciences 2014
+

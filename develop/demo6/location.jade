@@ -1,0 +1,180 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var bcType = "intitle"
+	- var currentMenu = "Location"
+	- var pageTitle = "Conference Location"
+	- var PageTitleHead = "Accomodation"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-grad1-alpha-70 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/04.jpg"
+	- var pageTitleParallaxMode = "title"
+
+block main-area
+	section.section: .container
+		h3 Travel
+		.row
+			.col-md-6
+				
+				p 
+					+lorem(70)
+				p 
+					+lorem(30)
+			.col-md-6
+				.ol-tab
+					ul.tab-navigation
+						li.active
+							a(href="#") Airlines
+						li
+							a(href="#") In the City
+						li
+							a(href="#") Subways
+						
+
+					.tab-content
+						.tab-pane.active
+							p 
+								+lorem(70)
+						.tab-pane
+							p 
+								+lorem(70)
+						.tab-pane
+							p 
+								+lorem(70)
+						.tab-pane
+							p 
+								+lorem(70)
+
+		.sp-line-200
+		h3 The City
+		.row
+			.col-md-4
+				p 
+					+lorem(70)
+				+hov5_icon('assets/img/gallery/03.jpg')
+			.col-md-4
+				+hov5_icon('assets/img/gallery/04.jpg')
+				.sp-blank-30
+				p 
+					+lorem(70)
+
+			.col-md-4
+				+hov5_icon('assets/img/gallery/02.jpg')
+				
+		.sp-line-200
+		h3 Accommodations
+		p 
+			+lorem(50)
+		.sp-blank-30
+		.row
+			.col-md-4
+				.featured-item.boxed
+					.features-image
+						+hov1('assets/img/gallery/05.jpg')
+					h3.features-title 
+						a(href="#") Awesome Hotel
+					.features-des 
+						|1615 Howard St. City, NE 68102
+						br 
+						| +134-123-3242-956
+			.col-md-4
+				.featured-item.boxed
+					.features-image
+						+hov1('assets/img/gallery/06.jpg')
+					h3.features-title 
+						a(href="#") Awesome Hotel
+					.features-des 
+						|1615 Howard St. City, NE 68102
+						br 
+						| +134-123-3242-956
+			.col-md-4
+				.featured-item.boxed
+					.features-image
+						+hov1('assets/img/gallery/07.jpg')
+					h3.features-title 
+						a(href="#") Awesome Hotel
+					.features-des 
+						|1615 Howard St. City, NE 68102
+						br 
+						| +134-123-3242-956
+
+	section.section.parallax-layer.ov-light-alpha-90(data-img-src="assets/img/bg/01.jpg"): .container
+		h3 Venue
+		.row
+			.col-md-6
+				p 
+					+lorem(50)
+			.col-md-6
+				.text-right
+					p 1615 Howard St. City, NE 68102
+					a.btn.btn-skin-purple.btn-small(hrf="#") visit website
+		.sp-blank-60
+		.owl-carousel.items.owwwlab-theme.tj-lightbox-gallery(data-cols="3" data-margin="30")
+			.item
+				+hov5_icon('assets/img/gallery/08.jpg')
+
+			.item
+				+hov5_icon('assets/img/gallery/09.jpg')
+
+			.item
+				+hov5_icon('assets/img/gallery/10.jpg')
+
+
+	section.section: .container
+		h3 Where to Drink and Eat
+		p 
+			+lorem(50)
+		.sp-blank-30
+		.row.multi-columns-row.col-margin-bottom-30
+			.col-md-4
+				+hov4('assets/img/gallery/11.jpg','ov-blue-alpha-50','ov-blue-alpha-95',"#","Laboo Dagh",null,"2-5 min drive.")
+			.col-md-4
+				+hov4('assets/img/gallery/11.jpg','ov-blue-alpha-50','ov-blue-alpha-95',"#","Kalapch",null,"2-5 min drive.")
+			.col-md-4
+				+hov4('assets/img/gallery/11.jpg','ov-blue-alpha-50','ov-blue-alpha-95',"#","Baghali",null,"2-5 min drive.")
+			.col-md-4
+				+hov4('assets/img/gallery/11.jpg','ov-blue-alpha-50','ov-blue-alpha-95',"#","Shalgham",null,"2-5 min drive.")
+			.col-md-4
+				+hov4('assets/img/gallery/15.jpg','ov-blue-alpha-50','ov-blue-alpha-95',"#","Siraabi",null,"2-5 min drive.")
+			.col-md-4
+				+hov4('assets/img/gallery/16.jpg','ov-blue-alpha-50','ov-blue-alpha-95',"#","Ghelyoon",null,"2-5 min drive.")
+				
+	
+	section.section.section-narrow-2.dark-wrapper.parallax-layer.ov-grad1-alpha-90.text-center(data-img-src="assets/img/bg/01.jpg"): .container
+		.heading-with-sub.text-center.m-bottom-40
+			h2.title Take Your Seat!
+			h4.subtitle The nubmer of available seats are limited so please make Jafar rich soon!
+		a.btn.btn-skin-blue.btn-wide.btn-thick-border.btn-circle.btn-medium(href="registration.html") Register Now
+	
+	// logo carousel
+	section: .container
+		.owl-carousel.items.owwwlab-theme(
+			data-cols-xxs=2,
+			data-cols-xs=3,
+			data-cols-sm=4,
+			data-cols-md=5,
+			data-cols-lg=6,
+			data-margin=50,
+			data-loop="true"
+			)
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/01.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/02.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/03.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/04.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/05.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/06.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/07.png")
+			a.pad-20(href="#")
+				img(src="assets/img/partner-logos/08.png")

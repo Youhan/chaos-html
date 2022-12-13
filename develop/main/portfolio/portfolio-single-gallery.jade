@@ -1,0 +1,134 @@
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Single with gallery"
+	- var PageTitleHead = "Portfolio"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var headerParallaxType = "bg"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-grad1-alpha-60 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/portfolio/masonry/01.jpg"
+	- var pageTitleParallaxMode = "bg-title"
+	
+	- var currentMenu = "Work"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+block main-area
+	section.section.slim-container.bg-gray: .container: .row
+		.ol-grid.grid.col-4.ol-lightbox-gallery
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/01.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/01.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/02.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/02.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/03.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/03.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/04.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/04.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/05.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/05.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/06.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/06.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/07.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/07.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+			// #####Begin grid item
+			a(href=dirPrefix+"assets/img/portfolio/08.jpg").grid-item.ol-lightbox
+				.gi-wrapper.ol-hover.hover-1
+					.img-layer.set-bg
+						img(src=dirPrefix+"assets/img/portfolio/08.jpg", alt='portfolio item')
+					.ol-overlay.ov-dark-alpha-80
+					.icons
+						i.oli.oli-camera2
+			// #####End grid item
+	section.section.slim-container: .container
+		h3 Project Details
+		.row
+			.col-md-8
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu.
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem.
+			.col-md-4
+				hr
+				.sp-blank-15
+				// #####Begin description metas
+				dl.description-item
+					dt Client
+					dd University of Chaos
+					dt Date
+					dd May 2015
+					dt Website:
+					dd www.example.com
+					dt Custom Field
+					dd Lorem ipsum odor sit amet to be the second line and not only one line
+				// #####End description metas
+				hr
+				.sp-blank-30
+				a.ol-iconic-link.skin-green(href="#")
+					i.oli.oli-download_2
+					| Download Data
+				.sp-blank-30
+				// #####Begin social icons
+				ul.social-icons.border-circle.large.hover-bg-cyan
+					li
+						a(href="#")
+							i.icon.oi-facebook
+					li
+						a(href="#")
+							i.icon.oi-twitter
+					li
+						a(href="#")
+							i.icon.oi-google
+					li
+						a(href="#")
+							i.icon.oi-linkedin
+																									
+				// #####End social icons

@@ -1,0 +1,59 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Hover styles"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var headerParallaxType = "bg"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+block main-area
+	//- hover-1
+	section.section: .container: .row
+		.col-md-4
+			+hov1(dirPrefix+"assets/img/hovers/01.jpg")
+		.col-md-4
+			+hov1(dirPrefix+"assets/img/hovers/02.jpg")
+		.col-md-4
+			+hov1(dirPrefix+"assets/img/hovers/03.jpg")
+	//- hover-2
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			+hov2(dirPrefix+"assets/img/hovers/01.jpg")
+		.col-md-4
+			+hov2(dirPrefix+"assets/img/hovers/02.jpg")
+		.col-md-4
+			+hov2(dirPrefix+"assets/img/hovers/03.jpg")
+	//- hover-3
+	section.section: .container: .row
+		.col-md-4
+			+hov3(dirPrefix+"assets/img/hovers/01.jpg")
+		.col-md-4
+			+hov3(dirPrefix+"assets/img/hovers/02.jpg")
+		.col-md-4
+			+hov3(dirPrefix+"assets/img/hovers/03.jpg")
+	//- hover-4
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			+hov4(dirPrefix+"assets/img/hovers/01.jpg")
+		.col-md-4
+			+hov4(dirPrefix+"assets/img/hovers/02.jpg")
+		.col-md-4
+			+hov4(dirPrefix+"assets/img/hovers/03.jpg")
+			
+	
+	section.section.bg-gray: .container: .row
+		h2.text-center Center Captions
+		.col-md-4
+			+hov5_icon(dirPrefix+"assets/img/hovers/02.jpg")
+		.col-md-4
+			+hov5_title(dirPrefix+"assets/img/hovers/03.jpg","Chaos Theory")
+		.col-md-4
+			+hov5_icon(dirPrefix+"assets/img/hovers/04.jpg","ol ol-start_filled")

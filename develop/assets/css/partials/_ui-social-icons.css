@@ -1,0 +1,427 @@
+
+.social-icons{
+	font-size:0;
+	padding:0;
+	li{
+		display: inline-block;
+		margin: 0px 0px;
+		
+		&:first-child{
+			margin-left:0;
+		}
+		&:last-child{
+			margin-right:0;
+		}
+	}
+	a{
+		text-decoration:none;
+		display: block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+    	text-align: center;
+        transition: all 0.25s ease;
+        color: #b5b5b5;
+
+        &:hover,&:focus{
+        	color:$chaos_dark;
+        }
+	}
+
+	&.size{
+		&-small{
+			a{
+				font-size: 10px;
+				width: 22px;
+				height: 22px;
+				line-height: 22px;
+			}
+		}
+
+		&-large{
+			a{
+				font-size: 14px;
+				width: 36px;
+				height: 36px;
+				line-height: 36px;
+			}
+		}
+	}
+
+	&.shape{
+		&-circle{
+			a{
+				border:1px solid #b5b5b5;
+				box-sizing:content-box;
+				border-radius: 50%;
+				&:hover,&:focus{
+					border:1px solid $chaos_dark;
+				}
+			}
+		}
+
+		&-square{
+			a{
+				border:1px solid #b5b5b5;
+				box-sizing:content-box;
+				&:hover,&:focus{
+					border:1px solid $chaos_dark;
+				}
+			}
+		}
+	}
+
+	&[class*="shape-"]{
+		li{
+			margin:0 2px;
+		}
+		&.size{
+			&-small{
+				li{
+					margin:0 2px;
+				}
+			}
+			&-large{
+				li{
+					margin:0 3px;
+				}
+			}
+		}
+
+		a{
+			&:hover,&:focus{
+	        	color:$chaos_white;
+	        	border-color:none;
+	        	background-color: $chaos_dark;
+
+	        }
+		}
+	}
+
+
+	.dark-wrapper & {
+		a{
+			&:hover,&:focus{
+	        	color:$chaos_white;
+	        }
+		}
+		&[class*="shape-"]:not([class*="skin-"]){
+			a{
+				&:hover,&:focus{
+					color:$chaos_dark;
+					border-color:none;
+					background-color: $chaos_white;
+				}
+			}
+		}
+
+	}
+
+	&.skin{
+		&-white{
+			li a{
+				color:$chaos_white;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:#b3b3b3;
+					color:#b3b3b3;
+					background-color: $chaos_white;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-theme{
+			li a{
+				color:$chaos_theme_color;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_theme_color;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-blue{
+			li a{
+				color:$chaos_blue;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_blue;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-green{
+			li a{
+				color:$chaos_green;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_green;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-yellow{
+			li a{
+				color:$chaos_yellow;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_yellow;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-dark{
+			li a{
+				color:$chaos_dark;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_dark;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-purple{
+			li a{
+				color:$chaos_purple;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_purple;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-cyan{
+			li a{
+				color:$chaos_cyan;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_cyan;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-lemon{
+			li a{
+				color:$chaos_lemon;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_lemon;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+		&-red{
+			li a{
+				color:$chaos_red;
+				&:hover,&:focus{
+					opacity:0.7;
+				}
+			}
+			&[class*="shape-"]{
+				li a{
+					border-color:transparent;
+					color:$chaos_white;
+					background-color: $chaos_red;
+					&:hover,&:focus{
+						opacity:0.7;
+					}
+				}
+			}
+		}
+	}
+
+	&.hover{
+		&-white{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_white;
+						color:$chaos_textinlight;
+						border-color:$chaos_white;
+					}
+				}
+			}
+		}
+		&-theme{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_theme_color;
+						color:$chaos_white;
+						border-color:$chaos_theme_color;
+					}
+				}
+			}
+		}
+		&-blue{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_blue;
+						color:$chaos_white;
+						border-color:$chaos_blue;
+					}
+				}
+			}
+		}
+		&-green{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_green;
+						color:$chaos_white;
+						border-color:$chaos_green;
+					}
+				}
+			}
+		}
+		&-yellow{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_yellow;
+						color:$chaos_white;
+						border-color:$chaos_yellow;
+					}
+				}
+			}
+		}
+		&-dark{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_dark;
+						color:$chaos_white;
+						border-color:$chaos_dark;
+					}
+				}
+			}
+		}
+		&-purple{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_purple;
+						color:$chaos_white;
+						border-color:$chaos_purple;
+					}
+				}
+			}
+		}
+		&-cyan{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_cyan;
+						color:$chaos_white;
+						border-color:$chaos_cyan;
+					}
+				}
+			}
+		}
+		&-lemon{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_lemon;
+						color:$chaos_white;
+						border-color:$chaos_lemon;
+					}
+				}
+			}
+		}
+		&-red{
+			&[class*="shape-"]{
+				li a{
+					&:hover,&:focus{
+						background-color: $chaos_red;
+						color:$chaos_white;
+						border-color:$chaos_red;
+					}
+				}
+			}
+		}
+	}
+
+	&.thick-border{
+		li a{
+			border-width: 3px;
+			box-sizing:content-box;
+			&:hover,&:focus{
+				border-width: 3px;
+			}
+		}
+	}
+	
+}

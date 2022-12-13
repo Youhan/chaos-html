@@ -1,0 +1,121 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Progress bars"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque. Integer eget mi eget risus eleifend consectetur vehicula sit amet neque. Pellentesque imperdiet est leo, at placerat sem semper eu. Quisque cursus condimentum dolor, vitae dapibus nunc convallis eu. Nulla condimentum, odio semper ultricies congue, purus ligula tempor turpis, a venenatis leo purus sed lectus. Cras tincidunt bibendum sem, vel sollicitudin sapien molestie sit amet. Nulla eleifend odio at felis dignissim consectetur"
+	
+block main-area
+	section.section
+		.container
+			.row
+			.col-md-8.col-md-offset-2
+				.progress
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+						| HTML / CSS
+						span 40%
+					// #####End progress item
+				.progress
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width: 50%;')
+						| PHOTOSHOP
+						span 50%
+					// #####End progress item
+				.progress
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+						| DESIGN
+						span 60%
+					// #####End progress item
+				.progress.progress-theme-color
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+						| PHP 
+						span 70%
+					// #####End progress item
+				.progress.progress-theme-color
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+						| Awesome
+						span 80%
+					// #####End progress item
+	section.section.bg-gray
+		.container
+			.row
+			.col-md-8.col-md-offset-2
+				.progress.progress-on-top
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+						| HTML / CSS
+						span 40%
+					// #####End progress item
+				.progress.progress-on-top
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width: 50%;')
+						| PHOTOSHOP
+						span 50%
+					// #####End progress item
+				.progress.progress-on-top
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+						| DESIGN
+						span 60%
+					// #####End progress item
+				.progress.progress-on-top.progress-theme-color
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+						| PHP 
+						span 70%
+					// #####End progress item
+				.progress.progress-on-top.progress-theme-color
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+						| Awesome
+						span 80%
+					// #####End progress item
+	section.section.dark-wrapper.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg")
+		.container
+			.row
+			.col-md-8.col-md-offset-2
+				.progress
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+						| HTML / CSS
+						span 40%
+					// #####End progress item
+				.progress
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width: 50%;')
+						| PHOTOSHOP
+						span 50%
+					// #####End progress item
+				.progress
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+						| DESIGN
+						span 60%
+					// #####End progress item
+				.progress.progress-theme-color
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+						| PHP 
+						span 70%
+					// #####End progress item
+				.progress.progress-theme-color
+					// #####Begin progress item
+					.progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+						| Awesome
+						span 80%
+					// #####End progress item
+	

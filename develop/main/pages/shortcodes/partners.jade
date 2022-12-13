@@ -1,0 +1,360 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Partners | Clients"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta."
+	
+block main-area
+	section.section
+		.container
+			p.highlight Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris viverra id. Donec est lectus, eleifend vitae rutrum eu, porta sed nisl. Nunc vehicula enim eget risus faucibus, id interdum nisi commodo. Nunc eget massa eget ipsum mattis iaculis ut in urna.
+			.sp-blank-75
+			// #####Begin row with multiple columns
+			.row.multi-columns-row.col-margin-bottom-60
+				.col-md-4
+					// #####Begin featured item
+					.featured-item.text-left
+						.features-image
+							img(src=dirPrefix+"assets/img/partner-logos/01.jpg", alt='image')
+						h3.features-title Lorem ipsum inc.
+						.features-des
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					.featured-item.text-left
+						.features-image
+							img(src=dirPrefix+"assets/img/partner-logos/02.jpg", alt='image')
+						h3.features-title Lorem ipsum inc.
+						.features-des
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					.featured-item.text-left
+						.features-image
+							img(src=dirPrefix+"assets/img/partner-logos/03.jpg", alt='image')
+						h3.features-title Lorem ipsum inc.
+						.features-des
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					.featured-item.text-center
+						.features-image
+							img(src=dirPrefix+"assets/img/partner-logos/04.jpg", alt='image')
+						h3.features-title Lorem ipsum inc.
+						.features-des
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris consectetur adipiscing elit.
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					.featured-item.text-center
+						.features-image
+							img(src=dirPrefix+"assets/img/partner-logos/05.jpg", alt='image')
+						h3.features-title Lorem ipsum inc.
+						.features-des
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris consectetur adipiscing elit.
+					// #####End featured item
+				.col-md-4
+					// #####Begin featured item
+					.featured-item.text-center
+						.features-image
+							img(src=dirPrefix+"assets/img/partner-logos/06.jpg", alt='image')
+						h3.features-title Lorem ipsum inc.
+						.features-des
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur nulla orci, in sollicitudin mauris consectetur adipiscing elit.
+					// #####End featured item
+			// #####End row with multiple columns
+			.sp-blank-30
+	section.section.dark-wrapper.parallax-layer(data-img-src=dirPrefix+"assets/img/poly-bg-dark.jpg")
+		.container 
+			.row
+				.col-md-12
+					
+					// testimonial carousel
+					// #####Begin carousel
+					.owl-carousel.items.owwwlab-theme.nav-sides.single-shot(data-cols-all="1" owl-auto-play="true")
+						// #####Begin single testimonial
+						.item: .testimonial-item
+							
+							.their-quote
+								p #{lorem} Phasellus lectus sem, egestas eget sollic ut, Phasellus lectus sem, egestas eget sollic ut
+							.their-info
+								.avatar.avatar-sm
+									img(src=dirPrefix+'assets/img/avatars/01.jpg', alt='Owl Image')
+								h4.their-name Martha M. Masters
+								div.their-cite 
+									| Marketing -
+									a(href="#") Google
+						// #####End single testimonial
+						// #####Begin single testimonial
+						.item: .testimonial-item
+							.their-quote
+								p #{lorem} 
+							.their-info
+								.avatar.avatar-sm
+									img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+								h4.their-name Martha M. Masters
+								div.their-cite 
+									| Marketing -
+									a(href="#") Google
+						// #####End single testimonial
+						// #####Begin single testimonial
+						.item: .testimonial-item
+							.their-quote
+								p #{lorem} Phasellus lectus sem, egestas eget sollic ut
+							.their-info
+								.avatar.avatar-sm
+									img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+								h4.their-name Martha M. Masters
+								div.their-cite 
+									| Marketing -
+									a(href="#") Google
+						// #####End single testimonial
+					// #####End carousel
+	section.section.section-nopadding
+		.container
+			.row
+				.col-md-12
+					// #####Begin carousel
+					.owl-carousel.items.owwwlab-theme.partner-logos(data-cols="6" data-cols-sm = 3 data-cols-xs=2 data-cols-xxs=2 data-loop="true")
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='image')
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='image')
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='image')
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='image')
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='image')
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='image')
+						.item.partner-logo
+							img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='image')
+					// #####End carousel
+	.sp-line-1
+	section.section
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Partners Grid 6-col
+				h4.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			// #####End heading
+			.sp-blank-75
+			.row
+				.col-md-10.col-md-offset-1
+					ul.clients-grid.grid-6
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+	.sp-line-1
+	section.section
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Partners Grid 5-col
+				h4.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			// #####End heading
+			.sp-blank-75
+			.row
+				.col-md-8.col-md-offset-2
+					ul.clients-grid
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+	.sp-line-1
+	section.section
+		.container
+			// #####Begin heading
+			.heading-with-sub.text-center
+				h2.title Partners Grid 4-col
+				h4.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			// #####End heading
+			.sp-blank-75
+			.row
+				.col-md-8.col-md-offset-2
+					ul.clients-grid.grid-4
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='Clients')
+	.sp-line-1
+	section.section
+		.container
+			
+			.row
+				.col-md-4.col-md-offset-4
+					h3.text-center Partners Grid 2-col
+					ul.clients-grid.grid-2
+						
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+	
+	.sp-line-1
+	section.section
+		.container
+			
+			.row
+				.col-md-6.col-md-offset-3
+					h3.text-center Partners Grid 3-col
+					ul.clients-grid.grid-3
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/05.png", alt='Clients')
+						li
+							a(href='#')
+								img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='Clients')
+	.sp-line-1
+	section.section.section-nopadding.bg-gray
+		// #####Begin carousel
+		.owl-carousel.items.owwwlab-theme.partner-logos(data-cols-lg="7" data-cols-md="4" data-cols-sm="3" data-cols-xs="2" data-cols-xxs=2 data-margin="50" data-loop="true")
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/01.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/02.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/03.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/04.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/06.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/07.png", alt='image')
+			.item.partner-logo
+				img(src=dirPrefix+"assets/img/partner-logos/08.png", alt='image')
+		// #####End carousel

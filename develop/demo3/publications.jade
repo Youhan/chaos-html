@@ -1,0 +1,164 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('side-header slim-container')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' dark') 
+	- var bcType = "intitle"
+	- var currentMenu = "Publications"
+	- var pageTitle = "Publications"
+	- var pageTitleClass = 'lined bg-white shadow-line ol-particles'
+	
+
+
+
+block main-area
+	section.section.section-narrow
+		.container
+			.search-box.inline-filters
+
+				.row.form-inline
+					
+					.col-sm-10.col-xs-6.form-group.with-filter
+						input.form-control(type='text', placeholder='Search')
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+						
+
+					.col-sm-2.col-xs-6.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Publication Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple')
+								option(value='')
+								option(value='Journal Article') Journal Article
+								option(value='Conference Paper') Conference Paper
+								option(value='Report') Report
+								option(value='Book') Book
+								option(value='Book Chapter') Book Chapter
+								option(value='Proceeding') Proceeding
+
+						.form-group
+							label Year:
+							select.selectize(data-placeholder='Select Year', multiple='multiple')
+								option(value='') 
+								option(value='2000') 2000
+								option(value='2001') 2001
+								option(value='2004') 2004
+								option(value='2005') 2005
+								option(value='2006') 2006
+								option(value='2010') 2010
+								option(value='2011') 2011
+								option(value='2012') 2012
+								option(value='2013') 2013
+								option(value='2014') 2014
+								option(value='2015') 2015
+
+
+
+					.col-sm-6
+						.form-group
+							label Category:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple')
+								option(value='')
+								option(value='Physics') Physics
+								option(value='Algebra') Algebra
+								option(value='Jafarology') Jafarology
+
+			.sp-blank-50
+
+			.pubs-wrapper
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title
+							a(href="#") Comparison of Methods for Counting Hoofed Animal Density in Sikhote-Alin
+						.description
+							.citation
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								| <br>Foster et. al.
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title
+							a(href="#") The Content of Heavy Metals in Bottom Sediments of the Streams of the Sikhote-Alin Biosphere Reserve and the Streams Draining Mines of the Transit Zone of the Reserve
+						.description
+							.citation
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								| <br>Foster et. al.
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title
+							a(href="#") The Use of Camera Traps for Monitoring the Population of Long-Tailed Gorals
+						.description
+							.citation
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								| <br>Foster et. al.
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title
+							a(href="#") A Taxonomic List of the Mayflies, Stoneflies and Caddisflies (Insecta: Ephemeroptera, Plecoptera and Trichoptera) of the Sikhote-Alin Biosphere Reserve
+						.description
+							.citation
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								| <br>Foster et. al.
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title
+							a(href="#") Organic Matter in the Small Lakes of the Sikhote-Alin Biosphere Reserve
+						.description
+							.citation
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								| <br>Foster et. al.
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+
+				.pub-item.with-icon
+					.elem-wrapper
+						i.oli.oli-bookmark
+					.content-wrapper
+						h3.title
+							a(href="#") Sample Preparation Method for the Determination of Organochlorine Pesticides in Aquatic Organisms by Gas Chromatography
+						.description
+							.citation
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								| <br>Foster et. al.
+							a.link-with-icon(href="#") 
+								i.fa.fa-external-link
+								| Publisher's website
+
+				
+
+
+			.sp-blank-50
+			include /_partials/blocks/paginations/lined
+			.sp-blank-50

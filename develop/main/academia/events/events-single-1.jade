@@ -1,0 +1,79 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('') 
+	- var pageTitle = "Awesome Title for Event"
+	- var PageTitleHead = "EVENT TYPE"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.slim-container.bg-gray.section-nopadding
+		.container
+			.wrapper.bg-white
+				// #####Begin summary box
+				.summary-box.pull-up-130.pull-up-xs-80
+					.two-col-info.split-line.bg-blue
+						.row
+							.col-sm-6
+								.info-box.text-right
+									.description
+										div 20-25 SEP 2015
+										div 12:00 - 18:00
+									i.oli.oli-clock
+							.col-sm-6
+								.info-box
+									i.oli.oli-map
+									.description
+										div Grant Museum of Zoology
+										div Rockefeller Building
+				// #####End summary box
+				.row.pad-50
+					.col-md-8.col-md-offset-2
+						h3 What is this event?
+						p The Proton Physics Research and Implementation Group (PPRIG) group is pleased to announce that a two-day workshop on Proton Therapy Physics will be hosted at NPL on Thursday 1 and Friday 2 October 2015. The aims of the workshop will be to initiate discussions between experts in the field; develop links and collaborations; as well as to inform relative new comers to the field, providing access to a network of experts.
+						p It is anticipated that the workshop will help to stimulate more collaborative research in the field of proton therapy physics, which would ultimately support the two new national centres at The Christie and UCLH.
+						p The main themes of the meeting will be on Treatment Planning, Radiobiology, Imaging and Verification, with invited talks in each area.
+						.caption-img
+							img(src=dirPrefix+"assets/img/events/thumb-7.jpg", alt="event-image")
+							.caption Prpf. Jafar Doe
+						.sp-blank-40
+						p The Proton Physics Research and Implementation Group (PPRIG) group is pleased to announce that a two-day workshop on Proton Therapy Physics will be hosted at NPL on Thursday 1 and Friday 2 October 2015. The aims of the workshop will be to initiate discussions between experts in the field; develop links and collaborations; as well as to inform relative new comers to the field, providing access to a network of experts.
+						p It is anticipated that the workshop will help to stimulate more collaborative research in the field of proton therapy physics, which would ultimately support the two new national centres at The Christie and UCLH.
+						p The main themes of the meeting will be on Treatment Planning, Radiobiology, Imaging and Verification, with invited talks in each area.
+					
+				hr
+				.row.pad-50
+					.col-md-8.col-md-offset-2
+						h3 Contact
+						p 
+							|John Doe
+							br
+							|+44 (0)20 3108 2052 | johndoe@chaos.ac.uk
+					.sp-blank-20
+				
+			.wrapper.bg-blue.dark-wrapper.with-top-icon.pad-60
+				.row
+					.top-icon.text-center
+						.circle-icon.double.skin-blue.size-lg
+							i.fa.fa-envelope
+					
+					// #####Begin widget
+					.widget-heading.text-center
+						h2.widget-title Take your seat!
+						h6.widget-sub-title Registration is free of charge and it is open to public
+					// #####End widget
+					.sp-blank-20
+					.newsletter-form.simple
+						form.form-inline.text-center
+							.form-group
+								input.form-control.form-circle(type='text', placeholder='Your Email...')
+							.form-group
+								input.btn.btn-medium.btn-trans.btn-skin-white.btn-circle.btn-wide(type='submit', value='REGISTER')
+					

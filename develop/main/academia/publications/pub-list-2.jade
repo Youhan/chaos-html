@@ -1,0 +1,207 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' trans dark sticky-light') 
+	- var pageTitle = "Publication List"
+	- var PageTitleHead = "with thumbnails"
+	- var PageTitleDesc = ""
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-700 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Academia"
+block main-area
+	section.section.slim-container.p-top-0
+		.container
+			// #####Begin summary box
+			.summary-box.parallax-layer.pull-up-200.pull-up-xs-100(data-img-src=dirPrefix+"assets/img/backgrounds/summ-bg.jpg")
+				i.oli.oli-literature
+				// #####Begin carousel
+				ul.summaries.owl-carousel.items.owwwlab-theme(data-cols-lg="5" data-cols-md="4" data-cols-sm="3" data-cols-xs="2" data-cols-xxs="1"  data-margin="30" data-nav="false" data-loop="true")
+					li.item: a(href="#")
+						.number 1235
+						.title Journal Articles
+					li.item: a(href="#")
+						.number 936
+						.title Book Chapters
+					li.item: a(href="#")
+						.number 20k
+						.title Reports
+					li.item: a(href="#")
+						.number 987
+						.title Technical Papers
+					li.item: a(href="#")
+						.number 453
+						.title Another Category
+					li.item: a(href="#")
+						.number 23
+						.title Awesome Category
+							
+				// #####End carousel
+			// #####End summary box
+			.sp-blank-50
+			
+			.search-box.inline-filters
+				.row.form-inline
+					
+					.col-sm-10.col-xs-8.form-group.with-filter
+						input.form-control(type='text', placeholder='Search')
+						a.toggle-filter(href="#" data-toggle="tooltip" data-placement="top" title="Filter")
+							i.icon.oi-filter
+					.col-sm-2.col-xs-4.form-group
+						input.btn.btn-small.btn-skin-red.btn-block(type='submit', value='Submit')
+				.row.filters
+					a.clear-selectize(href="#") Clear Filters
+					.col-sm-6
+						.form-group
+							label Publication Type:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple')
+								option(value='')
+								option(value='Journal Article') Journal Article
+								option(value='Conference Paper') Conference Paper
+								option(value='Report') Report
+								option(value='Book') Book
+								option(value='Book Chapter') Book Chapter
+								option(value='Proceeding') Proceeding
+						.form-group
+							label Year:
+							select.selectize(data-placeholder='Select Year', multiple='multiple')
+								option(value='') 
+								option(value='2000') 2000
+								option(value='2001') 2001
+								option(value='2004') 2004
+								option(value='2005') 2005
+								option(value='2006') 2006
+								option(value='2010') 2010
+								option(value='2011') 2011
+								option(value='2012') 2012
+								option(value='2013') 2013
+								option(value='2014') 2014
+								option(value='2015') 2015
+					.col-sm-6
+						.form-group
+							label Category:
+							select.selectize(data-placeholder='Select Types...', multiple='multiple')
+								option(value='')
+								option(value='Physics') Physics
+								option(value='Algebra') Algebra
+								option(value='Jafarology') Jafarology
+			.sp-blank-50
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/03.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/05.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/04.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/03.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/02.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/06.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			.pub-item.with-thumb.large
+				.elem-wrapper
+					img.pub-thumbnail(src=dirPrefix+"assets/img/publications/07.jpg", alt="item thumbnail")
+				.content-wrapper
+					h3.title
+						a(href="#") A Forward-Design Approach to Increase the Production of Poly-3-Hydroxybutyrate in Genetically Engineered Escherichia coli,
+					.description
+						.citation
+							span 
+								a(href="#") Psychonomic Bulletin and Review 2014 
+								span.block-elem foster et al
+						a.link-with-icon(href="#") 
+							i.fa.fa-external-link
+							| Publisher's website
+			
+			.sp-blank-100
+			include ../../../_partials/blocks/paginations/lined

@@ -1,0 +1,145 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var currentMenu = "News"
+	- var pageTitle = "News"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text."
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-600 center-it parallax-layer dark ov-dark-alpha-80'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/06.jpg"
+	- var pageTitleParallaxMode = "bg-title"
+	- var lorem = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text."
+block main-area
+	section.section.bg-gray: .container: .row: .col-md-8.col-md-offset-2
+		.news-posts.date-aside-list.pull-up-230
+			.post
+				.post-header
+					a.post-thumb(href="#")
+						img(src=dirPrefix+"assets/img/news/thumb-1.jpg")
+				.post-contents
+					.published_date
+						.day 23
+						.month sep
+					.aside
+						h3.title
+							a(href="#") Undergrads Dive Deep for Submarine Competition
+						ul.meta
+							li.author
+								| by 
+								a(href="#") Admin
+							li.cats
+								| in 
+								a(href="#") Research News
+						.post-excerpt
+							| #{lorem}									
+						a.read-more.btn.btn-small.btn-circle.btn-icon-right.btn-anim-i(href="#") 
+							i.oli.oli-forward
+							span Read More
+			.sp-line-75
+			.post
+				.post-header
+					a.post-thumb(href="#")
+						img(src=dirPrefix+"assets/img/news/thumb-2.jpg")
+				.post-contents
+					.published_date
+						.day 20
+						.month oct
+						.year 2015
+					.aside
+						h3.title
+							a(href="#") Undergrads Dive Deep for Submarine Competition
+						ul.meta
+							li.author
+								| by 
+								a(href="#") Admin
+							li.cats
+								| in 
+								a(href="#") Research News
+						.post-excerpt
+							| #{lorem}									
+						a.read-more.btn.btn-small.btn-circle.btn-icon-right.btn-anim-i(href="#") 
+							i.oli.oli-forward
+							span Read More
+			.sp-line-75
+			.post
+				.post-header
+					a.post-thumb(href="#")
+						img(src=dirPrefix+"assets/img/news/thumb-3.jpg")
+				.post-contents
+					.published_date
+						.day 18
+						.month sep
+						.year 2015
+					.aside
+						h3.title
+							a(href="#") Undergrads Dive Deep for Submarine Competition
+						ul.meta
+							li.author
+								| by 
+								a(href="#") Admin
+							li.cats
+								| in 
+								a(href="#") Research News
+						.post-excerpt
+							| #{lorem}									
+						a.read-more.btn.btn-small.btn-circle.btn-icon-right.btn-anim-i(href="#") 
+							i.oli.oli-forward
+							span Read More
+			.sp-line-75
+			.post
+				.post-header
+					a.post-thumb(href="#")
+						img(src=dirPrefix+"assets/img/news/thumb-4.jpg")
+				.post-contents
+					.published_date
+						.day 8
+						.month sep
+						.year 2015
+					.aside
+						h3.title
+							a(href="#") Undergrads Dive Deep for Submarine Competition
+						ul.meta
+							li.author
+								| by 
+								a(href="#") Admin
+							li.cats
+								| in 
+								a(href="#") Research News
+						.post-excerpt
+							| #{lorem}									
+						a.read-more.btn.btn-small.btn-circle.btn-icon-right.btn-anim-i(href="#") 
+							i.oli.oli-forward
+							span Read More
+			.sp-line-75
+			.post
+				.post-header
+					a.post-thumb(href="#")
+						img(src=dirPrefix+"assets/img/news/thumb-5.jpg")
+				.post-contents
+					.published_date
+						.day 8
+						.month sep
+						.year 2015
+					.aside
+						h3.title
+							a(href="#") Undergrads Dive Deep for Submarine Competition
+						ul.meta
+							li.author
+								| by 
+								a(href="#") Admin
+							li.cats
+								| in 
+								a(href="#") Research News
+						.post-excerpt
+							| #{lorem}									
+						a.read-more.btn.btn-small.btn-circle.btn-icon-right.btn-anim-i(href="#") 
+							i.oli.oli-forward
+							span Read More
+
+		.sp-blank-100
+		include /_partials/blocks/paginations/lined

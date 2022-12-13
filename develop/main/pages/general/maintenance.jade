@@ -1,0 +1,46 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push("") 
+	
+	- var currentMenu = "Features"
+	- var bcType = "false"
+	- var ptType = "false"
+	
+block main-area
+	section.section
+		.container
+			
+			.maintenance-message.text-center
+				i.oli.oli-attention
+				h1.title MAINTENANCE MODE
+				h4.m-bottom-40 We are currently working on our website, we&#39;ll be back soon!
+			
+			.sp-blank-50
+			.shadow-line
+			.sp-blank-50
+			
+			.row
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-alpha
+						h5.title Why is the site down?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-beta
+						h5.title What is the downtime?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4
+						i.oli.oli-pi
+						h5.title Do you need support?
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4

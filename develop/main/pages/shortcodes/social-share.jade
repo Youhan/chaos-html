@@ -1,0 +1,57 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Share Social"
+	- var PageTitleHead = ""
+	- var PageTitleDesc = "Share social variations"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	
+	- var currentMenu = "Shortcodes"
+	
+block main-area
+	.h-200.bg-gray
+	section.section.with-social-share
+		.container
+			h2.text-center Social Shares Around Me
+			
+			.social-share
+				.trigger.circle-icon.double.skin-red.size-md.text-center
+					i.oli.oli-share
+				.items
+					a(href="#") FACEBOOK
+					a(href="#") TWITTER
+					a(href="#") GOOGLE+
+			
+			.social-share.bottom
+				.trigger.circle-icon.double.skin-green.size-md.text-center
+					i.oli.oli-share
+				.items
+					a(href="#") FACEBOOK
+					a(href="#") TWITTER
+					a(href="#") GOOGLE+
+			
+			.social-share.right
+				.trigger.circle-icon.double.skin-blue.size-md.text-center
+					i.oli.oli-share
+				.items
+					a(href="#") FACEBOOK
+					a(href="#") TWITTER
+					a(href="#") GOOGLE+
+			
+			.social-share.right.bottom
+				.trigger.circle-icon.double.skin-dark.size-md.text-center
+					i.oli.oli-share
+				.items
+					a(href="#") FACEBOOK
+					a(href="#") TWITTER
+					a(href="#") GOOGLE+
+				
+	.h-200.bg-gray
+	
+				

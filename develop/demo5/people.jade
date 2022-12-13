@@ -1,0 +1,170 @@
+extends /_layouts/lo-normal/fullwidth
+
+append config
+
+	- var PSbodyClass = bodyClasses.push('bg-gray sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('boxed-layout')
+	- var PSheaderClasses = headerClasses.push(' dark sticky') 
+	- var currentMenu = "People"
+	- var pageTitle = "Researchers and Staff"
+	- var PageTitleHead = "Awesome"
+	- var PageTitleDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text."
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-600 center-it parallax-layer dark ov-grad1-alpha-30'
+	- var pageTitleImage = dirPrefix+"assets/img/bg/16.jpg"
+	- var pageTitleParallaxMode = "bg-title"
+
+mixin list()
+	a(href="#" data-toggle="tooltip" data-original-title="Google+")
+		i.oli.oli-googleplus
+	a(href="#" data-toggle="tooltip" data-original-title="Linedin")
+		i.oli.oli-linkedin
+	a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+		i.oli.oli-facebook
+	a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+		i.oli.oli-twitter
+
+block main-area
+	section.section.slim-container
+		.container
+			.row.multi-columns-row.col-margin-bottom-40
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Kerr Waylon
+							.subtitle
+								| Dean
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Celestine Wilfred
+							.subtitle Founder & CEO
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Woody Terence
+							.subtitle
+								| Associate Marketing Dean
+						.links
+							a(href="#" data-toggle="tooltip" data-original-title="homepage")
+								i.fa.fa-external-link
+							a(href="#" data-toggle="tooltip" data-original-title="Biography")
+								i.oli.oli-user_male_circle
+							a(href="#" data-toggle="tooltip" data-original-title="Facebook")
+								i.fa.fa-facebook
+							a(href="#" data-toggle="tooltip" data-original-title="Twitter")
+									i.fa.fa-twitter
+			
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/05.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Mick Roscoe
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/06.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Tristram Jack
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+			
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/07.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. John Doe
+							.subtitle
+								| Associate Dean, physics head
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/08.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Jane Doe
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/01.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Kerr Waylon
+							.subtitle
+								| Dean
+						.links
+							+list
+			
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/02.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Celestine Wilfred
+							.subtitle
+								| Head of Human Resource
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/03.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr.Prof. Woody Terence
+							.subtitle
+								| Associate Dean, marketting
+						.links
+							+list
+				.col-xs-6.col-md-4
+					.vc-card.boxed
+						a(href="#")
+							img(src=dirPrefix+"assets/img/people/04.jpg", alt="people")
+						.vc-card-wrapper
+							a.title(href="#") Dr. Quinlan Granville
+							.subtitle
+								| Associate Dean
+						.links
+							+list
+
+	section.section.parallax-layer.dark-wrapper.ov-dark-alpha-60(data-img-src=dirPrefix+"assets/img/bg/15.jpg", alt="background")
+		.container
+			.row.call-out.tb-vcenter-wrapper
+				.col-sm-8.vcenter
+					h2.title Apply for Being a TA and Join us at Stanford
+					h4.sub-title Absolutely Stunning Design &amp; Functionality Common Things Expected
+				.col-sm-4.vcenter.text-center
+					a.btn.btn-medium.btn-circle.btn-skin-blue.btn-icon-right.btn-anim-i(href='#')
+						i.oli.oli-forward
+						span read more

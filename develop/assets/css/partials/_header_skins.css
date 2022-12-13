@@ -1,0 +1,120 @@
+
+/* 
+	color management of Header
+*/
+
+@custom-selector :--menus #primary-menu li ul.sub-menu, .cart .cart-inner;
+
+#header{
+	&.sticky-light.is-sticky{
+		border-bottom: 1px solid $chaos_borderinlight;
+		box-shadow: 0px 2px 10px -7px rgba(0,0,0,0.5);
+		background-color: $chaos_light;
+
+		#primary-menu>li>a{
+			text-decoration: none;
+			color:$chaos_textinlight;
+
+			&:hover,
+			&:focus{
+				color:$chaos_black;
+			}
+		}
+		#primary-menu > li.current-menu-item > a{
+			text-decoration: none;
+			color:$chaos_black;
+		}
+		.cart > a,
+		.search a{
+			text-decoration: none;
+			color:#555;
+		}
+		.search a:hover,
+		.cart > a:hover{
+			color:#000;
+		}
+		.cart > a .number{
+			
+			background-color:rgba(0,0,0,0.1);
+		}
+	}
+	
+
+	&.dark,&.sticky-dark.is-sticky{
+		background-color: #343434;
+		border-bottom: none;
+		color:$chaos_lightgray_darker;
+
+		#primary-menu>li>a,
+		#promary-menu > li.current-menu-item,
+		.cart > a,
+		.search a{
+			text-decoration: none;
+			color:$chaos_lightgray_darker;
+		}
+		.search a:hover,
+		.cart > a:hover{
+			color:#fff;
+		}
+		.cart > a .number{
+
+			background-color:rgba(255,255,255,0.2);
+		}
+		#primary-menu>li>a:hover,
+		#primary-menu>li>a:focus {
+			color:$chaos_white;
+		}
+		.current-menu-item{
+			a:not(.btn){
+				color:$chaos_light;
+			}
+		}
+		.nav-row{
+			border-color: $chaos_borderindark;
+		}
+	}
+
+	&.trans:not(.is-sticky){
+		background-color:transparent;
+		border:none;
+		box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.1);
+		
+	}
+
+
+	&.semi-trans-light{
+		background-color: color($chaos_light a(20%));
+	}
+	&.semi-trans-dark{
+		background-color: color($chaos_dark a(20%));
+	}
+
+	
+}
+
+
+@define-mixin trans $type,$op{
+	#header.semi-trans-$(type)-$(op):not(.is-sticky){
+		background-color: color($chaos_$(type) a($(op)%));
+	}
+}
+
+@mixin trans light,10{}
+@mixin trans light,20{}
+@mixin trans light,30{}
+@mixin trans light,40{}
+@mixin trans light,50{}
+@mixin trans light,60{}
+@mixin trans light,70{}
+@mixin trans light,80{}
+@mixin trans light,90{}
+
+@mixin trans dark,10{}
+@mixin trans dark,20{}
+@mixin trans dark,30{}
+@mixin trans dark,40{}
+@mixin trans dark,50{}
+@mixin trans dark,60{}
+@mixin trans dark,70{}
+@mixin trans dark,80{}
+@mixin trans dark,90{}

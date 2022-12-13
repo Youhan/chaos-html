@@ -1,0 +1,256 @@
+.ol-side-navigation{
+	background-color: $chaos_sidenav_bg;
+	
+
+	/*General styles for all levels*/
+	a{
+		text-decoration: none;
+		color: $chaos_textinlight;
+		padding: 2px 5px;
+		position: relative;
+		display: block;
+		font-size: 12px;
+		text-transform: capitalize;
+	}
+
+	&, & ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+	}
+
+	.sub-menu{
+		display: none;
+		padding: 0px 10px 25px 35px;
+		position: relative;
+	}
+
+	li{
+		&.current-menu-item,
+		&.current-menu-parent{
+			>a{
+				font-weight: 700;
+				color: $chaos_headerinlight;
+			}
+		}
+		&.menu-item-has-children{
+			position: relative;
+			> .ol-toggle{
+				position: absolute;
+				display: block;
+				top:25px;
+				right:20px;	
+				width: 11px;
+				height: 1px;
+				background-color: #bbb;
+				transition:all 0.3s ease;
+
+				&:after{
+					content:'';
+					position: absolute;
+					top:-5px;
+					left:5px;
+					width: 1px;
+					height: 11px;
+					background-color: #bbb;
+					transition:all 0.3s ease;
+				}
+			}
+			
+			&.active{
+				> .ol-toggle{
+					&,&:after{
+						background-color:#fff;
+					}
+				}
+			}
+
+			&.active{
+				> .ol-toggle{
+					transform:rotate(-180deg);
+					&:after{
+						transform:rotate(-90deg);
+					}
+				}
+			}
+		}
+
+		&:hover,
+		&:focus{
+			>a{color:#363636;}
+			>.ol-toggle{
+				&,&:after{
+					background-color: #363636;
+				}
+			}
+		}
+	}
+
+	
+	/*First level li*/
+
+	> li{
+
+		> a{
+			text-transform: uppercase;
+			padding: 15px 50px 15px 30px;
+			background-color: #eee;
+			transition: all 0.3s ease;
+		}
+		border: 1px solid $chaos_sidenav_border;
+		border-top:none;
+		&:first-child{
+			border-top: 1px solid $chaos_sidenav_border;
+		}
+		&.menu-item-has-children{
+			position: relative;
+		}
+		
+		&:hover,
+		&:focus{
+			> a{
+				background-color: #dedede;
+			}
+		}
+		&.active,
+		&.current-menu-item{
+			> a{
+				background-color: $chaos_theme_color;
+				color: #fff;
+			}
+		}
+		
+		> .sub-menu {
+			padding: 15px 0 25px 30px;
+
+
+			&:after{
+				position: absolute;
+				content:"";
+				width: 1px;
+				height: 100%;
+				left: 30px;
+				top: 0;
+				background-color: $chaos_theme_color;
+				z-index: 1;
+			}
+
+			/*Second level li*/
+			>li{
+
+				> a{
+					font-size: 13px;
+				    padding: 10px 40px 10px 25px;
+				}
+				&:hover,
+				&:focus{
+					>a{
+						color:#363636;
+					}
+				}
+				&.menu-item-has-children{
+					> .ol-toggle{
+						top:18px;
+						width:7px;
+						right:30px;
+						&:after{
+							height: 7px;
+						    top: -3px;
+							left: 3px;
+						}
+					}
+					&.current-menu-parent,
+					&.active,
+					&:hover,
+					&:focus{
+						> .ol-toggle{
+							&,&:after{
+								background-color:#363636;
+							}
+						}
+					}
+				}
+				&.current-menu-item,
+				&.current-menu-parent{
+					
+					>a:before{
+						position: absolute;
+						font-family: ol-icon-set;
+						content: "\e90b";
+						font-size: 14px;
+						color: $chaos_light;
+						background-color: $chaos_theme_color;
+						text-align: center;
+						width: 32px;
+						height: 32px;
+						line-height: 24px;
+						border-radius: 50%;
+						border: 4px solid $chaos_sidenav_bg;
+						left: -16px;
+						top: 20px;
+						transform:translateY(-50%);
+						z-index: 5;
+						
+						-webkit-filter: blur(0);
+					}
+				}
+			}
+		}
+	}
+
+	@define-mixin sidenavskins $color{
+		&.skin-$(color){
+			> li{
+				ul.sub-menu:after,
+				&.current-menu-item > a,
+				&.active > a,
+				ul> li a:before{
+					background-color: $chaos_$(color) !important;
+				}
+			
+			}
+		}
+	}
+
+	@mixin sidenavskins dark{}
+	@mixin sidenavskins green{}
+	@mixin sidenavskins blue{}
+	@mixin sidenavskins red{}
+	@mixin sidenavskins purple{}
+	@mixin sidenavskins yellow{}
+	@mixin sidenavskins lemon{}
+	@mixin sidenavskins cyan{}
+	
+	.dark-wrapper &{
+		background-color:#3a3a3a;
+		& > li:first-child,
+		& > li{
+			border-color:#4b4b4b;
+		}
+		& > li:not(.active):not(.current-menu-item) > a{
+			background-color: #3a3a3a;
+		}
+		a{
+			color:#cbcbcb;
+			&:hover{
+				color:#fff;
+			}
+		}
+		& li.current-menu-item >a, 
+		& li.current-menu-parent >a{
+			color:#fff;
+		}
+		& li.menu-item-has-children > .ol-toggle{
+			background-color: #cbcbcb;
+			&:after{
+				background-color:#cbcbcb;
+			}
+		}
+		& > li > .sub-menu >li.current-menu-item >a:before, 
+		& > li > .sub-menu >li.current-menu-parent >a:before{
+			border-color: #3a3a3a;
+		}
+
+	}
+}

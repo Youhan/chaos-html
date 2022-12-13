@@ -1,0 +1,15 @@
+.head-main.slim-container(class=headMainClass).text-center
+		.logo-wrapper(class=logoWrapperClass)
+			// standard Logo
+			a('href'=dirPrefix+"index.html", "class"="standard-logo").text-logo
+				img('src'=dirPrefix+"assets/img/avatar.jpg", alt='Dr. Chaos Mctabi')
+				.text-wrapper
+					h1.title Dr. Chaos McTabi
+					h2.subtitle.hidden-sticky Postdoc Candidate @ Stanford University
+			
+		// primary navigation
+		include header/menu-primary
+
+		// #####Begin icons beside menu
+		.header-icons
+			include header/humburger

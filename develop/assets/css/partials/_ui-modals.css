@@ -1,0 +1,27 @@
+.modal-dialog{
+	margin-top:100px !important;
+}
+.modal-title{
+	margin: -15px;
+    padding: 15px;
+    background-color: $chaos_theme_color;
+    color: $chaos_light;
+    margin-bottom: 15px;
+}
+.modal-body {
+        padding:0;
+}
+.modal-footer{
+	margin: -15px;
+    padding: 15px;
+    position: relative;
+    bottom: -15px;
+    background-color: $chaos_lightgray_darker;
+    margin-top: 0px;
+}
+.modal-header{
+    .close{
+        color:#fff;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,15 @@
+extends ../../../_layouts/lo-normal/left_sidebar
+
+append config
+	- var pageSpecificBodyClass = bodyClasses.push()
+	- var pagewrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push("") 
+	- var pageTitle = "Regular Layout - Left Sidebar"
+	- var dirPrefix = '../../'
+	- var currentMenu = "pages"
+
+block main-area
+	include ../../../_partials/blocks/pages/main-area
+block sidebar-1
+	include ../../../_partials/blocks/pages/sidebar-1
+

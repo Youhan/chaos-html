@@ -1,0 +1,81 @@
+extends ../../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout bg-gray')
+	- var PSheaderClasses = headerClasses.push(' ') 
+	- var pageTitle = "Parallax sections"
+	- var PageTitleHead = "Chaos"
+	- var PageTitleDesc = "Scroll Down to see all variations"
+	- var bcType = "intitle"
+	- var pageTitleClass = 'h-500 particles center-it parallax-layer ov-blue-alpha-50 dark'
+	- var pageTitleImage = dirPrefix+"assets/img/backgrounds/10.jpg"
+	- var pageTitleParallaxMode = "title"
+	- var currentMenu = "Shortcodes"
+	- var lorem = "Phasellus lectus sem, egestas eget sollic ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta aliquet sed!"
+block main-area
+	.hvh-30
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Landscape Image
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg")
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Portrait Image
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/backgrounds/parallax-1.jpg")
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - narrow section
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg").section-narrow
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Thick Section
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg").h-500
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Fullscreen Section
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/backgrounds/parallax-1.jpg").full-screen
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center User Defined Factor = 0.1
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg" ,data-bg-parallax-factor=0.1)
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Reverse Parallax
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg" ,data-bg-parallax-factor=-200)
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Reverse Parallax - Fullscreen
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/backgrounds/parallax-1.jpg" ,data-bg-parallax-factor=-0.15).full-screen
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Mode-1
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg",data-parallax-mode="mode-1").h-500
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Mode-2
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg",data-parallax-mode="mode-2").h-500
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Mode-3
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg",data-parallax-mode="mode-3").h-500
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Mode-4
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg",data-parallax-mode="mode-4").h-500
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Mode-5
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg",data-parallax-mode="mode-5").h-500
+	
+	.hvh-70
+	section.section.section-narrow
+		h2.text-center Simple Parallax - Mode-6
+	section.section.parallax-layer(data-img-src=dirPrefix+"assets/img/bg-dark.jpg",data-parallax-mode="mode-6").h-500
+	.hvh-70

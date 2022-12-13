@@ -1,0 +1,403 @@
+
+extends ../../_layouts/lo-normal/fullwidth
+append config
+	- var dirPrefix = '../'
+	- var PSbodyClass = bodyClasses.push('sticky-header')
+	- var PSwrapperClasses = wrapperClasses.push('regular-layout')
+	- var PSheaderClasses = headerClasses.push('trans sticky-light') 
+	- var bcType = "intitle"
+	- var currentMenu = "Home"
+	- var PageTitleHead = "Chaos theme"
+	- var pageTitle = "Bring Order Out Of Chaos!"
+	-loadeExtraAssets.push('revolution')
+block page-title
+	.page-head.center-it.auto-height
+		include /_partials/blocks/sliders/slider-h3
+block main-area
+	// About
+	section.section: .container
+		h4.with-shaded-label
+			span.shaded-label.darken OVERVIEW
+			span The Most Refered Book of 2016
+		.sp-blank-30.hidden-xs
+		.row
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.		
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.
+			.col-md-4
+				p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.		
+	// preview of book
+	section.section.bg-gray: .container: .row
+		.col-md-4
+			h2.title Meta & Preview
+			p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla.
+			.sp-blank-20
+			ul.list-unstyled
+				li
+					strong Publication Date
+					span.pull-right Sep 2015
+				li
+					strong Publisher
+					span.pull-right Safa and Sons
+				li
+					strong ISSN
+					span.pull-right 63723X
+				li
+					strong Type
+					span.pull-right Hard Cover
+				li
+					strong Price
+					span.pull-right $22.99
+			hr
+			.ol-people-short
+				.avatar.avatar-sm
+					img.img-circle(src=dirPrefix+'assets/img/people/03.jpg', alt='Owl Image')
+				.contents
+					h5.title Lavonne Morra
+					p.meta recomplicate@fairy.com
+			.sp-blank-10
+			.ol-people-short
+				.avatar.avatar-sm
+					img.img-circle(src=dirPrefix+'assets/img/people/01.jpg', alt='Owl Image')
+				.contents
+					h5.title Larhonda Trill
+					p.meta tracaulon@carbarn.net
+			.sp-blank-10
+			hr
+		.col-md-8
+			.issuuembed(data-configid='23762006/33691266', style='width:525px; height:371px;')
+				script(type='text/javascript', src='https://e.issuu.com/embed.js', async='true')
+	// About the author
+	section.section.parallax-layer.ov-light-alpha-90(data-img-src=dirPrefix+"assets/img/author.jpg"): .container
+		.row
+			.col-md-4
+				img(src=dirPrefix+"assets/img/author.jpg")
+			.col-md-8.p-left-30
+				.row
+					.col-md-5.col-sm-6
+						h4.with-shaded-label
+							span.shaded-label.darken AUTHOR
+							span About Dr. Ellen Hoffman
+						.sp-blank-20
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed, venenatis quis neque. Pellentesque pellentesque iaculis porta. Nam quis odio vitae lectus convallis accumsan et sed neque.	
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Quisque nibh diam, mattis pharetra aliquet sed.
+					.col-md-7.col-sm-6
+						.ol-timeline
+							div.tl-item.pub-item.with-icon
+								span.item-section 2015
+								.elem-wrapper
+									i.oli.oli-desk_lamp
+								.content-wrapper
+									h3.title General Atlantic Professor
+									.description
+										p in Mechanical Engineering <br> Stanford University
+							div.tl-item.pub-item.with-icon
+								span.item-section 2012
+								.elem-wrapper
+									i.oli.oli-desk_lamp
+								.content-wrapper
+									h3.title Assistance Professor
+									.description
+										p in Mechanical Engineering <br> Stanford University
+							div.tl-item.pub-item.with-icon
+								span.item-section 2005
+								.elem-wrapper
+									i.oli.oli-desk_lamp
+								.content-wrapper
+									h3.title Baghale Seller
+									.description
+										p in Daneshjo Blvd. <br> Shiraz Hafezie
+	// Testimonials
+	section.section.bg-gray: .container
+		// #####Begin heading
+		.heading-with-sub.text-center
+			h2.title Don&#39;t take it from us, see what other people say!
+			h4.subtitle Here is an awesome quick description about it that is class.
+		// #####End heading
+		.sp-blank-50
+		
+		.row
+			.col-md-4
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/05.jpg', alt='Owl Image')
+					.texts
+						p
+							mixin lorem(15)
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+			.col-md-4
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/06.jpg', alt='Owl Image')
+					.texts
+						p
+							mixin lorem(15)
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+			.col-md-4
+				.testimonial-item
+					.avatar.avatar-sm
+						img(src=dirPrefix+'assets/img/avatars/07.jpg', alt='Owl Image')
+					.texts
+						p
+							mixin lorem(15)
+						h4.their-name Martha M. Masters
+						div.their-cite 
+							| Marketing -
+							a(href="#") Google
+	// call to action
+	section.section.parallax-layer.ov-light-alpha-70(data-img-src=dirPrefix+"assets/img/backgrounds/42.jpg" data-parallax-mode="mode-5")
+		.container
+			.row
+				// #####Begin call to action
+				.call-out.tb-vcenter-wrapper
+					.col-md-9.vcenter.ol-animate.fadeIn
+						h2.title Purchase Now and Get 20% off
+						h4.sub-title Absolutely Stunning Design & Functionality Common Things Expected
+					.col-md-3.vcenter.text-center.ol-animate.fadeIn
+						a.btn.btn-medium.btn-anim-i.btn-skin-red.btn-icon-right.btn-circle(href='#') 
+							i.oli.oli-forward
+							span Purchase Now
+				// #####End call to action
+	// table of contents
+	section.section: .container
+		h4.with-shaded-label
+			span.shaded-label.darken Contents
+			span Table of Contents
+		.sp-blank-20
+		.row
+			.col-md-9
+				p 
+					mixin lorem(50)
+			.col-md-3
+				a.ol-iconic-link.skin-yellow(href="#")
+					i.oli.oli-download_2
+					|Download PDF
+		.sp-blank-80
+		// #####Begin schedule item
+		.ol-agenda.sticky-type
+			// #####Begin agenda section
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 01
+						span Chapter 
+				.section-body
+					.item
+						.info
+							span 
+								strong 1-14
+							span pages
+						.contents
+							h3.title 1.1 - Introduction and Overview- 
+							h4.subtitle All of us should register for the conf
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 14-30
+							span pages
+						.contents
+							h3.title 1.2 - Understanding Change and Difference - 
+							h4.subtitle in the Global Automotive Industry
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 1.3 - The Market for New Cars- 
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 1.4 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+			// #####End agenda section
+			// #####Begin agenda section
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 02
+						span Chapter 
+				.section-body
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 2.1 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 2.2 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 2.3 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 2.4 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+			// #####End agenda section
+			// #####Begin agenda section
+			.ag-section
+				.section-head
+					.date.with-shaded-label
+						span.shaded-label 03
+						span Chapter
+				.section-body
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 3.1 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 3.2 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+					.item
+						.info
+							span 
+								strong 19–28
+							span pages
+						.contents
+							h3.title 3.3 - 
+								mixin lorem(5,'')
+							h4.subtitle Lorem ipsum dolor sit amet, delenit forensibus qui ea.
+							.extra-description
+								p 
+									mixin lorem(30)
+								p 
+									mixin lorem(30)
+			// #####End agenda section
+		// #####End schedule item
+	// iconboxes
+	section.section.dark-wrapper.bg-dark
+		.container
+			.row
+				.col-md-4
+					// #####Begin heading
+					.heading-with-sub
+						h3.title Give me a Reason Why?
+						h4.subtitle Reasons about why we are one of a kind!
+					// #####End heading
+					p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut. Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					.sp-blank-30
+					a.btn.btn-small.btn-circle.btn-skin-red(href='#') read more
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-camera
+						h3.title reasonable offer
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+					.sp-blank-50
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-quill_with_ink
+						h3.title Drives you crazy
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+				.col-md-4
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-printed_OCR
+						h3.title loaded with love
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+					.sp-blank-50
+					// #####Begin iconbox v4
+					.icon-box.ib-v4.icon-theme-color
+						i.oli.oli-chromatography
+						h3.title Approved by Jafar!
+						p Phasellus lectus sem, egestas eget sollicitudin ut, lobortis ac nulla. Phasellus lectus sem, egestas eget sollicitudin ut.
+					// #####End iconbox v4
+prepend customjs
+	include /_partials/blocks/sliders/slider-h3-js
